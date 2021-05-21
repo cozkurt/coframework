@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */; };
 		DFC4F04B265726C80064ECBB /* COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC4F041265726C80064ECBB /* COFramework.framework */; };
-		DFC4F050265726C80064ECBB /* COFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
 		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
@@ -169,8 +168,6 @@
 		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
 		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC4F04A265726C80064ECBB /* COFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COFrameworkTests.swift; sourceTree = "<group>"; };
-		DFC4F051265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC4F05C265727010064ECBB /* Bundle+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
 		DFC4F05D265727010064ECBB /* UIApplication+Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Version.swift"; sourceTree = "<group>"; };
 		DFC4F05E265727010064ECBB /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
@@ -352,7 +349,6 @@
 			isa = PBXGroup;
 			children = (
 				DFC4F043265726C80064ECBB /* COFramework */,
-				DFC4F04E265726C80064ECBB /* COFrameworkTests */,
 				DFC4F042265726C80064ECBB /* Products */,
 				375214C319DC084BFD57E082 /* Pods */,
 				9BB4BAE022007446F5D04B2E /* Frameworks */,
@@ -377,15 +373,6 @@
 				DFC4F045265726C80064ECBB /* Info.plist */,
 			);
 			path = COFramework;
-			sourceTree = "<group>";
-		};
-		DFC4F04E265726C80064ECBB /* COFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */,
-				DFC4F051265726C80064ECBB /* Info.plist */,
-			);
-			path = COFrameworkTests;
 			sourceTree = "<group>";
 		};
 		DFC4F05B265727010064ECBB /* Extentions */ = {
@@ -955,7 +942,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC4F050265726C80064ECBB /* COFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
