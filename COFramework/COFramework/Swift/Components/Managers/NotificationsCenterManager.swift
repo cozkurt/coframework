@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class NotificationsCenterManager {
+public class NotificationsCenterManager {
     
     /// Store each NotificationsCenter object
     // [className: [(forName, notification)]
@@ -32,7 +32,7 @@ open class NotificationsCenterManager {
      - parameters:
      - return : Void
      */
-    func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
+    public func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
         runOnMainQueue {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: forName), object: object, userInfo: userInfo)
         }
@@ -44,7 +44,7 @@ open class NotificationsCenterManager {
      - parameters:
      - return : Void
      */
-    func addObserver(_ object: AnyHashable, forName: String, _ observe: @escaping (Foundation.Notification) -> Void) {
+    public func addObserver(_ object: AnyHashable, forName: String, _ observe: @escaping (Foundation.Notification) -> Void) {
         
         let name = object.description.split(":").first ?? object.description
         let notif = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: forName), object: nil, queue: nil, using: observe)
@@ -73,7 +73,7 @@ open class NotificationsCenterManager {
      - parameters:
      - return : Void
      */
-    func removeObserver(_ object: AnyHashable) {
+    public func removeObserver(_ object: AnyHashable) {
         
         let name = object.description.split(":").first ?? object.description
         

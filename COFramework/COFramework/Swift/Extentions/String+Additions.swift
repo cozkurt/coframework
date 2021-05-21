@@ -297,7 +297,7 @@ extension String {
         }
     }
     
-    func toData() -> Data? {
+    public func toData() -> Data? {
         return Data(base64Encoded: self)
     }
 }
