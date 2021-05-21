@@ -1,0 +1,45 @@
+
+[
+ {
+ "colors" : [
+              { "name": "default.text", "value": "0x3c396f" },
+              { "name": "default.text.cursor", "value": "0x6269ff" },
+              { "name": "default.image.tint", "value": "60,57,111,1" },
+              { "name": "default.table.bottom", "value": "255,255,255,1" },
+              
+              { "name": "console.text", "value": "0x00ffff" },
+              
+              { "name": "custom.color.1", "value": "243,243,245,1" }
+             ]
+ },
+ 
+ {
+ "appearanceId": "cell.console.label",
+ "appearanceType": "label",
+ "textColor": "console.text",
+ "font": "System-Regular,10",
+ "styleLineSpacing": "1"
+ },
+ {
+ "appearanceId": "cell.search.title",
+ "appearanceType": "label",
+ "textColor": "default.text",
+ "font": "System-Regular,17",
+ "styleLineSpacing": "1"
+ },
+ {
+ "appearanceId": "cell.search.desc",
+ "appearanceType": "label",
+ "textColor": "default.text",
+ "font": "System-Regular,11",
+ "styleLineSpacing": "1"
+ },
+ {
+ "appearanceId": "cell.search.price",
+ "appearanceType": "label",
+ "textColor": "0,150,0,1",
+ "font": "System-Regular,14",
+ "styleLineSpacing": "1",
+ "styleAlignment": "right"
+ }
+]

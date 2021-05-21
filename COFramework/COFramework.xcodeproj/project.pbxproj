@@ -1,0 +1,1216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */; };
+		DFC4F04B265726C80064ECBB /* COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC4F041265726C80064ECBB /* COFramework.framework */; };
+		DFC4F050265726C80064ECBB /* COFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */; };
+		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
+		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
+		DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05E265727010064ECBB /* UIImage+Additions.swift */; };
+		DFC4F0DB265727010064ECBB /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05F265727010064ECBB /* UIView+Additions.swift */; };
+		DFC4F0DC265727010064ECBB /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F060265727010064ECBB /* MKMapView+Additions.swift */; };
+		DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F061265727010064ECBB /* Double+Additions.swift */; };
+		DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F062265727010064ECBB /* NSTimer+Swifty.swift */; };
+		DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F063265727010064ECBB /* CKAsset+Additions.swift */; };
+		DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F064265727010064ECBB /* UIColor+Additions.swift */; };
+		DFC4F0E2265727020064ECBB /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F066265727010064ECBB /* UIFont+Additions.swift */; };
+		DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F067265727010064ECBB /* UIResponder+Additions.swift */; };
+		DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F068265727010064ECBB /* UIDevice+Additions.swift */; };
+		DFC4F0E5265727020064ECBB /* UIButton+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F069265727010064ECBB /* UIButton+Additions.swift */; };
+		DFC4F0E6265727020064ECBB /* NSObject+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06A265727010064ECBB /* NSObject+Additions.swift */; };
+		DFC4F0E7265727020064ECBB /* UILabel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06B265727010064ECBB /* UILabel+Additions.swift */; };
+		DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06C265727010064ECBB /* NSObject+CloudKit.swift */; };
+		DFC4F0E9265727020064ECBB /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06D265727010064ECBB /* Date+Additions.swift */; };
+		DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06E265727010064ECBB /* UUID+Additions.swift */; };
+		DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F06F265727010064ECBB /* DispatchQueue.swift */; };
+		DFC4F0EC265727020064ECBB /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F070265727010064ECBB /* UITextField+Additions.swift */; };
+		DFC4F0ED265727020064ECBB /* UINib+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F071265727010064ECBB /* UINib+Load.swift */; };
+		DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F072265727010064ECBB /* NSMutableAttributedString.swift */; };
+		DFC4F0EF265727020064ECBB /* CGSize+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F073265727010064ECBB /* CGSize+Additions.swift */; };
+		DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F074265727010064ECBB /* UIScrollView+Additions.swift */; };
+		DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F075265727010064ECBB /* UIView+Border.swift */; };
+		DFC4F0F2265727020064ECBB /* UITableView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F076265727010064ECBB /* UITableView+Additions.swift */; };
+		DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F077265727010064ECBB /* Array+Additions.swift */; };
+		DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F078265727010064ECBB /* UIPageViewController+Additions.swift */; };
+		DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F079265727010064ECBB /* CALayer+Additions.swift */; };
+		DFC4F0F7265727020064ECBB /* NSLocale+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F07B265727010064ECBB /* NSLocale+Additions.swift */; };
+		DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F07C265727010064ECBB /* UISegmentedControl+Additions.swift */; };
+		DFC4F0F9265727020064ECBB /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F07D265727010064ECBB /* String+Additions.swift */; };
+		DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F07E265727010064ECBB /* DataFormatter+Additions.swift */; };
+		DFC4F0FB265727020064ECBB /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F07F265727010064ECBB /* UIBarButtonItem+Additions.swift */; };
+		DFC4F0FC265727020064ECBB /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F080265727010064ECBB /* Data+Additions.swift */; };
+		DFC4F0FD265727020064ECBB /* UITextview+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F081265727010064ECBB /* UITextview+Additions.swift */; };
+		DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F082265727010064ECBB /* String+Localization.swift */; };
+		DFC4F0FF265727020064ECBB /* String+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F083265727010064ECBB /* String+Colors.swift */; };
+		DFC4F100265727020064ECBB /* CGPoint+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F084265727010064ECBB /* CGPoint+Additions.swift */; };
+		DFC4F103265727020064ECBB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F08A265727010064ECBB /* WebViewController.swift */; };
+		DFC4F104265727020064ECBB /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F08B265727010064ECBB /* WebViewController.xib */; };
+		DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F08D265727010064ECBB /* DynamicCellBase.swift */; };
+		DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F08E265727010064ECBB /* DynamicCellController.swift */; };
+		DFC4F107265727020064ECBB /* DynamicCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F08F265727010064ECBB /* DynamicCellViewController.xib */; };
+		DFC4F108265727020064ECBB /* SampleDynamicCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F091265727010064ECBB /* SampleDynamicCellViewController.xib */; };
+		DFC4F109265727020064ECBB /* SampleDynamicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F092265727010064ECBB /* SampleDynamicCellViewController.swift */; };
+		DFC4F10A265727020064ECBB /* DynamicCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F093265727010064ECBB /* DynamicCellViewController.swift */; };
+		DFC4F10B265727020064ECBB /* UIFlowBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F095265727010064ECBB /* UIFlowBaseView.swift */; };
+		DFC4F10C265727020064ECBB /* UIFlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F096265727010064ECBB /* UIFlowModel.swift */; };
+		DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F097265727010064ECBB /* UIFlowController.swift */; };
+		DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F099265727010064ECBB /* UIBehaviourFactory.swift */; };
+		DFC4F10F265727020064ECBB /* UIBehaviourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F09A265727010064ECBB /* UIBehaviourModel.swift */; };
+		DFC4F110265727020064ECBB /* UIBehaviourHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F09B265727010064ECBB /* UIBehaviourHelper.swift */; };
+		DFC4F111265727020064ECBB /* UIBehaviours.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F09C265727010064ECBB /* UIBehaviours.json */; };
+		DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A4265727010064ECBB /* AppearanceView.swift */; };
+		DFC4F118265727020064ECBB /* AppearanceSegmented.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A5265727010064ECBB /* AppearanceSegmented.swift */; };
+		DFC4F119265727020064ECBB /* AppearanceSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A6265727010064ECBB /* AppearanceSwitch.swift */; };
+		DFC4F11A265727020064ECBB /* AppearanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A7265727010064ECBB /* AppearanceButton.swift */; };
+		DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A8265727010064ECBB /* AppearanceController.swift */; };
+		DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0A9265727010064ECBB /* AppearanceImageView.swift */; };
+		DFC4F11D265727020064ECBB /* DemoStyle2.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F0AB265727010064ECBB /* DemoStyle2.json */; };
+		DFC4F11E265727020064ECBB /* StylesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F0AC265727010064ECBB /* StylesViewController.xib */; };
+		DFC4F11F265727020064ECBB /* StylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0AD265727010064ECBB /* StylesViewController.swift */; };
+		DFC4F120265727020064ECBB /* DemoStyle1.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F0AE265727010064ECBB /* DemoStyle1.json */; };
+		DFC4F121265727020064ECBB /* AppearanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0AF265727010064ECBB /* AppearanceModel.swift */; };
+		DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B0265727010064ECBB /* AppearanceTextView.swift */; };
+		DFC4F123265727020064ECBB /* AppearanceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B1265727010064ECBB /* AppearanceHelpers.swift */; };
+		DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B2265727010064ECBB /* AppearanceLabel.swift */; };
+		DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B3265727010064ECBB /* AppearanceTextField.swift */; };
+		DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B5265727010064ECBB /* CircleGraphView.swift */; };
+		DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B6265727010064ECBB /* DynamicActionSheet.swift */; };
+		DFC4F128265727020064ECBB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B7265727010064ECBB /* CustomTextField.swift */; };
+		DFC4F129265727020064ECBB /* ResizableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B8265727010064ECBB /* ResizableImageView.swift */; };
+		DFC4F12A265727020064ECBB /* CircleAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0B9265727010064ECBB /* CircleAnimatedView.swift */; };
+		DFC4F12B265727020064ECBB /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0BA265727010064ECBB /* DismissButton.swift */; };
+		DFC4F12C265727020064ECBB /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0BB265727010064ECBB /* CustomTextView.swift */; };
+		DFC4F12D265727020064ECBB /* AdvancedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0BC265727010064ECBB /* AdvancedPageViewController.swift */; };
+		DFC4F12E265727020064ECBB /* AppTableBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0BD265727010064ECBB /* AppTableBase.swift */; };
+		DFC4F12F265727020064ECBB /* CustomTableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0BF265727010064ECBB /* CustomTableHelper.swift */; };
+		DFC4F130265727020064ECBB /* CustomTableBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C0265727010064ECBB /* CustomTableBase.swift */; };
+		DFC4F131265727020064ECBB /* SectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C2265727010064ECBB /* SectionDescriptor.swift */; };
+		DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C3265727010064ECBB /* CellDescriptor.swift */; };
+		DFC4F133265727020064ECBB /* UITableViewCell+CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C5265727010064ECBB /* UITableViewCell+CustomTable.swift */; };
+		DFC4F134265727020064ECBB /* CustomTableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C6265727010064ECBB /* CustomTableConfiguration.swift */; };
+		DFC4F135265727020064ECBB /* CustomTableDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C7265727010064ECBB /* CustomTableDelegates.swift */; };
+		DFC4F136265727020064ECBB /* SignalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0C9265727010064ECBB /* SignalData.swift */; };
+		DFC4F137265727020064ECBB /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CA265727010064ECBB /* Logging.swift */; };
+		DFC4F138265727020064ECBB /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CB265727010064ECBB /* GlobalHelpers.swift */; };
+		DFC4F139265727020064ECBB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CC265727010064ECBB /* ImagePicker.swift */; };
+		DFC4F13A265727020064ECBB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CD265727010064ECBB /* Reachability.swift */; };
+		DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CE265727010064ECBB /* FileLoader.swift */; };
+		DFC4F13C265727020064ECBB /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CF265727010064ECBB /* Alerts.swift */; };
+		DFC4F13D265727020064ECBB /* DateUTCTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */; };
+		DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */; };
+		DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D2265727010064ECBB /* ImageHelper.swift */; };
+		DFC4F140265727020064ECBB /* ImageViewWithMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */; };
+		DFC4F142265727020064ECBB /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D5265727010064ECBB /* Signal.swift */; };
+		DFC4F143265727020064ECBB /* CustomOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D7265727010064ECBB /* CustomOperation.swift */; };
+		DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */; };
+		DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F14826572A140064ECBB /* Defaults.swift */; };
+		DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F14926572A140064ECBB /* DemoStyle3.json */; };
+		DFC4F15126572CF00064ECBB /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F15026572CF00064ECBB /* LanguageManager.swift */; };
+		DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */; };
+		DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */; };
+		DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */; };
+		DFC4F1B4265733340064ECBB /* COUIAnimatedBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */; };
+		DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */; };
+		DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F190265733340064ECBB /* COUIAnimationFactory.h */; };
+		DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */; };
+		DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F192265733340064ECBB /* COUIAnimationController.h */; };
+		DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F193265733340064ECBB /* COUIAnimationRouter.h */; };
+		DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */; };
+		DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */; };
+		DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F197265733340064ECBB /* CODataSource.h */; };
+		DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F198265733340064ECBB /* COJSONLoader.h */; };
+		DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F199265733340064ECBB /* COSingleton.h */; };
+		DFC4F1BF265733340064ECBB /* COLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19A265733340064ECBB /* COLogging.h */; };
+		DFC4F1C0265733340064ECBB /* COTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19B265733340064ECBB /* COTimer.m */; };
+		DFC4F1C1265733340064ECBB /* COCacheController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19C265733340064ECBB /* COCacheController.h */; };
+		DFC4F1C2265733340064ECBB /* COJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19D265733340064ECBB /* COJSONLoader.m */; };
+		DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19E265733340064ECBB /* CODataSource.m */; };
+		DFC4F1C4265733340064ECBB /* COLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19F265733340064ECBB /* COLogging.m */; };
+		DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A0265733340064ECBB /* COCacheController.m */; };
+		DFC4F1C6265733340064ECBB /* COMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A1265733340064ECBB /* COMacros.h */; };
+		DFC4F1C7265733340064ECBB /* COTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A2265733340064ECBB /* COTimer.h */; };
+		DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A3265733340064ECBB /* COUIAnimationController.m */; };
+		DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */; };
+		DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */; };
+		DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A7265733340064ECBB /* NSString+Utilities.m */; };
+		DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */; };
+		DFC4F1CD265733340064ECBB /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */; };
+		DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AA265733340064ECBB /* NSString+Utilities.h */; };
+		DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */; };
+		DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */; };
+		DFC4F1D1265733340064ECBB /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */; };
+		DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */; };
+		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
+		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFC4F04C265726C80064ECBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC4F038265726C80064ECBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFC4F040265726C80064ECBB;
+			remoteInfo = COFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.release.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.release.xcconfig"; sourceTree = "<group>"; };
+		68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.debug.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC4F041265726C80064ECBB /* COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
+		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC4F04A265726C80064ECBB /* COFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COFrameworkTests.swift; sourceTree = "<group>"; };
+		DFC4F051265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC4F05C265727010064ECBB /* Bundle+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F05D265727010064ECBB /* UIApplication+Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Version.swift"; sourceTree = "<group>"; };
+		DFC4F05E265727010064ECBB /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F05F265727010064ECBB /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F060265727010064ECBB /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F061265727010064ECBB /* Double+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F062265727010064ECBB /* NSTimer+Swifty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+Swifty.swift"; sourceTree = "<group>"; };
+		DFC4F063265727010064ECBB /* CKAsset+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CKAsset+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F064265727010064ECBB /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F066265727010064ECBB /* UIFont+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F067265727010064ECBB /* UIResponder+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F068265727010064ECBB /* UIDevice+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F069265727010064ECBB /* UIButton+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F06A265727010064ECBB /* NSObject+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F06B265727010064ECBB /* UILabel+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F06C265727010064ECBB /* NSObject+CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+CloudKit.swift"; sourceTree = "<group>"; };
+		DFC4F06D265727010064ECBB /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F06E265727010064ECBB /* UUID+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F06F265727010064ECBB /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		DFC4F070265727010064ECBB /* UITextField+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F071265727010064ECBB /* UINib+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Load.swift"; sourceTree = "<group>"; };
+		DFC4F072265727010064ECBB /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		DFC4F073265727010064ECBB /* CGSize+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F074265727010064ECBB /* UIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F075265727010064ECBB /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		DFC4F076265727010064ECBB /* UITableView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F077265727010064ECBB /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F078265727010064ECBB /* UIPageViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F079265727010064ECBB /* CALayer+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F07B265727010064ECBB /* NSLocale+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLocale+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F07C265727010064ECBB /* UISegmentedControl+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F07D265727010064ECBB /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F07E265727010064ECBB /* DataFormatter+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataFormatter+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F07F265727010064ECBB /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F080265727010064ECBB /* Data+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F081265727010064ECBB /* UITextview+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextview+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F082265727010064ECBB /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		DFC4F083265727010064ECBB /* String+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Colors.swift"; sourceTree = "<group>"; };
+		DFC4F084265727010064ECBB /* CGPoint+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Additions.swift"; sourceTree = "<group>"; };
+		DFC4F08A265727010064ECBB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DFC4F08B265727010064ECBB /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		DFC4F08D265727010064ECBB /* DynamicCellBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellBase.swift; sourceTree = "<group>"; };
+		DFC4F08E265727010064ECBB /* DynamicCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellController.swift; sourceTree = "<group>"; };
+		DFC4F08F265727010064ECBB /* DynamicCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicCellViewController.xib; sourceTree = "<group>"; };
+		DFC4F091265727010064ECBB /* SampleDynamicCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleDynamicCellViewController.xib; sourceTree = "<group>"; };
+		DFC4F092265727010064ECBB /* SampleDynamicCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDynamicCellViewController.swift; sourceTree = "<group>"; };
+		DFC4F093265727010064ECBB /* DynamicCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellViewController.swift; sourceTree = "<group>"; };
+		DFC4F095265727010064ECBB /* UIFlowBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowBaseView.swift; sourceTree = "<group>"; };
+		DFC4F096265727010064ECBB /* UIFlowModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowModel.swift; sourceTree = "<group>"; };
+		DFC4F097265727010064ECBB /* UIFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlowController.swift; sourceTree = "<group>"; };
+		DFC4F099265727010064ECBB /* UIBehaviourFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBehaviourFactory.swift; sourceTree = "<group>"; };
+		DFC4F09A265727010064ECBB /* UIBehaviourModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBehaviourModel.swift; sourceTree = "<group>"; };
+		DFC4F09B265727010064ECBB /* UIBehaviourHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBehaviourHelper.swift; sourceTree = "<group>"; };
+		DFC4F09C265727010064ECBB /* UIBehaviours.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UIBehaviours.json; sourceTree = "<group>"; };
+		DFC4F0A4265727010064ECBB /* AppearanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
+		DFC4F0A5265727010064ECBB /* AppearanceSegmented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceSegmented.swift; sourceTree = "<group>"; };
+		DFC4F0A6265727010064ECBB /* AppearanceSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceSwitch.swift; sourceTree = "<group>"; };
+		DFC4F0A7265727010064ECBB /* AppearanceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceButton.swift; sourceTree = "<group>"; };
+		DFC4F0A8265727010064ECBB /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		DFC4F0A9265727010064ECBB /* AppearanceImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceImageView.swift; sourceTree = "<group>"; };
+		DFC4F0AB265727010064ECBB /* DemoStyle2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle2.json; sourceTree = "<group>"; };
+		DFC4F0AC265727010064ECBB /* StylesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StylesViewController.xib; sourceTree = "<group>"; };
+		DFC4F0AD265727010064ECBB /* StylesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesViewController.swift; sourceTree = "<group>"; };
+		DFC4F0AE265727010064ECBB /* DemoStyle1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle1.json; sourceTree = "<group>"; };
+		DFC4F0AF265727010064ECBB /* AppearanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceModel.swift; sourceTree = "<group>"; };
+		DFC4F0B0265727010064ECBB /* AppearanceTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceTextView.swift; sourceTree = "<group>"; };
+		DFC4F0B1265727010064ECBB /* AppearanceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceHelpers.swift; sourceTree = "<group>"; };
+		DFC4F0B2265727010064ECBB /* AppearanceLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceLabel.swift; sourceTree = "<group>"; };
+		DFC4F0B3265727010064ECBB /* AppearanceTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceTextField.swift; sourceTree = "<group>"; };
+		DFC4F0B5265727010064ECBB /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
+		DFC4F0B6265727010064ECBB /* DynamicActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicActionSheet.swift; sourceTree = "<group>"; };
+		DFC4F0B7265727010064ECBB /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DFC4F0B8265727010064ECBB /* ResizableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizableImageView.swift; sourceTree = "<group>"; };
+		DFC4F0B9265727010064ECBB /* CircleAnimatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAnimatedView.swift; sourceTree = "<group>"; };
+		DFC4F0BA265727010064ECBB /* DismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		DFC4F0BB265727010064ECBB /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		DFC4F0BC265727010064ECBB /* AdvancedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedPageViewController.swift; sourceTree = "<group>"; };
+		DFC4F0BD265727010064ECBB /* AppTableBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableBase.swift; sourceTree = "<group>"; };
+		DFC4F0BF265727010064ECBB /* CustomTableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableHelper.swift; sourceTree = "<group>"; };
+		DFC4F0C0265727010064ECBB /* CustomTableBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableBase.swift; sourceTree = "<group>"; };
+		DFC4F0C2265727010064ECBB /* SectionDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDescriptor.swift; sourceTree = "<group>"; };
+		DFC4F0C3265727010064ECBB /* CellDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDescriptor.swift; sourceTree = "<group>"; };
+		DFC4F0C5265727010064ECBB /* UITableViewCell+CustomTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+CustomTable.swift"; sourceTree = "<group>"; };
+		DFC4F0C6265727010064ECBB /* CustomTableConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableConfiguration.swift; sourceTree = "<group>"; };
+		DFC4F0C7265727010064ECBB /* CustomTableDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableDelegates.swift; sourceTree = "<group>"; };
+		DFC4F0C9265727010064ECBB /* SignalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalData.swift; sourceTree = "<group>"; };
+		DFC4F0CA265727010064ECBB /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		DFC4F0CB265727010064ECBB /* GlobalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		DFC4F0CC265727010064ECBB /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DFC4F0CD265727010064ECBB /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DFC4F0CE265727010064ECBB /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		DFC4F0CF265727010064ECBB /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUTCTransform.swift; sourceTree = "<group>"; };
+		DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryHelper.swift; sourceTree = "<group>"; };
+		DFC4F0D2265727010064ECBB /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewWithMask.swift; sourceTree = "<group>"; };
+		DFC4F0D5265727010064ECBB /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		DFC4F0D7265727010064ECBB /* CustomOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperation.swift; sourceTree = "<group>"; };
+		DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsCenterManager.swift; sourceTree = "<group>"; };
+		DFC4F14826572A140064ECBB /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		DFC4F14926572A140064ECBB /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
+		DFC4F15026572CF00064ECBB /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationRouter.m; sourceTree = "<group>"; };
+		DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationSpriteLayer.h; sourceTree = "<group>"; };
+		DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationBaseModel.h; sourceTree = "<group>"; };
+		DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimatedBaseView.m; sourceTree = "<group>"; };
+		DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationParticleModel.m; sourceTree = "<group>"; };
+		DFC4F190265733340064ECBB /* COUIAnimationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationFactory.h; sourceTree = "<group>"; };
+		DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationCAModel.h; sourceTree = "<group>"; };
+		DFC4F192265733340064ECBB /* COUIAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationController.h; sourceTree = "<group>"; };
+		DFC4F193265733340064ECBB /* COUIAnimationRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationRouter.h; sourceTree = "<group>"; };
+		DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationSpriteLayer.m; sourceTree = "<group>"; };
+		DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationBaseModel.m; sourceTree = "<group>"; };
+		DFC4F197265733340064ECBB /* CODataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CODataSource.h; sourceTree = "<group>"; };
+		DFC4F198265733340064ECBB /* COJSONLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COJSONLoader.h; sourceTree = "<group>"; };
+		DFC4F199265733340064ECBB /* COSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSingleton.h; sourceTree = "<group>"; };
+		DFC4F19A265733340064ECBB /* COLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COLogging.h; sourceTree = "<group>"; };
+		DFC4F19B265733340064ECBB /* COTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTimer.m; sourceTree = "<group>"; };
+		DFC4F19C265733340064ECBB /* COCacheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COCacheController.h; sourceTree = "<group>"; };
+		DFC4F19D265733340064ECBB /* COJSONLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COJSONLoader.m; sourceTree = "<group>"; };
+		DFC4F19E265733340064ECBB /* CODataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CODataSource.m; sourceTree = "<group>"; };
+		DFC4F19F265733340064ECBB /* COLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COLogging.m; sourceTree = "<group>"; };
+		DFC4F1A0265733340064ECBB /* COCacheController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COCacheController.m; sourceTree = "<group>"; };
+		DFC4F1A1265733340064ECBB /* COMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMacros.h; sourceTree = "<group>"; };
+		DFC4F1A2265733340064ECBB /* COTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTimer.h; sourceTree = "<group>"; };
+		DFC4F1A3265733340064ECBB /* COUIAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationController.m; sourceTree = "<group>"; };
+		DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationCAModel.m; sourceTree = "<group>"; };
+		DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		DFC4F1A7265733340064ECBB /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Utilities.h"; sourceTree = "<group>"; };
+		DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Blocks.m"; sourceTree = "<group>"; };
+		DFC4F1AA265733340064ECBB /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Blocks.h"; sourceTree = "<group>"; };
+		DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Utilities.m"; sourceTree = "<group>"; };
+		DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationFactory.m; sourceTree = "<group>"; };
+		DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationParticleModel.h; sourceTree = "<group>"; };
+		DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimatedBaseView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFC4F03E265726C80064ECBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC4F047265726C80064ECBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC4F04B265726C80064ECBB /* COFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		375214C319DC084BFD57E082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */,
+				2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BB4BAE022007446F5D04B2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFC4F037265726C80064ECBB = {
+			isa = PBXGroup;
+			children = (
+				DFC4F043265726C80064ECBB /* COFramework */,
+				DFC4F04E265726C80064ECBB /* COFrameworkTests */,
+				DFC4F042265726C80064ECBB /* Products */,
+				375214C319DC084BFD57E082 /* Pods */,
+				9BB4BAE022007446F5D04B2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFC4F042265726C80064ECBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F041265726C80064ECBB /* COFramework.framework */,
+				DFC4F04A265726C80064ECBB /* COFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFC4F043265726C80064ECBB /* COFramework */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F05B265727010064ECBB /* Extentions */,
+				DFC4F085265727010064ECBB /* Components */,
+				DFC4F044265726C80064ECBB /* COFramework.h */,
+				DFC4F045265726C80064ECBB /* Info.plist */,
+			);
+			path = COFramework;
+			sourceTree = "<group>";
+		};
+		DFC4F04E265726C80064ECBB /* COFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F04F265726C80064ECBB /* COFrameworkTests.swift */,
+				DFC4F051265726C80064ECBB /* Info.plist */,
+			);
+			path = COFrameworkTests;
+			sourceTree = "<group>";
+		};
+		DFC4F05B265727010064ECBB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F05C265727010064ECBB /* Bundle+Additions.swift */,
+				DFC4F05D265727010064ECBB /* UIApplication+Version.swift */,
+				DFC4F05E265727010064ECBB /* UIImage+Additions.swift */,
+				DFC4F05F265727010064ECBB /* UIView+Additions.swift */,
+				DFC4F060265727010064ECBB /* MKMapView+Additions.swift */,
+				DFC4F061265727010064ECBB /* Double+Additions.swift */,
+				DFC4F062265727010064ECBB /* NSTimer+Swifty.swift */,
+				DFC4F063265727010064ECBB /* CKAsset+Additions.swift */,
+				DFC4F064265727010064ECBB /* UIColor+Additions.swift */,
+				DFC4F066265727010064ECBB /* UIFont+Additions.swift */,
+				DFC4F067265727010064ECBB /* UIResponder+Additions.swift */,
+				DFC4F068265727010064ECBB /* UIDevice+Additions.swift */,
+				DFC4F069265727010064ECBB /* UIButton+Additions.swift */,
+				DFC4F06A265727010064ECBB /* NSObject+Additions.swift */,
+				DFC4F06B265727010064ECBB /* UILabel+Additions.swift */,
+				DFC4F06C265727010064ECBB /* NSObject+CloudKit.swift */,
+				DFC4F06D265727010064ECBB /* Date+Additions.swift */,
+				DFC4F06E265727010064ECBB /* UUID+Additions.swift */,
+				DFC4F06F265727010064ECBB /* DispatchQueue.swift */,
+				DFC4F070265727010064ECBB /* UITextField+Additions.swift */,
+				DFC4F071265727010064ECBB /* UINib+Load.swift */,
+				DFC4F072265727010064ECBB /* NSMutableAttributedString.swift */,
+				DFC4F073265727010064ECBB /* CGSize+Additions.swift */,
+				DFC4F074265727010064ECBB /* UIScrollView+Additions.swift */,
+				DFC4F075265727010064ECBB /* UIView+Border.swift */,
+				DFC4F076265727010064ECBB /* UITableView+Additions.swift */,
+				DFC4F077265727010064ECBB /* Array+Additions.swift */,
+				DFC4F078265727010064ECBB /* UIPageViewController+Additions.swift */,
+				DFC4F079265727010064ECBB /* CALayer+Additions.swift */,
+				DFC4F07B265727010064ECBB /* NSLocale+Additions.swift */,
+				DFC4F07C265727010064ECBB /* UISegmentedControl+Additions.swift */,
+				DFC4F07D265727010064ECBB /* String+Additions.swift */,
+				DFC4F07E265727010064ECBB /* DataFormatter+Additions.swift */,
+				DFC4F07F265727010064ECBB /* UIBarButtonItem+Additions.swift */,
+				DFC4F080265727010064ECBB /* Data+Additions.swift */,
+				DFC4F081265727010064ECBB /* UITextview+Additions.swift */,
+				DFC4F082265727010064ECBB /* String+Localization.swift */,
+				DFC4F083265727010064ECBB /* String+Colors.swift */,
+				DFC4F084265727010064ECBB /* CGPoint+Additions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		DFC4F085265727010064ECBB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F094265727010064ECBB /* UIFlow */,
+				DFC4F0A3265727010064ECBB /* UIStyling */,
+				DFC4F0B4265727010064ECBB /* UIShared */,
+				DFC4F1442657295B0064ECBB /* Managers */,
+				DFC4F08C265727010064ECBB /* DynamicCell */,
+				DFC4F0D6265727010064ECBB /* OperationQueue */,
+				DFC4F18A265733340064ECBB /* COUIAnimation */,
+				DFC4F0BE265727010064ECBB /* CustomTable */,
+				DFC4F098265727010064ECBB /* UIDynamics */,
+				DFC4F089265727010064ECBB /* WebView */,
+				DFC4F0C8265727010064ECBB /* Helpers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DFC4F089265727010064ECBB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F08A265727010064ECBB /* WebViewController.swift */,
+				DFC4F08B265727010064ECBB /* WebViewController.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		DFC4F08C265727010064ECBB /* DynamicCell */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F08D265727010064ECBB /* DynamicCellBase.swift */,
+				DFC4F08E265727010064ECBB /* DynamicCellController.swift */,
+				DFC4F08F265727010064ECBB /* DynamicCellViewController.xib */,
+				DFC4F090265727010064ECBB /* Sample */,
+				DFC4F093265727010064ECBB /* DynamicCellViewController.swift */,
+			);
+			path = DynamicCell;
+			sourceTree = "<group>";
+		};
+		DFC4F090265727010064ECBB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F091265727010064ECBB /* SampleDynamicCellViewController.xib */,
+				DFC4F092265727010064ECBB /* SampleDynamicCellViewController.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		DFC4F094265727010064ECBB /* UIFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F095265727010064ECBB /* UIFlowBaseView.swift */,
+				DFC4F096265727010064ECBB /* UIFlowModel.swift */,
+				DFC4F097265727010064ECBB /* UIFlowController.swift */,
+			);
+			path = UIFlow;
+			sourceTree = "<group>";
+		};
+		DFC4F098265727010064ECBB /* UIDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F099265727010064ECBB /* UIBehaviourFactory.swift */,
+				DFC4F09A265727010064ECBB /* UIBehaviourModel.swift */,
+				DFC4F09B265727010064ECBB /* UIBehaviourHelper.swift */,
+				DFC4F09C265727010064ECBB /* UIBehaviours.json */,
+			);
+			path = UIDynamics;
+			sourceTree = "<group>";
+		};
+		DFC4F0A3265727010064ECBB /* UIStyling */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F14826572A140064ECBB /* Defaults.swift */,
+				DFC4F0A4265727010064ECBB /* AppearanceView.swift */,
+				DFC4F0A5265727010064ECBB /* AppearanceSegmented.swift */,
+				DFC4F0A6265727010064ECBB /* AppearanceSwitch.swift */,
+				DFC4F0A7265727010064ECBB /* AppearanceButton.swift */,
+				DFC4F0A8265727010064ECBB /* AppearanceController.swift */,
+				DFC4F0A9265727010064ECBB /* AppearanceImageView.swift */,
+				DFC4F0AF265727010064ECBB /* AppearanceModel.swift */,
+				DFC4F0B0265727010064ECBB /* AppearanceTextView.swift */,
+				DFC4F0B1265727010064ECBB /* AppearanceHelpers.swift */,
+				DFC4F0B2265727010064ECBB /* AppearanceLabel.swift */,
+				DFC4F0B3265727010064ECBB /* AppearanceTextField.swift */,
+				DFC4F0AA265727010064ECBB /* Sample */,
+			);
+			path = UIStyling;
+			sourceTree = "<group>";
+		};
+		DFC4F0AA265727010064ECBB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0AE265727010064ECBB /* DemoStyle1.json */,
+				DFC4F0AB265727010064ECBB /* DemoStyle2.json */,
+				DFC4F14926572A140064ECBB /* DemoStyle3.json */,
+				DFC4F0AC265727010064ECBB /* StylesViewController.xib */,
+				DFC4F0AD265727010064ECBB /* StylesViewController.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		DFC4F0B4265727010064ECBB /* UIShared */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0B5265727010064ECBB /* CircleGraphView.swift */,
+				DFC4F0B6265727010064ECBB /* DynamicActionSheet.swift */,
+				DFC4F0B7265727010064ECBB /* CustomTextField.swift */,
+				DFC4F0B8265727010064ECBB /* ResizableImageView.swift */,
+				DFC4F0B9265727010064ECBB /* CircleAnimatedView.swift */,
+				DFC4F0BA265727010064ECBB /* DismissButton.swift */,
+				DFC4F0BB265727010064ECBB /* CustomTextView.swift */,
+				DFC4F0BC265727010064ECBB /* AdvancedPageViewController.swift */,
+				DFC4F0BD265727010064ECBB /* AppTableBase.swift */,
+			);
+			path = UIShared;
+			sourceTree = "<group>";
+		};
+		DFC4F0BE265727010064ECBB /* CustomTable */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0C1265727010064ECBB /* Models */,
+				DFC4F0C4265727010064ECBB /* Extensions */,
+				DFC4F0BF265727010064ECBB /* CustomTableHelper.swift */,
+				DFC4F0C0265727010064ECBB /* CustomTableBase.swift */,
+				DFC4F0C6265727010064ECBB /* CustomTableConfiguration.swift */,
+				DFC4F0C7265727010064ECBB /* CustomTableDelegates.swift */,
+			);
+			path = CustomTable;
+			sourceTree = "<group>";
+		};
+		DFC4F0C1265727010064ECBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0C2265727010064ECBB /* SectionDescriptor.swift */,
+				DFC4F0C3265727010064ECBB /* CellDescriptor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DFC4F0C4265727010064ECBB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0C5265727010064ECBB /* UITableViewCell+CustomTable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFC4F0C8265727010064ECBB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0C9265727010064ECBB /* SignalData.swift */,
+				DFC4F0CA265727010064ECBB /* Logging.swift */,
+				DFC4F0CB265727010064ECBB /* GlobalHelpers.swift */,
+				DFC4F0CC265727010064ECBB /* ImagePicker.swift */,
+				DFC4F0CD265727010064ECBB /* Reachability.swift */,
+				DFC4F0CE265727010064ECBB /* FileLoader.swift */,
+				DFC4F0CF265727010064ECBB /* Alerts.swift */,
+				DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */,
+				DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */,
+				DFC4F0D2265727010064ECBB /* ImageHelper.swift */,
+				DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */,
+				DFC4F0D5265727010064ECBB /* Signal.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DFC4F0D6265727010064ECBB /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F0D7265727010064ECBB /* CustomOperation.swift */,
+			);
+			path = OperationQueue;
+			sourceTree = "<group>";
+		};
+		DFC4F1442657295B0064ECBB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F15026572CF00064ECBB /* LanguageManager.swift */,
+				DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DFC4F18A265733340064ECBB /* COUIAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */,
+				DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */,
+				DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */,
+				DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */,
+				DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */,
+				DFC4F190265733340064ECBB /* COUIAnimationFactory.h */,
+				DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */,
+				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
+				DFC4F193265733340064ECBB /* COUIAnimationRouter.h */,
+				DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */,
+				DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */,
+				DFC4F196265733340064ECBB /* COShared */,
+				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
+				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
+				DFC4F1A5265733340064ECBB /* Categories */,
+				DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */,
+				DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */,
+				DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */,
+			);
+			path = COUIAnimation;
+			sourceTree = "<group>";
+		};
+		DFC4F196265733340064ECBB /* COShared */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F197265733340064ECBB /* CODataSource.h */,
+				DFC4F198265733340064ECBB /* COJSONLoader.h */,
+				DFC4F199265733340064ECBB /* COSingleton.h */,
+				DFC4F19A265733340064ECBB /* COLogging.h */,
+				DFC4F19B265733340064ECBB /* COTimer.m */,
+				DFC4F19C265733340064ECBB /* COCacheController.h */,
+				DFC4F19D265733340064ECBB /* COJSONLoader.m */,
+				DFC4F19E265733340064ECBB /* CODataSource.m */,
+				DFC4F19F265733340064ECBB /* COLogging.m */,
+				DFC4F1A0265733340064ECBB /* COCacheController.m */,
+				DFC4F1A1265733340064ECBB /* COMacros.h */,
+				DFC4F1A2265733340064ECBB /* COTimer.h */,
+			);
+			path = COShared;
+			sourceTree = "<group>";
+		};
+		DFC4F1A5265733340064ECBB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */,
+				DFC4F1A7265733340064ECBB /* NSString+Utilities.m */,
+				DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */,
+				DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */,
+				DFC4F1AA265733340064ECBB /* NSString+Utilities.h */,
+				DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */,
+				DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */,
+				DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFC4F03C265726C80064ECBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC4F1C7265733340064ECBB /* COTimer.h in Headers */,
+				DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */,
+				DFC4F1C6265733340064ECBB /* COMacros.h in Headers */,
+				DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */,
+				DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */,
+				DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */,
+				DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */,
+				DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */,
+				DFC4F1C1265733340064ECBB /* COCacheController.h in Headers */,
+				DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */,
+				DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */,
+				DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */,
+				DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */,
+				DFC4F1BF265733340064ECBB /* COLogging.h in Headers */,
+				DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */,
+				DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */,
+				DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */,
+				DFC4F052265726C80064ECBB /* COFramework.h in Headers */,
+				DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */,
+				DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFC4F040265726C80064ECBB /* COFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC4F055265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFramework" */;
+			buildPhases = (
+				DEFC3F1830AF066098C48193 /* [CP] Check Pods Manifest.lock */,
+				DFC4F03C265726C80064ECBB /* Headers */,
+				DFC4F03D265726C80064ECBB /* Sources */,
+				DFC4F03E265726C80064ECBB /* Frameworks */,
+				DFC4F03F265726C80064ECBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = COFramework;
+			productName = COFramework;
+			productReference = DFC4F041265726C80064ECBB /* COFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFC4F049265726C80064ECBB /* COFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFC4F058265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFrameworkTests" */;
+			buildPhases = (
+				DFC4F046265726C80064ECBB /* Sources */,
+				DFC4F047265726C80064ECBB /* Frameworks */,
+				DFC4F048265726C80064ECBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFC4F04D265726C80064ECBB /* PBXTargetDependency */,
+			);
+			name = COFrameworkTests;
+			productName = COFrameworkTests;
+			productReference = DFC4F04A265726C80064ECBB /* COFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFC4F038265726C80064ECBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DFC4F040265726C80064ECBB = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DFC4F049265726C80064ECBB = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = DFC4F03B265726C80064ECBB /* Build configuration list for PBXProject "COFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFC4F037265726C80064ECBB;
+			productRefGroup = DFC4F042265726C80064ECBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFC4F040265726C80064ECBB /* COFramework */,
+				DFC4F049265726C80064ECBB /* COFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFC4F03F265726C80064ECBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC4F11D265727020064ECBB /* DemoStyle2.json in Resources */,
+				DFC4F104265727020064ECBB /* WebViewController.xib in Resources */,
+				DFC4F11E265727020064ECBB /* StylesViewController.xib in Resources */,
+				DFC4F108265727020064ECBB /* SampleDynamicCellViewController.xib in Resources */,
+				DFC4F111265727020064ECBB /* UIBehaviours.json in Resources */,
+				DFC4F120265727020064ECBB /* DemoStyle1.json in Resources */,
+				DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */,
+				DFC4F107265727020064ECBB /* DynamicCellViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC4F048265726C80064ECBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEFC3F1830AF066098C48193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFC4F03D265726C80064ECBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC4F0EF265727020064ECBB /* CGSize+Additions.swift in Sources */,
+				DFC4F100265727020064ECBB /* CGPoint+Additions.swift in Sources */,
+				DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */,
+				DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */,
+				DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */,
+				DFC4F0FF265727020064ECBB /* String+Colors.swift in Sources */,
+				DFC4F12F265727020064ECBB /* CustomTableHelper.swift in Sources */,
+				DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */,
+				DFC4F136265727020064ECBB /* SignalData.swift in Sources */,
+				DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */,
+				DFC4F13D265727020064ECBB /* DateUTCTransform.swift in Sources */,
+				DFC4F134265727020064ECBB /* CustomTableConfiguration.swift in Sources */,
+				DFC4F131265727020064ECBB /* SectionDescriptor.swift in Sources */,
+				DFC4F0EC265727020064ECBB /* UITextField+Additions.swift in Sources */,
+				DFC4F109265727020064ECBB /* SampleDynamicCellViewController.swift in Sources */,
+				DFC4F0DB265727010064ECBB /* UIView+Additions.swift in Sources */,
+				DFC4F15126572CF00064ECBB /* LanguageManager.swift in Sources */,
+				DFC4F0FD265727020064ECBB /* UITextview+Additions.swift in Sources */,
+				DFC4F12A265727020064ECBB /* CircleAnimatedView.swift in Sources */,
+				DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */,
+				DFC4F0F2265727020064ECBB /* UITableView+Additions.swift in Sources */,
+				DFC4F10A265727020064ECBB /* DynamicCellViewController.swift in Sources */,
+				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
+				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
+				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
+				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,
+				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
+				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
+				DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */,
+				DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */,
+				DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */,
+				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
+				DFC4F12D265727020064ECBB /* AdvancedPageViewController.swift in Sources */,
+				DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */,
+				DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */,
+				DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */,
+				DFC4F123265727020064ECBB /* AppearanceHelpers.swift in Sources */,
+				DFC4F0FB265727020064ECBB /* UIBarButtonItem+Additions.swift in Sources */,
+				DFC4F0F7265727020064ECBB /* NSLocale+Additions.swift in Sources */,
+				DFC4F12B265727020064ECBB /* DismissButton.swift in Sources */,
+				DFC4F1C2265733340064ECBB /* COJSONLoader.m in Sources */,
+				DFC4F1C4265733340064ECBB /* COLogging.m in Sources */,
+				DFC4F0DC265727010064ECBB /* MKMapView+Additions.swift in Sources */,
+				DFC4F103265727020064ECBB /* WebViewController.swift in Sources */,
+				DFC4F10F265727020064ECBB /* UIBehaviourModel.swift in Sources */,
+				DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */,
+				DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */,
+				DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */,
+				DFC4F12E265727020064ECBB /* AppTableBase.swift in Sources */,
+				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
+				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
+				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
+				DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */,
+				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
+				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
+				DFC4F10B265727020064ECBB /* UIFlowBaseView.swift in Sources */,
+				DFC4F137265727020064ECBB /* Logging.swift in Sources */,
+				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
+				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
+				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
+				DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */,
+				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
+				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
+				DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */,
+				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
+				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
+				DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */,
+				DFC4F119265727020064ECBB /* AppearanceSwitch.swift in Sources */,
+				DFC4F139265727020064ECBB /* ImagePicker.swift in Sources */,
+				DFC4F11F265727020064ECBB /* StylesViewController.swift in Sources */,
+				DFC4F1CD265733340064ECBB /* NSObject+Blocks.m in Sources */,
+				DFC4F1D1265733340064ECBB /* NSMutableAttributedString+Utilities.m in Sources */,
+				DFC4F118265727020064ECBB /* AppearanceSegmented.swift in Sources */,
+				DFC4F140265727020064ECBB /* ImageViewWithMask.swift in Sources */,
+				DFC4F0FC265727020064ECBB /* Data+Additions.swift in Sources */,
+				DFC4F133265727020064ECBB /* UITableViewCell+CustomTable.swift in Sources */,
+				DFC4F11A265727020064ECBB /* AppearanceButton.swift in Sources */,
+				DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */,
+				DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */,
+				DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */,
+				DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */,
+				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,
+				DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */,
+				DFC4F121265727020064ECBB /* AppearanceModel.swift in Sources */,
+				DFC4F135265727020064ECBB /* CustomTableDelegates.swift in Sources */,
+				DFC4F0E7265727020064ECBB /* UILabel+Additions.swift in Sources */,
+				DFC4F142265727020064ECBB /* Signal.swift in Sources */,
+				DFC4F130265727020064ECBB /* CustomTableBase.swift in Sources */,
+				DFC4F12C265727020064ECBB /* CustomTextView.swift in Sources */,
+				DFC4F13C265727020064ECBB /* Alerts.swift in Sources */,
+				DFC4F143265727020064ECBB /* CustomOperation.swift in Sources */,
+				DFC4F0E2265727020064ECBB /* UIFont+Additions.swift in Sources */,
+				DFC4F128265727020064ECBB /* CustomTextField.swift in Sources */,
+				DFC4F0E5265727020064ECBB /* UIButton+Additions.swift in Sources */,
+				DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */,
+				DFC4F110265727020064ECBB /* UIBehaviourHelper.swift in Sources */,
+				DFC4F13A265727020064ECBB /* Reachability.swift in Sources */,
+				DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */,
+				DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */,
+				DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */,
+				DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */,
+				DFC4F138265727020064ECBB /* GlobalHelpers.swift in Sources */,
+				DFC4F0E9265727020064ECBB /* Date+Additions.swift in Sources */,
+				DFC4F1B4265733340064ECBB /* COUIAnimatedBaseView.m in Sources */,
+				DFC4F10C265727020064ECBB /* UIFlowModel.swift in Sources */,
+				DFC4F0F9265727020064ECBB /* String+Additions.swift in Sources */,
+				DFC4F129265727020064ECBB /* ResizableImageView.swift in Sources */,
+				DFC4F0ED265727020064ECBB /* UINib+Load.swift in Sources */,
+				DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */,
+				DFC4F0E6265727020064ECBB /* NSObject+Additions.swift in Sources */,
+				DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC4F046265726C80064ECBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC4F050265726C80064ECBB /* COFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFC4F04D265726C80064ECBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFC4F040265726C80064ECBB /* COFramework */;
+			targetProxy = DFC4F04C265726C80064ECBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFC4F053265726C80064ECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFC4F054265726C80064ECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFC4F056265726C80064ECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7LZQHD2Y4Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = COFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFC4F057265726C80064ECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7LZQHD2Y4Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = COFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFC4F059265726C80064ECBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LZQHD2Y4Q;
+				INFOPLIST_FILE = COFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFC4F05A265726C80064ECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7LZQHD2Y4Q;
+				INFOPLIST_FILE = COFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFC4F03B265726C80064ECBB /* Build configuration list for PBXProject "COFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC4F053265726C80064ECBB /* Debug */,
+				DFC4F054265726C80064ECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC4F055265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC4F056265726C80064ECBB /* Debug */,
+				DFC4F057265726C80064ECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC4F058265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC4F059265726C80064ECBB /* Debug */,
+				DFC4F05A265726C80064ECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFC4F038265726C80064ECBB /* Project object */;
+}

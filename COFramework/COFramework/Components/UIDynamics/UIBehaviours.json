@@ -1,0 +1,6 @@
+{
+ "kingDensity": 10,
+ "nodeDensity": 2,
+ "attachDamping":1,
+ "snapDamping": 1
+}
