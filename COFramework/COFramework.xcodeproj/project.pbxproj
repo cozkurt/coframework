@@ -150,7 +150,7 @@
 		DFC4F1E0265824570064ECBB /* COFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DD265824570064ECBB /* COFramework.podspec */; };
 		DFC4F1E1265824570064ECBB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DE265824570064ECBB /* LICENSE */; };
 		DFC4F1E2265824570064ECBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DF265824570064ECBB /* README.md */; };
-		DFC4F1E42658248C0064ECBB /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1E32658248C0064ECBB /* Package.swift */; };
+		DFC4F1E626582A240064ECBB /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1E526582A240064ECBB /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -301,7 +301,7 @@
 		DFC4F1DD265824570064ECBB /* COFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COFramework.podspec; path = ../COFramework.podspec; sourceTree = "<group>"; };
 		DFC4F1DE265824570064ECBB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DFC4F1DF265824570064ECBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DFC4F1E32658248C0064ECBB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		DFC4F1E526582A240064ECBB /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -654,10 +654,10 @@
 		DFC4F1DC265824420064ECBB /* Packages Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				DFC4F1E526582A240064ECBB /* Package.swift */,
 				DFC4F1DD265824570064ECBB /* COFramework.podspec */,
 				DFC4F1DE265824570064ECBB /* LICENSE */,
 				DFC4F1DF265824570064ECBB /* README.md */,
-				DFC4F1E32658248C0064ECBB /* Package.swift */,
 			);
 			name = "Packages Metadata";
 			sourceTree = "<group>";
@@ -849,7 +849,7 @@
 				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
 				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
-				DFC4F1E42658248C0064ECBB /* Package.swift in Sources */,
+				DFC4F1E626582A240064ECBB /* Package.swift in Sources */,
 				DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */,
 				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
 				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
