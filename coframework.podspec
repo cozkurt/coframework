@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-s.name             = 'coframework-alpha'
-s.version          = '3.0'
+s.name             = 'COFramework'
+s.version          = '1.0'
 s.summary          = 'Cenker Ozkurt framework'
-s.homepage         = 'https://github.com/cozkurt/coframework-alpha.git'
+s.homepage         = 'https://github.com/cozkurt/coframework.git'
 s.license          = 'MIT'
 s.author           = { 'Cenker Ozkurt' => 'cenker@yahoo.com' }
-s.source           = { :git => 'https://github.com/cozkurt/coframework-alpha.git', :tag => s.version }
+s.source           = { :git => 'https://github.com/cozkurt/coframework.git', :tag => s.version }
 s.platform         = :ios, '13.0'
 s.requires_arc     = true
 
