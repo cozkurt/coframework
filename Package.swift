@@ -5,5 +5,5 @@ import PackageDescription
 let package = Package(name: "COFramework",
                       platforms: [.iOS(.v10)],
                       products: [.library(name: "COFramework", targets: ["COFramework"])],
-                      targets: [.target(name: "COFramework", path: "COFramework")],
+                      targets: [.target(name: "COFramework", path: "COFramework/Swift")],
                       swiftLanguageVersions: [.v5])

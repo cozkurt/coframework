@@ -351,8 +351,8 @@
 		DFC4F043265726C80064ECBB /* COFramework */ = {
 			isa = PBXGroup;
 			children = (
-				DFC4F05B265727010064ECBB /* Extentions */,
-				DFC4F085265727010064ECBB /* Components */,
+				DFC4F1E826582C560064ECBB /* ObjC */,
+				DFC4F1E726582C4A0064ECBB /* Swift */,
 				DFC4F044265726C80064ECBB /* COFramework.h */,
 				DFC4F045265726C80064ECBB /* Info.plist */,
 			);
@@ -414,7 +414,6 @@
 				DFC4F1442657295B0064ECBB /* Managers */,
 				DFC4F08C265727010064ECBB /* DynamicCell */,
 				DFC4F0D6265727010064ECBB /* OperationQueue */,
-				DFC4F18A265733340064ECBB /* COUIAnimation */,
 				DFC4F0BE265727010064ECBB /* CustomTable */,
 				DFC4F098265727010064ECBB /* UIDynamics */,
 				DFC4F089265727010064ECBB /* WebView */,
@@ -656,6 +655,23 @@
 				DFC4F1DF265824570064ECBB /* README.md */,
 			);
 			name = "Packages Metadata";
+			sourceTree = "<group>";
+		};
+		DFC4F1E726582C4A0064ECBB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F05B265727010064ECBB /* Extentions */,
+				DFC4F085265727010064ECBB /* Components */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		DFC4F1E826582C560064ECBB /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4F18A265733340064ECBB /* COUIAnimation */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
