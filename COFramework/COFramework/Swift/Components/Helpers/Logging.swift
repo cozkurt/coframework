@@ -21,7 +21,7 @@ public enum LogLevel: Int {
     case none
 }
 
-open class Logger {
+public class Logger {
     
     /// eventBuffer limit per action
     static let maxEventsBufferSize = 50
@@ -39,7 +39,7 @@ open class Logger {
     open var delegate: LoggerDelegate?
     
     // MARK: - sharedInstance for singleton access
-	static let sharedInstance: Logger = Logger()
+    public static let sharedInstance: Logger = Logger()
     
     // MARK: - Init Methods
     
@@ -50,7 +50,7 @@ open class Logger {
     
     // MARK: - Clear logs
     
-    open func clearLogs() {
+    public func clearLogs() {
         self.logBuffer.removeAll()
         
         if let delegate = delegate {
@@ -60,7 +60,7 @@ open class Logger {
     
     // MARK: - Log Methods
     
-    func LogDebug(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
+    public func LogDebug(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
         #if DEBUG
             if self.logLevel.rawValue <= LogLevel.debug.rawValue {
                 print("[DEBUG] \(makeTag(function, file: file, line: line, msg: msg))")
@@ -68,7 +68,7 @@ open class Logger {
         #endif
     }
     
-    func LogInfo(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
+    public func LogInfo(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
         #if DEBUG
             if self.logLevel.rawValue <= LogLevel.info.rawValue {
                 print("[INFO] \(makeTag(function, file: file, line: line, msg: msg))")
@@ -76,7 +76,7 @@ open class Logger {
         #endif
     }
     
-    func LogWarning(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
+    public func LogWarning(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
         #if DEBUG
             if self.logLevel.rawValue <= LogLevel.warning.rawValue {
                 print("[WARNING] \(makeTag(function, file: file, line: line, msg: msg))")
@@ -84,7 +84,7 @@ open class Logger {
         #endif
     }
     
-    func LogError(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
+    public func LogError(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
         #if DEBUG
             if self.logLevel.rawValue <= LogLevel.error.rawValue {
                 print("[ERROR] \(makeTag(function, file: file, line: line, msg: msg))")
@@ -92,7 +92,7 @@ open class Logger {
         #endif
     }
     
-    func LogCustom(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
+    public func LogCustom(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
         #if DEBUG
             if self.logLevel.rawValue == LogLevel.custom.rawValue {
                 print("[CUSTOM] \(makeTag(function, file: file, line: line, msg: msg))")
