@@ -147,6 +147,7 @@
 		DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */; };
 		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
 		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
+		DFC4F1E92658377F0064ECBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F045265726C80064ECBB /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -765,6 +766,7 @@
 			files = (
 				DFC4F11D265727020064ECBB /* DemoStyle2.json in Resources */,
 				DFC4F104265727020064ECBB /* WebViewController.xib in Resources */,
+				DFC4F1E92658377F0064ECBB /* Info.plist in Resources */,
 				DFC4F11E265727020064ECBB /* StylesViewController.xib in Resources */,
 				DFC4F108265727020064ECBB /* SampleDynamicCellViewController.xib in Resources */,
 				DFC4F111265727020064ECBB /* UIBehaviours.json in Resources */,
