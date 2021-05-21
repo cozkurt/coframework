@@ -147,10 +147,6 @@
 		DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */; };
 		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
 		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
-		DFC4F1E0265824570064ECBB /* COFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DD265824570064ECBB /* COFramework.podspec */; };
-		DFC4F1E1265824570064ECBB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DE265824570064ECBB /* LICENSE */; };
-		DFC4F1E2265824570064ECBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F1DF265824570064ECBB /* README.md */; };
-		DFC4F1E626582A240064ECBB /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1E526582A240064ECBB /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -755,12 +751,9 @@
 				DFC4F104265727020064ECBB /* WebViewController.xib in Resources */,
 				DFC4F11E265727020064ECBB /* StylesViewController.xib in Resources */,
 				DFC4F108265727020064ECBB /* SampleDynamicCellViewController.xib in Resources */,
-				DFC4F1E1265824570064ECBB /* LICENSE in Resources */,
 				DFC4F111265727020064ECBB /* UIBehaviours.json in Resources */,
 				DFC4F120265727020064ECBB /* DemoStyle1.json in Resources */,
 				DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */,
-				DFC4F1E0265824570064ECBB /* COFramework.podspec in Resources */,
-				DFC4F1E2265824570064ECBB /* README.md in Resources */,
 				DFC4F107265727020064ECBB /* DynamicCellViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,7 +842,6 @@
 				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
 				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
-				DFC4F1E626582A240064ECBB /* Package.swift in Sources */,
 				DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */,
 				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
 				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
