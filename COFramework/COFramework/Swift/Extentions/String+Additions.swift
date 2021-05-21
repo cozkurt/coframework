@@ -296,4 +296,8 @@ extension String {
             return UIFont.Weight.regular
         }
     }
+    
+    func toData() -> Data? {
+        return Data(base64Encoded: self)
+    }
 }

@@ -148,6 +148,7 @@
 		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
 		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
 		DFC4F1E92658377F0064ECBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F045265726C80064ECBB /* Info.plist */; };
+		DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -299,6 +300,7 @@
 		DFC4F1DE265824570064ECBB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DFC4F1DF265824570064ECBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DFC4F1E526582A240064ECBB /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +404,7 @@
 				DFC4F082265727010064ECBB /* String+Localization.swift */,
 				DFC4F083265727010064ECBB /* String+Colors.swift */,
 				DFC4F084265727010064ECBB /* CGPoint+Additions.swift */,
+				DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 				DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */,
 				DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */,
 				DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */,
+				DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */,
 				DFC4F123265727020064ECBB /* AppearanceHelpers.swift in Sources */,
 				DFC4F0FB265727020064ECBB /* UIBarButtonItem+Additions.swift in Sources */,
 				DFC4F0F7265727020064ECBB /* NSLocale+Additions.swift in Sources */,
