@@ -1,5 +1,5 @@
 //
-//  FileLoader.swift
+//  JSONLoader.swift
 //  FuzFuz
 //
 //  Created by Cenker Ozkurt on 10/7/19.
@@ -19,16 +19,28 @@ open class FileLoader {
      - completion:
      */
     
-    class func load(_ fileName: String, ofType: String = "json") throws -> String {
+    class func loadFile(fileName: String) throws -> String {
+        return try self.loadFile(bundle: Bundle.main, fileName: fileName)
+    }
+    
+    /**
+     loadFile loads custom json styles from file.
+     
+     - parameters:
+     - fileName:
+     - completion:
+     */
+    
+    class func loadFile(bundle: Bundle, fileName: String) throws -> String {
         
-        guard let path = Bundle.main.path(forResource: fileName, ofType: ofType) else {
-            throw NSError(domain: "com.FuzFuz", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid filename!"])
+        guard let path = bundle.path(forResource: fileName, ofType: "json") else {
+            throw NSError(domain: "com.kp", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid filename!"])
         }
         
         let data = try Data(contentsOf: URL(fileURLWithPath: path), options: Data.ReadingOptions.alwaysMapped)
         
         guard let dataString = String(data: data, encoding: String.Encoding.utf8) else {
-            throw NSError(domain: "com.FuzFuz", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid contents!"])
+            throw NSError(domain: "com.kp", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid contents!"])
         }
         
         return dataString

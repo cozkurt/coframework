@@ -38,7 +38,7 @@ open class UIBehaviourHelper {
             return
         }
         
-        if let jsonString = try? FileLoader.load(fileName) {
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
             
             let mappable = Mapper<UIBehaviourModel>()
             

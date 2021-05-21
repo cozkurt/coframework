@@ -1,4 +1,3 @@
-
 //
 //  UIFlowController.swift
 //  FuzFuz
@@ -104,7 +103,7 @@ open class UIFlowController: NSObject {
             return
         }
 
-        if let jsonString = try? FileLoader.load(fileName) {
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
             
             let mappable = Mapper<UIFlowModel>()
             
@@ -932,11 +931,24 @@ open class UIFlowController: NSObject {
      */
     
     @objc static func viewController(_ className : String) -> UIViewController? {
-        let className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
+        
+        var className = className
+        let split = className.components(separatedBy: ".")
+        
+        //
+        // if module name not defined then grab fom class
+        //
+        
+        if split.count == 0 {
+            className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
+        }
         
         if let aClass = NSClassFromString(className) as? UIViewController.Type {
             return aClass.init()
         }
+        
+        Logger.sharedInstance.LogError(" \(className) not loaded...")
+        
         return nil
     }
     
@@ -951,13 +963,24 @@ open class UIFlowController: NSObject {
      */
     
     @objc static func viewController(_ className : String, nibName: String) -> UIViewController? {
-        let className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
+        
+        var className = className
+        let split = className.components(separatedBy: ".")
+        
+        //
+        // if module name not defined then grab fom class
+        //
+        
+        if split.count == 0 {
+            className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
+        }
         
         if let aClass = NSClassFromString(className) as? UIViewController.Type {
             return aClass.init(nibName: nibName, bundle: nil)
         }
         return nil
     }
+
     
     /**
      flowModel for given eventName
@@ -1089,15 +1112,15 @@ open class UIFlowController: NSObject {
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromCATransitionSubtype(_ input: CATransitionSubtype) -> String {
-	return input.rawValue
+    return input.rawValue
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromCATransitionType(_ input: CATransitionType) -> String {
-	return input.rawValue
+    return input.rawValue
 }
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
-	return CATransitionType(rawValue: input)
+    return CATransitionType(rawValue: input)
 }
