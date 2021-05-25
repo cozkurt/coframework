@@ -8,9 +8,9 @@
 
 import Foundation
 
-class SignalData<T> {
+open class SignalData<T> {
     
-    typealias completed = ((T?) -> Void)
+    public typealias completed = ((T?) -> Void)
     
     var value : T? {
         didSet {

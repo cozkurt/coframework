@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Signal {
+open class Signal {
     
-    typealias completed = (() -> Void)
+    public typealias completed = (() -> Void)
     
     private var listeners = [String: completed]()
         

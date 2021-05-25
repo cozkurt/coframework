@@ -41,10 +41,10 @@ open class CustomTableBase: UIViewController {
     // MARK: Variables
     
     /// bindable objects to listen
-    static var tableViewCellEditingEvent: SignalData<(String, String, IndexPath)> = SignalData()
-    static var tableViewScrollingUpEvent: SignalData<String> = SignalData()
-    static var tableViewScrollingDownEvent: SignalData<String> = SignalData()
-    static var tableViewCellEndEvent: SignalData<(String)> = SignalData()
+    public static var tableViewCellEditingEvent: SignalData<(String, String, IndexPath)> = SignalData()
+    public static var tableViewScrollingUpEvent: SignalData<String> = SignalData()
+    public static var tableViewScrollingDownEvent: SignalData<String> = SignalData()
+    public static var tableViewCellEndEvent: SignalData<(String)> = SignalData()
     
     /// Section configuration from pList
     var sectionDescriptors: [SectionDescriptor] = []
