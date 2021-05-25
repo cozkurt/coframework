@@ -46,7 +46,7 @@ open class AppearanceController {
         
         self.fileName = fileName
         
-        if let jsonString = try? appearanceHelpers.loadFile(fileName) {
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
             
             let mappable = Mapper<AppearanceModel>()
             
@@ -525,7 +525,7 @@ open class AppearanceController {
                 return
             }
         }
-		
+        
         if let numberOfLines = appearanceModel.numberOfLines, let lines = Int(numberOfLines) {
             label?.numberOfLines = lines
         } else {

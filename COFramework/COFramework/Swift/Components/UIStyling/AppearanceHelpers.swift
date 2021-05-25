@@ -71,7 +71,7 @@ open class AppearanceHelpers {
         
         if colors.count == 1 || colors.count == 2 {
             
-            let alpha = Float(colors.count == 2 ? Float(colors[1]) ?? 1 : 1) 
+            let alpha = Float(colors.count == 2 ? Float(colors[1]) ?? 1 : 1)
             
             return self.hexStringToUIColor(rgbString: colors[0], alpha: alpha)
             
@@ -129,8 +129,8 @@ open class AppearanceHelpers {
     func searchColorMap(_ colorName: String) -> UIColor? {
         let appearanceModels = AppearanceController.sharedInstance.appearanceModels
         
-		let colors = appearanceModels.compactMap { $0.colors }.flatMap { $0 }
-		let color = colors.filter { $0.name == colorName }.last
+        let colors = appearanceModels.compactMap { $0.colors }.flatMap { $0 }
+        let color = colors.filter { $0.name == colorName }.last
         
         if let value = color?.value {
             return self.convertToUIColor(value, searchColors: false)
@@ -240,29 +240,4 @@ open class AppearanceHelpers {
         
         return breakMode
     }
-    
-    
-    /**
-     loadFile loads custom json styles from file.
-     
-     - parameters:
-     - fileName:
-     - completion:
-     */
-    
-    func loadFile(_ fileName: String) throws -> String {
-        
-        guard let path = Bundle.main.path(forResource: fileName, ofType: "json") else {
-            throw NSError(domain: "com.FuzFuz", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid filename!"])
-        }
-        
-        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: NSData.ReadingOptions.alwaysMapped)
-        
-        guard let dataString = String(data: data, encoding: String.Encoding.utf8) else {
-            throw NSError(domain: "com.FuzFuz", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid contents!"])
-        }
-        
-        return dataString
-    }
 }
-
