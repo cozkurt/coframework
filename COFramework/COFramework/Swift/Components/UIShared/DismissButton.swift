@@ -8,10 +8,10 @@
 
 import UIKit
 
-class DismissButton {
+public class DismissButton {
     
     let tag = 12345
-    typealias ButtonClickedEvent = () -> Void
+    public typealias ButtonClickedEvent = () -> Void
     
     var tableViewBottomGap: CGFloat = 0
     var buttonClickedEvent:ButtonClickedEvent?
@@ -19,9 +19,9 @@ class DismissButton {
     var toView: UIView?
     
     /// Singleton instance
-    static let sharedInstance = DismissButton()
+    public static let sharedInstance = DismissButton()
     
-    func presentButton(toView: UIView,
+    public func presentButton(toView: UIView,
                        iconName: String,
                        delay: TimeInterval,
                        tableViewBottomGap: CGFloat = 0,
@@ -57,7 +57,7 @@ class DismissButton {
         }
     }
     
-    func showButton() {
+    public func showButton() {
         guard let toView = self.toView, let dismissIconView = self.dismissIconView else {
             return
         }
@@ -67,7 +67,7 @@ class DismissButton {
         }, completion: nil)
     }
     
-    func dismissButton(_ completion: ((Bool) -> Void)? = nil) {
+    public func dismissButton(_ completion: ((Bool) -> Void)? = nil) {
         guard let toView = self.toView else {
             if let completion = completion {
                 completion(false)

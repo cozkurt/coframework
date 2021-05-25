@@ -33,7 +33,7 @@ public protocol CustomHeaderTapProtocol {
     func headerTapped(_ sectionDescription: SectionDescriptor, section: Int)
 }
 
-open class CustomTableBase: UIViewController {
+public class CustomTableBase: UIViewController {
     
     // MARK: IBOutlet Properties
     @IBOutlet weak open var tableView: UITableView!
@@ -57,7 +57,7 @@ open class CustomTableBase: UIViewController {
     
     // MARK: UIViewController Lifecycle
     
-    open override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         // set automatic sizing if cells are supporting constraints
@@ -72,7 +72,7 @@ open class CustomTableBase: UIViewController {
 
     // MARK: Subclass must implement following methods
     
-    open func configureCells() {
+    public func configureCells() {
         // override
         self.loadConfiguration()
         
@@ -81,11 +81,11 @@ open class CustomTableBase: UIViewController {
     }
     
     // load cells descriptions/configuration
-    open func loadConfiguration() {
+    public func loadConfiguration() {
         // override
     }
     
-    open func resetBuffers() {
+    public func resetBuffers() {
         // erase tableview cell cache
         self.cellBuffer.removeAll()
         self.cellInitBuffer.removeAll()

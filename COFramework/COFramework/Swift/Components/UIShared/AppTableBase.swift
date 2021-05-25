@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ScrollDirection {
+public enum ScrollDirection {
     case idle
     case up
     case down

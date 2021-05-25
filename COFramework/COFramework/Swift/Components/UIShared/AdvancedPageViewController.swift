@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdvancedPageViewController: UIViewController {
+public class AdvancedPageViewController: UIViewController {
 
     @IBOutlet internal weak var pageView: UIView!
     @IBOutlet internal weak var pageControl: UIPageControl!
@@ -24,7 +24,7 @@ class AdvancedPageViewController: UIViewController {
     var viewControllers: [UIViewController] = []
     var flowControllers: [UIFlowController] = []
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 
@@ -246,7 +246,7 @@ class AdvancedPageViewController: UIViewController {
 
 extension AdvancedPageViewController: UIPageViewControllerDelegate {
     
-    func pageViewController(_ pageViewController: UIPageViewController,
+    public func pageViewController(_ pageViewController: UIPageViewController,
                             didFinishAnimating finished: Bool,
                                                previousViewControllers: [UIViewController],
                                                transitionCompleted completed: Bool) {
@@ -263,7 +263,7 @@ extension AdvancedPageViewController: UIPageViewControllerDelegate {
 
 extension AdvancedPageViewController: UIPageViewControllerDataSource {
     
-    func pageViewController(_ pageViewController: UIPageViewController,
+    public func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         var index = viewController.view.tag;
@@ -274,7 +274,7 @@ extension AdvancedPageViewController: UIPageViewControllerDataSource {
         return self.viewControllers[index]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController,
+    public func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         var index = viewController.view.tag;
