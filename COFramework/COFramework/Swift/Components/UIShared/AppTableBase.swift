@@ -14,7 +14,7 @@ enum ScrollDirection {
     case down
 }
 
-class AppTableBase: CustomTableBase {
+public class AppTableBase: CustomTableBase {
     
     @IBOutlet var topMenuView: UIView!
     @IBOutlet var leftButton: UIButton!
@@ -38,7 +38,7 @@ class AppTableBase: CustomTableBase {
     var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
     var previousConstantValue: CGFloat = 0
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         // remove extra spacing in tableview
@@ -53,7 +53,7 @@ class AppTableBase: CustomTableBase {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // update top view position according
@@ -117,7 +117,7 @@ class AppTableBase: CustomTableBase {
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    public override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         NotificationsCenterManager.sharedInstance.removeObserver(self)

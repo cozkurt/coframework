@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DynamicCellBase: UITableViewCell {
+public class DynamicCellBase: UITableViewCell {
 
     @IBOutlet var top: NSLayoutConstraint!
     @IBOutlet var left: NSLayoutConstraint!
@@ -21,7 +21,7 @@ class DynamicCellBase: UITableViewCell {
     // Space after dynamicCellSubView view, space will be added after this view
     var space:CGFloat = 5.0
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         if self.dynamicCellSubView?.constraints.count ?? 0 > 0 {

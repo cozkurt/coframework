@@ -8,9 +8,9 @@
 
 import UIKit
 
-class DynamicCellViewController: DynamicActionSheet {
+public class DynamicCellViewController: DynamicActionSheet {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         DynamicCellController.sharedInstance.dynamicCellViewController = self
@@ -24,7 +24,7 @@ class DynamicCellViewController: DynamicActionSheet {
         self.blurView.isUserInteractionEnabled = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // configure keyboard only for editing
