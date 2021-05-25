@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DynamicCellController {
+open class DynamicCellController {
     
     // notifiers
     var dynamicCellControllerDataUpdatedEvent: SignalData<[AnyObject]?> = SignalData()
@@ -60,7 +60,7 @@ public class DynamicCellController {
      - return : void
      */
     
-    public func postCell(_ parent: AppTableBase? = nil,
+    open func postCell(_ parent: AppTableBase? = nil,
                   key: String,
                   afterKey: String? = nil,
                   beforeKey: String? = nil,
@@ -198,7 +198,7 @@ public class DynamicCellController {
      - return : void
      */
     
-    public func dismissCell(_ indexPath: IndexPath? = nil) {
+    open func dismissCell(_ indexPath: IndexPath? = nil) {
         self.dismissCell(nil, indexPath)
     }
     
@@ -211,7 +211,7 @@ public class DynamicCellController {
      - return : void
      */
     
-    public func dismissCell(_ key: String?, _ indexPath: IndexPath? = nil, after: Double = 0.0) {
+    open func dismissCell(_ key: String?, _ indexPath: IndexPath? = nil, after: Double = 0.0) {
         
         guard let dynamicCellViewController = self.dynamicCellViewController else {
             Logger.sharedInstance.LogError("*** dynamicCellViewController is nil ***")
@@ -248,7 +248,7 @@ public class DynamicCellController {
      - return : void
      */
     
-    public func showViewController() {
+    open func showViewController() {
         guard let _ = self.dynamicCellViewController?.tableView else {
             NotificationsCenterManager.sharedInstance.post("DYNAMIC_CELL_VIEW")
             return
@@ -265,7 +265,7 @@ public class DynamicCellController {
      - return : void
      */
     
-    public func dismissViewController() {
+    open func dismissViewController() {
         NotificationsCenterManager.sharedInstance.post("DYNAMIC_CELL_VIEW_DISMISS")
         
         Timer.after(0.3) {

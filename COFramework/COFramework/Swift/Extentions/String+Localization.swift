@@ -8,9 +8,9 @@
 
 import Foundation
 
-internal extension String {
+extension String {
     
-    func localize() -> String {
+    public func localize() -> String {
         
         let lang = LanguageManager.sharedInstance.currentIdentifier
         

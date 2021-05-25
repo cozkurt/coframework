@@ -14,15 +14,15 @@ public enum ScrollDirection {
     case down
 }
 
-public class AppTableBase: CustomTableBase {
+open class AppTableBase: CustomTableBase {
     
     @IBOutlet var topMenuView: UIView!
     @IBOutlet var leftButton: UIButton!
     @IBOutlet var rightButton: UIButton!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     
-    var addBottomColor = true
-    var scrollToDismiss = true
+    open var addBottomColor = true
+    open var scrollToDismiss = true
     
     // flag for use to control content inset and top menu view
     var directionUpdates: Bool = false
@@ -38,7 +38,7 @@ public class AppTableBase: CustomTableBase {
     var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
     var previousConstantValue: CGFloat = 0
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         // remove extra spacing in tableview
@@ -53,7 +53,7 @@ public class AppTableBase: CustomTableBase {
         }
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // update top view position according

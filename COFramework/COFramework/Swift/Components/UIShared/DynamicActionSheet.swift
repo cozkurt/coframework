@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DynamicActionSheet: AppTableBase {
+open class DynamicActionSheet: AppTableBase {
     
     @IBOutlet public weak var blurView: UIView!
     
@@ -22,14 +22,14 @@ public class DynamicActionSheet: AppTableBase {
     
     @objc var defaultTableView = false
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.addEmptyFooter()
         self.tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         self.tableView?.reloadData()

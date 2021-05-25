@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DismissButton {
+open class DismissButton {
     
     let tag = 12345
     public typealias ButtonClickedEvent = () -> Void
@@ -21,7 +21,7 @@ public class DismissButton {
     /// Singleton instance
     public static let sharedInstance = DismissButton()
     
-    public func presentButton(toView: UIView,
+    open func presentButton(toView: UIView,
                        iconName: String,
                        delay: TimeInterval,
                        tableViewBottomGap: CGFloat = 0,
@@ -34,7 +34,7 @@ public class DismissButton {
         Timer.after(delay) {
             
             self.dismissIconView = UIImageView(image: UIImage(systemName: iconName) ?? UIImage(named: iconName))
-			self.dismissIconView?.accessibilityIdentifier = "CLOSE_BUTTON"
+            self.dismissIconView?.accessibilityIdentifier = "CLOSE_BUTTON"
             
             if let dismissIconView = self.dismissIconView {
                 
@@ -57,7 +57,7 @@ public class DismissButton {
         }
     }
     
-    public func showButton() {
+    open func showButton() {
         guard let toView = self.toView, let dismissIconView = self.dismissIconView else {
             return
         }
@@ -67,7 +67,7 @@ public class DismissButton {
         }, completion: nil)
     }
     
-    public func dismissButton(_ completion: ((Bool) -> Void)? = nil) {
+    open func dismissButton(_ completion: ((Bool) -> Void)? = nil) {
         guard let toView = self.toView else {
             if let completion = completion {
                 completion(false)

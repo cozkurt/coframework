@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AdvancedPageViewController: UIViewController {
+open class AdvancedPageViewController: UIViewController {
 
     @IBOutlet internal weak var pageView: UIView!
     @IBOutlet internal weak var pageControl: UIPageControl!
@@ -24,7 +24,7 @@ public class AdvancedPageViewController: UIViewController {
     var viewControllers: [UIViewController] = []
     var flowControllers: [UIFlowController] = []
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 
