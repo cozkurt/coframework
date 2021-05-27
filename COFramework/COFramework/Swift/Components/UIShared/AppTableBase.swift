@@ -51,10 +51,6 @@ open class AppTableBase: CustomTableBase {
         if addBottomColor {
             self.tableView?.addColorToBottom(color: UIColor.systemBackground)
         }
-    }
-    
-    open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
         // update top view position according
         // to scrolling up or down for iPhone only
@@ -88,9 +84,12 @@ open class AppTableBase: CustomTableBase {
         self.topMenuView?.frame.origin.y = 0
         self.tableView?.contentInset.top = height
         
-        self.tableView?.scrollToTop()
+        runOnMainQueue(after: 0.1) {
+            self.tableView?.scrollToTop(animated: true)
+        }
         
         if self.directionUpdates && UIDevice().isIPhone() {
+            
             CustomTableBase.tableViewScrollingUpEvent.bind(self) { nibName in
                 if self.nibName != nibName { return }
                 
