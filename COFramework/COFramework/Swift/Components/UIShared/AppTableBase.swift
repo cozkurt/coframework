@@ -14,15 +14,15 @@ public enum ScrollDirection {
     case down
 }
 
-open class AppTableBase: CustomTableBase {
+public class AppTableBase: CustomTableBase {
     
     @IBOutlet var topMenuView: UIView!
     @IBOutlet var leftButton: UIButton!
     @IBOutlet var rightButton: UIButton!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     
-    open var addBottomColor = true
-    open var scrollToDismiss = true
+    var addBottomColor = true
+    var scrollToDismiss = true
     
     // flag for use to control content inset and top menu view
     var directionUpdates: Bool = false
@@ -38,7 +38,7 @@ open class AppTableBase: CustomTableBase {
     var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
     var previousConstantValue: CGFloat = 0
     
-    open override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         // remove extra spacing in tableview
@@ -75,17 +75,17 @@ open class AppTableBase: CustomTableBase {
     
     func topMenuScrollUpdate() {
         
-        guard let height = self.topMenuView?.frame.size.height else {
+        guard let tableView = self.tableView, let topMenuView = self.topMenuView else {
             return
         }
 
         let move:CGFloat = -50
 
-        self.topMenuView?.frame.origin.y = 0
-        self.tableView?.contentInset.top = height
+        topMenuView.frame.origin.y = 0
+        tableView.contentInset.top = topMenuView.frame.size.height
         
         runOnMainQueue(after: 0.1) {
-            self.tableView?.scrollToTop(animated: true)
+            tableView.scrollToTop(animated: false)
         }
         
         if self.directionUpdates && UIDevice().isIPhone() {
@@ -97,7 +97,7 @@ open class AppTableBase: CustomTableBase {
                     self.leftButton?.alpha = 0
                     self.rightButton?.alpha = 0
                     
-                    self.topMenuView?.frame.origin.y = move
+                    topMenuView.frame.origin.y = move
                 }
             }
             
@@ -108,7 +108,7 @@ open class AppTableBase: CustomTableBase {
                     self.leftButton?.alpha = 1
                     self.rightButton?.alpha = 1
                     
-                    self.topMenuView?.frame.origin.y = 0
+                    topMenuView.frame.origin.y = 0
                 }
             }
             
@@ -161,14 +161,12 @@ extension AppTableBase {
             if self.lastSrollingDirection != .up {
                 
                 CustomTableBase.tableViewScrollingDownEvent.notify(nibName)
-
                 self.lastSrollingDirection = .up
             }
         } else if targetContentOffset.pointee.y - targetDiff > scrollView.contentOffset.y {
             if self.lastSrollingDirection != .down {
                 
                 CustomTableBase.tableViewScrollingUpEvent.notify(nibName)
-
                 self.lastSrollingDirection = .down
             }
         }
