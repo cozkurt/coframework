@@ -886,40 +886,69 @@ open class UIFlowController: NSObject {
         return UIFlowController.loadViewControllerFromNib(viewControllerName)
     }
     
+    /**
+     loadViewControllerFromNib load view controller
+     
+     - parameters:
+     - viewControllerName: view controller to load
+     - return: UIViewController
+     */
+    
     static func loadViewControllerFromNib(_ viewControllerName: String) -> UIViewController? {
+        
+        let viewController = UIFlowController.viewControllerNameSeperate(viewControllerName: viewControllerName).1
+        
         if UIDevice().isMac() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_mac", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_mac")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_mac", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_mac")
             }
         } else if UIDevice().isIPadx() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_iPadx", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_iPadx")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_iPadx", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
             }
         } else if UIDevice().isScreen35inch() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_35", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_35")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_35", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_35")
             }
         } else if UIDevice().isScreen4inch() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_4", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_4")
-            } else if let _ = Bundle.main.path(forResource: "\(viewControllerName)_35", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_35")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_4", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_4")
+            } else if let _ = Bundle.main.path(forResource: "\(viewController)_35", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_35")
             }
         } else if UIDevice().isScreen47inch() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_47", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_47")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_47", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_47")
             }
         } else if UIDevice().isScreen55inch() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_55", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_55")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_55", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_55")
             }
         } else if UIDevice().isIPhoneX() {
-            if let _ = Bundle.main.path(forResource: "\(viewControllerName)_x", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewControllerName)_x")
+            if let _ = Bundle.main.path(forResource: "\(viewController)_x", ofType: "nib") {
+                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_x")
             }
         }
         
         return UIFlowController.viewController(viewControllerName)
+    }
+    
+    /**
+     viewControllerNameSeperate helper method to split Framework name and viewcontroller name
+     
+     - parameters:
+     - viewControllerName: Format Module.ViewControllerName
+     - return: UIViewController
+     */
+    
+    static func viewControllerNameSeperate(viewControllerName: String) -> (String, String) {
+        let split = viewControllerName.components(separatedBy: ".")
+        
+        if split.count == 0 {
+            return ("", viewControllerName)
+        } else {
+            return (split.first ?? "", split.last ?? "")
+        }
     }
     
     /**
@@ -930,7 +959,7 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    @objc static func viewController(_ className : String) -> UIViewController? {
+    static func viewController(_ className : String) -> UIViewController? {
         
         var className = className
         let split = className.components(separatedBy: ".")
@@ -962,7 +991,7 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    @objc static func viewController(_ className : String, nibName: String) -> UIViewController? {
+    static func viewController(_ className : String, nibName: String) -> UIViewController? {
         
         var className = className
         let split = className.components(separatedBy: ".")
