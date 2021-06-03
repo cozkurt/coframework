@@ -110,7 +110,6 @@
 		DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */; };
 		DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F14826572A140064ECBB /* Defaults.swift */; };
 		DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F14926572A140064ECBB /* DemoStyle3.json */; };
-		DFC4F15126572CF00064ECBB /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F15026572CF00064ECBB /* LanguageManager.swift */; };
 		DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */; };
 		DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */; };
 		DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */; };
@@ -258,7 +257,6 @@
 		DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsCenterManager.swift; sourceTree = "<group>"; };
 		DFC4F14826572A140064ECBB /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		DFC4F14926572A140064ECBB /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
-		DFC4F15026572CF00064ECBB /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationRouter.m; sourceTree = "<group>"; };
 		DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationSpriteLayer.h; sourceTree = "<group>"; };
 		DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationBaseModel.h; sourceTree = "<group>"; };
@@ -584,7 +582,6 @@
 		DFC4F1442657295B0064ECBB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				DFC4F15026572CF00064ECBB /* LanguageManager.swift */,
 				DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */,
 			);
 			path = Managers;
@@ -825,7 +822,6 @@
 				DFC4F0EC265727020064ECBB /* UITextField+Additions.swift in Sources */,
 				DFC4F109265727020064ECBB /* SampleDynamicCellViewController.swift in Sources */,
 				DFC4F0DB265727010064ECBB /* UIView+Additions.swift in Sources */,
-				DFC4F15126572CF00064ECBB /* LanguageManager.swift in Sources */,
 				DFC4F0FD265727020064ECBB /* UITextview+Additions.swift in Sources */,
 				DFC4F12A265727020064ECBB /* CircleAnimatedView.swift in Sources */,
 				DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */,
