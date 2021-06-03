@@ -21,7 +21,7 @@ import UIKit
 	@IBInspectable open var useDefaultFont: Bool = false
 	@IBInspectable open var useDefaultTint: Bool = false
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable open var borderColor: UIColor? {
         didSet {
             if let bColor = borderColor {
                 self.layer.borderColor = bColor.cgColor
@@ -29,7 +29,7 @@ import UIKit
         }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             self.layer.borderWidth = borderWidth
         }
@@ -42,7 +42,7 @@ import UIKit
         self.setForLocalization()
     }
 	
-	open func setDefaults() {
+	public func setDefaults() {
 		if useDefaultFont {
             if let size = self.titleLabel?.font.pointSize {
                 self.titleLabel?.font = self.titleLabel?.font.appearanceFont(fontDefault: defaultFontName, size: size)
@@ -58,7 +58,7 @@ import UIKit
         }
 	}
     
-    open func setForLocalization() {
+    public func setForLocalization() {
         // Adjust font for localization
         self.titleLabel?.numberOfLines = 0
         self.titleLabel?.minimumScaleFactor = 0.8
