@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-struct AppearanceModel: Mappable {
+public struct AppearanceModel: Mappable {
     
     /// Model Properties
     
@@ -104,7 +104,7 @@ struct AppearanceModel: Mappable {
     
     // MARK: Mappable protocol conformance
     
-    init?(map: Map) {
+    public init?(map: Map) {
         
         // Model Properties
         appearanceId <- map["appearanceId"]
@@ -153,24 +153,24 @@ struct AppearanceModel: Mappable {
         removeDividers <- map["removeDividers"]
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         /// Mapping already completed in init()
     }
 }
 
-struct ColorsMap: Mappable {
+public struct ColorsMap: Mappable {
     
     var name: String?
     var value: String?
     
     // MARK: Mappable protocol conformance
     
-    init?(map: Map) {
+    public init?(map: Map) {
         name <- map["name"]
         value <- map["value"]
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         /// Mapping already completed in init()
     }
 }

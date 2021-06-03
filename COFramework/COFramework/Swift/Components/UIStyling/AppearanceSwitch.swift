@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class AppearanceSwitch: UISwitch {
+public class AppearanceSwitch: UISwitch {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeSwitch(self)

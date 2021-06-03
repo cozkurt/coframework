@@ -8,11 +8,11 @@
 
 import UIKit
 
-open class CustomTextView: AppearanceTextView {
+public class CustomTextView: AppearanceTextView {
     
     @IBOutlet public var placeHolderLabel: UILabel?
     
-    open override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         self.layer.cornerRadius = 5
@@ -21,14 +21,14 @@ open class CustomTextView: AppearanceTextView {
         self.updateBorderColor()
     }
         
-    override open func becomeFirstResponder() -> Bool {
+    override public func becomeFirstResponder() -> Bool {
         super.becomeFirstResponder()
         self.updateBorderColor()
         
         return true
     }
     
-    override open func resignFirstResponder() -> Bool {
+    override public func resignFirstResponder() -> Bool {
         let _ = super.resignFirstResponder()
         self.updateBorderColor()
         

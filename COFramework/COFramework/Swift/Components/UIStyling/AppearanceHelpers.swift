@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-open class AppearanceHelpers {
+public class AppearanceHelpers {
     
     // MARK: - Helper Methods
     
@@ -22,7 +22,7 @@ open class AppearanceHelpers {
      - returns:    UIFont?
      */
     
-    func convertToUIFont(_ font: String) -> UIFont? {
+    public func convertToUIFont(_ font: String) -> UIFont? {
         
         let values: Array = font.components(separatedBy: ",")
         
@@ -57,7 +57,7 @@ open class AppearanceHelpers {
      - returns:    UIColor
      */
     
-    func convertToUIColor(_ rgbColors: String, searchColors: Bool = true) -> UIColor? {
+    public func convertToUIColor(_ rgbColors: String, searchColors: Bool = true) -> UIColor? {
         
         // look for if color is defined in colorMap
         
@@ -96,7 +96,7 @@ open class AppearanceHelpers {
      - returns:    UIColor
      */
     
-    func hexStringToUIColor (rgbString:String, alpha: Float) -> UIColor {
+    public func hexStringToUIColor (rgbString:String, alpha: Float) -> UIColor {
         var hex = rgbString.replacingOccurrences(of: "#", with: "")
         hex = hex.replacingOccurrences(of: "0x", with: "")
         
@@ -126,7 +126,7 @@ open class AppearanceHelpers {
      - returns:    UIColor
      */
     
-    func searchColorMap(_ colorName: String) -> UIColor? {
+    public func searchColorMap(_ colorName: String) -> UIColor? {
         let appearanceModels = AppearanceController.sharedInstance.appearanceModels
         
         let colors = appearanceModels.compactMap { $0.colors }.flatMap { $0 }
@@ -149,7 +149,7 @@ open class AppearanceHelpers {
      - returns:    UIEdgeInsets
      */
     
-    func convertToUIEdgeInsets(_ edgeInsets: String) -> UIEdgeInsets? {
+    public func convertToUIEdgeInsets(_ edgeInsets: String) -> UIEdgeInsets? {
         
         let values: Array = edgeInsets.components(separatedBy: ",")
         
@@ -175,7 +175,7 @@ open class AppearanceHelpers {
      - returns:    UIControlState
      */
     
-    func buttonControlState(_ state: String?) -> UIControl.State {
+    public func buttonControlState(_ state: String?) -> UIControl.State {
         
         var controlState: UIControl.State
         
@@ -203,7 +203,7 @@ open class AppearanceHelpers {
      - returns:    UIControlState
      */
     
-    func textAlignment(_ alignmentString: String?) -> NSTextAlignment {
+    public func textAlignment(_ alignmentString: String?) -> NSTextAlignment {
         
         var alignment: NSTextAlignment
         
@@ -232,7 +232,7 @@ open class AppearanceHelpers {
      - returns:    NSLineBreakMode
      */
     
-    func lineBreakMode(_ lineBreakString: String?) -> NSLineBreakMode {
+    public func lineBreakMode(_ lineBreakString: String?) -> NSLineBreakMode {
         
         guard let lineBreakString = lineBreakString, let lineBreakInt = Int(lineBreakString), let breakMode = NSLineBreakMode.init(rawValue: lineBreakInt) else {
             return NSLineBreakMode.byWordWrapping

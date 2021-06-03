@@ -8,9 +8,10 @@
 
 import UIKit
 
-@IBDesignable open class AppearanceButton: UIButton {
+@IBDesignable
+public class AppearanceButton: UIButton {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeButton(self)
@@ -18,10 +19,10 @@ import UIKit
         }
     }
 	
-	@IBInspectable open var useDefaultFont: Bool = false
-	@IBInspectable open var useDefaultTint: Bool = false
+	@IBInspectable public var useDefaultFont: Bool = false
+	@IBInspectable public var useDefaultTint: Bool = false
     
-    @IBInspectable open var borderColor: UIColor? {
+    @IBInspectable public var borderColor: UIColor? {
         didSet {
             if let bColor = borderColor {
                 self.layer.borderColor = bColor.cgColor
@@ -29,13 +30,13 @@ import UIKit
         }
     }
 
-    @IBInspectable open var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             self.layer.borderWidth = borderWidth
         }
     }
     
-    open override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
         self.setDefaults()
@@ -67,7 +68,7 @@ import UIKit
         self.titleLabel?.textAlignment = .center
     }
     
-    override open var isHighlighted: Bool {
+    override public var isHighlighted: Bool {
         didSet {
             guard let currentBorderColor = borderColor else {
                 return

@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 import Foundation
 
-open class AppearanceController {
+public class AppearanceController {
     
     /// json file to load into model
     var fileName: String?
@@ -42,7 +42,7 @@ open class AppearanceController {
      - append: Bool if true then adds new models to previous onces
      */
     
-    open func loadAppearance(_ fileName: String, view: UIView? = nil, append: Bool = true) {
+    public func loadAppearance(_ fileName: String, view: UIView? = nil, append: Bool = true) {
         
         self.fileName = fileName
         
@@ -82,7 +82,7 @@ open class AppearanceController {
      - defaultColor: if color not found then return defaultColor (default is red)
      */
     
-    open func color(_ colorName: String, defaultColor: UIColor = UIColor.red) -> UIColor {
+    public func color(_ colorName: String, defaultColor: UIColor = UIColor.red) -> UIColor {
         return self.appearanceHelpers.searchColorMap(colorName) ?? defaultColor
     }
     
@@ -102,7 +102,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeView(_ view: AppearanceView) {
+    public func customizeView(_ view: AppearanceView) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == view.appearanceId }
         
@@ -134,7 +134,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeButton(_ button: AppearanceButton) {
+    public func customizeButton(_ button: AppearanceButton) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == button.appearanceId }
         
@@ -160,7 +160,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeLabel(_ label: AppearanceLabel) {
+    public func customizeLabel(_ label: AppearanceLabel) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == label.appearanceId }
         
@@ -185,7 +185,7 @@ open class AppearanceController {
      }
      */
 
-    open func customizeTextView(_ textView: AppearanceTextView) {
+    public func customizeTextView(_ textView: AppearanceTextView) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == textView.appearanceId }
         
@@ -210,7 +210,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeTextField(_ textField: AppearanceTextField) {
+    public func customizeTextField(_ textField: AppearanceTextField) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == textField.appearanceId }
         
@@ -235,7 +235,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeSegmentedControl(_ segmentedControl: AppearanceSegmented) {
+    public func customizeSegmentedControl(_ segmentedControl: AppearanceSegmented) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == segmentedControl.appearanceId }
         
@@ -259,7 +259,7 @@ open class AppearanceController {
      }
      */
     
-    open func customizeSwitch(_ switchUI: AppearanceSwitch) {
+    public func customizeSwitch(_ switchUI: AppearanceSwitch) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == switchUI.appearanceId }
         
@@ -280,7 +280,7 @@ open class AppearanceController {
     }
     */
     
-    open func customizeImageView(_ imageView: AppearanceImageView) {
+    public func customizeImageView(_ imageView: AppearanceImageView) {
         
         let models = self.appearanceModels.filter { $0.appearanceId == imageView.appearanceId }
         
@@ -297,7 +297,7 @@ open class AppearanceController {
      - view: View to apply appearance settings realtime
      */
     
-    open func applyModelsToView(_ view: UIView?) {
+    public func applyModelsToView(_ view: UIView?) {
         
         guard let view = view else {
             return
@@ -408,7 +408,7 @@ open class AppearanceController {
      Otherwise it applies to actual component.
      */
     
-    open func applyModelsToAppearance() {
+    public func applyModelsToAppearance() {
         
         for appearanceModel in self.appearanceModels {
             
@@ -436,7 +436,7 @@ open class AppearanceController {
      - parameters:
      */
     
-    open func refreshViews() {
+    public func refreshViews() {
         
         let windows = UIApplication.shared.windows as [UIWindow]
         
@@ -460,7 +460,7 @@ open class AppearanceController {
      - label: UILabel to apply styles.
      */
     
-    func applyToView(_ appearanceModel: AppearanceModel, view: UIView?) {
+    public func applyToView(_ appearanceModel: AppearanceModel, view: UIView?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -488,7 +488,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToViewAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToViewAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "view"
         if let styleType = appearanceModel.appearanceType {
@@ -517,7 +517,7 @@ open class AppearanceController {
      - label: UILabel to apply styles.
      */
     
-    func applyToLabel(_ appearanceModel: AppearanceModel, label: UILabel?) {
+    public func applyToLabel(_ appearanceModel: AppearanceModel, label: UILabel?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -563,7 +563,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToLabelAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToLabelAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "label"
         if let styleType = appearanceModel.appearanceType {
@@ -592,7 +592,7 @@ open class AppearanceController {
      - label: UILabel to apply styles.
      */
     
-    func applyToTextView(_ appearanceModel: AppearanceModel, textView: UITextView?) {
+    public func applyToTextView(_ appearanceModel: AppearanceModel, textView: UITextView?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -632,7 +632,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToTextViewAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToTextViewAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "textView"
         if let styleType = appearanceModel.appearanceType {
@@ -661,7 +661,7 @@ open class AppearanceController {
      - label: UILabel to apply styles.
      */
     
-    func applyToTextField(_ appearanceModel: AppearanceModel, textField: UITextField?) {
+    public func applyToTextField(_ appearanceModel: AppearanceModel, textField: UITextField?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -701,7 +701,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToTextFieldAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToTextFieldAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "textField"
         if let styleType = appearanceModel.appearanceType {
@@ -730,7 +730,7 @@ open class AppearanceController {
      - label: UILabel to apply styles.
      */
     
-    func applyToSegmentedControl(_ appearanceModel: AppearanceModel, segmentedControl: UISegmentedControl?) {
+    public func applyToSegmentedControl(_ appearanceModel: AppearanceModel, segmentedControl: UISegmentedControl?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -776,7 +776,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToSegmentedControlAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToSegmentedControlAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "segmentedControl"
         if let styleType = appearanceModel.appearanceType {
@@ -805,7 +805,7 @@ open class AppearanceController {
      - button: UIButton to apply styles.
      */
     
-    func applyToButton(_ appearanceModel: AppearanceModel, button: UIButton?) {
+    public func applyToButton(_ appearanceModel: AppearanceModel, button: UIButton?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -857,7 +857,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToButtonAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToButtonAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -886,7 +886,7 @@ open class AppearanceController {
      - switchUI: UISwitch to apply styles.
      */
     
-    func applyToSwitch(_ appearanceModel: AppearanceModel, switchUI: UISwitch?) {
+    public func applyToSwitch(_ appearanceModel: AppearanceModel, switchUI: UISwitch?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -914,7 +914,7 @@ open class AppearanceController {
      - appearanceModel: model to apply styles.
      */
     
-    func applyToSwitchAppearance(_ appearanceModel: AppearanceModel) {
+    public func applyToSwitchAppearance(_ appearanceModel: AppearanceModel) {
         
         /// check if appearanceType is "switch"
         if let styleType = appearanceModel.appearanceType {
@@ -943,7 +943,7 @@ open class AppearanceController {
      - imageView: UIImageView to apply styles.
      */
     
-    func applyToImageView(_ appearanceModel: AppearanceModel, imageView: UIImageView?) {
+    public func applyToImageView(_ appearanceModel: AppearanceModel, imageView: UIImageView?) {
         
         /// check if appearanceType is "button"
         if let styleType = appearanceModel.appearanceType {
@@ -971,7 +971,7 @@ open class AppearanceController {
      - layer: CALayer to apply styles.
      */
     
-    func applyToCALayer(_ appearanceModel: AppearanceModel, layer: CALayer?) {
+    public func applyToCALayer(_ appearanceModel: AppearanceModel, layer: CALayer?) {
         
         if let borderColor = appearanceModel.borderColor, let color = appearanceHelpers.convertToUIColor(borderColor)?.cgColor {
             layer?.borderColor = color
@@ -1003,7 +1003,7 @@ open class AppearanceController {
      - return: NSAttributedString
      */
     
-    func applyStyle(_ appearanceModel: AppearanceModel, text: String) -> NSAttributedString {
+    public func applyStyle(_ appearanceModel: AppearanceModel, text: String) -> NSAttributedString {
         
         let attrString = NSMutableAttributedString(string: text)
         

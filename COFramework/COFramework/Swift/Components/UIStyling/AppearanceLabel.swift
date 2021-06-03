@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class AppearanceLabel: UILabel {
+public class AppearanceLabel: UILabel {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeLabel(self)
@@ -18,15 +18,15 @@ open class AppearanceLabel: UILabel {
         }
     }
 	
-    @IBInspectable open var useDefaultFont: Bool = false
+    @IBInspectable public var useDefaultFont: Bool = false
 
-    open override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
         self.setDefaults()
     }
 	
-	open func setDefaults() {
+    public func setDefaults() {
 		if useDefaultFont {
             self.font = self.font.appearanceFont(fontDefault: defaultFontName, size: self.font.pointSize)
 			self.textColor = AppearanceController.sharedInstance.color("default.text")

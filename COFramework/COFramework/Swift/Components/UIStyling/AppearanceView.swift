@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class AppearanceView: UIView {
+public class AppearanceView: UIView {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeView(self)

@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class AppearanceTextField: UITextField {
+public class AppearanceTextField: UITextField {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeTextField(self)
@@ -18,16 +18,16 @@ open class AppearanceTextField: UITextField {
         }
     }
     
-    @IBInspectable open var useDefaultFont: Bool = false
-    @IBInspectable open var useDefaultCursorColor: Bool = true
+    @IBInspectable public var useDefaultFont: Bool = false
+    @IBInspectable public var useDefaultCursorColor: Bool = true
 
-    open override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
         setDefaults()
     }
     
-    open func setDefaults() {
+    public func setDefaults() {
         if useDefaultFont {
             if let font = self.font {
                 self.font = font.appearanceFont(fontDefault: defaultFontName, size: font.pointSize)

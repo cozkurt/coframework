@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-open class AppearanceImageView: UIImageView {
+public class AppearanceImageView: UIImageView {
     
-    @IBInspectable open var appearanceId: String? {
+    @IBInspectable public var appearanceId: String? {
         didSet {
             if self.appearanceId != "" {
                 AppearanceController.sharedInstance.customizeImageView(self)
@@ -19,26 +19,26 @@ open class AppearanceImageView: UIImageView {
         }
     }
     
-    @IBInspectable open var useDefaultTint: Bool = false {
+    @IBInspectable public var useDefaultTint: Bool = false {
         didSet {
             self.tintColor = AppearanceController.sharedInstance.color("default.image.tint")
 			self.setImageWithAlwaysTemplate()
         }
     }
     
-    @IBInspectable open var imageName: String? {
+    @IBInspectable public var imageName: String? {
         didSet {
             self.image = self.localizedImage(imageName ?? "")
         }
     }
     
-    override open func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         let bundle = Bundle(for: type(of: self))
         
         self.image = self.localizedImage(imageName ?? "", bundle: bundle)
     }
     
-    private func localizedImage(_ imageName: String, bundle: Bundle? = nil) -> UIImage? {
+    public func localizedImage(_ imageName: String, bundle: Bundle? = nil) -> UIImage? {
         let id = Locale.current.identifier
         
         let localizedName = id == "en" ? imageName : "\(imageName)_\(id)"
@@ -60,11 +60,11 @@ open class AppearanceImageView: UIImageView {
         return UIImage(systemName: imageName) ?? UIImage(named: imageName)
     }
     
-    open func setImageWithAlwaysTemplate(name: String) {
+    public func setImageWithAlwaysTemplate(name: String) {
         self.image = self.localizedImage(name)?.withRenderingMode(.alwaysTemplate)
     }
  
-	open func setImageWithAlwaysTemplate() {
+    public func setImageWithAlwaysTemplate() {
 		if useDefaultTint {
 			self.image = self.image?.withRenderingMode(.alwaysTemplate)
 		}
