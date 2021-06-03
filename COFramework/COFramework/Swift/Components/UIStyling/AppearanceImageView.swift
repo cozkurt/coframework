@@ -39,7 +39,7 @@ open class AppearanceImageView: UIImageView {
     }
     
     private func localizedImage(_ imageName: String, bundle: Bundle? = nil) -> UIImage? {
-        let id = LanguageManager.sharedInstance.currentIdentifier
+        let id = Locale.current.identifier
         
         let localizedName = id == "en" ? imageName : "\(imageName)_\(id)"
         

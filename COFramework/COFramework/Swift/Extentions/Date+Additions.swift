@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal extension Date {
+extension Date {
     
     public static var currentCalendar = Foundation.Calendar.autoupdatingCurrent
     
