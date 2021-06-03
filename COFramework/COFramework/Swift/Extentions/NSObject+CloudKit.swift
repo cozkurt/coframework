@@ -12,7 +12,7 @@ import ObjectMapper
 
 extension NSObject {
     
-    var record: CKRecord {
+    public var record: CKRecord {
         let className = String(describing: type(of: self))
         let record = CKRecord(recordType: className, recordID: CKRecord.ID(recordName: UUID().uuidString))
 
