@@ -127,7 +127,7 @@ open class AdvancedPageViewController: UIViewController {
         self.pageChanged(pageNumber)
     }
     
-    func pageChanged(_ pageNumber: Int) {
+    open func pageChanged(_ pageNumber: Int) {
         // override to get updated pageNumber
     }
     

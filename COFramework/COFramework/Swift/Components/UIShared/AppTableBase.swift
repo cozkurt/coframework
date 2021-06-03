@@ -127,14 +127,14 @@ open class AppTableBase: CustomTableBase {
         // override
     }
     
-    public func showLoadingIndicator() {
+    open func showLoadingIndicator() {
         runOnMainQueue {
             self.rightButton?.isHidden = true
             self.loadingIndicator?.startAnimating()
         }
     }
     
-    public func hideLoadingIndicator() {
+    open func hideLoadingIndicator() {
         runOnMainQueue {
             self.rightButton?.isHidden = false
             self.loadingIndicator?.stopAnimating()
