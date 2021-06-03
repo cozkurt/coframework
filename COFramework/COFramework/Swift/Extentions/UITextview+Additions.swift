@@ -10,7 +10,7 @@ import UIKit
 
 extension UITextView {
     
-    @objc func setTextWhileKeepingAttributes(_ string: String) {
+    public func setTextWhileKeepingAttributes(_ string: String) {
         if let newAttributedText = self.attributedText {
             let mutableAttributedText = newAttributedText.mutableCopy()
             (mutableAttributedText as AnyObject).mutableString.setString(string)
@@ -18,7 +18,7 @@ extension UITextView {
         }
     }
     
-    func applySpacingToTextViewAndScroll(_ contentOffset: CGPoint = .zero, spacing: CGFloat, text: String) {
+    public func applySpacingToTextViewAndScroll(_ contentOffset: CGPoint = .zero, spacing: CGFloat, text: String) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacing
         let attributes = [NSAttributedString.Key.paragraphStyle : style, NSAttributedString.Key.font : self.font, NSAttributedString.Key.foregroundColor : self.textColor ]
@@ -28,7 +28,7 @@ extension UITextView {
         }
     }
     
-    func checkLimits(text: String, range: NSRange, limit: Int, lineFeed: Bool) -> Bool {
+    public func checkLimits(text: String, range: NSRange, limit: Int, lineFeed: Bool) -> Bool {
         
         // if next line allowed then skio
         if lineFeed == false && text == "\n" {

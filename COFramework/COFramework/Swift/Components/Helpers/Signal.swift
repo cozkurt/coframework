@@ -13,6 +13,8 @@ open class Signal {
     public typealias completed = (() -> Void)
     
     private var listeners = [String: completed]()
+    
+    public init() {}
         
     public func bind(_ object: AnyObject, completed: @escaping completed) {
         if let name = object.description.split(":").first ?? object.description {

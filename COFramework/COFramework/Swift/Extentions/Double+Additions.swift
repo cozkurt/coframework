@@ -9,11 +9,11 @@
 import Foundation
 
 extension Double {
-    func truncate(places : Int)-> Double {
+    public func truncate(places : Int)-> Double {
         return Double(floor(pow(10.0, Double(places)) * self)/pow(10.0, Double(places)))
     }
     
-    func string(_ fractionDigits:Int) -> String {
+    public func string(_ fractionDigits:Int) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .none
         formatter.minimumFractionDigits = 0
@@ -21,7 +21,7 @@ extension Double {
         return formatter.string(from: NSNumber(value: self)) ?? "\(self)"
     }
     
-    func currencyString(_ localeIdentifier: String? = nil) -> String {
+    public func currencyString(_ localeIdentifier: String? = nil) -> String {
         let formatter = NumberFormatter()
     
         if let identifier = localeIdentifier {

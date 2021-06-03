@@ -10,7 +10,7 @@ import UIKit
 
 extension UITextField {
     
-    @objc func reloadReturnKeyType() {
+    public func reloadReturnKeyType() {
         reloadInputViews()
         
         // NOTE: workaround to properly reload new returnKeyType
@@ -20,7 +20,7 @@ extension UITextField {
         text = currentText
     }
     
-    func validateNewEntry(string:String, validRange:ClosedRange<Int>) -> Bool {
+    public func validateNewEntry(string:String, validRange:ClosedRange<Int>) -> Bool {
         
         let length = string.count
         

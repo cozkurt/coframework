@@ -10,13 +10,13 @@
 import UIKit
 
 extension UIButton {
-    func scaleButtonTitle() {
+    public func scaleButtonTitle() {
         self.titleLabel?.minimumScaleFactor = 0.5
         self.titleLabel?.numberOfLines = 1
         self.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
-    func sizeToFitWidth(contentInset: CGFloat = 40) {
+    public func sizeToFitWidth(contentInset: CGFloat = 40) {
         if let fontName = self.titleLabel?.font.fontName, let size = self.titleLabel?.font.pointSize, let font = UIFont(name: fontName, size: size)  {
             let frameWidth = self.frame.width
 

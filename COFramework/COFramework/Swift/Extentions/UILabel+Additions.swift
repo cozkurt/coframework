@@ -11,7 +11,7 @@ import UIKit
 
 extension UILabel {
     
-    func sizeToFitHeight() {
+    public func sizeToFitHeight() {
         let size: CGSize = self.sizeThatFits(CGSize.init(width: self.frame.size.width, height: CGFloat.greatestFiniteMagnitude))
         var frame:CGRect = self.frame
         frame.size.height = size.height
@@ -19,11 +19,11 @@ extension UILabel {
         return
     }
 	
-	func sizeToFitWidth() {
+    public func sizeToFitWidth() {
 		self.sizeToFitWidth(contentInset: 0)
 	}
 
-	@objc func setTextWhileKeepingAttributes(_ string: String) {
+    public func setTextWhileKeepingAttributes(_ string: String) {
 		if let newAttributedText = self.attributedText {
 			let mutableAttributedText = newAttributedText.mutableCopy()
 			(mutableAttributedText as AnyObject).mutableString.setString(string)
@@ -31,14 +31,14 @@ extension UILabel {
 		}
 	}
     
-    func addCharactersSpacing(_ value: CGFloat = 1.15) {
+    public func addCharactersSpacing(_ value: CGFloat = 1.15) {
         if let textString = text {
             let attrs: [NSAttributedString.Key : Any] = [.kern: value]
             attributedText = NSAttributedString(string: textString, attributes: attrs)
         }
     }
     
-    func applyLineSpacingToLabel(_ spacing: CGFloat = 1.4, _ text: String) {
+    public func applyLineSpacingToLabel(_ spacing: CGFloat = 1.4, _ text: String) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacing
         style.alignment = .center
@@ -46,7 +46,7 @@ extension UILabel {
         self.attributedText = NSAttributedString(string: text, attributes:attributes as [NSAttributedString.Key : Any])
     }
 	
-	func sizeToFitWidth(contentInset: CGFloat = 40) {
+    public func sizeToFitWidth(contentInset: CGFloat = 40) {
 		let size = self.font.pointSize
 		let fontName = self.font.fontName
 		
@@ -63,7 +63,7 @@ extension UILabel {
 		}
 	}
 	
-    func sizeToFitWidth(contentInset: CGFloat = 40, leftView: UIView) {
+    public func sizeToFitWidth(contentInset: CGFloat = 40, leftView: UIView) {
         let size = self.font.pointSize
         let fontName = self.font.fontName
         

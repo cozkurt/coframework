@@ -10,7 +10,7 @@ import UIKit
 
 extension UISegmentedControl {
     
-    func defaultConfiguration(font: UIFont, color: UIColor) {
+    public func defaultConfiguration(font: UIFont, color: UIColor) {
         let defaultAttributes: [NSAttributedString.Key: Any]? = [
             NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): font,
             NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): color
@@ -18,7 +18,7 @@ extension UISegmentedControl {
         setTitleTextAttributes(defaultAttributes, for: .normal)
     }
     
-    func selectedConfiguration(font: UIFont, color: UIColor) {
+    public func selectedConfiguration(font: UIFont, color: UIColor) {
         let selectedAttributes: [NSAttributedString.Key: Any]? = [
             NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue): font,
             NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): color
@@ -26,18 +26,18 @@ extension UISegmentedControl {
         setTitleTextAttributes(selectedAttributes, for: .selected)
     }
     
-    func removeDividers() {
+    public func removeDividers() {
         setDividerImage(UIImage(), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
     }
     
-    func removeBorders() {
+    public func removeBorders() {
         setBackgroundImage(imageWithColor(color: backgroundColor!), for: .normal, barMetrics: .default)
         setBackgroundImage(imageWithColor(color: tintColor!), for: .selected, barMetrics: .default)
         setDividerImage(imageWithColor(color: UIColor.clear), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
     }
     
     // create a 1x1 image with this color
-    private func imageWithColor(color: UIColor) -> UIImage {
+    public func imageWithColor(color: UIColor) -> UIImage {
         let rect = CGRect(x: 0.0, y: 0.0, width:  1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()

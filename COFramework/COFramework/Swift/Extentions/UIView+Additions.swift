@@ -10,26 +10,26 @@ import UIKit
 
 extension UIView {
     
-    func removeAllSubviews() {
+    public func removeAllSubviews() {
         self.subviews.forEach { $0.removeFromSuperview() }
     }
     
-    func showAnimateAlpha(alpha: CGFloat) {
+    public func showAnimateAlpha(alpha: CGFloat) {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseOut, animations: {
             self.alpha = alpha
         }) { _ in
         }
     }
     
-    func superview<T>(of type: T.Type) -> T? {
+    public func superview<T>(of type: T.Type) -> T? {
         return superview as? T ?? superview.flatMap { $0.superview(of: type) }
     }
     
-    func subview<T>(of type: T.Type) -> T? {
+    public func subview<T>(of type: T.Type) -> T? {
         return subviews.compactMap { $0 as? T ?? $0.subview(of: type) }.first
     }
     
-    class func fromNib(_ nibName: String, index: Int?) -> UIView? {
+    public class func fromNib(_ nibName: String, index: Int?) -> UIView? {
         if let views = Bundle.main.loadNibNamed(nibName, owner: nil, options: nil) {
             
             let view: UIView?
@@ -49,7 +49,7 @@ extension UIView {
         return nil
     }
     
-    @objc class func accessoryViewWithButton(_ nibName: String, label:String, target: AnyObject?, action: Selector) -> UIView? {
+    public class func accessoryViewWithButton(_ nibName: String, label:String, target: AnyObject?, action: Selector) -> UIView? {
         if let view = UIView.fromNib(nibName, index: 0) {
             
             if let button: UIButton = view.viewWithTag(100) as? UIButton {
@@ -62,7 +62,7 @@ extension UIView {
          return nil
     }
     
-    @objc class func accessoryViewWithTextView(_ nibName: String, text:String, delegate: UITextViewDelegate) -> UIView? {
+    public class func accessoryViewWithTextView(_ nibName: String, text:String, delegate: UITextViewDelegate) -> UIView? {
         if let view = UIView.fromNib(nibName, index: 0) {
             
             if let textView: CustomTextView = view.viewWithTag(100) as? CustomTextView {
@@ -75,7 +75,7 @@ extension UIView {
          return nil
     }
     
-    @objc func setAnchorPoint(_ anchorPoint: CGPoint) {
+    public func setAnchorPoint(_ anchorPoint: CGPoint) {
         var newPoint = CGPoint(x: self.bounds.size.width * anchorPoint.x, y: self.bounds.size.height * anchorPoint.y)
         var oldPoint = CGPoint(x: self.bounds.size.width * self.layer.anchorPoint.x, y: self.bounds.size.height * self.layer.anchorPoint.y)
         
@@ -94,15 +94,15 @@ extension UIView {
         self.layer.anchorPoint = anchorPoint
     }
     
-    @objc func applyDefaultGradient() {
+    public func applyDefaultGradient() {
         self.applyGradient([UIColor.systemBlue, UIColor.systemBackground ], startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0.8, y: 1.0), cornerRadius: 5, opacity: 0.1, animated: false)
     }
     
-    @objc func applyDefaultGradient2() {
+    public func applyDefaultGradient2() {
         self.applyGradient([UIColor.systemBlue, UIColor.systemBackground ], startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0.8, y: 1.0), cornerRadius: 5, opacity: 0.2, animated: false)
     }
     
-    @objc func applyGradient(_ colours: [UIColor], startPoint: CGPoint, endPoint: CGPoint, cornerRadius: CGFloat, opacity: Float, animated: Bool = false) -> Void {
+    public func applyGradient(_ colours: [UIColor], startPoint: CGPoint, endPoint: CGPoint, cornerRadius: CGFloat, opacity: Float, animated: Bool = false) -> Void {
         
         self.removeGradients()
         
@@ -128,7 +128,7 @@ extension UIView {
         self.layer.insertSublayer(gradient, at: 0)
     }
     
-    @objc func removeGradients() -> Void {
+    public func removeGradients() -> Void {
         
         if let layers = self.layer.sublayers {
             for layer in layers {
@@ -139,11 +139,11 @@ extension UIView {
         }
     }
     
-    @objc func removeSublayers() -> Void {
+    public func removeSublayers() -> Void {
         self.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
     }
     
-    @objc func removeAll() {
+    public func removeAll() {
 //        self.layer.sublayers?.forEach { $0.removeAllAnimations() }
 //        self.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
 //
@@ -152,7 +152,7 @@ extension UIView {
         self.removeFromSuperview()
     }
     
-    @objc func animateTo(frame: CGRect, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
+    public func animateTo(frame: CGRect, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
         guard let _ = superview else {
             return
         }
@@ -169,7 +169,7 @@ extension UIView {
         }, completion: completion)
     }
     
-    @objc func scaleTo(scale: CGFloat, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
+    public func scaleTo(scale: CGFloat, withDuration duration: TimeInterval, completion: ((Bool) -> Void)? = nil) {
         guard let _ = superview else {
             return
         }
@@ -180,7 +180,7 @@ extension UIView {
         }, completion: completion)
     }
     
-    func resizeToFitSubviews() {
+    public func resizeToFitSubviews() {
         var w: CGFloat = 0
         var h: CGFloat = 0
         
@@ -196,12 +196,12 @@ extension UIView {
 }
 
 // Blur
-protocol Bluring {
+public protocol Bluring {
     func addBlur(_ alpha: CGFloat)
 }
 
 extension Bluring where Self: UIView {
-    func addBlur(_ alpha: CGFloat = 0.5) {
+    public func addBlur(_ alpha: CGFloat = 0.5) {
         
         let isBlurExists = self.subviews.count > 0
         
@@ -224,7 +224,7 @@ extension Bluring where Self: UIView {
         }
     }
     
-    func removeBlur() {
+    public func removeBlur() {
         self.removeAllSubviews()
     }
 }
@@ -234,7 +234,7 @@ extension UIView: Bluring {}
 
 // Gesture recognizer
 extension UIView {
-    func userStartedGesture() -> Bool {
+    public func userStartedGesture() -> Bool {
         
         guard let view = self.subviews.first, let gestureReconizers = view.gestureRecognizers else {
             return false

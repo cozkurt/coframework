@@ -8,8 +8,8 @@
 
 import UIKit
 
-class Alerts {
-    static func adultContentWarning(_ viewController: UIViewController?) {
+public class Alerts {
+    static public func adultContentWarning(_ viewController: UIViewController?) {
         let alert = UIAlertController(title: "Oops".localize(),
                                       message: "Inappropriate content detected".localize(),
                                       preferredStyle: .alert)

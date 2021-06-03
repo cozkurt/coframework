@@ -8,28 +8,28 @@
 
 import UIKit
 
-open class DynamicActionSheet: AppTableBase {
+public class DynamicActionSheet: AppTableBase {
     
     @IBOutlet public weak var blurView: UIView!
     
     private static var dismissing = false
     
     private var animation: Bool = true
-    private var tableViewBottomGap: CGFloat = 0
+    public var tableViewBottomGap: CGFloat = 0
     
     /// set this flag to true to to use tableview as notification style
     /// it wil adjust tableView y position to snap to bottom with animation
     
-    @objc var defaultTableView = false
+    var defaultTableView = false
     
-    open override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.addEmptyFooter()
         self.tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
 
-    open override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         self.tableView?.reloadData()
@@ -40,7 +40,7 @@ open class DynamicActionSheet: AppTableBase {
         }
     }
     
-    func resetTableHeightPosition() {
+    public func resetTableHeightPosition() {
         if defaultTableView {
             return
         }
@@ -48,7 +48,7 @@ open class DynamicActionSheet: AppTableBase {
         self.tableView?.frame = CGRect(x: self.tableView.frame.origin.x, y: self.view.frame.height, width: self.tableView.frame.width, height: self.tableView.frame.height)
     }
     
-    func updateTableHeight(_ tableViewBottomGap: CGFloat = 0, _ animation: Bool = true) {
+    public func updateTableHeight(_ tableViewBottomGap: CGFloat = 0, _ animation: Bool = true) {
         
         if defaultTableView {
             return
@@ -80,7 +80,7 @@ open class DynamicActionSheet: AppTableBase {
         }
     }
     
-    func animateDismiss(_ completed: @escaping () -> Void = {}) {
+    public func animateDismiss(_ completed: @escaping () -> Void = {}) {
         UIView.animate(withDuration: 0.5, delay: 0.3, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: .curveEaseOut, animations: {
             
             let gap:CGFloat = (UIDevice().isIPhoneX() ? 20 : 10) + self.tableViewBottomGap
@@ -91,7 +91,7 @@ open class DynamicActionSheet: AppTableBase {
         })
     }
     
-    func dismiss() {
+    public func dismiss() {
         if DynamicActionSheet.dismissing { return }
         DynamicActionSheet.dismissing = true
         
@@ -101,7 +101,7 @@ open class DynamicActionSheet: AppTableBase {
         }
     }
     
-    @IBAction func dismissButton() {
+    @IBAction public func dismissButton() {
         if defaultTableView {
             NotificationsCenterManager.sharedInstance.post("DISMISS")
         } else {

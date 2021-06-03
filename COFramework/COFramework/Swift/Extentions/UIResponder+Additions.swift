@@ -10,15 +10,15 @@
 import UIKit
 
 extension UIResponder {
-	var parentViewController: UIViewController? {
+	public var parentViewController: UIViewController? {
 		return (self.next as? UIViewController) ?? self.next?.parentViewController
 	}
 	
-	var className: String {
+    public var className: String {
 		return NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
 	}
 	
-	var classNameDot: String {
+    public var classNameDot: String {
 		return self.className + "."
 	}
 }

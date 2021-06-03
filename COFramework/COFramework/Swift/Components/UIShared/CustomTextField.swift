@@ -9,11 +9,11 @@
 import UIKit
 import Foundation
 
-open class CustomTextField: AppearanceTextField {
+public class CustomTextField: AppearanceTextField {
     
-    var isEditable: Bool = true
+    public var isEditable: Bool = true
     
-    open override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         self.layer.cornerRadius = 5
@@ -22,21 +22,21 @@ open class CustomTextField: AppearanceTextField {
         self.updateBorderColor()
     }
         
-    override open func becomeFirstResponder() -> Bool {
+    public override func becomeFirstResponder() -> Bool {
         super.becomeFirstResponder()
         self.updateBorderColor()
         
         return true
     }
     
-    override open func resignFirstResponder() -> Bool {
+    public override func resignFirstResponder() -> Bool {
         let _ = super.resignFirstResponder()
         self.updateBorderColor()
         
         return true
     }
     
-    func updateBorderColor() {
+    public func updateBorderColor() {
         if isEditable {
             if isFirstResponder {
                 self.layer.borderColor = UIColor.systemRed.cgColor

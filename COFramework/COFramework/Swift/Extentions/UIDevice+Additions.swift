@@ -10,15 +10,15 @@ import UIKit
 
 extension UIDevice {
     
-    @objc static var isSimulator: Bool {
+    public static var isSimulator: Bool {
         return ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] != nil
     }
     
-    @objc var iPhone: Bool {
+    public var iPhone: Bool {
         return UIDevice().userInterfaceIdiom == .phone
     }
 	
-    enum ScreenType: String {
+    public enum ScreenType: String {
         case i35
         case i4
         case i47
@@ -28,11 +28,11 @@ extension UIDevice {
         case Unknown
     }
     
-    var bounds: CGRect {
+    public var bounds: CGRect {
         return UIScreen.main.bounds
     }
 	
-    var screenType: ScreenType? {
+    public var screenType: ScreenType? {
         switch UIScreen.main.nativeBounds.height {
         case 480, 960:
             return .i35
@@ -51,47 +51,47 @@ extension UIDevice {
         }
     }
 
-	func isScreen35or4inch() -> Bool {
+    public func isScreen35or4inch() -> Bool {
 		return isScreen35inch() || isScreen4inch()
 	}
 	
-    func isScreen35inch() -> Bool {
+    public func isScreen35inch() -> Bool {
         return UIDevice().screenType == .i35
     }
 	
-    func isScreen4inch() -> Bool {
+    public func isScreen4inch() -> Bool {
         return UIDevice().screenType == .i4
     }
 	
-    func isScreen47inch() -> Bool {
+    public func isScreen47inch() -> Bool {
         return UIDevice().screenType == .i47
     }
     
-    func isScreen55inch() -> Bool {
+    public func isScreen55inch() -> Bool {
         return UIDevice().screenType == .i55
     }
 	
-	func isIPhoneX() -> Bool {
+    public func isIPhoneX() -> Bool {
 		return UIDevice().screenType == .ix
 	}
 	
-    func isIPad() -> Bool {
+    public func isIPad() -> Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
     
-    func isIPadx() -> Bool {
+    public func isIPadx() -> Bool {
         return UIDevice().screenType == .iPadx
     }
     
-    func isIPhone() -> Bool {
+    public func isIPhone() -> Bool {
         return UIDevice.current.userInterfaceIdiom == .phone
     }
     
-    func preferredStyle() -> UIAlertController.Style {
+    public func preferredStyle() -> UIAlertController.Style {
         return UIDevice().isIPad() ? .alert : .actionSheet
     }
     
-    func isMac() -> Bool {
+    public func isMac() -> Bool {
         #if targetEnvironment(macCatalyst)
             return true
         #else
@@ -99,7 +99,7 @@ extension UIDevice {
         #endif
     }
     
-    func deviceInfo() -> String {
+    public func deviceInfo() -> String {
         if self.isMac() {
             return "Mac"
         } else if self.isIPhone() {

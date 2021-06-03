@@ -10,20 +10,20 @@ import UIKit
 
 extension UIScrollView {
 	
-	@objc var isAtTop: Bool {
+    public var isAtTop: Bool {
 		return contentOffset.y <= verticalOffsetForTop
 	}
 	
-	@objc var isAtBottom: Bool {
+    public var isAtBottom: Bool {
 		return contentOffset.y >= verticalOffsetForBottom
 	}
 	
-	@objc var verticalOffsetForTop: CGFloat {
+    public var verticalOffsetForTop: CGFloat {
 		let topInset = contentInset.top
 		return -topInset
 	}
 	
-	@objc var verticalOffsetForBottom: CGFloat {
+    public var verticalOffsetForBottom: CGFloat {
 		let scrollViewHeight = bounds.height
 		let scrollContentSizeHeight = contentSize.height
 		let bottomInset = contentInset.bottom

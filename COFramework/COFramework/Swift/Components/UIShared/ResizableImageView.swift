@@ -9,29 +9,29 @@
 import UIKit
 import Foundation
 
-class ResizableImageView: UIImageView, UIGestureRecognizerDelegate {
+public class ResizableImageView: UIImageView, UIGestureRecognizerDelegate {
     
     /// bindable objects to listen
-    static var imageTapped: Signal = Signal()
+    public static var imageTapped: Signal = Signal()
     
     var autoReset = false
     var originalImageCenter: CGPoint?
     var newScale: CGFloat = 0
     var simultaneousGesturesAllowed = true
     
-    override init(image: UIImage?) {
+    public override init(image: UIImage?) {
         super.init(image: image)
         
         self.addGestures()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         self.addGestures()
     }
     
-    func addGestures() {
+    public func addGestures() {
         let pinch = UIPinchGestureRecognizer(target: self, action: #selector(self.pinch(sender:)))
         pinch.delegate = self
         self.addGestureRecognizer(pinch)
@@ -48,7 +48,7 @@ class ResizableImageView: UIImageView, UIGestureRecognizerDelegate {
         self.isUserInteractionEnabled = true
     }
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return simultaneousGesturesAllowed
     }
     
@@ -56,7 +56,7 @@ class ResizableImageView: UIImageView, UIGestureRecognizerDelegate {
         ResizableImageView.imageTapped.notify()
     }
     
-    @objc func pan(sender: UIPanGestureRecognizer) {
+    @objc  func pan(sender: UIPanGestureRecognizer) {
         if sender.state == .began {
             if self.originalImageCenter == nil {
                 self.originalImageCenter = sender.view?.center
@@ -115,7 +115,7 @@ class ResizableImageView: UIImageView, UIGestureRecognizerDelegate {
         }
     }
     
-    @IBAction func resetImagePosition() {
+    @IBAction public func resetImagePosition() {
         guard let center = self.originalImageCenter else {return}
         
         UIView.animate(withDuration: 0.3, animations: {

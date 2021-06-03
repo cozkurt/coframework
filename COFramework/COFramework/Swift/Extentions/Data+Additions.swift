@@ -9,11 +9,11 @@
 import Foundation
 
 extension Data {
-    var hexString: String {
+    public var hexString: String {
         return map { String(format: "%02.2hhx", arguments: [$0]) }.joined()
     }
     
-    var toString: String {
+    public var toString: String {
         return map { String($0) }.joined()
     }
 }

@@ -12,11 +12,11 @@ import Foundation
 
 extension MKMapView {
 
-    var topCenterCoordinate: CLLocationCoordinate2D {
+    public var topCenterCoordinate: CLLocationCoordinate2D {
         return self.convert(CGPoint(x: self.frame.size.width / 2.0, y: 0), toCoordinateFrom: self)
     }
 
-    var currentRadius: Double {
+    public var currentRadius: Double {
         let centerLocation = CLLocation(latitude: self.centerCoordinate.latitude, longitude: self.centerCoordinate.longitude)
         let topCenterLocation = CLLocation(latitude: self.topCenterCoordinate.latitude, longitude: self.topCenterCoordinate.longitude)
         

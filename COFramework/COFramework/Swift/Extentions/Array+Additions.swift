@@ -9,7 +9,7 @@
 import Foundation
 
 extension Array {
-	func grouped<T>(by criteria: (Element) -> T) -> [T: [Element]] {
+    public func grouped<T>(by criteria: (Element) -> T) -> [T: [Element]] {
 		var groups = [T: [Element]]()
 		for element in self {
 			let key = criteria(element)
@@ -21,7 +21,7 @@ extension Array {
 		return groups
 	}
     
-    func unique<T:Hashable>(map: ((Element) -> (T)))  -> [Element] {
+    public func unique<T:Hashable>(map: ((Element) -> (T)))  -> [Element] {
         var set = Set<T>()
         var arrayOrdered = [Element]()
         for value in self {
@@ -43,7 +43,7 @@ extension Array where Element : Equatable {
 }
 
 extension Array where Element == Int {
-    var average: Int {
+    public var average: Int {
         return isEmpty ? 0 : Int(reduce(0, +)) / Int(count)
     }
 }

@@ -30,7 +30,7 @@ open class AdvancedPageViewController: UIViewController {
 
     // MARK: - Public Methods
     
-    func setUpViewControllers() {
+    public func setUpViewControllers() {
         
         if self.viewControllers.count == 0 {
             return
@@ -55,7 +55,7 @@ open class AdvancedPageViewController: UIViewController {
         self.pageControl?.currentPage = 0
     }
     
-    func pagesWithImages(_ imagesList: [UIImage]?) {
+    public func pagesWithImages(_ imagesList: [UIImage]?) {
         
         guard let imagesList = imagesList else {
             return
@@ -75,7 +75,7 @@ open class AdvancedPageViewController: UIViewController {
         self.setUpViewControllers()
     }
     
-    func pagesWithControllers(_ controllersList: [String]?) {
+    public func pagesWithControllers(_ controllersList: [String]?) {
         
         guard let controllersList = controllersList else {
             return
@@ -97,7 +97,7 @@ open class AdvancedPageViewController: UIViewController {
     
     // filename, instanceName, startEventName
     
-    func pagesWithFlowControllers(_ flowControllersList: [(String,String,String)]?) {
+    public func pagesWithFlowControllers(_ flowControllersList: [(String,String,String)]?) {
         
         guard let flowControllersList = flowControllersList else {
             return
@@ -199,7 +199,7 @@ open class AdvancedPageViewController: UIViewController {
         return controller
     }
     
-    func slideToTab(tabName: String?) {
+    public func slideToTab(tabName: String?) {
         
         let index = self.flowControllersList?.firstIndex(where: { item -> Bool in
             return item.tabName == tabName
@@ -210,7 +210,7 @@ open class AdvancedPageViewController: UIViewController {
         }
     }
     
-    func slideToPage(index: Int) {
+    public func slideToPage(index: Int) {
         var count = 0
         
         if let controllers = controllersList {

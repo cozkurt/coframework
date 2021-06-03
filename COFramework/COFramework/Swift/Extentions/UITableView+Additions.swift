@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 extension UITableView {
-	@objc func addColorToBottom(color: UIColor) {
+    public func addColorToBottom(color: UIColor) {
         let tag = 9000009
 		
 		if self.tableFooterView?.viewWithTag(tag) != nil {
@@ -32,22 +32,22 @@ extension UITableView {
 		self.tableFooterView?.addSubview(bgView)
 	}
     
-    @objc func addFooter(height: CGFloat = 0) {
+    public func addFooter(height: CGFloat = 0) {
         self.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: height))
     }
     
-    @objc func addEmptyFooter() {
+    public func addEmptyFooter() {
         self.tableFooterView = UIView(frame: CGRect.zero)
     }
     
-    @objc func removeFooter() {
+    public func removeFooter() {
         let tag = 9000009
         if self.tableFooterView?.viewWithTag(tag) != nil {
             self.tableFooterView?.viewWithTag(tag)?.removeFromSuperview()
         }
     }
     
-    func scrollToBottom(animated: Bool = true) {
+    public func scrollToBottom(animated: Bool = true) {
         if self.visibleCells.count == 0 { return }
         
         DispatchQueue.main.async {
@@ -63,7 +63,7 @@ extension UITableView {
         }
     }
     
-    func scrollToTop(animated: Bool = false) {
+    public func scrollToTop(animated: Bool = false) {
         if self.visibleCells.count == 0 { return }
         
         DispatchQueue.main.async {
@@ -75,21 +75,21 @@ extension UITableView {
 
 extension UITableView {
     
-    func setUpRefreshing(_ object: Any, _ refreshText:String = "", handleRefresh: Selector?) {
+    public func setUpRefreshing(_ object: Any, _ refreshText:String = "", handleRefresh: Selector?) {
         if refreshControl == nil {
             addRefreshUI(object, refreshText, handleRefresh)
         }
     }
     
-    func endRefreshing() {
+    public func endRefreshing() {
         self.refreshControl?.endRefreshing()
     }
     
-    func sendValueChangeAction() {
+    public func sendValueChangeAction() {
         self.refreshControl?.sendActions(for: .valueChanged)
     }
     
-    func addRefreshUI(_ object: Any, _ refreshText:String, _ handleRefresh: Selector?) {
+    public func addRefreshUI(_ object: Any, _ refreshText:String, _ handleRefresh: Selector?) {
         let refreshControl = UIRefreshControl()
         
         if let handleRefresh = handleRefresh {

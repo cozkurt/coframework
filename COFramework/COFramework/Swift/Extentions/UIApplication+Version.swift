@@ -9,14 +9,14 @@
 import UIKit
 
 extension UIApplication {
-    @objc var shortVersion: String {
+    public var shortVersion: String {
         guard let version =
             Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
             else { return "" }
         return version
     }
     
-    @objc var build: String {
+    public var build: String {
         guard let build =
             Bundle.main.infoDictionary?["CFBundleVersion"] as? String
             else { return "" }

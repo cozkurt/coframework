@@ -9,7 +9,7 @@
 import UIKit
 
 extension CGPoint {
-    func intersects(to: CGPoint, delta: CGFloat) -> Bool {
+    public func intersects(to: CGPoint, delta: CGFloat) -> Bool {
         if abs(self.x - to.x) < delta && abs(self.y - to.y) < delta {
             return true
         } else {

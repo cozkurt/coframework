@@ -11,7 +11,7 @@ import Foundation
 
 extension NSObject {
     
-    func synchronized<T>(_ lockObj: Any, closure: () throws -> T) rethrows -> T
+    public func synchronized<T>(_ lockObj: Any, closure: () throws -> T) rethrows -> T
     {
         objc_sync_enter(lockObj)
         

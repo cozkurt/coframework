@@ -15,7 +15,7 @@ extension UIColor {
      
      - parameter hex: Six-digit hexadecimal value.
      */
-    @objc public convenience init(hex: UInt32, alpha: CGFloat = 1) {
+    public convenience init(hex: UInt32, alpha: CGFloat = 1) {
         let divisor = CGFloat(255)
         let red     = CGFloat((hex & 0xFF0000) >> 16) / divisor
         let green   = CGFloat((hex & 0x00FF00) >>  8) / divisor
@@ -29,7 +29,7 @@ extension UIColor {
 	- parameter rgb: RGB tuple
 	-returns: an UIColor instance that represent the required color
 	*/
-	convenience init(_ rgb: (Int, Int, Int)) {
+    public convenience init(_ rgb: (Int, Int, Int)) {
 		self.init(
 			red: CGFloat(rgb.0) / 255.0,
 			green: CGFloat(rgb.1) / 255.0,
@@ -44,7 +44,7 @@ extension UIColor {
 	- parameter percent: lighting percent percentage
 	- returns: lighter UIColor
 	*/
-	@objc func lighterColor(_ percent : Double) -> UIColor {
+    public  func lighterColor(_ percent : Double) -> UIColor {
 		return colorWithBrightnessFactor(CGFloat(1 + percent));
 	}
 	
@@ -54,7 +54,7 @@ extension UIColor {
 	- parameter percent: darking percent percentage
 	- returns: darker UIColor
 	*/
-	@objc func darkerColor(_ percent : Double) -> UIColor {
+    public  func darkerColor(_ percent : Double) -> UIColor {
 		return colorWithBrightnessFactor(CGFloat(1 - percent));
 	}
 	
@@ -64,7 +64,7 @@ extension UIColor {
 	- parameter factor: brightness factor
 	- returns: modified color
 	*/
-	@objc func colorWithBrightnessFactor(_ factor: CGFloat) -> UIColor {
+    public  func colorWithBrightnessFactor(_ factor: CGFloat) -> UIColor {
 		var hue : CGFloat = 0
 		var saturation : CGFloat = 0
 		var brightness : CGFloat = 0

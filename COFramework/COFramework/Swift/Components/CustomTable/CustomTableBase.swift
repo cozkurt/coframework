@@ -36,7 +36,7 @@ public protocol CustomHeaderTapProtocol {
 open class CustomTableBase: UIViewController {
     
     // MARK: IBOutlet Properties
-    @IBOutlet weak open var tableView: UITableView!
+    @IBOutlet weak public var tableView: UITableView!
     
     // MARK: Variables
     
@@ -47,13 +47,13 @@ open class CustomTableBase: UIViewController {
     public static var tableViewCellEndEvent: SignalData<(String)> = SignalData()
     
     /// Section configuration from pList
-    var sectionDescriptors: [SectionDescriptor] = []
+    public var sectionDescriptors: [SectionDescriptor] = []
     
     /// Buffer registered cells
-    var cellBuffer: [String: UITableViewCell] = [:]
+    public var cellBuffer: [String: UITableViewCell] = [:]
     
     /// check for cell initialization
-    var cellInitBuffer: [String] = []
+    public var cellInitBuffer: [String] = []
     
     // MARK: UIViewController Lifecycle
     
@@ -85,7 +85,7 @@ open class CustomTableBase: UIViewController {
         // override
     }
     
-    open func resetBuffers() {
+    public func resetBuffers() {
         // erase tableview cell cache
         self.cellBuffer.removeAll()
         self.cellInitBuffer.removeAll()

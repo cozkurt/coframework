@@ -10,7 +10,7 @@ import Foundation
 
 extension DateFormatter {
     
-    @objc func isWithin24hrs(offlineSince: String) -> Bool {
+    public func isWithin24hrs(offlineSince: String) -> Bool {
         self.timeZone = TimeZone(abbreviation: "UTC")!
         self.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
       

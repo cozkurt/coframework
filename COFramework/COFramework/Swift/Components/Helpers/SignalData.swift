@@ -20,7 +20,9 @@ open class SignalData<T> {
     
     private var listeners = [String: completed]()
     
-    convenience init(_ value: T?) {
+    public init() {}
+    
+    public convenience init(_ value: T?) {
         self.init()
         self.value = value
     }

@@ -11,14 +11,14 @@ import UIKit
 import CloudKit
 
 extension CKAsset {
-    convenience init(image: UIImage, size: CGFloat, compression: CGFloat) {
+    public convenience init(image: UIImage, size: CGFloat, compression: CGFloat) {
         let image = image.resizeWithScaleAspectFitMode(to: size, resizeFramework: .accelerate) ?? UIImage()
 
         let fileURL = ImageHelper.saveToDisk(image: image, compression: compression)
         self.init(fileURL: fileURL)
     }
     
-    var image: UIImage? {
+    public var image: UIImage? {
         guard let fileURL = fileURL, let data = try? Data(contentsOf: fileURL),
             let image = UIImage(data: data) else {
                 return nil

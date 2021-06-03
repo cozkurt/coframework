@@ -10,7 +10,7 @@ import UIKit
 
 open class CustomTextView: AppearanceTextView {
     
-    @IBOutlet var placeHolderLabel: UILabel?
+    @IBOutlet public var placeHolderLabel: UILabel?
     
     open override func layoutSubviews() {
         super.layoutSubviews()
@@ -35,7 +35,7 @@ open class CustomTextView: AppearanceTextView {
         return true
     }
     
-    func updateBorderColor() {
+    public func updateBorderColor() {
         if isEditable {
             if isFirstResponder {
                 self.layer.borderColor = UIColor.systemRed.cgColor

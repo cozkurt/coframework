@@ -8,9 +8,9 @@
 
 import UIKit
 
-open class DynamicCellViewController: DynamicActionSheet {
+public class DynamicCellViewController: DynamicActionSheet {
 
-    open override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         DynamicCellController.sharedInstance.dynamicCellViewController = self
@@ -18,13 +18,13 @@ open class DynamicCellViewController: DynamicActionSheet {
         self.addTapGesture()
     }
     
-    func addTapGesture() {
+    public func addTapGesture() {
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(dismissView))
         self.blurView.addGestureRecognizer(tapGestureRecognizer)
         self.blurView.isUserInteractionEnabled = true
     }
     
-    open override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // configure keyboard only for editing
@@ -35,7 +35,7 @@ open class DynamicCellViewController: DynamicActionSheet {
         self.keyboardConfigure()
     }
     
-    @IBAction func dismissView() {
+    @IBAction public func dismissView() {
         if DynamicCellController.sharedInstance.tapToDismiss {
             DynamicCellController.sharedInstance.dismissViewController()
         }

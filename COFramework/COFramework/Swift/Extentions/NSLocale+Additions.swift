@@ -12,7 +12,7 @@ extension NSLocale {
     
     /// Is Device use Turkish language
     
-    static func isTurkish() -> Bool {
+    public static func isTurkish() -> Bool {
         return self.preferredLanguages[0].range(of:"tr") != nil
     }
 }

@@ -11,60 +11,60 @@ import Foundation
 
 extension String {
     
-    func trimWhitespace() -> String {
+    public func trimWhitespace() -> String {
         return self.replacingOccurrences(of: " ", with: "")
     }
     
-    func indexOf(_ substring: String) -> Int? {
+    public func indexOf(_ substring: String) -> Int? {
         if let range = range(of: substring) {
             return self.distance(from: startIndex, to: range.lowerBound)
         }
         return nil
     }
     
-    func substring(_ startIndex: Int, length: Int) -> String {
+    public func substring(_ startIndex: Int, length: Int) -> String {
         let start = self.index(self.startIndex, offsetBy: startIndex)
         let end = self.index(self.startIndex, offsetBy: startIndex + length)
         return String(self[start..<end])
     }
     
-    subscript(i: Int) -> Character {
+    public subscript(i: Int) -> Character {
         get {
             let index = self.index(self.startIndex, offsetBy: i)
             return self[index]
         }
     }
     
-    func split(_ separator: Character) -> [String] {
+    public func split(_ separator: Character) -> [String] {
         return self.split{$0 == separator}.map(String.init)
     }
     
-    func doubleValue() -> Double? {
+    public func doubleValue() -> Double? {
         let result = self.filter("0123456789.,".contains)
         
         return Double(result)
     }
 	
-    var firstWord: String {
+    public var firstWord: String {
         return self.components(separatedBy: " ").first ?? ""
     }
     
-    var lastWord: String {
+    public var lastWord: String {
         return self.components(separatedBy: " ").last ?? ""
     }
     
-    var hasValidEmail: Bool {
+    public var hasValidEmail: Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: self)
     }
     
-    var hasValidCharacters: Bool {
+    public var hasValidCharacters: Bool {
         return hasValidEmojiCharacters || hasValidPasswordCharacters
     }
     
-    var hasValidEmojiCharacters: Bool {
+    public var hasValidEmojiCharacters: Bool {
         for scalar in unicodeScalars {
             switch scalar.value {
             case
@@ -92,7 +92,7 @@ extension String {
         return false
     }
     
-    var hasValidPasswordCharacters: Bool {
+    public var hasValidPasswordCharacters: Bool {
         for scalar in unicodeScalars {
             switch scalar.value {
             case
@@ -105,7 +105,7 @@ extension String {
         return false
     }
 	
-	var passwordStrength: Int {
+    public var passwordStrength: Int {
 		// return 0: weak, 1: medium, 2: strong
 		// minimum 8 characters
 		
@@ -137,7 +137,7 @@ extension String {
 		return (strength == 4) ? 2 : (strength == 3) ? 1 : 0
 	}
     
-    func relativeDateString() -> String {
+    public func relativeDateString() -> String {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -152,15 +152,15 @@ extension String {
     }
 	
 	// Version compare
-	func compareTo(_ version: String) -> ComparisonResult {
+    public func compareTo(_ version: String) -> ComparisonResult {
 		return self.compare(version, options: NSString.CompareOptions.numeric, range: nil, locale: nil)
 	}
 	
-	func newerThan(_ version: String) -> Bool {
+    public func newerThan(_ version: String) -> Bool {
 		return (self.compareTo(version) == .orderedDescending)
 	}
 	
-	func truncate(_ length: Int, trailing: String? = "\u{2026}") -> String {
+    public func truncate(_ length: Int, trailing: String? = "\u{2026}") -> String {
 		if self.count > length {
 			return self.prefix(upTo: self.index(self.startIndex, offsetBy: length)) + (trailing ?? "")
 		} else {
@@ -168,7 +168,7 @@ extension String {
 		}
 	}
     
-    var capitalizeFirstWord: String {
+    public var capitalizeFirstWord: String {
         if self.count == 0 {
             return self
         }
@@ -176,7 +176,7 @@ extension String {
         return String(self[self.startIndex]).localizedCapitalized + String(self.dropFirst())
     }
     
-    var capitalizeFirstLetter: String {
+    public var capitalizeFirstLetter: String {
         if self.count == 0 {
             return self
         }
@@ -184,7 +184,7 @@ extension String {
         return String(self[self.startIndex]).localizedCapitalized
     }
     
-    var htmlToAttributedString: NSMutableAttributedString? {
+    public var htmlToAttributedString: NSMutableAttributedString? {
         guard let data = data(using: .utf8) else { return NSMutableAttributedString() }
         do {
             return try NSMutableAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue], documentAttributes: nil)
@@ -193,11 +193,11 @@ extension String {
         }
     }
     
-    var htmlToString: String {
+    public var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
     }
     
-    func limit(size: Int) -> String {
+    public func limit(size: Int) -> String {
         var locationName = String(self.prefix(size))
         if self.count > size {
             locationName += "..."
@@ -206,7 +206,7 @@ extension String {
         return locationName
     }
 
-	func stringSize(withFontName fontName: String, size: CGFloat) -> CGSize {
+    public func stringSize(withFontName fontName: String, size: CGFloat) -> CGSize {
 
 		var font: UIFont?
 		
@@ -223,7 +223,7 @@ extension String {
 		}
 	}
     
-    func markdownStyleLinks() -> [(String, String)] {
+    public func markdownStyleLinks() -> [(String, String)] {
         var inLink:Bool = false
         var inLinkText:Bool = false
         
@@ -264,7 +264,7 @@ extension String {
         return links
     }
     
-    func validateAsEntry() -> Bool {
+    public func validateAsEntry() -> Bool {
         if (self.isEmpty) {
             return false
         }
@@ -276,7 +276,7 @@ extension String {
         return self[justSpacesRange] != self
     }
     
-    func asFontWeight() -> UIFont.Weight {
+    public func asFontWeight() -> UIFont.Weight {
     
         switch self {
             

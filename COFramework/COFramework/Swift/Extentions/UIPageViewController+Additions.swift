@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIPageViewController {
-    var isPagingEnabled: Bool {
+    public var isPagingEnabled: Bool {
         get {
             var isEnabled: Bool = true
             for view in view.subviews {

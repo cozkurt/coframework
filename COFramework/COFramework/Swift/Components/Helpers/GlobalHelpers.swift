@@ -15,7 +15,7 @@ import Foundation
  - parameter wait:    wait time before running the closure
  - parameter closure: closure to be run
  */
-func run(_ queue: DispatchQueue = DispatchQueue.main, after wait: TimeInterval? = nil, closure: @escaping () -> Void) {
+public func run(_ queue: DispatchQueue = DispatchQueue.main, after wait: TimeInterval? = nil, closure: @escaping () -> Void) {
 
     if let wait = wait {
         queue.asyncAfter(deadline: DispatchTime.now() + Double((Int64)(wait * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
@@ -30,7 +30,7 @@ func run(_ queue: DispatchQueue = DispatchQueue.main, after wait: TimeInterval? 
  - parameter wait:    wait time before running the closure
  - parameter closure: closure to be run
  */
-func runOnMainQueue(after wait: TimeInterval? = nil, closure: @escaping () -> Void) {
+public func runOnMainQueue(after wait: TimeInterval? = nil, closure: @escaping () -> Void) {
     run(after: wait, closure: closure)
 }
 
@@ -39,7 +39,7 @@ func runOnMainQueue(after wait: TimeInterval? = nil, closure: @escaping () -> Vo
 
  - parameter closure: closure to be run
  */
-func runInBackground(_ closure: @escaping () -> Void) {
+public func runInBackground(_ closure: @escaping () -> Void) {
     run(DispatchQueue.global(qos: DispatchQoS.QoSClass.background), closure: closure)
 }
 
@@ -48,7 +48,7 @@ Helper method to run syncronized block
 
 - parameter closure: closure to be run
 */
-func synchronized(_ lock: Any, closure: () -> ()) {
+public func synchronized(_ lock: Any, closure: () -> ()) {
         objc_sync_enter(lock)
         defer { objc_sync_exit(lock) }
         closure()

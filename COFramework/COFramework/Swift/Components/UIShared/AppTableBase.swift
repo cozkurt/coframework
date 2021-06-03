@@ -16,27 +16,27 @@ public enum ScrollDirection {
 
 open class AppTableBase: CustomTableBase {
     
-    @IBOutlet var topMenuView: UIView!
-    @IBOutlet var leftButton: UIButton!
-    @IBOutlet var rightButton: UIButton!
-    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet public var topMenuView: UIView!
+    @IBOutlet public var leftButton: UIButton!
+    @IBOutlet public var rightButton: UIButton!
+    @IBOutlet public var loadingIndicator: UIActivityIndicatorView!
     
-    var addBottomColor = true
-    var scrollToDismiss = true
+    public var addBottomColor = true
+    public var scrollToDismiss = true
     
     // flag for use to control content inset and top menu view
-    var directionUpdates: Bool = false
+    public var directionUpdates: Bool = false
     
     // (key: nibName, scrollDirection)
-    var lastSrollingDirection: ScrollDirection = .idle
+    public var lastSrollingDirection: ScrollDirection = .idle
     
     // used by tracking keyboard show/hide
-    var isKeyboardHidden: Bool = true
-    var isKeyboardHidden2: Bool = true
+    public var isKeyboardHidden: Bool = true
+    public var isKeyboardHidden2: Bool = true
     
     // save previous content inset/constant
-    var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
-    var previousConstantValue: CGFloat = 0
+    public var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
+    public var previousConstantValue: CGFloat = 0
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ open class AppTableBase: CustomTableBase {
     // configure keyboard only when editing
     // otherwise it's effection tapToDismiss whne using as actionsheet
     
-    func keyboardConfigure(_ cancelsTouchesInView: Bool = false) {
+    public func keyboardConfigure(_ cancelsTouchesInView: Bool = false) {
         // add auto dismiss keyboard
         self.hideKeyboardOnTap(cancelsTouchesInView)
         
@@ -73,7 +73,7 @@ open class AppTableBase: CustomTableBase {
     // position depends on scrolling up or down
     // with given yDelta o change origin.y
     
-    func topMenuScrollUpdate() {
+    open func topMenuScrollUpdate() {
         
         guard let tableView = self.tableView, let topMenuView = self.topMenuView else {
             return
@@ -123,18 +123,18 @@ open class AppTableBase: CustomTableBase {
     }
     
     // refresh controller handler
-    @objc func handleRefresh(_ sender: Any) {
+    func handleRefresh(_ sender: Any) {
         // override
     }
     
-    func showLoadingIndicator() {
+    public func showLoadingIndicator() {
         runOnMainQueue {
             self.rightButton?.isHidden = true
             self.loadingIndicator?.startAnimating()
         }
     }
     
-    func hideLoadingIndicator() {
+    public func hideLoadingIndicator() {
         runOnMainQueue {
             self.rightButton?.isHidden = false
             self.loadingIndicator?.stopAnimating()
@@ -146,7 +146,7 @@ open class AppTableBase: CustomTableBase {
 
 extension AppTableBase {
     
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+    public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
 
         guard let nibName = self.nibName, self.directionUpdates == true else {
             return
@@ -172,7 +172,7 @@ extension AppTableBase {
         }
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let percentage = scrollView.frame.height * 0.2
 
         if self.scrollToDismiss && scrollView.contentOffset.y < -percentage {
@@ -183,17 +183,17 @@ extension AppTableBase {
 
 extension AppTableBase {
 
-    func hideKeyboardOnTap(_ cancelsTouchesInView: Bool = false) {
+    public func hideKeyboardOnTap(_ cancelsTouchesInView: Bool = false) {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.closeKeyboard))
         tap.cancelsTouchesInView = cancelsTouchesInView
         view.addGestureRecognizer(tap)
     }
 
-    @objc func closeKeyboard() {
+    @objc public func closeKeyboard() {
         view.endEditing(true)
     }
     
-    func positionWithKeyboard(_ scrollView: UIScrollView) {
+    public func positionWithKeyboard(_ scrollView: UIScrollView) {
         NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillShowNotification.rawValue) { (notification) in
             
             if !self.isKeyboardHidden { return }
@@ -228,7 +228,7 @@ extension AppTableBase {
         }
     }
     
-    func positionWithKeyboard(_ constraint: NSLayoutConstraint) {
+    public func positionWithKeyboard(_ constraint: NSLayoutConstraint) {
         NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillShowNotification.rawValue) { (notification) in
             
             if !self.isKeyboardHidden2 { return }
@@ -260,7 +260,7 @@ extension AppTableBase {
         }
     }
     
-    func keyboardHeight(notification: Foundation.Notification) -> CGFloat {
+    public func keyboardHeight(notification: Foundation.Notification) -> CGFloat {
         let userInfo = notification.userInfo!
         let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey]! as AnyObject).cgRectValue.size
         let keyboardHeight = keyboardSize.height + (UIDevice().isIPad() ? 30.0 : 0.0)
@@ -269,7 +269,7 @@ extension AppTableBase {
     }
     
     // helper method to find space to window bottom
-    func bottomSpaceOfViewController() -> CGFloat {
+    public func bottomSpaceOfViewController() -> CGFloat {
         let viewHeight = self.view.bounds.size.height
         let windowHeight = UIDevice().bounds.height
         

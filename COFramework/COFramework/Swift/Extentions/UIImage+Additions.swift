@@ -13,7 +13,7 @@ import Accelerate
 
 extension UIImage {
     
-    func isPortrait() -> Bool {
+    public func isPortrait() -> Bool {
         return self.size.height > self.size.width
     }
 
@@ -27,7 +27,7 @@ extension UIImage {
     /// - Parameter resizeFramework: Technique for image resizing: UIKit / CoreImage / CoreGraphics / ImageIO / Accelerate.
     /// - Returns: Resized image.
 
-    func resizeWithScaleAspectFitMode(to dimension: CGFloat, resizeFramework: ResizeFramework = .coreGraphics) -> UIImage? {
+    public func resizeWithScaleAspectFitMode(to dimension: CGFloat, resizeFramework: ResizeFramework = .coreGraphics) -> UIImage? {
 
         if max(size.width, size.height) <= dimension { return self }
 
@@ -70,7 +70,7 @@ extension UIImage {
     /// - Parameter newSize: Size of the image output.
     /// - Returns: Resized image.
     
-    private func resizeWithUIKit(to newSize: CGSize?) -> UIImage? {
+    public func resizeWithUIKit(to newSize: CGSize?) -> UIImage? {
         guard let newSize = newSize else { return nil }
         
         UIGraphicsBeginImageContextWithOptions(newSize, true, 1.0)
@@ -87,7 +87,7 @@ extension UIImage {
     /// - Returns: Resized image.
     /// https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
     
-    private func resizeWithCoreImage(to newSize: CGSize?) -> UIImage? {
+    public func resizeWithCoreImage(to newSize: CGSize?) -> UIImage? {
         guard let newSize = newSize else { return nil }
         guard let cgImage = cgImage, let filter = CIFilter(name: "CILanczosScaleTransform") else { return nil }
 
@@ -110,7 +110,7 @@ extension UIImage {
     /// - Parameter newSize: Size of the image output.
     /// - Returns: Resized image.
     
-    private func resizeWithCoreGraphics(to newSize: CGSize?) -> UIImage? {
+    public func resizeWithCoreGraphics(to newSize: CGSize?) -> UIImage? {
         guard let newSize = newSize else { return nil }
         guard let cgImage = cgImage, let colorSpace = cgImage.colorSpace else { return nil }
 
@@ -138,7 +138,7 @@ extension UIImage {
     /// - Parameter newSize: Size of the image output.
     /// - Returns: Resized image.
     
-    private func resizeWithImageIO(to newSize: CGSize?) -> UIImage? {
+    public func resizeWithImageIO(to newSize: CGSize?) -> UIImage? {
         guard let newSize = newSize else { return nil }
         var resultImage = self
 
@@ -163,7 +163,7 @@ extension UIImage {
     /// - Parameter newSize: Size of the image output.
     /// - Returns: Resized image.
     
-    private func resizeWithAccelerate(to newSize: CGSize?) -> UIImage? {
+    public func resizeWithAccelerate(to newSize: CGSize?) -> UIImage? {
         guard let newSize = newSize else { return nil }
         var resultImage = self
 
@@ -218,7 +218,7 @@ extension UIImage {
     /// - Parameter degree: rotate degree
     /// - Returns: Resized image.
     
-    func imageRotatedByDegrees(deg degrees: CGFloat) -> UIImage {
+    public func imageRotatedByDegrees(deg degrees: CGFloat) -> UIImage {
 
         UIGraphicsBeginImageContext(CGSize(width: self.size.height, height: self.size.width))
 
@@ -246,7 +246,7 @@ extension UIImage {
 
 extension UIImage {
 
-    func pixelBuffer() -> CVPixelBuffer? {
+    public func pixelBuffer() -> CVPixelBuffer? {
 
         let width = Int(self.size.width)
         let height = Int(self.size.height)

@@ -10,14 +10,14 @@ import UIKit
 
 extension UIFont {
     
-	@objc func mediumWeight() -> UIFont? {
+    public func mediumWeight() -> UIFont? {
 		if let fontName = self.fontName.split(separator: "-").first {
 			return UIFont(name: "\(fontName)-Medium", size: self.pointSize)
 		}
 		return nil
 	}
 	
-	@objc func regularWeight() -> UIFont? {
+    public func regularWeight() -> UIFont? {
 		if let fontName = self.fontName.split(separator: "-").first {
 			return UIFont(name: "\(fontName)", size: self.pointSize)
 		}
@@ -25,7 +25,7 @@ extension UIFont {
 	}
 	
 	// For Theme use
-    class func defaultFontWithSize(fontDefault: String, ofSize fontSize: CGFloat, andWeight weight: UIFont.Weight) -> UIFont? {
+    public class func defaultFontWithSize(fontDefault: String, ofSize fontSize: CGFloat, andWeight weight: UIFont.Weight) -> UIFont? {
         
 		if fontDefault.lowercased() == "system" {
 			return UIFont.systemFont(ofSize: fontSize, weight: weight)
@@ -49,13 +49,14 @@ extension UIFont {
         // This is custom font mapping if
         // font family is not the same
         
-        return UIFont(name: "\(fontDefault)-\(fontWeight)", size: fontSize)	}
+        return UIFont(name: "\(fontDefault)-\(fontWeight)", size: fontSize)
+    }
     
-    func appearanceFont(fontDefault: String, size: CGFloat) -> UIFont? {
+    public func appearanceFont(fontDefault: String, size: CGFloat) -> UIFont? {
         return UIFont.defaultFontWithSize(fontDefault: fontDefault, ofSize: size, andWeight: self.weight())
     }
 	
-	func weight() -> UIFont.Weight {
+    public func weight() -> UIFont.Weight {
 		
 		if let fontWeight = self.fontDescriptor.object(forKey: UIFontDescriptor.AttributeName.face) as? String {
             
