@@ -10,19 +10,19 @@ import UIKit
 
 open class AdvancedPageViewController: UIViewController {
 
-    @IBOutlet internal weak var pageView: UIView!
-    @IBOutlet internal weak var pageControl: UIPageControl!
+    @IBOutlet public weak var pageView: UIView!
+    @IBOutlet public weak var pageControl: UIPageControl!
     
-    var pageViewController: UIPageViewController!
+    public var pageViewController: UIPageViewController!
     
-    var imagesList: [UIImage]?
-    var controllersList: [String]?
-    var flowControllersList: [(flowname: String, tabName: String, eventName: String)]?
+    public var imagesList: [UIImage]?
+    public var controllersList: [String]?
+    public var flowControllersList: [(flowname: String, tabName: String, eventName: String)]?
     
     var currentPageIndex: Int = 0
     
-    var viewControllers: [UIViewController] = []
-    var flowControllers: [UIFlowController] = []
+    public var viewControllers: [UIViewController] = []
+    public var flowControllers: [UIFlowController] = []
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
