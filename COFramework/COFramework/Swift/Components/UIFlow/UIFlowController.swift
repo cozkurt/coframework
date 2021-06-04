@@ -16,25 +16,25 @@ public protocol UIFlowProtocol {
     func userInfoHandler(_ userInfo: [AnyHashable: Any]?)
 }
 
-open class UIFlowController: NSObject {
+public class UIFlowController {
     
     /// Navigation Controller
-    @objc var navigationController: UINavigationController?
+    var navigationController: UINavigationController?
     
     /// Parent view to be added subView
-    @objc var parentView: UIView?
+    var parentView: UIView?
     
     /// instanceName of current Flow Controller
-    @objc var instanceName: String = ""
+    var instanceName: String = ""
     
     /// Models in array
     var flowModels = [UIFlowModel]()
     
     // MARK: - Init Methods
     
-    @objc init(parentView: UIView, fileName:String?, instanceName: String?, startEventName: String?) {
-        
-        super.init()
+    public init() {}
+    
+    public init(parentView: UIView, fileName:String?, instanceName: String?, startEventName: String?) {
         
         // assign parent view
         self.parentView = parentView
@@ -883,7 +883,7 @@ open class UIFlowController: NSObject {
             return nil
         }
         
-        return UIFlowController.loadViewControllerFromNib(viewControllerName)
+        return self.loadViewControllerFromNib(viewControllerName)
     }
     
     /**
@@ -894,43 +894,43 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    static func loadViewControllerFromNib(_ viewControllerName: String) -> UIViewController? {
+    public func loadViewControllerFromNib(_ viewControllerName: String) -> UIViewController? {
         
-        let viewController = UIFlowController.viewControllerNameSeperate(viewControllerName: viewControllerName).1
+        let viewController = self.viewControllerNameSeperate(viewControllerName: viewControllerName).1
         
         if UIDevice().isMac() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_mac", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_mac")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_mac")
             }
         } else if UIDevice().isIPadx() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_iPadx", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
             }
         } else if UIDevice().isScreen35inch() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_35", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_35")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_35")
             }
         } else if UIDevice().isScreen4inch() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_4", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_4")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_4")
             } else if let _ = Bundle.main.path(forResource: "\(viewController)_35", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_35")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_35")
             }
         } else if UIDevice().isScreen47inch() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_47", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_47")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_47")
             }
         } else if UIDevice().isScreen55inch() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_55", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_55")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_55")
             }
         } else if UIDevice().isIPhoneX() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_x", ofType: "nib") {
-                return UIFlowController.viewController(viewControllerName, nibName: "\(viewController)_x")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_x")
             }
         }
         
-        return UIFlowController.viewController(viewControllerName)
+        return self.viewController(viewControllerName)
     }
     
     /**
@@ -941,7 +941,7 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    static func viewControllerNameSeperate(viewControllerName: String) -> (String, String) {
+    public func viewControllerNameSeperate(viewControllerName: String) -> (String, String) {
         let split = viewControllerName.components(separatedBy: ".")
         
         if split.count == 0 {
@@ -959,7 +959,7 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    static func viewController(_ className : String) -> UIViewController? {
+    public func viewController(_ className : String) -> UIViewController? {
         
         var className = className
         let split = className.components(separatedBy: ".")
@@ -991,7 +991,7 @@ open class UIFlowController: NSObject {
      - return: UIViewController
      */
     
-    static func viewController(_ className : String, nibName: String) -> UIViewController? {
+    public func viewController(_ className : String, nibName: String) -> UIViewController? {
         
         var className = className
         let split = className.components(separatedBy: ".")

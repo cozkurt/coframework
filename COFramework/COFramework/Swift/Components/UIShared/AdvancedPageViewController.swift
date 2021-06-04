@@ -152,7 +152,7 @@ open class AdvancedPageViewController: UIViewController {
             return nil
         }
         
-        let controller = UIFlowController.loadViewControllerFromNib(controllersList[index])
+        let controller = UIFlowController().loadViewControllerFromNib(controllersList[index])
         
         controller?.view.frame = self.pageView.bounds
         controller?.view.tag = index
