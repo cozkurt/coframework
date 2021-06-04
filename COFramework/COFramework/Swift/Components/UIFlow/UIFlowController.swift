@@ -968,7 +968,7 @@ open class UIFlowController: NSObject {
         // if module name not defined then grab fom class
         //
         
-        if split.count == 0 {
+        if split.count == 1 {
             className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
         }
         
@@ -1000,7 +1000,7 @@ open class UIFlowController: NSObject {
         // if module name not defined then grab fom class
         //
         
-        if split.count == 0 {
+        if split.count == 1 {
             className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
         }
         
