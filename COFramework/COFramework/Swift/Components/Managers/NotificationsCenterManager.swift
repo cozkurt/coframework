@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class NotificationsCenterManager {
+public class NotificationsCenterManager {
     
     /// Store each NotificationsCenter object
     // [className: [(forName, notification)]
@@ -32,7 +32,7 @@ open class NotificationsCenterManager {
      - parameters:
      - return : Void
      */
-    open func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
+    public func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
         runOnMainQueue {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: forName), object: object, userInfo: userInfo)
         }
