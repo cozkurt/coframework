@@ -31,6 +31,7 @@ struct UIFlowModel: Mappable {
     
     /// Model Properties
 
+    var instanceName: String?
     var eventName: String?
     var eventMapTo: String?
     var storyBoard: String?
@@ -39,17 +40,18 @@ struct UIFlowModel: Mappable {
     var navigationType: UIFlowNavigationType?
     var modalPresentationStyle: UIModalPresentationStyle?
     var modalTransitionStyle: UIModalTransitionStyle?
-	var transitionType: String?
+    var transitionType: String?
     var navigationBar: Bool? // on/off navigation bar
     var statusBarStyle: String? // If status bar is on then apply status bar style "Default", "LightContent"
     var animated: Bool? // animation on/off
-	var multiple: Bool? = false // allows to push same viewController
+    var multiple: Bool? = false // allows to push same viewController
 
     // MARK: Mappable protocol conformance
     
     init?(map: Map) {
         
         // Model Properties
+        instanceName <- map["instanceName"]
         eventName <- map["eventName"]
         eventMapTo <- map["eventMapTo"]
         storyBoard <- map["storyBoard"]
@@ -58,11 +60,11 @@ struct UIFlowModel: Mappable {
         navigationType <- map["navigationType"]
         modalPresentationStyle <- (map["modalPresentationStyle"], TransformOf<UIModalPresentationStyle, String>(fromJSON: { UIModalPresentationStyle(rawValue: Int($0!)!) }, toJSON: { $0.map { String(describing: $0) } }))
         modalTransitionStyle <- (map["modalTransitionStyle"], TransformOf<UIModalTransitionStyle, String>(fromJSON: { UIModalTransitionStyle(rawValue: Int($0!)!) }, toJSON: { $0.map { String(describing: $0) } }))
-		transitionType <- map["transitionType"]
+        transitionType <- map["transitionType"]
         navigationBar <- map["navigationBar"]
         statusBarStyle <- map["statusBarStyle"]
         animated <- map["animated"]
-		multiple <- map["multiple"]
+        multiple <- map["multiple"]
     }
     
     func mapping(map: Map) {

@@ -60,7 +60,7 @@ open class DynamicCellController {
      - return : void
      */
     
-    open func postCell(_ parent: AppTableBase? = nil,
+    func postCell(_ parent: AppTableBase? = nil,
                   key: String,
                   afterKey: String? = nil,
                   beforeKey: String? = nil,
@@ -198,7 +198,7 @@ open class DynamicCellController {
      - return : void
      */
     
-    open func dismissCell(_ indexPath: IndexPath? = nil) {
+    func dismissCell(_ indexPath: IndexPath? = nil) {
         self.dismissCell(nil, indexPath)
     }
     
@@ -211,7 +211,7 @@ open class DynamicCellController {
      - return : void
      */
     
-    open func dismissCell(_ key: String?, _ indexPath: IndexPath? = nil, after: Double = 0.0) {
+    func dismissCell(_ key: String?, _ indexPath: IndexPath? = nil, after: Double = 0.0) {
         
         guard let dynamicCellViewController = self.dynamicCellViewController else {
             Logger.sharedInstance.LogError("*** dynamicCellViewController is nil ***")
@@ -248,7 +248,7 @@ open class DynamicCellController {
      - return : void
      */
     
-    open func showViewController() {
+    func showViewController() {
         guard let _ = self.dynamicCellViewController?.tableView else {
             NotificationsCenterManager.sharedInstance.post("DYNAMIC_CELL_VIEW")
             return
@@ -265,7 +265,7 @@ open class DynamicCellController {
      - return : void
      */
     
-    open func dismissViewController() {
+    func dismissViewController() {
         NotificationsCenterManager.sharedInstance.post("DYNAMIC_CELL_VIEW_DISMISS")
         
         Timer.after(0.3) {

@@ -55,7 +55,7 @@ public class UIFlowController {
     deinit {
         NotificationCenter.default.removeObserver(self)
         
-        Logger.sharedInstance.LogCustom("\(instanceName): deinit() called")
+        Logger.sharedInstance.LogDebug("\(instanceName): deinit() called")
     }
     
     // MARK: - Public Methods
@@ -111,7 +111,7 @@ public class UIFlowController {
                 self.flowModels = flowModels
             }
             
-            Logger.sharedInstance.LogCustom("\(instanceName): File: \(fileName) loaded")
+            Logger.sharedInstance.LogDebug("\(instanceName): File: \(fileName) loaded")
         } else {
             Logger.sharedInstance.LogError("\(instanceName): File: \(fileName) NOT loaded")
         }
@@ -127,7 +127,7 @@ public class UIFlowController {
     
     func logEvent(model: UIFlowModel) {
         if let eventName = model.eventName, let navigationType = model.navigationType {
-            Logger.sharedInstance.LogCustom(" \(instanceName) Navigating : \(eventName), navigationType : \(navigationType)")
+            Logger.sharedInstance.LogDebug(" \(instanceName) Navigating : \(eventName), navigationType : \(navigationType)")
         }
     }
     
@@ -146,7 +146,7 @@ public class UIFlowController {
             if let eventName = flowModel.eventName {
                 NotificationCenter.default.addObserver(self, selector: #selector(self.handleEvent), name: NSNotification.Name(rawValue: eventName), object: nil)
             } else {
-                Logger.sharedInstance.LogCustom("\(instanceName) FlowModel missing eventName")
+                Logger.sharedInstance.LogDebug("\(instanceName) FlowModel missing eventName")
             }
         }
     }
@@ -184,7 +184,12 @@ public class UIFlowController {
         var viewController: UIViewController?
         
         guard let eventName = name, let flowModel = self.flowModel(forEventName: eventName) else {
-            Logger.sharedInstance.LogCustom(" \(instanceName) Handling Event: \(name ?? "") model can't found for event : \(name ?? "")")
+            Logger.sharedInstance.LogDebug(" \(instanceName) Handling Event: \(name ?? "") model can't found for event : \(name ?? "")")
+            return
+        }
+        
+        if let instanceName = flowModel.instanceName, instanceName != self.instanceName {
+            Logger.sharedInstance.LogDebug(" \(instanceName) Handling Event: \(name ?? "") not for this instance : \(self.instanceName ?? "")")
             return
         }
         
@@ -194,7 +199,7 @@ public class UIFlowController {
         if let eventMapTo = flowModel.eventMapTo {
             self.startEvent(eventMapTo, userInfo: userInfo)
             
-            Logger.sharedInstance.LogCustom(" \(eventName) mapped to : \(eventMapTo)")
+            Logger.sharedInstance.LogDebug(" \(eventName) mapped to : \(eventMapTo)")
             return
         }
         
@@ -300,7 +305,7 @@ public class UIFlowController {
                         return true
                     }
                     
-                    Logger.sharedInstance.LogCustom(" \(vc.nibName ?? "") already in Navigation stack...")
+                    Logger.sharedInstance.LogDebug(" \(vc.nibName ?? "") already in Navigation stack...")
                     
                     return !multiple
                 }
@@ -461,7 +466,7 @@ public class UIFlowController {
                     self.dismissViewController(flowModel, userInfo: userInfo)
                 }
 
-                Logger.sharedInstance.LogCustom(" \(instanceName) Navigating : \(String(describing: flowModel.eventName)), navigationType : \(String(describing: flowModel.navigationType))")
+                Logger.sharedInstance.LogDebug(" \(instanceName) Navigating : \(String(describing: flowModel.eventName)), navigationType : \(String(describing: flowModel.navigationType))")
                 
                 return
             }
@@ -858,7 +863,7 @@ public class UIFlowController {
     fileprivate func loadStoryBoard(_ flowModel: UIFlowModel) -> UIViewController? {
         
         guard let storyBoardName = flowModel.storyBoard, let identifier = flowModel.identifier else {
-            Logger.sharedInstance.LogCustom(" \(instanceName) storyBoard/identifier property is missing")
+            Logger.sharedInstance.LogDebug(" \(instanceName) storyBoard/identifier property is missing")
             return nil
         }
         
