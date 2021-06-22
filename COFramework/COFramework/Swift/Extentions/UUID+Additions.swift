@@ -12,14 +12,14 @@ import CloudKit
 
 extension UUID {
 
-    enum UUIDv5NameSpace: String {
+    public enum UUIDv5NameSpace: String {
         case dns  = "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
         case url  = "6ba7b811-9dad-11d1-80b4-00c04fd430c8"
         case oid  = "6ba7b812-9dad-11d1-80b4-00c04fd430c8"
         case x500 = "6ba7b814-9dad-11d1-80b4-00c04fd430c8"
     }
 
-    init(hashing value: String, namespace: UUIDv5NameSpace) {
+    public init(hashing value: String, namespace: UUIDv5NameSpace) {
         var context = CC_SHA1_CTX()
         CC_SHA1_Init(&context)
 
@@ -44,11 +44,11 @@ extension UUID {
                          array[12], array[13], array[14], array[15]))
     }
     
-    var shortuuid: String {
+    public var shortuuid: String {
         return self.uuidString.components(separatedBy: "-").first ?? ""
     }
     
-    func uuidHashed(ids: [CKRecord.ID]) -> String {
+    public func uuidHashed(ids: [CKRecord.ID]) -> String {
         // sum of all hashValues, 1000 is arbitary number just to prevent aritmetic error
         let allHashValues = ids.compactMap({abs($0.hashValue/1000)}).reduce(0, +)
         
