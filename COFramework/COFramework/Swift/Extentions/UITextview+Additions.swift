@@ -10,7 +10,7 @@ import UIKit
 
 extension UITextView {
     
-    public func setTextWhileKeepingAttributes(_ string: String) {
+    @objc func setTextWhileKeepingAttributes(_ string: String) {
         if let newAttributedText = self.attributedText {
             let mutableAttributedText = newAttributedText.mutableCopy()
             (mutableAttributedText as AnyObject).mutableString.setString(string)
@@ -18,7 +18,7 @@ extension UITextView {
         }
     }
     
-    public func applySpacingToTextViewAndScroll(_ contentOffset: CGPoint = .zero, spacing: CGFloat, text: String) {
+    func applySpacingToTextViewAndScroll(_ contentOffset: CGPoint = .zero, spacing: CGFloat, text: String) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacing
         let attributes = [NSAttributedString.Key.paragraphStyle : style, NSAttributedString.Key.font : self.font, NSAttributedString.Key.foregroundColor : self.textColor ]
@@ -28,13 +28,18 @@ extension UITextView {
         }
     }
     
-    public func checkLimits(text: String, range: NSRange, limit: Int, lineFeed: Bool) -> Bool {
+    func checkLimits(text: String, range: NSRange, limit: Int, lineFeed: Bool) -> Bool {
         
         // if next line allowed then skio
         if lineFeed == false && text == "\n" {
             self.resignFirstResponder()
             return false
         }
+        
+        // filter out adult content
+        
+        // TO DO: Adult content check disabled
+        // self.text = AdultContentManager.sharedInstance.filterAdultContent(string: self.text)
         
         // get the current text, or use an empty string if that failed
         let currentText = self.text ?? ""
