@@ -10,8 +10,13 @@ import Foundation
 
 public class NotificationsCenterManager {
     
+    public typealias FlowInstanceNameCallBack = (() -> (name: String?, value: String?))
+    
+    /// callback method to add new userInfo value
+    public var flowInstanceNameCallBack: FlowInstanceNameCallBack? = nil
+    
     /// Store each NotificationsCenter object
-    // [className: [(forName, notification)]
+    /// [className: [(forName, notification)]
     var notifObjects:[String: [(String, NSObjectProtocol)]] = [:]
     
     //
@@ -34,7 +39,18 @@ public class NotificationsCenterManager {
      */
     public func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
         runOnMainQueue {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: forName), object: object, userInfo: userInfo)
+            
+            if var userInfo = userInfo, let flowInstanceNameCallBack = self.flowInstanceNameCallBack {
+                let result = flowInstanceNameCallBack()
+                
+                if let name = result.name, let value = result.value {
+                    userInfo[name] = value
+                }
+                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: forName), object: object, userInfo: userInfo)
+            } else {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: forName), object: object, userInfo: userInfo)
+            }
         }
     }
     
