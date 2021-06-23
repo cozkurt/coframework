@@ -25,7 +25,7 @@ public enum CurrencyCode: String {
 public class LanguageManager {
     
     // initial lang code from system
-    var languageCode: String? = Locale.current.identifier
+    public var languageCode: String? = Locale.current.identifier
     
     //
     // MARK: - sharedInstance for singleton access
@@ -33,27 +33,27 @@ public class LanguageManager {
     
     public static let sharedInstance: LanguageManager = LanguageManager()
     
-    var currentIdentifier: String {
+    public var currentIdentifier: String {
         return languageCode?.components(separatedBy: "_").first ?? "en"
     }
     
-    var currentIdentifierLong: String {
+    public var currentIdentifierLong: String {
         Locale.current.identifier
     }
     
-    var currentLocale: Locale {
+    public var currentLocale: Locale {
         return Locale(identifier: currentIdentifier)
     }
     
-    var currentSymbol: String {
+    public var currentSymbol: String {
         return Locale.current.currencySymbol ?? ""
     }
     
-    var currentRegion: String {
+    public var currentRegion: String {
         return Locale.current.regionCode ?? ""
     }
     
-    var currentLanguageString: String {
+    public var currentLanguageString: String {
         
         let lang = self.currentIdentifier
         
@@ -83,12 +83,12 @@ public class LanguageManager {
     
     // MARK - helper methods
     
-    func symbol(forCurrencyCode code: CurrencyCode) -> String {
+    public func symbol(forCurrencyCode code: CurrencyCode) -> String {
         let locale = Locale(identifier: code.rawValue)
         return locale.currencySymbol ?? ""
     }
     
-    func changeLanguage(with language: String) {
+    public func changeLanguage(with language: String) {
         self.languageCode = language
     }
 }
