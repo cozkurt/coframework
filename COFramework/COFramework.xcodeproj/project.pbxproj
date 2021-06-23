@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
 		D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */; };
@@ -155,6 +156,7 @@
 		2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.release.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.release.xcconfig"; sourceTree = "<group>"; };
 		68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.debug.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
 		DFC4F041265726C80064ECBB /* COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -589,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */,
+				D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -815,6 +818,7 @@
 				DFC4F0EF265727020064ECBB /* CGSize+Additions.swift in Sources */,
 				DFC4F100265727020064ECBB /* CGPoint+Additions.swift in Sources */,
 				D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */,
+				D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */,
 				DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */,
 				DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */,
 				DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */,

@@ -12,7 +12,7 @@ extension String {
     
     public func localize() -> String {
         
-        let lang = Locale.current.identifier
+        let lang = LanguageManager.sharedInstance.currentIdentifier
         
         if let path = Bundle.main.path(forResource: lang, ofType: "lproj"), let bundle = Bundle(path: path) {
             let stringToReturn = NSLocalizedString(self, tableName: nil, bundle: bundle, value: "", comment: "")
