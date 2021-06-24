@@ -9,19 +9,19 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController, WKNavigationDelegate {
+open class WebViewController: UIViewController, WKNavigationDelegate {
 
-    @IBOutlet var webView: WKWebView!
+    @IBOutlet open var webView: WKWebView!
     
-    @IBOutlet var leftButton: UIButton!
+    @IBOutlet open var leftButton: UIButton!
     
-    @IBOutlet var headerLabel: UILabel!
-    @IBOutlet var addressLabel: UILabel!
+    @IBOutlet open var headerLabel: UILabel!
+    @IBOutlet open var addressLabel: UILabel!
     
     var link: String?
     var header: String?
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let link = self.link, let url = URL(string: link) else {
@@ -38,11 +38,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         self.webView?.load(URLRequest(url: url))
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    open func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         self.addressLabel?.text = webView.url?.absoluteString
     }
     
-    @IBAction func backButtonClicked() {
+    @IBAction open func backButtonClicked() {
         guard let webView = self.webView, webView.canGoBack else {
             return
         }
@@ -50,7 +50,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         self.webView?.goBack()
     }
     
-    @IBAction func forwardButtonClicked() {
+    @IBAction open func forwardButtonClicked() {
         guard let webView = self.webView, webView.canGoForward else {
             return
         }
@@ -58,11 +58,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         self.webView?.goForward()
     }
     
-    @IBAction func reloadButtonClicked() {
+    @IBAction open func reloadButtonClicked() {
         self.webView?.reload()
     }
     
-    @IBAction func closeButtonClicked() {
+    @IBAction open func closeButtonClicked() {
         self.dismiss(animated: true, completion: nil)
     }
 }
@@ -71,7 +71,7 @@ extension WebViewController: UIFlowProtocol {
     
     // MARK: For handling UIFlowProtocol
     
-    @objc func userInfoHandler(_ userInfo: [AnyHashable: Any]?) {
+    @objc open func userInfoHandler(_ userInfo: [AnyHashable: Any]?) {
         
         if let link = (userInfo?["link"] as? String),
             let header = (userInfo?["header"] as? String) {
