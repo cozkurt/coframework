@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(name: "COFramework",
                       
-                      platforms: [.macOS(.v10_12), .iOS(.v12), .tvOS(.v10), .watchOS(.v3)],
+                      platforms: [.macOS(.v10_12), .iOS(.v13)],
 
                       products: [.library(name: "COFramework", targets: ["COFramework"])],
                       
@@ -16,5 +16,5 @@ let package = Package(name: "COFramework",
                                         dependencies: ["ObjectMapper"],
                                         path: "COFramework/COFramework/Swift")],
                       
-                      swiftLanguageVersions: [.v5]
+                      swiftLanguageVersions: [.v51]
 )
