@@ -7,16 +7,12 @@ let package = Package(name: "COFramework",
                       products: [.library(name: "COFramework", targets: ["COFramework"])],
                       
                       dependencies: [
-                        // Dependencies declare other packages that this package depends on.
-                        .package(url: "https://github.com/tristanhimmelman/ObjectMapper", .upToNextMajor(from: "4.2.0"))
+                        .package(url: "https://github.com/tristanhimmelman/ObjectMapper", from: "4.2.0")
                       ],
                       
                       targets: [.target(name: "COFramework",
-                                        dependencies: [
-                                          .product(name: "ObjectMapper", package: "ObjectMapper")
-                                        ],
+                                        dependencies: ["ObjectMapper"],
                                         path: "COFramework/COFramework/Swift")],
                       
                       swiftLanguageVersions: [.v5]
 )
-
