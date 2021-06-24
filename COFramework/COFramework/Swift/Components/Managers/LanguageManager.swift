@@ -12,7 +12,7 @@ public enum CurrencyCode: String {
     case dollar = "en_US"
     case euro = "en_EU"
     
-    var symbol: String {
+    public var symbol: String {
         switch self {
         case .dollar:
             return "$"
