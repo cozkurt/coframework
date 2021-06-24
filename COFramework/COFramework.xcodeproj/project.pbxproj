@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
-		D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */; };
+		D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D1FCD8A9268519FB00E601FA /* ObjectMapper */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
 		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
@@ -153,9 +153,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.release.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.release.xcconfig"; sourceTree = "<group>"; };
-		68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COFramework.debug.xcconfig"; path = "Target Support Files/Pods-COFramework/Pods-COFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -311,38 +308,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7AE7893C524121CAE3F9046 /* Pods_COFramework.framework in Frameworks */,
+				D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		375214C319DC084BFD57E082 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */,
-				2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		9BB4BAE022007446F5D04B2E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68B4FACEAB5AF3FEB46A5E67 /* Pods_COFramework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DFC4F037265726C80064ECBB = {
 			isa = PBXGroup;
 			children = (
 				DFC4F1DC265824420064ECBB /* Packages Metadata */,
 				DFC4F043265726C80064ECBB /* COFramework */,
 				DFC4F042265726C80064ECBB /* Products */,
-				375214C319DC084BFD57E082 /* Pods */,
-				9BB4BAE022007446F5D04B2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -720,7 +698,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFC4F055265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFramework" */;
 			buildPhases = (
-				DEFC3F1830AF066098C48193 /* [CP] Check Pods Manifest.lock */,
 				DFC4F03C265726C80064ECBB /* Headers */,
 				DFC4F03D265726C80064ECBB /* Sources */,
 				DFC4F03E265726C80064ECBB /* Frameworks */,
@@ -731,6 +708,9 @@
 			dependencies = (
 			);
 			name = COFramework;
+			packageProductDependencies = (
+				D1FCD8A9268519FB00E601FA /* ObjectMapper */,
+			);
 			productName = COFramework;
 			productReference = DFC4F041265726C80064ECBB /* COFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -758,6 +738,9 @@
 				Base,
 			);
 			mainGroup = DFC4F037265726C80064ECBB;
+			packageReferences = (
+				D1FCD8A8268519FB00E601FA /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = DFC4F042265726C80064ECBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -784,31 +767,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DEFC3F1830AF066098C48193 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-COFramework-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFC4F03D265726C80064ECBB /* Sources */ = {
@@ -1059,7 +1017,6 @@
 		};
 		DFC4F056265726C80064ECBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D031FA032E8AAEBDF501BAA7 /* Pods-COFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1084,7 +1041,6 @@
 		};
 		DFC4F057265726C80064ECBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A3002DB9D7071FA9B54F409 /* Pods-COFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1129,6 +1085,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1FCD8A8268519FB00E601FA /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1FCD8A9268519FB00E601FA /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1FCD8A8268519FB00E601FA /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFC4F038265726C80064ECBB /* Project object */;
 }

@@ -1,6 +1,0 @@
-framework module Pods_COFramework {
-  umbrella header "Pods-COFramework-umbrella.h"
-
-  export *
-  module * { export * }
-}
