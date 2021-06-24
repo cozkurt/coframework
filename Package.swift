@@ -13,9 +13,6 @@ let package = Package(name: "COFramework",
                       ],
                       
                       targets: [.target(name: "COFramework",
-                                        dependencies: [
-                                          .product(name: "ObjectMapper", package: "ObjectMapper")
-                                        ],
                                         path: "COFramework/COFramework/Swift")],
                       
                       swiftLanguageVersions: [.v5]
