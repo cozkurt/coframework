@@ -8,7 +8,8 @@ s.author           = { 'Cenker Ozkurt' => 'cenker@yahoo.com' }
 s.source           = { :git => 'https://github.com/cozkurt/coframework.git', :tag => s.version.to_s }
 s.requires_arc     = true
 
-s.resources        = 'COFramework/**/*.xib'
+s.resource_bundles = { 'COFramework' => ['COFramework/**/*.xib'] }
+  
 s.source_files     = 'COFramework/**/*.{h,m,swift}'
 s.module_name      = 'COFramework'
 
