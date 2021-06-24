@@ -955,37 +955,7 @@ public class UIFlowController {
             return (split.first ?? "", split.last ?? "")
         }
     }
-    
-    /**
-     viewController helper method to load viewController
-     
-     - parameters:
-     - className: className for viewController
-     - return: UIViewController
-     */
-    
-    public func viewController(_ className : String) -> UIViewController? {
         
-        var className = className
-        let split = className.components(separatedBy: ".")
-        
-        //
-        // if module name not defined then grab fom class
-        //
-        
-        if split.count == 1 {
-            className = NSStringFromClass(UIFlowController.self).components(separatedBy: ".").first! + "." + className
-        }
-        
-        if let aClass = NSClassFromString(className) as? UIViewController.Type {
-            return aClass.init()
-        }
-        
-        Logger.sharedInstance.LogError(" \(className) not loaded...")
-        
-        return nil
-    }
-    
     /**
      viewController helper method to load viewController
      with given nibName
@@ -996,7 +966,7 @@ public class UIFlowController {
      - return: UIViewController
      */
     
-    public func viewController(_ className : String, nibName: String) -> UIViewController? {
+    public func viewController(_ className : String, nibName: String? = nil) -> UIViewController? {
         
         var className = className
         let split = className.components(separatedBy: ".")
@@ -1010,7 +980,11 @@ public class UIFlowController {
         }
         
         if let aClass = NSClassFromString(className) as? UIViewController.Type {
-            return aClass.init(nibName: nibName, bundle: nil)
+            if let nibName = nibName {
+                return aClass.init(nibName: nibName, bundle: nil)
+            } else {
+                return aClass.init()
+            }
         }
         return nil
     }
