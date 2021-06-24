@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(name: "COFramework",
                       
-                      platforms: [.macOS(.v10_12), .iOS(.v12), .tvOS(.v10), .watchOS(.v3)],
+                      platforms: [.macOS(.v10_14), .iOS(.v14)],
 
                       products: [.library(name: "COFramework", targets: ["COFramework"])],
                       
