@@ -220,6 +220,9 @@ public class UIFlowController {
         // Perform userInfo method if UIFlowProtocol conformed for view controller
         self.userInfoHandler(viewController, userInfo: userInfo)
         
+        // for debugging
+        self.logEvent(model: flowModel)
+        
         // Navigate to view controller
         if let navigationType = flowModel.navigationType {
             switch navigationType {
@@ -393,8 +396,6 @@ public class UIFlowController {
             viewController.viewDidAppear(true)
             parentViewController.viewDidDisappear(true)
         })
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -571,8 +572,6 @@ public class UIFlowController {
         } else {
             self.navigationController = self.setupNavigationController(viewController, flowModel: flowModel)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -621,8 +620,6 @@ public class UIFlowController {
         } else {
             self.navigationController = self.setupNavigationController(viewController, flowModel: flowModel)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -658,8 +655,6 @@ public class UIFlowController {
         } else {
             self.navigationController = self.setupNavigationController(viewController, flowModel: flowModel)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -703,8 +698,6 @@ public class UIFlowController {
         } else {
             self.navigationController = self.setupNavigationController(viewController, flowModel: flowModel)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -721,8 +714,6 @@ public class UIFlowController {
         if let navigationController = self.topNavigationController() {
             navigationController.popViewController(animated: flowModel.animated ?? true)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -749,8 +740,6 @@ public class UIFlowController {
                 }
             }
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -767,8 +756,6 @@ public class UIFlowController {
         if let navigationController = self.topNavigationController() {
             navigationController.popToRootViewController(animated: flowModel.animated ?? true)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -786,8 +773,6 @@ public class UIFlowController {
                 self.updateParentViewController(userInfo: userInfo)
             })
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -807,8 +792,6 @@ public class UIFlowController {
                 })
             })
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -824,8 +807,6 @@ public class UIFlowController {
         if let rootVC = self.navigationController?.viewControllers.first {
             rootVC.dismiss(animated: true, completion: nil)
         }
-        
-        self.logEvent(model: flowModel)
     }
     
     /**
@@ -884,7 +865,6 @@ public class UIFlowController {
     fileprivate func loadViewController(_ flowModel: UIFlowModel) -> UIViewController? {
         
         guard let viewControllerName = flowModel.viewController else {
-            self.logEvent(model: flowModel)
             return nil
         }
         
