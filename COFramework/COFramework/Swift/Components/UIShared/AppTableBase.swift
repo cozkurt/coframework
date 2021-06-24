@@ -21,8 +21,11 @@ open class AppTableBase: CustomTableBase {
     @IBOutlet public var rightButton: UIButton!
     @IBOutlet public var loadingIndicator: UIActivityIndicatorView!
     
-    public var addBottomColor = true
-    public var scrollToDismiss = true
+    // Grey background below the table
+    public var addBottomColor = false
+    
+    // for subviews
+    public var scrollToDismiss = false
     
     // flag for use to control content inset and top menu view
     public var directionUpdates: Bool = false
