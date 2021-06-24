@@ -9,7 +9,6 @@ s.source           = { :git => 'https://github.com/cozkurt/coframework.git', :ta
 s.requires_arc     = true
 
 s.resource_bundles = {'COFramework' => ['COFramework/Swift/**/*.xib']}
-s.resources        = 'COFramework/**/*.xib'
   
 s.source_files     = 'COFramework/**/*.{h,m,swift}'
 s.module_name      = 'COFramework'
