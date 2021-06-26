@@ -156,6 +156,14 @@
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		D1FCD8C52686B23800E601FA /* SampleAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPIFactory.swift; sourceTree = "<group>"; };
+		D1FCD8C72686B23800E601FA /* SampleServiceURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleServiceURL.swift; sourceTree = "<group>"; };
+		D1FCD8C82686B23800E601FA /* SampleEnvironments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEnvironments.swift; sourceTree = "<group>"; };
+		D1FCD8CA2686B23800E601FA /* SampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		D1FCD8DF2686B8CB00E601FA /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		D1FCD8E02686B8CB00E601FA /* AppURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURLRequest.swift; sourceTree = "<group>"; };
+		D1FCD8E12686B8CB00E601FA /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		D1FCD8E22686B8CB00E601FA /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
 		DFC4F041265726C80064ECBB /* COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
 		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -315,6 +323,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1FCD8C22686B23800E601FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D1FCD8DE2686B8CB00E601FA /* Base */,
+				D1FCD8E72686CD8E00E601FA /* Sample */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D1FCD8DE2686B8CB00E601FA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D1FCD8E02686B8CB00E601FA /* AppURLRequest.swift */,
+				D1FCD8DF2686B8CB00E601FA /* ProviderProtocol.swift */,
+				D1FCD8E12686B8CB00E601FA /* URLSessionProvider.swift */,
+				D1FCD8E22686B8CB00E601FA /* TestProvider.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D1FCD8E72686CD8E00E601FA /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D1FCD8CA2686B23800E601FA /* SampleModel.swift */,
+				D1FCD8C52686B23800E601FA /* SampleAPIFactory.swift */,
+				D1FCD8C72686B23800E601FA /* SampleServiceURL.swift */,
+				D1FCD8C82686B23800E601FA /* SampleEnvironments.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		DFC4F037265726C80064ECBB = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +438,7 @@
 				DFC4F0A3265727010064ECBB /* UIStyling */,
 				DFC4F0B4265727010064ECBB /* UIShared */,
 				DFC4F1442657295B0064ECBB /* Managers */,
+				D1FCD8C22686B23800E601FA /* Networking */,
 				DFC4F08C265727010064ECBB /* DynamicCell */,
 				DFC4F0D6265727010064ECBB /* OperationQueue */,
 				DFC4F0BE265727010064ECBB /* CustomTable */,
