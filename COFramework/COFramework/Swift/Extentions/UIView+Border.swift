@@ -10,19 +10,19 @@ import UIKit
 
 extension UIView {
 
-    @objc func addBorderTop(_ size: CGFloat, color: UIColor) {
+    public func addBorderTop(_ size: CGFloat, color: UIColor) {
         addBorder(0, y: 0, width: frame.width, height: size, color: color)
     }
 
-    @objc func addBorderBottom(_ size: CGFloat, color: UIColor) {
+    public func addBorderBottom(_ size: CGFloat, color: UIColor) {
         addBorder(0, y: frame.height - size, width: frame.width, height: size, color: color)
     }
 
-    @objc func addBorderLeft(_ size: CGFloat, color: UIColor) {
+    public func addBorderLeft(_ size: CGFloat, color: UIColor) {
         addBorder(0, y: 0, width: size, height: frame.height, color: color)
     }
 
-    @objc func addBorderRight(_ size: CGFloat, color: UIColor) {
+    public func addBorderRight(_ size: CGFloat, color: UIColor) {
         addBorder(frame.width - size, y: 0, width: size, height: frame.height, color: color)
     }
 
@@ -33,7 +33,7 @@ extension UIView {
         layer.addSublayer(border)
     }
     
-    @objc func addDashedLine(_ y: CGFloat, color: UIColor = UIColor.black) {
+    public func addDashedLine(_ y: CGFloat, color: UIColor = UIColor.black) {
         let shapeLayer = CAShapeLayer()
         shapeLayer.bounds = self.bounds
         shapeLayer.position = CGPoint(x: frame.width / 2, y: y)
@@ -49,5 +49,16 @@ extension UIView {
         shapeLayer.path = path
         
         layer.addSublayer(shapeLayer)
+    }
+    
+    public func dropShadow(scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.2
+        layer.shadowOffset = .zero
+        layer.shadowRadius = 1
+
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
