@@ -33,13 +33,9 @@ open class AppTableBase: CustomTableBase {
     // (key: nibName, scrollDirection)
     public var lastSrollingDirection: ScrollDirection = .idle
     
-    // used by tracking keyboard show/hide
-    public var isKeyboardHidden: Bool = true
-    public var isKeyboardHidden2: Bool = true
-    
     // save previous content inset/constant
-    public var previousContentInset: UIEdgeInsets = UIEdgeInsets.zero
-    public var previousConstantValue: CGFloat = 0
+    public var previousContentInset: UIEdgeInsets?
+    public var previousConstantValue: CGFloat?
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -197,78 +193,83 @@ extension AppTableBase {
     }
     
     public func positionWithKeyboard(_ scrollView: UIScrollView) {
-        NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillShowNotification.rawValue) { (notification) in
+        
+        NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillChangeFrameNotification.rawValue) { (notification) in
             
-            if !self.isKeyboardHidden { return }
-            self.isKeyboardHidden = false
-            
-            self.previousContentInset = scrollView.contentInset
-            
-            let keyboardHeight = self.keyboardHeight(notification: notification)
-            let contentInsets = UIEdgeInsets(top: scrollView.contentInset.top, left: scrollView.contentInset.left, bottom: keyboardHeight, right: scrollView.contentInset.right)
+            if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                let keyboardHeight = keyboardFrame.size.height
 
-            runOnMainQueue {
-                UIView.animate(withDuration: 0.3) {
-                    scrollView.contentInset = contentInsets
-                    scrollView.scrollIndicatorInsets = contentInsets
-                    scrollView.layoutIfNeeded()
+                if self.previousContentInset == nil {
+                    self.previousContentInset = scrollView.contentInset
+                }
+                
+                let contentInsets = UIEdgeInsets(top: scrollView.contentInset.top, left: scrollView.contentInset.left, bottom: keyboardHeight, right: scrollView.contentInset.right)
+
+                runOnMainQueue {
+                    UIView.animate(withDuration: 0.3) {
+                        scrollView.contentInset = contentInsets
+                        scrollView.scrollIndicatorInsets = contentInsets
+                        scrollView.layoutIfNeeded()
+                    }
                 }
             }
         }
         
         NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillHideNotification.rawValue) { (notification) in
-
-            if self.isKeyboardHidden { return }
-            self.isKeyboardHidden = true
-
+            
+            guard let previousContentInset = self.previousContentInset else {
+                return
+            }
+            
             runOnMainQueue {
                 UIView.animate(withDuration: 0.3) {
-                    scrollView.contentInset = self.previousContentInset
-                    scrollView.scrollIndicatorInsets = self.previousContentInset
+                    scrollView.contentInset = previousContentInset
+                    scrollView.scrollIndicatorInsets = previousContentInset
                     scrollView.layoutIfNeeded()
+                    
+                    // reset
+                    self.previousContentInset = nil
                 }
             }
         }
     }
     
     public func positionWithKeyboard(_ constraint: NSLayoutConstraint) {
-        NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillShowNotification.rawValue) { (notification) in
+        
+        NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillChangeFrameNotification.rawValue) { (notification) in
             
-            if !self.isKeyboardHidden2 { return }
-            self.isKeyboardHidden2 = false
-            
-            self.previousConstantValue = constraint.constant
-            
-            let keyboardHeight = self.keyboardHeight(notification: notification)
+            if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                let keyboardHeight = keyboardFrame.size.height
+                
+                if self.previousConstantValue == nil {
+                    self.previousConstantValue = constraint.constant
+                }
 
-            runOnMainQueue {
-                UIView.animate(withDuration: 0.3) {
-                     constraint.constant += keyboardHeight - self.bottomSpaceOfViewController()
-                     self.view.layoutIfNeeded()
+                runOnMainQueue {
+                    UIView.animate(withDuration: 0.3) {
+                        constraint.constant = keyboardHeight - self.bottomSpaceOfViewController()
+                        self.view.layoutIfNeeded()
+                    }
                 }
             }
         }
         
         NotificationsCenterManager.sharedInstance.addObserver(self, forName: UIResponder.keyboardWillHideNotification.rawValue) { (notification) in
             
-            if self.isKeyboardHidden2 { return }
-            self.isKeyboardHidden2 = true
+            guard let previousConstantValue = self.previousConstantValue else {
+                return
+            }
             
             runOnMainQueue {
                 UIView.animate(withDuration: 0.3) {
-                    constraint.constant = self.previousConstantValue
+                    constraint.constant = previousConstantValue
                     self.view.layoutIfNeeded()
+                    
+                    // reset
+                    self.previousConstantValue = nil
                 }
             }
         }
-    }
-    
-    public func keyboardHeight(notification: Foundation.Notification) -> CGFloat {
-        let userInfo = notification.userInfo!
-        let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey]! as AnyObject).cgRectValue.size
-        let keyboardHeight = keyboardSize.height + (UIDevice().isIPad() ? 30.0 : 0.0)
-        
-        return keyboardHeight
     }
     
     // helper method to find space to window bottom
