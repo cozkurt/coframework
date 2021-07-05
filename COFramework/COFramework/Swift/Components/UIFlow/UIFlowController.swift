@@ -677,15 +677,6 @@ public class UIFlowController {
         // check if vc initialized
         guard let viewController = viewController, let parentView = self.parentView else { return }
         
-        // set vc properties if defined
-        if let modalPresentationStyle = flowModel.modalPresentationStyle {
-            viewController.modalPresentationStyle = modalPresentationStyle
-        }
-        
-        if let modalTransitionStyle = flowModel.modalTransitionStyle {
-            viewController.modalTransitionStyle = modalTransitionStyle
-        }
-        
         if let navigationController = self.topNavigationController() {
             
             let nc = UINavigationController(rootViewController: viewController)
@@ -693,6 +684,15 @@ public class UIFlowController {
             nc.isNavigationBarHidden = !(flowModel.navigationBar ?? false)
             nc.view.frame = parentView.frame
             nc.view.bounds = parentView.bounds
+            
+            // set vc properties if defined
+            if let modalPresentationStyle = flowModel.modalPresentationStyle {
+                nc.modalPresentationStyle = modalPresentationStyle
+            }
+            
+            if let modalTransitionStyle = flowModel.modalTransitionStyle {
+                nc.modalTransitionStyle = modalTransitionStyle
+            }
             
             navigationController.present(nc, animated: flowModel.animated ?? true, completion: nil)
         } else {
