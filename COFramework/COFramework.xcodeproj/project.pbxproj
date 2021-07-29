@@ -10,6 +10,11 @@
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
+		D1A4A3F426B35ED7008C7CD5 /* GeoCircleOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3EF26B35ED7008C7CD5 /* GeoCircleOverlay.swift */; };
+		D1A4A3F526B35ED7008C7CD5 /* GeoMapViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F026B35ED7008C7CD5 /* GeoMapViewManager.swift */; };
+		D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */; };
+		D1A4A3F726B35ED7008C7CD5 /* GeoLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */; };
+		D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */; };
 		D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D1FCD8A9268519FB00E601FA /* ObjectMapper */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
@@ -156,6 +161,11 @@
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		D1A4A3EF26B35ED7008C7CD5 /* GeoCircleOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCircleOverlay.swift; sourceTree = "<group>"; };
+		D1A4A3F026B35ED7008C7CD5 /* GeoMapViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoMapViewManager.swift; sourceTree = "<group>"; };
+		D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
+		D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationManager.swift; sourceTree = "<group>"; };
+		D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoderManager.swift; sourceTree = "<group>"; };
 		D1FCD8C52686B23800E601FA /* SampleAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPIFactory.swift; sourceTree = "<group>"; };
 		D1FCD8C72686B23800E601FA /* SampleServiceURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleServiceURL.swift; sourceTree = "<group>"; };
 		D1FCD8C82686B23800E601FA /* SampleEnvironments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEnvironments.swift; sourceTree = "<group>"; };
@@ -323,6 +333,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */,
+				D1A4A3EF26B35ED7008C7CD5 /* GeoCircleOverlay.swift */,
+				D1A4A3F026B35ED7008C7CD5 /* GeoMapViewManager.swift */,
+				D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */,
+				D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */,
+			);
+			path = GeoLocation;
+			sourceTree = "<group>";
+		};
 		D1FCD8C22686B23800E601FA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +461,7 @@
 				DFC4F0B4265727010064ECBB /* UIShared */,
 				DFC4F1442657295B0064ECBB /* Managers */,
 				D1FCD8C22686B23800E601FA /* Networking */,
+				D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */,
 				DFC4F08C265727010064ECBB /* DynamicCell */,
 				DFC4F0D6265727010064ECBB /* OperationQueue */,
 				DFC4F0BE265727010064ECBB /* CustomTable */,
@@ -839,6 +862,7 @@
 				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
 				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
 				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
+				D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */,
 				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,
 				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
 				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
@@ -848,6 +872,7 @@
 				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
 				DFC4F12D265727020064ECBB /* AdvancedPageViewController.swift in Sources */,
 				DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */,
+				D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */,
 				DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */,
 				DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */,
 				DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */,
@@ -860,6 +885,7 @@
 				DFC4F0DC265727010064ECBB /* MKMapView+Additions.swift in Sources */,
 				DFC4F103265727020064ECBB /* WebViewController.swift in Sources */,
 				DFC4F10F265727020064ECBB /* UIBehaviourModel.swift in Sources */,
+				D1A4A3F726B35ED7008C7CD5 /* GeoLocationManager.swift in Sources */,
 				DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */,
 				DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */,
 				DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */,
@@ -875,6 +901,7 @@
 				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
 				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
 				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
+				D1A4A3F426B35ED7008C7CD5 /* GeoCircleOverlay.swift in Sources */,
 				DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */,
 				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
 				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
@@ -909,6 +936,7 @@
 				DFC4F0E2265727020064ECBB /* UIFont+Additions.swift in Sources */,
 				DFC4F128265727020064ECBB /* CustomTextField.swift in Sources */,
 				DFC4F0E5265727020064ECBB /* UIButton+Additions.swift in Sources */,
+				D1A4A3F526B35ED7008C7CD5 /* GeoMapViewManager.swift in Sources */,
 				DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */,
 				DFC4F110265727020064ECBB /* UIBehaviourHelper.swift in Sources */,
 				DFC4F13A265727020064ECBB /* Reachability.swift in Sources */,
