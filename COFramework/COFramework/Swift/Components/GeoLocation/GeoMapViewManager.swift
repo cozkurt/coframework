@@ -12,20 +12,21 @@ import Foundation
 
 open class GeoMapViewManager: NSObject {
 
-    static var mapMovedEvent: Signal = Signal()
-    static var mapMovedByUserEvent: Signal = Signal()
-    static var mapMarkerSelectedEvent: SignalData<GeoModel> = SignalData()
+    public static var mapMovedEvent: Signal = Signal()
+    public static var mapMovedByUserEvent: Signal = Signal()
+    public static var mapMarkerSelectedEvent: SignalData<GeoModel> = SignalData()
     
-    var mapView: MKMapView?
+    public var mapView: MKMapView?
     
-    var centerAnnotationView: MKPinAnnotationView?
-    var saveLastPosition: Bool = false
+    public var centerAnnotationView: MKPinAnnotationView?
     
-    var currentLocation: CLLocation? {
+    public var saveLastPosition: Bool = false
+    
+    public var currentLocation: CLLocation? {
         return self.mapView?.userLocation.location
     }
     
-    var centerLocation: CLLocation? {
+    public var centerLocation: CLLocation? {
         guard let latitude = mapView?.centerCoordinate.latitude, let longitude = mapView?.centerCoordinate.longitude else {
             return nil
         }
@@ -41,7 +42,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    init(_ mapView: MKMapView, saveLastPosition: Bool = false) {
+    public init(_ mapView: MKMapView, saveLastPosition: Bool = false) {
         super.init()
         
         self.saveLastPosition = saveLastPosition
