@@ -10,7 +10,7 @@ import Foundation
 import MapKit
 import CoreLocation
 
-class GeoLocationManager: NSObject, CLLocationManagerDelegate {
+public class GeoLocationManager: NSObject, CLLocationManagerDelegate {
 
     /// Location objects
     public var locationManager: CLLocationManager?

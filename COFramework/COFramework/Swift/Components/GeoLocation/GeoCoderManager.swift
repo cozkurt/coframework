@@ -9,23 +9,23 @@
 import MapKit
 import Foundation
 
-open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
+public class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
     
-    var geocodeCache:[String:CLLocation] = [:]
-    var reverseGeocodeCache:[String:ReversedGeoLocation] = [:]
+    public var geocodeCache:[String:CLLocation] = [:]
+    public var reverseGeocodeCache:[String:ReversedGeoLocation] = [:]
     
-    lazy var localSearchCompleter: MKLocalSearchCompleter = {
+    public lazy var localSearchCompleter: MKLocalSearchCompleter = {
         let sc = MKLocalSearchCompleter()
         sc.delegate = self
         return sc
     }()
     
-    var localSearchCompleterBlock: (([String]?) -> ())?
+    public var localSearchCompleterBlock: (([String]?) -> ())?
     
     //
     // MARK: - sharedInstance for singleton access
     //
-    static let sharedInstance: GeoCoderManager = GeoCoderManager()
+    public static let sharedInstance: GeoCoderManager = GeoCoderManager()
     
     /**
      Search given address and atuo completes results
@@ -35,7 +35,7 @@ open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
      - returns void
      */
 
-    func searchGeocodeAddressesAutoComplete(_ address: String?, completion: (([String]?) -> ())?) {
+    public func searchGeocodeAddressesAutoComplete(_ address: String?, completion: (([String]?) -> ())?) {
         if let address = address {
             self.localSearchCompleterBlock = completion
             self.localSearchCompleter.queryFragment = address
@@ -59,7 +59,7 @@ open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
      - returns void
      */
     
-    func geocodeLocation(address: String, completion:@escaping (CLLocation?) -> Void) {
+    public func geocodeLocation(address: String, completion:@escaping (CLLocation?) -> Void) {
         
         if let cachedAddress = geocodeCache[address] {
             completion(cachedAddress)
@@ -86,7 +86,7 @@ open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
      - returns void
      */
     
-    func reverseGeocodeLocation(latitude:Double, longitude:Double, completion:@escaping (ReversedGeoLocation?) -> Void) {
+    public func reverseGeocodeLocation(latitude:Double, longitude:Double, completion:@escaping (ReversedGeoLocation?) -> Void) {
         
         let location = CLLocation(latitude: latitude, longitude: longitude)
         let locationHash:String = String(latitude) + String(longitude)
@@ -122,7 +122,7 @@ open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
      - returns void
      */
 
-    func searchGeocodeAddresses(_ address: String?, inRegion: MKCoordinateRegion, completed: ((Array<MKMapItem>?) -> ())?) {
+    public func searchGeocodeAddresses(_ address: String?, inRegion: MKCoordinateRegion, completed: ((Array<MKMapItem>?) -> ())?) {
 
         guard let address = address else {
             return
@@ -141,5 +141,4 @@ open class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
             completed?(response.mapItems)
         }
     }
-
 }
