@@ -9,13 +9,13 @@
 import UIKit
 import MapKit
 
-class GeoCircleOverlay: MKCircle {
+public class GeoCircleOverlay: MKCircle {
 
-    var lineWidth: CGFloat?
-    var strokeColor: UIColor?
-    var fillColor: UIColor?
+    public var lineWidth: CGFloat?
+    public var strokeColor: UIColor?
+    public var fillColor: UIColor?
     
-    convenience init(center: CLLocationCoordinate2D, radius: CLLocationDistance, lineWidth:CGFloat?, strokeColor: UIColor?, fillColor: UIColor?) {
+    public convenience init(center: CLLocationCoordinate2D, radius: CLLocationDistance, lineWidth:CGFloat?, strokeColor: UIColor?, fillColor: UIColor?) {
         self.init(center: center, radius: radius)
         
         self.lineWidth = lineWidth

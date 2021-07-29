@@ -14,22 +14,22 @@ import CoreLocation
 // GeoModel conforms MKAnnotation protocol
 // To make model work with MKMapView delegates
 
-open class GeoModel: NSObject, MKAnnotation {
+public class GeoModel: NSObject, MKAnnotation {
 
     // Following properties are reqired for MKAnnotation
     // for callouts
 
-    open var coordinate: CLLocationCoordinate2D
-    open var title: String?
-    open var subtitle: String?
+    public var coordinate: CLLocationCoordinate2D
+    public var title: String?
+    public var subtitle: String?
 
     // Custom properties used in model to store
     // more information
 
-    var nibName: String?
-    var data: AnyObject?
+    public var nibName: String?
+    public var data: AnyObject?
 
-    init(nibName: String?, coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?, data: AnyObject?) {
+    public init(nibName: String?, coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?, data: AnyObject?) {
         self.nibName = nibName
         
         self.coordinate = coordinate
@@ -40,7 +40,7 @@ open class GeoModel: NSObject, MKAnnotation {
     }
 }
 
-struct ReversedGeoLocation {
+public struct ReversedGeoLocation {
     let name: String            // eg. Apple Inc.
     let streetName: String      // eg. Infinite Loop
     let streetNumber: String    // eg. 1
@@ -51,7 +51,7 @@ struct ReversedGeoLocation {
     let isoCountryCode: String  // eg. US
     
     // Handle optionals as needed
-    init(with placemark: CLPlacemark) {
+    public init(with placemark: CLPlacemark) {
         self.name           = placemark.name ?? ""
         self.streetName     = placemark.thoroughfare ?? ""
         self.streetNumber   = placemark.subThoroughfare ?? ""
