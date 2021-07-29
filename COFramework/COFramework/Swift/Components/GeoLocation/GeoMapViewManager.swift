@@ -41,7 +41,7 @@ public class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    public init(_ mapView: MKMapView, saveLastPosition: Bool = false, delegate: MKMapViewDelegate) {
+    public init(_ mapView: MKMapView, saveLastPosition: Bool = false, delegate: MKMapViewDelegate?) {
         super.init()
         
         self.saveLastPosition = saveLastPosition

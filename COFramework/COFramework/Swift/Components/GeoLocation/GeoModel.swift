@@ -41,14 +41,14 @@ public class GeoModel: NSObject, MKAnnotation {
 }
 
 public struct ReversedGeoLocation {
-    let name: String            // eg. Apple Inc.
-    let streetName: String      // eg. Infinite Loop
-    let streetNumber: String    // eg. 1
-    let city: String            // eg. Cupertino
-    let state: String           // eg. CA
-    let zipCode: String         // eg. 95014
-    let country: String         // eg. United States
-    let isoCountryCode: String  // eg. US
+    public let name: String            // eg. Apple Inc.
+    public let streetName: String      // eg. Infinite Loop
+    public let streetNumber: String    // eg. 1
+    public let city: String            // eg. Cupertino
+    public let state: String           // eg. CA
+    public let zipCode: String         // eg. 95014
+    public let country: String         // eg. United States
+    public let isoCountryCode: String  // eg. US
     
     // Handle optionals as needed
     public init(with placemark: CLPlacemark) {
