@@ -10,7 +10,7 @@ import MapKit
 import CloudKit
 import Foundation
 
-open class GeoMapViewManager: NSObject {
+public class GeoMapViewManager: NSObject {
 
     public static var mapMovedEvent: Signal = Signal()
     public static var mapMovedByUserEvent: Signal = Signal()
@@ -19,7 +19,6 @@ open class GeoMapViewManager: NSObject {
     public var mapView: MKMapView?
     
     public var centerAnnotationView: MKPinAnnotationView?
-    
     public var saveLastPosition: Bool = false
     
     public var currentLocation: CLLocation? {
@@ -42,7 +41,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    public init(_ mapView: MKMapView, saveLastPosition: Bool = false) {
+    public init(_ mapView: MKMapView, saveLastPosition: Bool = false, delegate: MKMapViewDelegate) {
         super.init()
         
         self.saveLastPosition = saveLastPosition
@@ -50,7 +49,7 @@ open class GeoMapViewManager: NSObject {
         
         self.mapView = mapView
         self.mapView?.showsUserLocation = false
-        self.mapView?.delegate = self
+        self.mapView?.delegate = delegate
     }
     
     /**
@@ -60,7 +59,7 @@ open class GeoMapViewManager: NSObject {
      */
 
     
-    open func mapCenterLocationAndRadius() -> (CLLocation, CLLocationDistance)? {
+    public func mapCenterLocationAndRadius() -> (CLLocation, CLLocationDistance)? {
         
         guard let mapView = self.mapView else {
             return nil
@@ -80,7 +79,7 @@ open class GeoMapViewManager: NSObject {
      Shows user location on the mapView
      */
 
-    open func showUserLocation(show: Bool = true) {
+    public func showUserLocation(show: Bool = true) {
         self.mapView?.showsUserLocation = show
     }
     
@@ -91,7 +90,7 @@ open class GeoMapViewManager: NSObject {
      - returns distance : CLLocationDistance distance between locations
      */
 
-    open func distanceToLocation(fromLocation: CLLocation?, _ toLocation: CLLocation?) -> CLLocationDistance? {
+    public func distanceToLocation(fromLocation: CLLocation?, _ toLocation: CLLocation?) -> CLLocationDistance? {
         
         guard let fromLocation = fromLocation,
             let toLocation  = toLocation else {
@@ -107,7 +106,7 @@ open class GeoMapViewManager: NSObject {
      Remove annotations from mapView
      */
 
-    open func removeAnnotations() {
+    public func removeAnnotations() {
         if let annotations = mapView?.annotations {
             mapView?.removeAnnotations(annotations)
         }
@@ -122,7 +121,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addCenterPin() {
+    public func addCenterPin() {
         guard let centerAnnotationView = self.centerAnnotationView else {
             return
         }
@@ -147,7 +146,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
     
-    open func removeCenterPin() {
+    public func removeCenterPin() {
         guard let subviews = self.mapView?.subviews else {
             return
         }
@@ -167,7 +166,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
     
-    open func updatePin() {
+    public func updatePin() {
         guard let mapView = self.mapView, let centerCoordinate = self.mapView?.centerCoordinate,
             let mapViewPoint = self.mapView?.convert(centerCoordinate, toPointTo: mapView) else {
             return
@@ -184,7 +183,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addAnnotations(_ mapItems: Array<MKMapItem>) {
+    public func addAnnotations(_ mapItems: Array<MKMapItem>) {
 
         for item in mapItems {
 
@@ -205,7 +204,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addAnnotation(_ geoModel: GeoModel) {
+    public func addAnnotation(_ geoModel: GeoModel) {
         mapView?.addAnnotation(geoModel)
     }
     
@@ -216,7 +215,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func showAnnotation() {
+    public func showAnnotation() {
         if let annotations = mapView?.annotations {
             mapView?.showAnnotations(annotations, animated: true)
         }
@@ -232,7 +231,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addRadiusOverlay(_ geoModel: GeoModel, radius: CLLocationDistance) {
+    public func addRadiusOverlay(_ geoModel: GeoModel, radius: CLLocationDistance) {
         self.addRadiusOverlay(geoModel.coordinate, radius: radius, lineWidth: nil, strokeColor: nil, fillColor: nil)
     }
 
@@ -245,7 +244,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addRadiusOverlay(_ coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, lineWidth: CGFloat?, strokeColor: UIColor?, fillColor: UIColor?) {
+    public func addRadiusOverlay(_ coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, lineWidth: CGFloat?, strokeColor: UIColor?, fillColor: UIColor?) {
         mapView?.addOverlay(GeoCircleOverlay(center: coordinate, radius: radius, lineWidth: lineWidth, strokeColor: strokeColor, fillColor: fillColor))
     }
     
@@ -263,7 +262,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addRadiusOverlayToCurrentLocation(nibName: String, title: String?, subtitle: String?, data: AnyObject?) {
+    public func addRadiusOverlayToCurrentLocation(nibName: String, title: String?, subtitle: String?, data: AnyObject?) {
 
         if let coordinate = self.currentLocation?.coordinate {
 
@@ -279,7 +278,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
     
-    open func removeRadiusOverlays() {
+    public func removeRadiusOverlays() {
         guard let overlays = self.mapView?.overlays else {
             return
         }
@@ -303,7 +302,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addAnnotationToLocation(nibName: String?, coordinate: CLLocationCoordinate2D?, title: String?, subtitle: String?, data: AnyObject?) {
+    public func addAnnotationToLocation(nibName: String?, coordinate: CLLocationCoordinate2D?, title: String?, subtitle: String?, data: AnyObject?) {
 
         if let coordinate = coordinate {
             let geoModel = GeoModel(nibName: nibName, coordinate: coordinate, title: title, subtitle: subtitle, data: data)
@@ -324,7 +323,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func addAnnotationToCurrentLocation(nibName: String, title: String?, subtitle: String?, data: AnyObject?) {
+    public func addAnnotationToCurrentLocation(nibName: String, title: String?, subtitle: String?, data: AnyObject?) {
 
         if let coordinate = self.currentLocation?.coordinate {
             let geoModel = GeoModel(nibName: nibName, coordinate: coordinate, title: title, subtitle: subtitle, data: data)
@@ -341,7 +340,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
     
-    func zoomWithMeters(meters: Double, animated: Bool = true) {
+    public func zoomWithMeters(meters: Double, animated: Bool = true) {
         self.zoomToMapCenterLocationInMapView(meters: meters, animated: animated)
     }
 
@@ -350,7 +349,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func zoomToUserLocationInMapView(meters: CLLocationDistance = 10000, animation: Bool = true) {
+    public func zoomToUserLocationInMapView(meters: CLLocationDistance = 10000, animation: Bool = true) {
         if let coordinate = self.currentLocation?.coordinate {
             let region = MKCoordinateRegion.init(center: coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
             mapView?.setRegion(region, animated: animation)
@@ -362,7 +361,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func zoomToMapCenterLocationInMapView(meters: CLLocationDistance = 10000, animated: Bool = true) {
+    public func zoomToMapCenterLocationInMapView(meters: CLLocationDistance = 10000, animated: Bool = true) {
         guard let (location, _) = self.mapCenterLocationAndRadius() else {
             return
         }
@@ -378,7 +377,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func zoomToCustomLocationInMapView(_ geoModel: GeoModel, radius: CLLocationDistance) {
+    public func zoomToCustomLocationInMapView(_ geoModel: GeoModel, radius: CLLocationDistance) {
         self.zoomToCustomLocationInMapView(geoModel.coordinate, radius: radius)
     }
 
@@ -390,7 +389,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    open func zoomToCustomLocationInMapView(_ coordinate: CLLocationCoordinate2D?, radius: CLLocationDistance = 10000, animated: Bool = true) {
+    public func zoomToCustomLocationInMapView(_ coordinate: CLLocationCoordinate2D?, radius: CLLocationDistance = 10000, animated: Bool = true) {
         
         guard let coordinate = coordinate else {
             return
@@ -412,7 +411,7 @@ open class GeoMapViewManager: NSObject {
      - returns void
      */
 
-    fileprivate func openInMap(_ mapView: MKMapView, title: String) {
+    public func openInMap(_ mapView: MKMapView, title: String) {
 
         guard let coordinate = self.currentLocation?.coordinate else {
             return
@@ -428,73 +427,5 @@ open class GeoMapViewManager: NSObject {
 
         mapItem.name = title
         mapItem.openInMaps(launchOptions: options)
-    }
-}
-
-extension GeoMapViewManager: MKMapViewDelegate {
-    
-    // MARK: MKMapViewDelegate methods
-    
-    public func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        
-        // notify listeners when map moved
-        
-        if mapView.userStartedGesture() {
-            GeoMapViewManager.mapMovedByUserEvent.notify()
-        } else {
-            GeoMapViewManager.mapMovedEvent.notify()
-        }
-    }
-    
-    open func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        // update mapview
-        self.updatePin()
-    }
-
-    /**
-     MKMapViewDelegate method rendererForOverlay
-     */
-
-    open func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        
-        let circleRenderer = MKCircleRenderer(overlay: overlay)
-
-        if let overlay = overlay as? GeoCircleOverlay {
-            
-            if let lineWidth = overlay.lineWidth {
-                circleRenderer.lineWidth = lineWidth
-            }
-            
-            if let strokeColor = overlay.strokeColor {
-                circleRenderer.strokeColor = strokeColor
-            }
-            
-            if let fillColor = overlay.fillColor {
-                circleRenderer.fillColor = fillColor
-            }
-        }
-
-        return circleRenderer
-    }
-
-    /**
-     calloutAccessoryControlTapped method for callout actions
-     */
-
-    open func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-
-        guard let geoModel = view.annotation as? GeoModel, let title = geoModel.title, control == view.rightCalloutAccessoryView else { return }
-
-        self.openInMap(mapView, title: title)
-    }
-    
-    public func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if view.annotation is MKUserLocation {
-            return
-        }
-
-        if let geoModel = view.annotation as? GeoModel {
-            GeoMapViewManager.mapMarkerSelectedEvent.notify(geoModel)
-        }
     }
 }
