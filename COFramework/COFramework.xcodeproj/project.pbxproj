@@ -166,6 +166,7 @@
 		D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
 		D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationManager.swift; sourceTree = "<group>"; };
 		D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoderManager.swift; sourceTree = "<group>"; };
+		D1F420FA26B5F513007AC5B4 /* AlamofireProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireProvider.swift; sourceTree = "<group>"; };
 		D1FCD8C52686B23800E601FA /* SampleAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPIFactory.swift; sourceTree = "<group>"; };
 		D1FCD8C72686B23800E601FA /* SampleServiceURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleServiceURL.swift; sourceTree = "<group>"; };
 		D1FCD8C82686B23800E601FA /* SampleEnvironments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEnvironments.swift; sourceTree = "<group>"; };
@@ -359,6 +360,7 @@
 			children = (
 				D1FCD8E02686B8CB00E601FA /* AppURLRequest.swift */,
 				D1FCD8DF2686B8CB00E601FA /* ProviderProtocol.swift */,
+				D1F420FA26B5F513007AC5B4 /* AlamofireProvider.swift */,
 				D1FCD8E12686B8CB00E601FA /* URLSessionProvider.swift */,
 				D1FCD8E22686B8CB00E601FA /* TestProvider.swift */,
 			);
