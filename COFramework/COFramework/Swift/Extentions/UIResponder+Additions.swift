@@ -14,9 +14,15 @@ extension UIResponder {
 		return (self.next as? UIViewController) ?? self.next?.parentViewController
 	}
 	
+#if targetEnvironment(macCatalyst)
+    public override var className: String {
+        return NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
+    }
+#else
     public var className: String {
-		return NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
-	}
+        return NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
+    }
+#endif
 	
     public var classNameDot: String {
 		return self.className + "."
