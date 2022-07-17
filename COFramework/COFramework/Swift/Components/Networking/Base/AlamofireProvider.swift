@@ -1,16 +1,17 @@
 //
 //  AlamofireProvider.swift
-//  KPLibrary
+//  FuzFuz
 //
 //  Created by Cenker Ozkurt on 20/04/21.
-//  Copyright © 2021 KP.org. All rights reserved.
+//  Copyright © 2021 Cenker Ozkurt, All rights reserved.
 //
+
+#if !targetEnvironment(macCatalyst)
 
 import UIKit
 import Alamofire
 import ObjectMapper
 import Foundation
-import COFramework
 
 /**
  AlamofireProvider class confirms ProviderProtocol as a new networking provider.
@@ -23,7 +24,7 @@ open class AlamofireProvider: ProviderProtocol {
         let configuration = URLSessionConfiguration.af.default
         configuration.timeoutIntervalForRequest = 30
         
-        return Session(configuration: configuration, interceptor: KPRequestInterceptor())
+        return Session(configuration: configuration, interceptor: CORequestInterceptor())
     }()
     
     // MARK: - Init Methods
@@ -59,7 +60,7 @@ open class AlamofireProvider: ProviderProtocol {
     }
 }
 
-class KPRequestInterceptor: RequestInterceptor {
+class CORequestInterceptor: RequestInterceptor {
     let retryLimit = 3
     let retryDelay: TimeInterval = 10
 
@@ -77,3 +78,4 @@ class KPRequestInterceptor: RequestInterceptor {
       }
     }
 }
+#endif
