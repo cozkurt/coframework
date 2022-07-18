@@ -17,11 +17,6 @@
 		D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */; };
 		D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D1FCD8A9268519FB00E601FA /* ObjectMapper */; };
 		DF27F9392885180200A843FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DF27F9382885180200A843FC /* Alamofire */; };
-		DF27F93B28851BC000A843FC /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCD8DF2686B8CB00E601FA /* ProviderProtocol.swift */; };
-		DF27F93C28851BC000A843FC /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCD8E12686B8CB00E601FA /* URLSessionProvider.swift */; };
-		DF27F93D28851BC000A843FC /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCD8E22686B8CB00E601FA /* TestProvider.swift */; };
-		DF27F93E28851BC000A843FC /* AppURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCD8E02686B8CB00E601FA /* AppURLRequest.swift */; };
-		DF27F93F28851BC000A843FC /* AlamofireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F420FA26B5F513007AC5B4 /* AlamofireProvider.swift */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
 		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
@@ -847,7 +842,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF27F93D28851BC000A843FC /* TestProvider.swift in Sources */,
 				DFC4F0EF265727020064ECBB /* CGSize+Additions.swift in Sources */,
 				DFC4F100265727020064ECBB /* CGPoint+Additions.swift in Sources */,
 				D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */,
@@ -909,7 +903,6 @@
 				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
 				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
 				DFC4F10B265727020064ECBB /* UIFlowBaseView.swift in Sources */,
-				DF27F93E28851BC000A843FC /* AppURLRequest.swift in Sources */,
 				DFC4F137265727020064ECBB /* Logging.swift in Sources */,
 				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
 				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
@@ -922,13 +915,11 @@
 				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
 				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
 				DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */,
-				DF27F93C28851BC000A843FC /* URLSessionProvider.swift in Sources */,
 				DFC4F119265727020064ECBB /* AppearanceSwitch.swift in Sources */,
 				DFC4F139265727020064ECBB /* ImagePicker.swift in Sources */,
 				DFC4F11F265727020064ECBB /* StylesViewController.swift in Sources */,
 				DFC4F1CD265733340064ECBB /* NSObject+Blocks.m in Sources */,
 				DFC4F1D1265733340064ECBB /* NSMutableAttributedString+Utilities.m in Sources */,
-				DF27F93F28851BC000A843FC /* AlamofireProvider.swift in Sources */,
 				DFC4F118265727020064ECBB /* AppearanceSegmented.swift in Sources */,
 				DFC4F140265727020064ECBB /* ImageViewWithMask.swift in Sources */,
 				DFC4F0FC265727020064ECBB /* Data+Additions.swift in Sources */,
@@ -937,7 +928,6 @@
 				DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */,
 				DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */,
 				DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */,
-				DF27F93B28851BC000A843FC /* ProviderProtocol.swift in Sources */,
 				DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */,
 				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,
 				DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */,
