@@ -6,6 +6,8 @@
 //  Copyright © 2021 Cenker Ozkurt, All rights reserved.
 //
 
+#if !targetEnvironment(macCatalyst)
+
 import UIKit
 import Alamofire
 import ObjectMapper
@@ -77,3 +79,4 @@ class CORequestInterceptor: RequestInterceptor {
     }
 }
 
+#endif
