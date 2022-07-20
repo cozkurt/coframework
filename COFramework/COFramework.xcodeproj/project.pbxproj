@@ -16,7 +16,6 @@
 		D1A4A3F726B35ED7008C7CD5 /* GeoLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */; };
 		D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */; };
 		D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D1FCD8A9268519FB00E601FA /* ObjectMapper */; };
-		DF27F9392885180200A843FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DF27F9382885180200A843FC /* Alamofire */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
 		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
@@ -329,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */,
-				DF27F9392885180200A843FC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,7 +775,6 @@
 			name = COFramework;
 			packageProductDependencies = (
 				D1FCD8A9268519FB00E601FA /* ObjectMapper */,
-				DF27F9382885180200A843FC /* Alamofire */,
 			);
 			productName = COFramework;
 			productReference = DFC4F041265726C80064ECBB /* COFramework.framework */;
@@ -808,7 +805,6 @@
 			mainGroup = DFC4F037265726C80064ECBB;
 			packageReferences = (
 				D1FCD8A8268519FB00E601FA /* XCRemoteSwiftPackageReference "ObjectMapper" */,
-				DF27F9372885180200A843FC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = DFC4F042265726C80064ECBB /* Products */;
 			projectDirPath = "";
@@ -1169,14 +1165,6 @@
 				minimumVersion = 4.2.0;
 			};
 		};
-		DF27F9372885180200A843FC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1184,11 +1172,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D1FCD8A8268519FB00E601FA /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
-		};
-		DF27F9382885180200A843FC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DF27F9372885180200A843FC /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
