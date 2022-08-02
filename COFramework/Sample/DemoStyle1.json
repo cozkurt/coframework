@@ -1,0 +1,45 @@
+
+[
+ {
+ "colors" : [
+             { "name": "custom0", "value": "0,0,255,1" },
+             { "name": "custom1", "value": "0,84,154,1" },
+             { "name": "background1", "value": "0,255,0,1" }
+             ]
+ },
+ {
+ "appearanceId": "testButton1",
+ "appearanceType": "button",
+ "titleColor": "custom1",
+ "backgroundColor": "background1",
+ "font": "Arial,16",
+ "borderColor": "custom0",
+ "borderWidth": "0",
+ "cornerRadius": "10"
+ },
+ {
+ "appearanceId": "testLabel1",
+ "appearanceType": "label",
+ "titleColor": "custom1",
+ "backgroundColor": "background1",
+ "font": "Arial,16",
+ "borderColor": "custom0",
+ "borderWidth": "0",
+ "cornerRadius": "10",
+ "styleAlignment": "left"
+ },
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "button",
+ "titleColor": "255,0,0,1",
+ "backgroundColor": "background1",
+ "font": "Arial,16"
+ },
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "label",
+ "titleColor": "0,255,0,1",
+ "backgroundColor": "background1",
+ "font": "Arial,16"
+ }
+ ]
