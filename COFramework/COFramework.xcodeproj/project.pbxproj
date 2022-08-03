@@ -26,6 +26,24 @@
 		9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415356289B0D4A004275CD /* MenuViewController.swift */; };
 		9A41536C289B0D4A004275CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535A289B0D4A004275CD /* Main.storyboard */; };
 		9A41536D289B0D4A004275CD /* MainFlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535B289B0D4A004275CD /* MainFlow.json */; };
+		9A415383289B208D004275CD /* COUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415370289B208D004275CD /* COUIBaseView.m */; };
+		9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415372289B208D004275CD /* COUIBehaviorGestures.h */; };
+		9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415373289B208D004275CD /* COUIBehaviorModel.m */; };
+		9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415374289B208D004275CD /* COUIBehaviorController.m */; };
+		9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415375289B208D004275CD /* COUIBehaviorView.m */; };
+		9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415376289B208D004275CD /* COUIBehaviorBaseView.m */; };
+		9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415377289B208D004275CD /* COUIBehaviorMotion.h */; };
+		9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415378289B208D004275CD /* COUIBehaviorFactory.h */; };
+		9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415379289B208D004275CD /* COUIBehaviorImage.m */; };
+		9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537A289B208D004275CD /* COUIBehaviorGestures.m */; };
+		9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537B289B208D004275CD /* COUIBehaviorController.h */; };
+		9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537C289B208D004275CD /* COUIBehaviorModel.h */; };
+		9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537D289B208D004275CD /* COUIBehaviorFactory.m */; };
+		9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537E289B208D004275CD /* COUIBehaviorMotion.m */; };
+		9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */; };
+		9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415380289B208D004275CD /* COUIBehaviorView.h */; };
+		9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415381289B208D004275CD /* COUIBehaviorImage.h */; };
+		9A415394289B208D004275CD /* COUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415382289B208D004275CD /* COUIBaseView.h */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -196,6 +214,24 @@
 		9A415356289B0D4A004275CD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9A41535A289B0D4A004275CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9A41535B289B0D4A004275CD /* MainFlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainFlow.json; sourceTree = "<group>"; };
+		9A415370289B208D004275CD /* COUIBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBaseView.m; sourceTree = "<group>"; };
+		9A415372289B208D004275CD /* COUIBehaviorGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorGestures.h; sourceTree = "<group>"; };
+		9A415373289B208D004275CD /* COUIBehaviorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorModel.m; sourceTree = "<group>"; };
+		9A415374289B208D004275CD /* COUIBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorController.m; sourceTree = "<group>"; };
+		9A415375289B208D004275CD /* COUIBehaviorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorView.m; sourceTree = "<group>"; };
+		9A415376289B208D004275CD /* COUIBehaviorBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorBaseView.m; sourceTree = "<group>"; };
+		9A415377289B208D004275CD /* COUIBehaviorMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorMotion.h; sourceTree = "<group>"; };
+		9A415378289B208D004275CD /* COUIBehaviorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorFactory.h; sourceTree = "<group>"; };
+		9A415379289B208D004275CD /* COUIBehaviorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorImage.m; sourceTree = "<group>"; };
+		9A41537A289B208D004275CD /* COUIBehaviorGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorGestures.m; sourceTree = "<group>"; };
+		9A41537B289B208D004275CD /* COUIBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorController.h; sourceTree = "<group>"; };
+		9A41537C289B208D004275CD /* COUIBehaviorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorModel.h; sourceTree = "<group>"; };
+		9A41537D289B208D004275CD /* COUIBehaviorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorFactory.m; sourceTree = "<group>"; };
+		9A41537E289B208D004275CD /* COUIBehaviorMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorMotion.m; sourceTree = "<group>"; };
+		9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorBaseView.h; sourceTree = "<group>"; };
+		9A415380289B208D004275CD /* COUIBehaviorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorView.h; sourceTree = "<group>"; };
+		9A415381289B208D004275CD /* COUIBehaviorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorImage.h; sourceTree = "<group>"; };
+		9A415382289B208D004275CD /* COUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBaseView.h; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -442,6 +478,29 @@
 				9A3A03792898E9D80063C9DB /* StylesViewController.xib */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		9A415371289B208D004275CD /* COUIBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */,
+				9A415376289B208D004275CD /* COUIBehaviorBaseView.m */,
+				9A415372289B208D004275CD /* COUIBehaviorGestures.h */,
+				9A41537A289B208D004275CD /* COUIBehaviorGestures.m */,
+				9A41537C289B208D004275CD /* COUIBehaviorModel.h */,
+				9A415373289B208D004275CD /* COUIBehaviorModel.m */,
+				9A41537B289B208D004275CD /* COUIBehaviorController.h */,
+				9A415374289B208D004275CD /* COUIBehaviorController.m */,
+				9A415380289B208D004275CD /* COUIBehaviorView.h */,
+				9A415375289B208D004275CD /* COUIBehaviorView.m */,
+				9A415377289B208D004275CD /* COUIBehaviorMotion.h */,
+				9A41537E289B208D004275CD /* COUIBehaviorMotion.m */,
+				9A415378289B208D004275CD /* COUIBehaviorFactory.h */,
+				9A41537D289B208D004275CD /* COUIBehaviorFactory.m */,
+				9A415381289B208D004275CD /* COUIBehaviorImage.h */,
+				9A415379289B208D004275CD /* COUIBehaviorImage.m */,
+			);
+			path = COUIBehavior;
 			sourceTree = "<group>";
 		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
@@ -722,24 +781,24 @@
 		DFC4F18A265733340064ECBB /* COUIAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				DFC4F193265733340064ECBB /* COUIAnimationRouter.h */,
 				DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */,
 				DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */,
+				DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */,
 				DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */,
+				DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */,
+				DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */,
 				DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */,
+				DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */,
 				DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */,
 				DFC4F190265733340064ECBB /* COUIAnimationFactory.h */,
-				DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */,
-				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
-				DFC4F193265733340064ECBB /* COUIAnimationRouter.h */,
-				DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */,
-				DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */,
-				DFC4F196265733340064ECBB /* COShared */,
-				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
-				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
-				DFC4F1A5265733340064ECBB /* Categories */,
 				DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */,
-				DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */,
-				DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */,
+				DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */,
+				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
+				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
+				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
+				DFC4F196265733340064ECBB /* COShared */,
+				DFC4F1A5265733340064ECBB /* Categories */,
 			);
 			path = COUIAnimation;
 			sourceTree = "<group>";
@@ -747,18 +806,18 @@
 		DFC4F196265733340064ECBB /* COShared */ = {
 			isa = PBXGroup;
 			children = (
-				DFC4F197265733340064ECBB /* CODataSource.h */,
-				DFC4F198265733340064ECBB /* COJSONLoader.h */,
 				DFC4F199265733340064ECBB /* COSingleton.h */,
+				DFC4F1A1265733340064ECBB /* COMacros.h */,
+				DFC4F197265733340064ECBB /* CODataSource.h */,
+				DFC4F19E265733340064ECBB /* CODataSource.m */,
+				DFC4F198265733340064ECBB /* COJSONLoader.h */,
+				DFC4F19D265733340064ECBB /* COJSONLoader.m */,
 				DFC4F19A265733340064ECBB /* COLogging.h */,
+				DFC4F19F265733340064ECBB /* COLogging.m */,
+				DFC4F1A2265733340064ECBB /* COTimer.h */,
 				DFC4F19B265733340064ECBB /* COTimer.m */,
 				DFC4F19C265733340064ECBB /* COCacheController.h */,
-				DFC4F19D265733340064ECBB /* COJSONLoader.m */,
-				DFC4F19E265733340064ECBB /* CODataSource.m */,
-				DFC4F19F265733340064ECBB /* COLogging.m */,
 				DFC4F1A0265733340064ECBB /* COCacheController.m */,
-				DFC4F1A1265733340064ECBB /* COMacros.h */,
-				DFC4F1A2265733340064ECBB /* COTimer.h */,
 			);
 			path = COShared;
 			sourceTree = "<group>";
@@ -767,13 +826,13 @@
 			isa = PBXGroup;
 			children = (
 				DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */,
+				DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */,
+				DFC4F1AA265733340064ECBB /* NSString+Utilities.h */,
 				DFC4F1A7265733340064ECBB /* NSString+Utilities.m */,
 				DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */,
-				DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */,
-				DFC4F1AA265733340064ECBB /* NSString+Utilities.h */,
-				DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */,
-				DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */,
 				DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */,
+				DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */,
+				DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -801,6 +860,9 @@
 		DFC4F1E826582C560064ECBB /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				9A415382289B208D004275CD /* COUIBaseView.h */,
+				9A415370289B208D004275CD /* COUIBaseView.m */,
+				9A415371289B208D004275CD /* COUIBehavior */,
 				DFC4F18A265733340064ECBB /* COUIAnimation */,
 			);
 			path = ObjC;
@@ -813,11 +875,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */,
+				9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */,
 				DFC4F1C7265733340064ECBB /* COTimer.h in Headers */,
 				DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */,
+				9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */,
 				DFC4F1C6265733340064ECBB /* COMacros.h in Headers */,
 				DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */,
 				DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */,
+				9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */,
 				DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */,
 				DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */,
 				DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */,
@@ -827,11 +893,16 @@
 				DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */,
 				DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */,
 				DFC4F1BF265733340064ECBB /* COLogging.h in Headers */,
+				9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */,
+				9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */,
+				9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */,
 				DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */,
 				DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */,
 				DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */,
+				9A415394289B208D004275CD /* COUIBaseView.h in Headers */,
 				DFC4F052265726C80064ECBB /* COFramework.h in Headers */,
 				DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */,
+				9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */,
 				DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -977,10 +1048,12 @@
 				D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */,
 				D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */,
 				DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */,
+				9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */,
 				DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */,
 				DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */,
 				DFC4F0FF265727020064ECBB /* String+Colors.swift in Sources */,
 				DFC4F12F265727020064ECBB /* CustomTableHelper.swift in Sources */,
+				9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */,
 				DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */,
 				DFC4F136265727020064ECBB /* SignalData.swift in Sources */,
 				DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */,
@@ -1003,6 +1076,7 @@
 				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
 				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
 				DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */,
+				9A415383289B208D004275CD /* COUIBaseView.m in Sources */,
 				DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */,
 				DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */,
 				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
@@ -1025,7 +1099,9 @@
 				DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */,
 				DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */,
 				DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */,
+				9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */,
 				DFC4F12E265727020064ECBB /* AppTableBase.swift in Sources */,
+				9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */,
 				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
 				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
@@ -1042,6 +1118,7 @@
 				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
 				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
 				DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */,
+				9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */,
 				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
 				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
 				DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */,
@@ -1062,6 +1139,7 @@
 				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,
 				DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */,
 				DFC4F121265727020064ECBB /* AppearanceModel.swift in Sources */,
+				9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */,
 				DFC4F135265727020064ECBB /* CustomTableDelegates.swift in Sources */,
 				DFC4F0E7265727020064ECBB /* UILabel+Additions.swift in Sources */,
 				DFC4F142265727020064ECBB /* Signal.swift in Sources */,
@@ -1078,6 +1156,7 @@
 				DFC4F13A265727020064ECBB /* Reachability.swift in Sources */,
 				DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */,
 				DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */,
+				9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */,
 				DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */,
 				DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */,
 				DFC4F138265727020064ECBB /* GlobalHelpers.swift in Sources */,
@@ -1091,6 +1170,7 @@
 				DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */,
 				DFC4F0E6265727020064ECBB /* NSObject+Additions.swift in Sources */,
 				DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */,
+				9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
