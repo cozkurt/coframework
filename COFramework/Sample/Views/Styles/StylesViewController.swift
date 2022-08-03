@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import COFramework
 
 class StylesViewController: UIViewController {
 
@@ -26,6 +26,6 @@ class StylesViewController: UIViewController {
     }
     
     @IBAction func close() {
-        NotificationsController.sharedInstance.post("DISMISS")
+        NotificationsCenterManager.sharedInstance.post("DISMISS")
     }
 }

@@ -2,13 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StylesViewController" customModule="Plume" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StylesViewController" customModule="Sample" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,16 +17,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-ti-VsX" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="93" y="84" width="182" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-ti-VsX" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="0.0" y="57" width="182" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testButton1"/>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-VX-vmD" customClass="AppearanceLabel" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="93" y="139" width="182" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-VX-vmD" customClass="AppearanceLabel" customModule="COFramework">
+                    <rect key="frame" x="0.0" y="95" width="182" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -36,23 +35,23 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testLabel1"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T01-Wf-tSE" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="275" y="597" width="85" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T01-Wf-tSE" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="8" y="518" width="85" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Load Style 2"/>
                     <connections>
                         <action selector="loadStyle2" destination="-1" eventType="touchUpInside" id="MRw-ac-I6u"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtB-Be-8is" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="15" y="597" width="83" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtB-Be-8is" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="8" y="480" width="83" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Load Style 1"/>
                     <connections>
                         <action selector="loadStyle1" destination="-1" eventType="touchUpInside" id="yQF-H4-ex5"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwL-RN-ga9" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwL-RN-ga9" customClass="AppearanceButton" customModule="COFramework">
                     <rect key="frame" x="316" y="20" width="39" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Close"/>
@@ -60,13 +59,13 @@
                         <action selector="close" destination="-1" eventType="touchUpInside" id="VTq-VK-Jab"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-vB-1lY" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="164" y="254" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-vB-1lY" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="0.0" y="124" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CD-cu-txz" customClass="AppearanceButton" customModule="Plume" customModuleProvider="target">
-                    <rect key="frame" x="164" y="371" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CD-cu-txz" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="0.0" y="162" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                 </button>
@@ -76,4 +75,24 @@
             <point key="canvasLocation" x="109.5" y="115.5"/>
         </view>
     </objects>
+    <designables>
+        <designable name="2CD-cu-txz">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="J1u-ti-VsX">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="PtB-Be-8is">
+            <size key="intrinsicContentSize" width="83" height="30"/>
+        </designable>
+        <designable name="T01-Wf-tSE">
+            <size key="intrinsicContentSize" width="85" height="30"/>
+        </designable>
+        <designable name="VwL-RN-ga9">
+            <size key="intrinsicContentSize" width="39" height="30"/>
+        </designable>
+        <designable name="xbF-vB-1lY">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
 </document>
