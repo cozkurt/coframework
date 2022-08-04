@@ -117,11 +117,15 @@ class MenuViewController: AdvancedPageViewController {
     func setUpMenuItems() {
         // Setup Menu Items
         #if DEBUG
-        self.menuItems = [ ("Styles".localize(),"list.bullet.indent"),
+        self.menuItems = [
+            ("DynamicCells".localize(),"list.bullet.indent"),
+            ("Styles".localize(),"list.bullet.indent"),
             ("Dynamics".localize(),"list.bullet.indent"),
             ("Animations".localize(),"list.bullet.indent")]
         #else
-        self.menuItems = [ ("Styles".localize(),"list.bullet.indent"),
+        self.menuItems = [
+            ("DynamicCells".localize(),"list.bullet.indent"),
+            ("Styles".localize(),"list.bullet.indent"),
             ("Dynamics".localize(),"list.bullet.indent"),
             ("Animations".localize(),"list.bullet.indent")]
         #endif
@@ -129,11 +133,13 @@ class MenuViewController: AdvancedPageViewController {
     
     func setupControllers() {
         #if DEBUG
-        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW"),
+        self.pagesWithFlowControllers([("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
+                                       ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW")])
         #else
-        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW"),
+        self.pagesWithFlowControllers([("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
+                                       ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW")])
         #endif
@@ -148,9 +154,9 @@ class MenuViewController: AdvancedPageViewController {
         }
         
         #if DEBUG
-            self.badges = [ notificationsCount,0,0 ]
+            self.badges = [ notificationsCount,0,0,0 ]
         #else
-            self.badges = [ notificationsCount,0,0 ]
+            self.badges = [ notificationsCount,0,0,0 ]
         #endif
     }
     

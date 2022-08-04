@@ -82,15 +82,15 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="30" contentMode="scaleAspectFit" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-HK-ogv" customClass="COUIBehaviorImage">
-                    <rect key="frame" x="100" y="426" width="44" height="44"/>
+                    <rect key="frame" x="99" y="426" width="44" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="scaleAspectFit" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-JL-f9y" customClass="COUIBehaviorImage">
-                    <rect key="frame" x="200" y="426" width="44" height="44"/>
+                    <rect key="frame" x="199" y="426" width="44" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleAspectFit" fixedFrame="YES" image="globe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="277-Hj-DWw" customClass="COUIBehaviorImage">
-                    <rect key="frame" x="300" y="417" width="66" height="62"/>
+                    <rect key="frame" x="299" y="417" width="66" height="62"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>

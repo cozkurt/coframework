@@ -25,8 +25,8 @@ open class DynamicActionSheet: AppTableBase {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.addEmptyFooter()
-        self.tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+        self.tableView?.addEmptyFooter()
+        self.tableView?.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
     }
 
     open override func viewWillAppear(_ animated: Bool) {

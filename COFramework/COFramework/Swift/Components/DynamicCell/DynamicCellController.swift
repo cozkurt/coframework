@@ -147,8 +147,8 @@ public class DynamicCellController {
             
             // check if it's dynamic actionSheet
             if let dynamicActionSheet = self.dynamicCellViewController as? DynamicActionSheet {
-                dynamicActionSheet.blurView.isUserInteractionEnabled = userInteractionEnabled
-                dynamicActionSheet.blurView.addBlur(blurAlpha)
+                dynamicActionSheet.blurView?.isUserInteractionEnabled = userInteractionEnabled
+                dynamicActionSheet.blurView?.addBlur(blurAlpha)
                 
                 runOnMainQueue(after: 0.1) {
                     dynamicActionSheet.updateTableHeight(tableViewBottomGap, animation)

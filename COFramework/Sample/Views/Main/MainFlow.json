@@ -51,6 +51,9 @@
     "eventName": "MENU_VIEW", "viewController":"Sample.MenuViewController", "navigationType": "replace", "statusBarHidden": false
 },
 {
+    "eventName": "DYNAMIC_CELLS_VIEW", "viewController":"Sample.DynamicsCellsViewController", "navigationType": "present", "statusBarHidden": false
+},
+{
     "eventName": "STYLES_VIEW", "viewController":"Sample.StylesViewController", "navigationType": "present", "statusBarHidden": false
 },
 {
