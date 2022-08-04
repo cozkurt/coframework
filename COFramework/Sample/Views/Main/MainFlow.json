@@ -61,5 +61,8 @@
 },
 {
     "eventName": "ANIMATIONS_VIEW", "viewController":"Sample.AnimationsViewController", "navigationType": "present", "statusBarHidden": false
-}
+},
+{
+    "eventName": "CONSOLE_VIEW", "viewController":"Sample.ConsoleViewController", "navigationType": "present", "statusBarHidden": true
+},
 ]

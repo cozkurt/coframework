@@ -121,6 +121,10 @@
 		9A415447289B6086004275CD /* ConnectPiecesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415437289B6086004275CD /* ConnectPiecesCell.xib */; };
 		9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415449289B6442004275CD /* DynamicsCellsViewController.swift */; };
 		9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */; };
+		9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */; };
+		9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544F289B7127004275CD /* ConsoleViewController.swift */; };
+		9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415450289B7127004275CD /* ConsoleTableViewCell.xib */; };
+		9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415451289B7127004275CD /* ConsoleViewController.xib */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -386,6 +390,10 @@
 		9A415437289B6086004275CD /* ConnectPiecesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectPiecesCell.xib; sourceTree = "<group>"; };
 		9A415449289B6442004275CD /* DynamicsCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsCellsViewController.swift; sourceTree = "<group>"; };
 		9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicsCellsViewController.xib; sourceTree = "<group>"; };
+		9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTableViewCell.swift; sourceTree = "<group>"; };
+		9A41544F289B7127004275CD /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		9A415450289B7127004275CD /* ConsoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleTableViewCell.xib; sourceTree = "<group>"; };
+		9A415451289B7127004275CD /* ConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleViewController.xib; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -587,6 +595,7 @@
 		9A41534E289B0D4A004275CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A41544D289B7127004275CD /* Console */,
 				9A415448289B63ED004275CD /* DynamicCells */,
 				9A415395289B2878004275CD /* Animations */,
 				9A41536E289B0EF8004275CD /* Styles */,
@@ -787,6 +796,17 @@
 				9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */,
 			);
 			path = DynamicCells;
+			sourceTree = "<group>";
+		};
+		9A41544D289B7127004275CD /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */,
+				9A415450289B7127004275CD /* ConsoleTableViewCell.xib */,
+				9A41544F289B7127004275CD /* ConsoleViewController.swift */,
+				9A415451289B7127004275CD /* ConsoleViewController.xib */,
+			);
+			path = Console;
 			sourceTree = "<group>";
 		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
@@ -1343,6 +1363,7 @@
 				9A415416289B5AEE004275CD /* robot40_00037.png in Resources */,
 				9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */,
 				9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */,
+				9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */,
 				9A415415289B5AEE004275CD /* robot40_00009.png in Resources */,
 				9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */,
 				9A415366289B0D4A004275CD /* MenuViewController.xib in Resources */,
@@ -1351,6 +1372,7 @@
 				9A415402289B5AEE004275CD /* robot40_00016.png in Resources */,
 				9A41541D289B5AEE004275CD /* robot12_00002.png in Resources */,
 				9A415368289B0D4A004275CD /* MenuViewController_iPadx.xib in Resources */,
+				9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */,
 				9A415419289B5AEE004275CD /* robot40_00036.png in Resources */,
 				9A41543E289B6086004275CD /* RestartYourModemCell.xib in Resources */,
 				9A3A037C2898E9D80063C9DB /* DemoStyle2.json in Resources */,
@@ -1385,6 +1407,7 @@
 				9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */,
 				9A3A037F2898E9D80063C9DB /* StylesViewController.swift in Sources */,
 				9A415442289B6086004275CD /* RestartYourModemCell.swift in Sources */,
+				9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */,
 				9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */,
 				9A41543C289B6086004275CD /* ConnectCell.swift in Sources */,
 				9A3A03692898E7740063C9DB /* ViewController.swift in Sources */,
@@ -1393,6 +1416,7 @@
 				9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */,
 				9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */,
 				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
+				9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */,
 				9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */,
 				9A415364289B0D4A004275CD /* MenuItemCell.swift in Sources */,
 				9A415444289B6086004275CD /* PlugPodCell.swift in Sources */,
