@@ -47,6 +47,66 @@
 		9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41539A289B2878004275CD /* DynamicsViewController.swift */; };
 		9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41539C289B2878004275CD /* DynamicsViewController.json */; };
 		9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A3289B2A71004275CD /* DynamicsViewController.xib */; };
+		9A4153A9289B53A4004275CD /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153A7289B53A4004275CD /* AnimationsViewController.swift */; };
+		9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A8289B53A4004275CD /* AnimationsViewController.xib */; };
+		9A4153B5289B5700004275CD /* COUICircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AD289B5700004275CD /* COUICircleView.m */; };
+		9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AE289B5700004275CD /* COUIParticleView.m */; };
+		9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B0289B5700004275CD /* COUIViewCustom.h */; };
+		9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B1289B5700004275CD /* COUIParticleView.h */; };
+		9A4153BA289B5700004275CD /* COUICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B2289B5700004275CD /* COUICircleView.h */; };
+		9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153B4289B5700004275CD /* COUIViewCustom.m */; };
+		9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */; };
+		9A4153F4289B5AEE004275CD /* robot40_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C0289B5AEE004275CD /* robot40_00013.png */; };
+		9A4153F5289B5AEE004275CD /* robot40_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C1289B5AEE004275CD /* robot40_00007.png */; };
+		9A4153F6289B5AEE004275CD /* robot40_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C2289B5AEE004275CD /* robot40_00006.png */; };
+		9A4153F7289B5AEE004275CD /* robot40_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C3289B5AEE004275CD /* robot40_00012.png */; };
+		9A4153F8289B5AEE004275CD /* robot40_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C4289B5AEE004275CD /* robot40_00004.png */; };
+		9A4153F9289B5AEE004275CD /* robot40_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C5289B5AEE004275CD /* robot40_00010.png */; };
+		9A4153FA289B5AEE004275CD /* robot40_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C6289B5AEE004275CD /* robot40_00011.png */; };
+		9A4153FB289B5AEE004275CD /* robot40_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C7289B5AEE004275CD /* robot40_00005.png */; };
+		9A4153FC289B5AEE004275CD /* robot40_00029.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C8289B5AEE004275CD /* robot40_00029.png */; };
+		9A4153FD289B5AEE004275CD /* robot40_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C9289B5AEE004275CD /* robot40_00001.png */; };
+		9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CA289B5AEE004275CD /* robot40_00015.png */; };
+		9A4153FF289B5AEE004275CD /* robot40_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CB289B5AEE004275CD /* robot40_00014.png */; };
+		9A415400289B5AEE004275CD /* robot40_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CC289B5AEE004275CD /* robot40_00000.png */; };
+		9A415401289B5AEE004275CD /* robot40_00028.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CD289B5AEE004275CD /* robot40_00028.png */; };
+		9A415402289B5AEE004275CD /* robot40_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CE289B5AEE004275CD /* robot40_00016.png */; };
+		9A415403289B5AEE004275CD /* robot40_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CF289B5AEE004275CD /* robot40_00002.png */; };
+		9A415404289B5AEE004275CD /* robot40_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D0289B5AEE004275CD /* robot40_00003.png */; };
+		9A415405289B5AEE004275CD /* robot40_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D1289B5AEE004275CD /* robot40_00017.png */; };
+		9A415406289B5AEE004275CD /* robot40_00032.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D2289B5AEE004275CD /* robot40_00032.png */; };
+		9A415407289B5AEE004275CD /* robot40_00026.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D3289B5AEE004275CD /* robot40_00026.png */; };
+		9A415408289B5AEE004275CD /* robot40_00027.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D4289B5AEE004275CD /* robot40_00027.png */; };
+		9A415409289B5AEE004275CD /* robot40_00033.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D5289B5AEE004275CD /* robot40_00033.png */; };
+		9A41540A289B5AEE004275CD /* robot40_00025.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D6289B5AEE004275CD /* robot40_00025.png */; };
+		9A41540B289B5AEE004275CD /* robot40_00031.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D7289B5AEE004275CD /* robot40_00031.png */; };
+		9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D8289B5AEE004275CD /* robot40_00019.png */; };
+		9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D9289B5AEE004275CD /* robot40_00018.png */; };
+		9A41540E289B5AEE004275CD /* robot40_00030.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DA289B5AEE004275CD /* robot40_00030.png */; };
+		9A41540F289B5AEE004275CD /* robot40_00024.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DB289B5AEE004275CD /* robot40_00024.png */; };
+		9A415410289B5AEE004275CD /* robot40_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DC289B5AEE004275CD /* robot40_00008.png */; };
+		9A415411289B5AEE004275CD /* robot40_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DD289B5AEE004275CD /* robot40_00020.png */; };
+		9A415412289B5AEE004275CD /* robot40_00034.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DE289B5AEE004275CD /* robot40_00034.png */; };
+		9A415413289B5AEE004275CD /* robot40_00035.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DF289B5AEE004275CD /* robot40_00035.png */; };
+		9A415414289B5AEE004275CD /* robot40_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E0289B5AEE004275CD /* robot40_00021.png */; };
+		9A415415289B5AEE004275CD /* robot40_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E1289B5AEE004275CD /* robot40_00009.png */; };
+		9A415416289B5AEE004275CD /* robot40_00037.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E2289B5AEE004275CD /* robot40_00037.png */; };
+		9A415417289B5AEE004275CD /* robot40_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E3289B5AEE004275CD /* robot40_00023.png */; };
+		9A415418289B5AEE004275CD /* robot40_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E4289B5AEE004275CD /* robot40_00022.png */; };
+		9A415419289B5AEE004275CD /* robot40_00036.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E5289B5AEE004275CD /* robot40_00036.png */; };
+		9A41541A289B5AEE004275CD /* robot12_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E7289B5AEE004275CD /* robot12_00009.png */; };
+		9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E8289B5AEE004275CD /* robot12_00008.png */; };
+		9A41541C289B5AEE004275CD /* robot12_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E9289B5AEE004275CD /* robot12_00003.png */; };
+		9A41541D289B5AEE004275CD /* robot12_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EA289B5AEE004275CD /* robot12_00002.png */; };
+		9A41541E289B5AEE004275CD /* robot12_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EB289B5AEE004275CD /* robot12_00000.png */; };
+		9A41541F289B5AEE004275CD /* robot12_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EC289B5AEE004275CD /* robot12_00001.png */; };
+		9A415420289B5AEE004275CD /* robot12_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153ED289B5AEE004275CD /* robot12_00011.png */; };
+		9A415421289B5AEE004275CD /* robot12_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EE289B5AEE004275CD /* robot12_00005.png */; };
+		9A415422289B5AEE004275CD /* robot12_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EF289B5AEE004275CD /* robot12_00004.png */; };
+		9A415423289B5AEE004275CD /* robot12_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F0289B5AEE004275CD /* robot12_00010.png */; };
+		9A415424289B5AEE004275CD /* robot12_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F1289B5AEE004275CD /* robot12_00006.png */; };
+		9A415425289B5AEE004275CD /* robot12_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F2289B5AEE004275CD /* robot12_00012.png */; };
+		9A415426289B5AEE004275CD /* robot12_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F3289B5AEE004275CD /* robot12_00007.png */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -238,6 +298,66 @@
 		9A41539A289B2878004275CD /* DynamicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsViewController.swift; sourceTree = "<group>"; };
 		9A41539C289B2878004275CD /* DynamicsViewController.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DynamicsViewController.json; sourceTree = "<group>"; };
 		9A4153A3289B2A71004275CD /* DynamicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsViewController.xib; sourceTree = "<group>"; };
+		9A4153A7289B53A4004275CD /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
+		9A4153A8289B53A4004275CD /* AnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationsViewController.xib; sourceTree = "<group>"; };
+		9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationsViewControlller.json; sourceTree = "<group>"; };
+		9A4153AD289B5700004275CD /* COUICircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUICircleView.m; sourceTree = "<group>"; };
+		9A4153AE289B5700004275CD /* COUIParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIParticleView.m; sourceTree = "<group>"; };
+		9A4153B0289B5700004275CD /* COUIViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIViewCustom.h; sourceTree = "<group>"; };
+		9A4153B1289B5700004275CD /* COUIParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIParticleView.h; sourceTree = "<group>"; };
+		9A4153B2289B5700004275CD /* COUICircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUICircleView.h; sourceTree = "<group>"; };
+		9A4153B4289B5700004275CD /* COUIViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIViewCustom.m; sourceTree = "<group>"; };
+		9A4153C0289B5AEE004275CD /* robot40_00013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00013.png; sourceTree = "<group>"; };
+		9A4153C1289B5AEE004275CD /* robot40_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00007.png; sourceTree = "<group>"; };
+		9A4153C2289B5AEE004275CD /* robot40_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00006.png; sourceTree = "<group>"; };
+		9A4153C3289B5AEE004275CD /* robot40_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00012.png; sourceTree = "<group>"; };
+		9A4153C4289B5AEE004275CD /* robot40_00004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00004.png; sourceTree = "<group>"; };
+		9A4153C5289B5AEE004275CD /* robot40_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00010.png; sourceTree = "<group>"; };
+		9A4153C6289B5AEE004275CD /* robot40_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00011.png; sourceTree = "<group>"; };
+		9A4153C7289B5AEE004275CD /* robot40_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00005.png; sourceTree = "<group>"; };
+		9A4153C8289B5AEE004275CD /* robot40_00029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00029.png; sourceTree = "<group>"; };
+		9A4153C9289B5AEE004275CD /* robot40_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00001.png; sourceTree = "<group>"; };
+		9A4153CA289B5AEE004275CD /* robot40_00015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00015.png; sourceTree = "<group>"; };
+		9A4153CB289B5AEE004275CD /* robot40_00014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00014.png; sourceTree = "<group>"; };
+		9A4153CC289B5AEE004275CD /* robot40_00000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00000.png; sourceTree = "<group>"; };
+		9A4153CD289B5AEE004275CD /* robot40_00028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00028.png; sourceTree = "<group>"; };
+		9A4153CE289B5AEE004275CD /* robot40_00016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00016.png; sourceTree = "<group>"; };
+		9A4153CF289B5AEE004275CD /* robot40_00002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00002.png; sourceTree = "<group>"; };
+		9A4153D0289B5AEE004275CD /* robot40_00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00003.png; sourceTree = "<group>"; };
+		9A4153D1289B5AEE004275CD /* robot40_00017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00017.png; sourceTree = "<group>"; };
+		9A4153D2289B5AEE004275CD /* robot40_00032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00032.png; sourceTree = "<group>"; };
+		9A4153D3289B5AEE004275CD /* robot40_00026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00026.png; sourceTree = "<group>"; };
+		9A4153D4289B5AEE004275CD /* robot40_00027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00027.png; sourceTree = "<group>"; };
+		9A4153D5289B5AEE004275CD /* robot40_00033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00033.png; sourceTree = "<group>"; };
+		9A4153D6289B5AEE004275CD /* robot40_00025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00025.png; sourceTree = "<group>"; };
+		9A4153D7289B5AEE004275CD /* robot40_00031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00031.png; sourceTree = "<group>"; };
+		9A4153D8289B5AEE004275CD /* robot40_00019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00019.png; sourceTree = "<group>"; };
+		9A4153D9289B5AEE004275CD /* robot40_00018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00018.png; sourceTree = "<group>"; };
+		9A4153DA289B5AEE004275CD /* robot40_00030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00030.png; sourceTree = "<group>"; };
+		9A4153DB289B5AEE004275CD /* robot40_00024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00024.png; sourceTree = "<group>"; };
+		9A4153DC289B5AEE004275CD /* robot40_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00008.png; sourceTree = "<group>"; };
+		9A4153DD289B5AEE004275CD /* robot40_00020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00020.png; sourceTree = "<group>"; };
+		9A4153DE289B5AEE004275CD /* robot40_00034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00034.png; sourceTree = "<group>"; };
+		9A4153DF289B5AEE004275CD /* robot40_00035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00035.png; sourceTree = "<group>"; };
+		9A4153E0289B5AEE004275CD /* robot40_00021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00021.png; sourceTree = "<group>"; };
+		9A4153E1289B5AEE004275CD /* robot40_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00009.png; sourceTree = "<group>"; };
+		9A4153E2289B5AEE004275CD /* robot40_00037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00037.png; sourceTree = "<group>"; };
+		9A4153E3289B5AEE004275CD /* robot40_00023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00023.png; sourceTree = "<group>"; };
+		9A4153E4289B5AEE004275CD /* robot40_00022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00022.png; sourceTree = "<group>"; };
+		9A4153E5289B5AEE004275CD /* robot40_00036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00036.png; sourceTree = "<group>"; };
+		9A4153E7289B5AEE004275CD /* robot12_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00009.png; sourceTree = "<group>"; };
+		9A4153E8289B5AEE004275CD /* robot12_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00008.png; sourceTree = "<group>"; };
+		9A4153E9289B5AEE004275CD /* robot12_00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00003.png; sourceTree = "<group>"; };
+		9A4153EA289B5AEE004275CD /* robot12_00002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00002.png; sourceTree = "<group>"; };
+		9A4153EB289B5AEE004275CD /* robot12_00000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00000.png; sourceTree = "<group>"; };
+		9A4153EC289B5AEE004275CD /* robot12_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00001.png; sourceTree = "<group>"; };
+		9A4153ED289B5AEE004275CD /* robot12_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00011.png; sourceTree = "<group>"; };
+		9A4153EE289B5AEE004275CD /* robot12_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00005.png; sourceTree = "<group>"; };
+		9A4153EF289B5AEE004275CD /* robot12_00004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00004.png; sourceTree = "<group>"; };
+		9A4153F0289B5AEE004275CD /* robot12_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00010.png; sourceTree = "<group>"; };
+		9A4153F1289B5AEE004275CD /* robot12_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00006.png; sourceTree = "<group>"; };
+		9A4153F2289B5AEE004275CD /* robot12_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00012.png; sourceTree = "<group>"; };
+		9A4153F3289B5AEE004275CD /* robot12_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00007.png; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -513,11 +633,102 @@
 		9A415395289B2878004275CD /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				9A4153BE289B5AEE004275CD /* assets */,
 				9A41539A289B2878004275CD /* DynamicsViewController.swift */,
 				9A41539C289B2878004275CD /* DynamicsViewController.json */,
 				9A4153A3289B2A71004275CD /* DynamicsViewController.xib */,
+				9A4153A7289B53A4004275CD /* AnimationsViewController.swift */,
+				9A4153A8289B53A4004275CD /* AnimationsViewController.xib */,
+				9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		9A4153AC289B5700004275CD /* COUICustom */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153B2289B5700004275CD /* COUICircleView.h */,
+				9A4153AD289B5700004275CD /* COUICircleView.m */,
+				9A4153B1289B5700004275CD /* COUIParticleView.h */,
+				9A4153AE289B5700004275CD /* COUIParticleView.m */,
+				9A4153B0289B5700004275CD /* COUIViewCustom.h */,
+				9A4153B4289B5700004275CD /* COUIViewCustom.m */,
+			);
+			path = COUICustom;
+			sourceTree = "<group>";
+		};
+		9A4153BE289B5AEE004275CD /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153BF289B5AEE004275CD /* robot40 */,
+				9A4153E6289B5AEE004275CD /* robot12 */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		9A4153BF289B5AEE004275CD /* robot40 */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153C0289B5AEE004275CD /* robot40_00013.png */,
+				9A4153C1289B5AEE004275CD /* robot40_00007.png */,
+				9A4153C2289B5AEE004275CD /* robot40_00006.png */,
+				9A4153C3289B5AEE004275CD /* robot40_00012.png */,
+				9A4153C4289B5AEE004275CD /* robot40_00004.png */,
+				9A4153C5289B5AEE004275CD /* robot40_00010.png */,
+				9A4153C6289B5AEE004275CD /* robot40_00011.png */,
+				9A4153C7289B5AEE004275CD /* robot40_00005.png */,
+				9A4153C8289B5AEE004275CD /* robot40_00029.png */,
+				9A4153C9289B5AEE004275CD /* robot40_00001.png */,
+				9A4153CA289B5AEE004275CD /* robot40_00015.png */,
+				9A4153CB289B5AEE004275CD /* robot40_00014.png */,
+				9A4153CC289B5AEE004275CD /* robot40_00000.png */,
+				9A4153CD289B5AEE004275CD /* robot40_00028.png */,
+				9A4153CE289B5AEE004275CD /* robot40_00016.png */,
+				9A4153CF289B5AEE004275CD /* robot40_00002.png */,
+				9A4153D0289B5AEE004275CD /* robot40_00003.png */,
+				9A4153D1289B5AEE004275CD /* robot40_00017.png */,
+				9A4153D2289B5AEE004275CD /* robot40_00032.png */,
+				9A4153D3289B5AEE004275CD /* robot40_00026.png */,
+				9A4153D4289B5AEE004275CD /* robot40_00027.png */,
+				9A4153D5289B5AEE004275CD /* robot40_00033.png */,
+				9A4153D6289B5AEE004275CD /* robot40_00025.png */,
+				9A4153D7289B5AEE004275CD /* robot40_00031.png */,
+				9A4153D8289B5AEE004275CD /* robot40_00019.png */,
+				9A4153D9289B5AEE004275CD /* robot40_00018.png */,
+				9A4153DA289B5AEE004275CD /* robot40_00030.png */,
+				9A4153DB289B5AEE004275CD /* robot40_00024.png */,
+				9A4153DC289B5AEE004275CD /* robot40_00008.png */,
+				9A4153DD289B5AEE004275CD /* robot40_00020.png */,
+				9A4153DE289B5AEE004275CD /* robot40_00034.png */,
+				9A4153DF289B5AEE004275CD /* robot40_00035.png */,
+				9A4153E0289B5AEE004275CD /* robot40_00021.png */,
+				9A4153E1289B5AEE004275CD /* robot40_00009.png */,
+				9A4153E2289B5AEE004275CD /* robot40_00037.png */,
+				9A4153E3289B5AEE004275CD /* robot40_00023.png */,
+				9A4153E4289B5AEE004275CD /* robot40_00022.png */,
+				9A4153E5289B5AEE004275CD /* robot40_00036.png */,
+			);
+			path = robot40;
+			sourceTree = "<group>";
+		};
+		9A4153E6289B5AEE004275CD /* robot12 */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153E7289B5AEE004275CD /* robot12_00009.png */,
+				9A4153E8289B5AEE004275CD /* robot12_00008.png */,
+				9A4153E9289B5AEE004275CD /* robot12_00003.png */,
+				9A4153EA289B5AEE004275CD /* robot12_00002.png */,
+				9A4153EB289B5AEE004275CD /* robot12_00000.png */,
+				9A4153EC289B5AEE004275CD /* robot12_00001.png */,
+				9A4153ED289B5AEE004275CD /* robot12_00011.png */,
+				9A4153EE289B5AEE004275CD /* robot12_00005.png */,
+				9A4153EF289B5AEE004275CD /* robot12_00004.png */,
+				9A4153F0289B5AEE004275CD /* robot12_00010.png */,
+				9A4153F1289B5AEE004275CD /* robot12_00006.png */,
+				9A4153F2289B5AEE004275CD /* robot12_00012.png */,
+				9A4153F3289B5AEE004275CD /* robot12_00007.png */,
+			);
+			path = robot12;
 			sourceTree = "<group>";
 		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
@@ -814,8 +1025,6 @@
 				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
 				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
 				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
-				DFC4F196265733340064ECBB /* COShared */,
-				DFC4F1A5265733340064ECBB /* Categories */,
 			);
 			path = COUIAnimation;
 			sourceTree = "<group>";
@@ -879,8 +1088,11 @@
 			children = (
 				9A415382289B208D004275CD /* COUIBaseView.h */,
 				9A415370289B208D004275CD /* COUIBaseView.m */,
+				DFC4F1A5265733340064ECBB /* Categories */,
+				DFC4F196265733340064ECBB /* COShared */,
 				9A415371289B208D004275CD /* COUIBehavior */,
 				DFC4F18A265733340064ECBB /* COUIAnimation */,
+				9A4153AC289B5700004275CD /* COUICustom */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -899,6 +1111,7 @@
 				9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */,
 				DFC4F1C6265733340064ECBB /* COMacros.h in Headers */,
 				DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */,
+				9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */,
 				DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */,
 				9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */,
 				DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */,
@@ -908,9 +1121,11 @@
 				DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */,
 				DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */,
 				DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */,
+				9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */,
 				DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */,
 				DFC4F1BF265733340064ECBB /* COLogging.h in Headers */,
 				9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */,
+				9A4153BA289B5700004275CD /* COUICircleView.h in Headers */,
 				9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */,
 				9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */,
 				DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */,
@@ -1011,19 +1226,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A415425289B5AEE004275CD /* robot12_00012.png in Resources */,
+				9A415404289B5AEE004275CD /* robot40_00003.png in Resources */,
+				9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */,
+				9A41540E289B5AEE004275CD /* robot40_00030.png in Resources */,
+				9A4153F4289B5AEE004275CD /* robot40_00013.png in Resources */,
 				9A3A03712898E7750063C9DB /* LaunchScreen.storyboard in Resources */,
+				9A415418289B5AEE004275CD /* robot40_00022.png in Resources */,
 				9A415365289B0D4A004275CD /* MenuItemCell.xib in Resources */,
+				9A415405289B5AEE004275CD /* robot40_00017.png in Resources */,
+				9A415406289B5AEE004275CD /* robot40_00032.png in Resources */,
+				9A415413289B5AEE004275CD /* robot40_00035.png in Resources */,
+				9A415411289B5AEE004275CD /* robot40_00020.png in Resources */,
 				9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */,
+				9A41541E289B5AEE004275CD /* robot12_00000.png in Resources */,
+				9A415400289B5AEE004275CD /* robot40_00000.png in Resources */,
+				9A415403289B5AEE004275CD /* robot40_00002.png in Resources */,
+				9A4153F8289B5AEE004275CD /* robot40_00004.png in Resources */,
+				9A415409289B5AEE004275CD /* robot40_00033.png in Resources */,
+				9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */,
+				9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */,
 				9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */,
+				9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */,
+				9A415423289B5AEE004275CD /* robot12_00010.png in Resources */,
+				9A415410289B5AEE004275CD /* robot40_00008.png in Resources */,
+				9A41541A289B5AEE004275CD /* robot12_00009.png in Resources */,
+				9A415408289B5AEE004275CD /* robot40_00027.png in Resources */,
+				9A41540F289B5AEE004275CD /* robot40_00024.png in Resources */,
+				9A4153FC289B5AEE004275CD /* robot40_00029.png in Resources */,
 				9A3A037D2898E9D80063C9DB /* StylesViewController.xib in Resources */,
 				9A415367289B0D4A004275CD /* MenuViewController_x.xib in Resources */,
+				9A4153FD289B5AEE004275CD /* robot40_00001.png in Resources */,
+				9A4153F7289B5AEE004275CD /* robot40_00012.png in Resources */,
+				9A415412289B5AEE004275CD /* robot40_00034.png in Resources */,
+				9A4153FF289B5AEE004275CD /* robot40_00014.png in Resources */,
+				9A415422289B5AEE004275CD /* robot12_00004.png in Resources */,
+				9A415424289B5AEE004275CD /* robot12_00006.png in Resources */,
+				9A41541C289B5AEE004275CD /* robot12_00003.png in Resources */,
+				9A415401289B5AEE004275CD /* robot40_00028.png in Resources */,
+				9A415407289B5AEE004275CD /* robot40_00026.png in Resources */,
+				9A4153F9289B5AEE004275CD /* robot40_00010.png in Resources */,
+				9A415421289B5AEE004275CD /* robot12_00005.png in Resources */,
+				9A415417289B5AEE004275CD /* robot40_00023.png in Resources */,
+				9A415414289B5AEE004275CD /* robot40_00021.png in Resources */,
 				9A41536C289B0D4A004275CD /* Main.storyboard in Resources */,
+				9A4153F5289B5AEE004275CD /* robot40_00007.png in Resources */,
 				9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */,
+				9A41541F289B5AEE004275CD /* robot12_00001.png in Resources */,
+				9A415420289B5AEE004275CD /* robot12_00011.png in Resources */,
+				9A4153FA289B5AEE004275CD /* robot40_00011.png in Resources */,
 				9A41536D289B0D4A004275CD /* MainFlow.json in Resources */,
 				9A3A037E2898E9D80063C9DB /* DemoStyle1.json in Resources */,
+				9A415416289B5AEE004275CD /* robot40_00037.png in Resources */,
+				9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */,
+				9A415415289B5AEE004275CD /* robot40_00009.png in Resources */,
+				9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */,
 				9A415366289B0D4A004275CD /* MenuViewController.xib in Resources */,
+				9A41540B289B5AEE004275CD /* robot40_00031.png in Resources */,
+				9A4153FB289B5AEE004275CD /* robot40_00005.png in Resources */,
+				9A415402289B5AEE004275CD /* robot40_00016.png in Resources */,
+				9A41541D289B5AEE004275CD /* robot12_00002.png in Resources */,
 				9A415368289B0D4A004275CD /* MenuViewController_iPadx.xib in Resources */,
+				9A415419289B5AEE004275CD /* robot40_00036.png in Resources */,
 				9A3A037C2898E9D80063C9DB /* DemoStyle2.json in Resources */,
+				9A415426289B5AEE004275CD /* robot12_00007.png in Resources */,
+				9A41540A289B5AEE004275CD /* robot40_00025.png in Resources */,
+				9A4153F6289B5AEE004275CD /* robot40_00006.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1320,7 @@
 				9A3A037F2898E9D80063C9DB /* StylesViewController.swift in Sources */,
 				9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */,
 				9A3A03692898E7740063C9DB /* ViewController.swift in Sources */,
+				9A4153A9289B53A4004275CD /* AnimationsViewController.swift in Sources */,
 				9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */,
 				9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */,
 				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
@@ -1097,6 +1366,7 @@
 				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
 				DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */,
 				9A415383289B208D004275CD /* COUIBaseView.m in Sources */,
+				9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */,
 				DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */,
 				DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */,
 				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
@@ -1138,6 +1408,7 @@
 				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
 				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
 				DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */,
+				9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */,
 				9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */,
 				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
 				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
@@ -1154,6 +1425,7 @@
 				DFC4F11A265727020064ECBB /* AppearanceButton.swift in Sources */,
 				DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */,
 				DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */,
+				9A4153B5289B5700004275CD /* COUICircleView.m in Sources */,
 				DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */,
 				DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */,
 				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,

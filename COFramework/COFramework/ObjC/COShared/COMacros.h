@@ -34,3 +34,6 @@ alpha:alphaValue]
 #define IS_VALID_STRING(str) (((str != nil) && ([str length] > 0) && ![str isEqualToString:@""]) ? YES : NO)
 #define IS_VALID_ARRAY(arr) (((arr != nil) && ([arr count] > 0)) ? YES : NO)
 
+#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+

@@ -13,8 +13,6 @@ class StylesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        AppearanceController.sharedInstance.loadAppearance("DemoStyle1", view: self.view)
     }
     
     @IBAction func loadStyle1() {
