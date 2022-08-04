@@ -44,6 +44,9 @@
 		9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415380289B208D004275CD /* COUIBehaviorView.h */; };
 		9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415381289B208D004275CD /* COUIBehaviorImage.h */; };
 		9A415394289B208D004275CD /* COUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415382289B208D004275CD /* COUIBaseView.h */; };
+		9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41539A289B2878004275CD /* DynamicsViewController.swift */; };
+		9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41539C289B2878004275CD /* DynamicsViewController.json */; };
+		9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A3289B2A71004275CD /* DynamicsViewController.xib */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -232,6 +235,9 @@
 		9A415380289B208D004275CD /* COUIBehaviorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorView.h; sourceTree = "<group>"; };
 		9A415381289B208D004275CD /* COUIBehaviorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorImage.h; sourceTree = "<group>"; };
 		9A415382289B208D004275CD /* COUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBaseView.h; sourceTree = "<group>"; };
+		9A41539A289B2878004275CD /* DynamicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsViewController.swift; sourceTree = "<group>"; };
+		9A41539C289B2878004275CD /* DynamicsViewController.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DynamicsViewController.json; sourceTree = "<group>"; };
+		9A4153A3289B2A71004275CD /* DynamicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsViewController.xib; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -432,6 +438,7 @@
 		9A41534E289B0D4A004275CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A415395289B2878004275CD /* Animations */,
 				9A41536E289B0EF8004275CD /* Styles */,
 				9A41534F289B0D4A004275CD /* Menu */,
 				9A415357289B0D4A004275CD /* Main */,
@@ -501,6 +508,16 @@
 				9A415379289B208D004275CD /* COUIBehaviorImage.m */,
 			);
 			path = COUIBehavior;
+			sourceTree = "<group>";
+		};
+		9A415395289B2878004275CD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9A41539A289B2878004275CD /* DynamicsViewController.swift */,
+				9A41539C289B2878004275CD /* DynamicsViewController.json */,
+				9A4153A3289B2A71004275CD /* DynamicsViewController.xib */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
@@ -996,10 +1013,12 @@
 			files = (
 				9A3A03712898E7750063C9DB /* LaunchScreen.storyboard in Resources */,
 				9A415365289B0D4A004275CD /* MenuItemCell.xib in Resources */,
+				9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */,
 				9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */,
 				9A3A037D2898E9D80063C9DB /* StylesViewController.xib in Resources */,
 				9A415367289B0D4A004275CD /* MenuViewController_x.xib in Resources */,
 				9A41536C289B0D4A004275CD /* Main.storyboard in Resources */,
+				9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */,
 				9A41536D289B0D4A004275CD /* MainFlow.json in Resources */,
 				9A3A037E2898E9D80063C9DB /* DemoStyle1.json in Resources */,
 				9A415366289B0D4A004275CD /* MenuViewController.xib in Resources */,
@@ -1035,6 +1054,7 @@
 				9A3A03692898E7740063C9DB /* ViewController.swift in Sources */,
 				9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */,
 				9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */,
+				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
 				9A415364289B0D4A004275CD /* MenuItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -117,17 +117,21 @@ class MenuViewController: AdvancedPageViewController {
     func setUpMenuItems() {
         // Setup Menu Items
         #if DEBUG
-        self.menuItems = [ ("Styles".localize(),"list.bullet.indent")]
+        self.menuItems = [ ("Styles".localize(),"list.bullet.indent"),
+            ("Dynamics".localize(),"list.bullet.indent")]
         #else
-        self.menuItems = [ ("Styles".localize(),"list.bullet.indent")]
+        self.menuItems = [ ("Styles".localize(),"list.bullet.indent"),
+            ("Dynamics".localize(),"list.bullet.indent")]
         #endif
     }
     
     func setupControllers() {
         #if DEBUG
-        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW")])
+        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW"),
+                                       ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW")])
         #else
-        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW")])
+        self.pagesWithFlowControllers([("MainFlow", "StylesTab", "STYLES_VIEW"),
+                                       ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW")])
         #endif
     }
     

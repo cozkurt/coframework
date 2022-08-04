@@ -1,0 +1,58 @@
+[
+ {
+ "startAfterEvent": "BEHAVIOR_1_EVENT",
+ "behaviorType": "dynamicItemBehavior",
+ "tag": "10,20,30,40",
+ "allowsRotation": "NO",
+ "density": "10.0",
+ "elasticity" : "1.0",
+ "friction": "10.0",
+ "resistance" : "10.0"
+ },
+ {
+ "startAfterEvent": "BEHAVIOR_1_EVENT",
+ "behaviorType": "snapBehavior",
+ "tag": "10",
+ "damping": "0",
+ "snapToPoint": "{165.0,312.0}"
+ },
+ {
+ "startAfterEvent": "BEHAVIOR_2_EVENT",
+ "behaviorType": "attachmentBehavior",
+ "tag": "20",
+ "attachedToItem": "10",
+ "anchorPoint": "{0.0,0.0}",
+ "frequency" : "10",
+ "damping": "1.0",
+ "length" : "100"
+ },
+ {
+ "startAfterEvent": "BEHAVIOR_3_EVENT",
+ "behaviorType": "attachmentBehavior",
+ "tag": "30",
+ "attachedToItem": "20",
+ "anchorPoint": "{0.0,0.0}",
+ "frequency" : "10",
+ "damping": "1.0",
+ "length" : "100"
+ },
+ {
+ "startAfterEvent": "BEHAVIOR_4_EVENT",
+ "behaviorType": "attachmentBehavior",
+ "tag": "40",
+ "attachedToItem": "10",
+ "anchorPoint": "{0.0,0.0}",
+ "frequency" : "10",
+ "damping": "1.0",
+ "length" : "100"
+ },
+ {
+ "animationType": "gradientColorAnimation",
+ "startAfterEvent": "GRADIENT_ANIMATION_EVENT",
+ "tag": "100",
+ "caDuration": "10.0",
+ "caFromValue": "20,46,126,100|31,182,193,100",
+ "caToValue": "20,46,126,255|31,182,193,255",
+ "caSpeed": "1"
+ }
+ ]

@@ -52,5 +52,8 @@
 },
 {
     "eventName": "STYLES_VIEW", "viewController":"Sample.StylesViewController", "navigationType": "present", "statusBarHidden": false
-}
+},
+{
+    "eventName": "DYNAMICS_VIEW", "viewController":"Sample.DynamicsViewController", "navigationType": "present", "statusBarHidden": false
+},
 ]
