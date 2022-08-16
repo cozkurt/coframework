@@ -122,14 +122,16 @@ class MenuViewController: AdvancedPageViewController {
             ("Styles".localize(),"text.badge.plus"),
             ("Dynamics".localize(),"gear"),
             ("Animations".localize(),"list.bullet.below.rectangle"),
-            ("Console".localize(),"person")]
+            ("Console".localize(),"person"),
+            ("Combiend".localize(),"text.badge.plus")]
         #else
         self.menuItems = [
             ("DynamicCells".localize(),"list.bullet.indent"),
             ("Styles".localize(),"text.badge.plus"),
             ("Dynamics".localize(),"gear"),
             ("Animations".localize(),"list.bullet.below.rectangle"),
-            ("Console".localize(),"person")]
+            ("Console".localize(),"person"),
+            ("Combiend".localize(),"text.badge.plus")]
         #endif
     }
     
@@ -139,13 +141,15 @@ class MenuViewController: AdvancedPageViewController {
                                        ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW"),
-                                       ("MainFlow", "ConsoleTab", "CONSOLE_VIEW")])
+                                       ("MainFlow", "ConsoleTab", "CONSOLE_VIEW"),
+                                       ("MainFlow", "CombinedTab", "COMBINED_VIEW")])
         #else
         self.pagesWithFlowControllers([("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
                                        ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW"),
-                                       ("MainFlow", "ConsoleTab", "CONSOLE_VIEW")])
+                                       ("MainFlow", "ConsoleTab", "CONSOLE_VIEW"),
+                                       ("MainFlow", "CombinedTab", "COMBINED_VIEW")])
         #endif
     }
     
@@ -158,9 +162,9 @@ class MenuViewController: AdvancedPageViewController {
         }
         
         #if DEBUG
-            self.badges = [ notificationsCount,0,0,0,0 ]
+            self.badges = [ notificationsCount,0,0,0,0,0 ]
         #else
-            self.badges = [ notificationsCount,0,0,0,0 ]
+            self.badges = [ notificationsCount,0,0,0,0,0 ]
         #endif
     }
     

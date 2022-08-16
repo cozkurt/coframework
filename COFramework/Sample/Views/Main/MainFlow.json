@@ -65,4 +65,7 @@
 {
     "eventName": "CONSOLE_VIEW", "viewController":"Sample.ConsoleViewController", "navigationType": "present", "statusBarHidden": true
 },
+{
+    "eventName": "COMBINED_VIEW", "viewController":"Sample.CombinedViewController", "navigationType": "present", "statusBarHidden": true
+}
 ]

@@ -282,6 +282,8 @@
 		DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877628AB334600C070DD /* AppURLRequest.swift */; };
 		DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877728AB334600C070DD /* URLSessionProvider.swift */; };
 		DFF6878128AB334600C070DD /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877828AB334600C070DD /* TestProvider.swift */; };
+		DFFA058E28AB4862007CA551 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA058C28AB4862007CA551 /* CombinedViewController.swift */; };
+		DFFA058F28AB4862007CA551 /* CombinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFA058D28AB4862007CA551 /* CombinedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -565,6 +567,8 @@
 		DFF6877628AB334600C070DD /* AppURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURLRequest.swift; sourceTree = "<group>"; };
 		DFF6877728AB334600C070DD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		DFF6877828AB334600C070DD /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
+		DFFA058C28AB4862007CA551 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		DFFA058D28AB4862007CA551 /* CombinedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombinedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,6 +617,7 @@
 		9A41534E289B0D4A004275CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DFFA058B28AB4826007CA551 /* Combined */,
 				9A41544D289B7127004275CD /* Console */,
 				9A415448289B63ED004275CD /* DynamicCells */,
 				9A415395289B2878004275CD /* Animations */,
@@ -1226,6 +1231,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		DFFA058B28AB4826007CA551 /* Combined */ = {
+			isa = PBXGroup;
+			children = (
+				DFFA058C28AB4862007CA551 /* CombinedViewController.swift */,
+				DFFA058D28AB4862007CA551 /* CombinedViewController.xib */,
+			);
+			path = Combined;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1394,6 +1408,7 @@
 				9A415422289B5AEE004275CD /* robot12_00004.png in Resources */,
 				9A415424289B5AEE004275CD /* robot12_00006.png in Resources */,
 				9A41543F289B6086004275CD /* PlugPodCell.xib in Resources */,
+				DFFA058F28AB4862007CA551 /* CombinedViewController.xib in Resources */,
 				9A41541C289B5AEE004275CD /* robot12_00003.png in Resources */,
 				9A415401289B5AEE004275CD /* robot40_00028.png in Resources */,
 				9A415441289B6086004275CD /* BluetoothOnCell.xib in Resources */,
@@ -1466,6 +1481,7 @@
 				9A41543B289B6086004275CD /* ConnectPodToModemCell.swift in Sources */,
 				9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */,
 				9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */,
+				DFFA058E28AB4862007CA551 /* CombinedViewController.swift in Sources */,
 				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
 				9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */,
 				9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */,
