@@ -11,9 +11,5 @@ let package = Package(name: "COFramework",
                       dependencies: [
                         .package(url: "https://github.com/tristanhimmelman/ObjectMapper", from: "4.2.0"),
                         .package(url: "https://github.com/Alamofire/Alamofire", from: "5.6.2")
-                      ],
-                      
-                      targets: [
-                        .target(name: "COFramework", dependencies: ["Alamofire, ObjectMapper"], path: "COFramework/COFramework/Swift")
                       ]
 )
