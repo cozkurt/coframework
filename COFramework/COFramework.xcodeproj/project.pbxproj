@@ -109,7 +109,6 @@
 		9A41543A289B6086004275CD /* BluetoothOnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542A289B6085004275CD /* BluetoothOnCell.swift */; };
 		9A41543B289B6086004275CD /* ConnectPodToModemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */; };
 		9A41543C289B6086004275CD /* ConnectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542C289B6085004275CD /* ConnectCell.swift */; };
-		9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542D289B6086004275CD /* ConnectPiecesCell.swift */; };
 		9A41543E289B6086004275CD /* RestartYourModemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41542E289B6086004275CD /* RestartYourModemCell.xib */; };
 		9A41543F289B6086004275CD /* PlugPodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41542F289B6086004275CD /* PlugPodCell.xib */; };
 		9A415440289B6086004275CD /* ConnectPodToModemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415430289B6086004275CD /* ConnectPodToModemCell.xib */; };
@@ -117,7 +116,6 @@
 		9A415442289B6086004275CD /* RestartYourModemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415432289B6086004275CD /* RestartYourModemCell.swift */; };
 		9A415444289B6086004275CD /* PlugPodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415434289B6086004275CD /* PlugPodCell.swift */; };
 		9A415445289B6086004275CD /* ConnectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415435289B6086004275CD /* ConnectCell.xib */; };
-		9A415447289B6086004275CD /* ConnectPiecesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415437289B6086004275CD /* ConnectPiecesCell.xib */; };
 		9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415449289B6442004275CD /* DynamicsCellsViewController.swift */; };
 		9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */; };
 		9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */; };
@@ -392,7 +390,6 @@
 		9A41542A289B6085004275CD /* BluetoothOnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothOnCell.swift; sourceTree = "<group>"; };
 		9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectPodToModemCell.swift; sourceTree = "<group>"; };
 		9A41542C289B6085004275CD /* ConnectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectCell.swift; sourceTree = "<group>"; };
-		9A41542D289B6086004275CD /* ConnectPiecesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectPiecesCell.swift; sourceTree = "<group>"; };
 		9A41542E289B6086004275CD /* RestartYourModemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestartYourModemCell.xib; sourceTree = "<group>"; };
 		9A41542F289B6086004275CD /* PlugPodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlugPodCell.xib; sourceTree = "<group>"; };
 		9A415430289B6086004275CD /* ConnectPodToModemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectPodToModemCell.xib; sourceTree = "<group>"; };
@@ -400,7 +397,6 @@
 		9A415432289B6086004275CD /* RestartYourModemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartYourModemCell.swift; sourceTree = "<group>"; };
 		9A415434289B6086004275CD /* PlugPodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugPodCell.swift; sourceTree = "<group>"; };
 		9A415435289B6086004275CD /* ConnectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectCell.xib; sourceTree = "<group>"; };
-		9A415437289B6086004275CD /* ConnectPiecesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectPiecesCell.xib; sourceTree = "<group>"; };
 		9A415449289B6442004275CD /* DynamicsCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsCellsViewController.swift; sourceTree = "<group>"; };
 		9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicsCellsViewController.xib; sourceTree = "<group>"; };
 		9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTableViewCell.swift; sourceTree = "<group>"; };
@@ -806,8 +802,6 @@
 				9A41542A289B6085004275CD /* BluetoothOnCell.swift */,
 				9A41542C289B6085004275CD /* ConnectCell.swift */,
 				9A415435289B6086004275CD /* ConnectCell.xib */,
-				9A41542D289B6086004275CD /* ConnectPiecesCell.swift */,
-				9A415437289B6086004275CD /* ConnectPiecesCell.xib */,
 				9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */,
 				9A415430289B6086004275CD /* ConnectPodToModemCell.xib */,
 				9A415434289B6086004275CD /* PlugPodCell.swift */,
@@ -1396,7 +1390,6 @@
 				9A415409289B5AEE004275CD /* robot40_00033.png in Resources */,
 				9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */,
 				9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */,
-				9A415447289B6086004275CD /* ConnectPiecesCell.xib in Resources */,
 				9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */,
 				9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */,
 				9A415423289B5AEE004275CD /* robot12_00010.png in Resources */,
@@ -1492,7 +1485,6 @@
 				DFFA058E28AB4862007CA551 /* CombinedViewController.swift in Sources */,
 				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
 				9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */,
-				9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */,
 				9A415364289B0D4A004275CD /* MenuItemCell.swift in Sources */,
 				9A415444289B6086004275CD /* PlugPodCell.swift in Sources */,
 				9A41543A289B6086004275CD /* BluetoothOnCell.swift in Sources */,

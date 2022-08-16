@@ -17,7 +17,7 @@ class DynamicsCellsViewController: DynamicActionSheet {
         
         CustomTableBase.tableViewCellEditingEvent.bind(self) { (tuple) in
             guard let indexPath = tuple?.2 else { return }
-                    
+            
             DynamicCellController.sharedInstance.dismissCell(indexPath)
         }
     }
@@ -43,10 +43,10 @@ class DynamicsCellsViewController: DynamicActionSheet {
     }
     
     @IBAction func add3() {
-        DynamicCellController.sharedInstance.postCell(self, key: "ConnectPiecesCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewBottomGap: 80, tableViewScrollToBottom: true)
+        DynamicCellController.sharedInstance.postCell(self, key: "ConnectPodToModemCell", leadingActions: "Hello", trailingActions: "Delete".localize(), once: false, only: false, tableViewBottomGap: 80, tableViewScrollToBottom: true)
     }
     
     @IBAction func remove3() {
-        DynamicCellController.sharedInstance.dismissCell("ConnectPiecesCell")
+        DynamicCellController.sharedInstance.dismissCell("ConnectPodToModemCell")
     }
 }
