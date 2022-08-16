@@ -14,7 +14,7 @@
  "behaviorType": "snapBehavior",
  "tag": "10",
  "damping": "0",
- "snapToPoint": "{165.0,312.0}"
+ "snapToPoint": "{165.0,200.0}"
  },
  {
  "startAfterEvent": "BEHAVIOR_2_EVENT",
