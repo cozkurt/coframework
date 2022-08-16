@@ -91,7 +91,7 @@ class MenuViewController: AdvancedPageViewController {
         // update menu items width
         // related to window width
         
-        let width = UIApplication.shared.windows[0].frame.size.width
+        let width = UIApplication.shared.window?.frame.size.width ?? 1000
         
         self.windowsWidth = min(width, 1000)
         self.viewRotated()
@@ -119,17 +119,17 @@ class MenuViewController: AdvancedPageViewController {
         #if DEBUG
         self.menuItems = [
             ("DynamicCells".localize(),"list.bullet.indent"),
-            ("Styles".localize(),"list.bullet.indent"),
-            ("Dynamics".localize(),"list.bullet.indent"),
-            ("Animations".localize(),"list.bullet.indent"),
-            ("Console".localize(),"list.bullet.indent")]
+            ("Styles".localize(),"text.badge.plus"),
+            ("Dynamics".localize(),"gear"),
+            ("Animations".localize(),"list.bullet.below.rectangle"),
+            ("Console".localize(),"person")]
         #else
         self.menuItems = [
             ("DynamicCells".localize(),"list.bullet.indent"),
-            ("Styles".localize(),"list.bullet.indent"),
-            ("Dynamics".localize(),"list.bullet.indent"),
-            ("Animations".localize(),"list.bullet.indent"),
-            ("Console".localize(),"list.bullet.indent")]
+            ("Styles".localize(),"text.badge.plus"),
+            ("Dynamics".localize(),"gear"),
+            ("Animations".localize(),"list.bullet.below.rectangle"),
+            ("Console".localize(),"person")]
         #endif
     }
     

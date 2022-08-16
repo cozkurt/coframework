@@ -136,7 +136,7 @@
 		D1FCD8AA268519FB00E601FA /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D1FCD8A9268519FB00E601FA /* ObjectMapper */; };
 		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
-		DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Version.swift */; };
+		DFC4F0D9265727010064ECBB /* UIApplication+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Additions.swift */; };
 		DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05E265727010064ECBB /* UIImage+Additions.swift */; };
 		DFC4F0DB265727010064ECBB /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05F265727010064ECBB /* UIView+Additions.swift */; };
 		DFC4F0DC265727010064ECBB /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F060265727010064ECBB /* MKMapView+Additions.swift */; };
@@ -415,7 +415,7 @@
 		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
 		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC4F05C265727010064ECBB /* Bundle+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
-		DFC4F05D265727010064ECBB /* UIApplication+Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Version.swift"; sourceTree = "<group>"; };
+		DFC4F05D265727010064ECBB /* UIApplication+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Additions.swift"; sourceTree = "<group>"; };
 		DFC4F05E265727010064ECBB /* UIImage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		DFC4F05F265727010064ECBB /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		DFC4F060265727010064ECBB /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
@@ -876,7 +876,7 @@
 				D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */,
 				D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */,
 				DFC4F05C265727010064ECBB /* Bundle+Additions.swift */,
-				DFC4F05D265727010064ECBB /* UIApplication+Version.swift */,
+				DFC4F05D265727010064ECBB /* UIApplication+Additions.swift */,
 				DFC4F05E265727010064ECBB /* UIImage+Additions.swift */,
 				DFC4F05F265727010064ECBB /* UIView+Additions.swift */,
 				DFC4F060265727010064ECBB /* MKMapView+Additions.swift */,
@@ -1544,7 +1544,7 @@
 				9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */,
 				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
-				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
+				DFC4F0D9265727010064ECBB /* UIApplication+Additions.swift in Sources */,
 				DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */,
 				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
 				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
