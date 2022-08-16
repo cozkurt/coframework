@@ -273,6 +273,15 @@
 		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
 		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
 		DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */; };
+		DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6876F28AB334600C070DD /* SampleServiceURL.swift */; };
+		DFF6877A28AB334600C070DD /* SampleEnvironments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877028AB334600C070DD /* SampleEnvironments.swift */; };
+		DFF6877B28AB334600C070DD /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877128AB334600C070DD /* SampleModel.swift */; };
+		DFF6877C28AB334600C070DD /* SampleAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877228AB334600C070DD /* SampleAPIFactory.swift */; };
+		DFF6877D28AB334600C070DD /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877428AB334600C070DD /* ProviderProtocol.swift */; };
+		DFF6877E28AB334600C070DD /* AlamofireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877528AB334600C070DD /* AlamofireProvider.swift */; };
+		DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877628AB334600C070DD /* AppURLRequest.swift */; };
+		DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877728AB334600C070DD /* URLSessionProvider.swift */; };
+		DFF6878128AB334600C070DD /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877828AB334600C070DD /* TestProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -547,6 +556,15 @@
 		DFC4F1DF265824570064ECBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DFC4F1E526582A240064ECBB /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		DFF6876F28AB334600C070DD /* SampleServiceURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleServiceURL.swift; sourceTree = "<group>"; };
+		DFF6877028AB334600C070DD /* SampleEnvironments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEnvironments.swift; sourceTree = "<group>"; };
+		DFF6877128AB334600C070DD /* SampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		DFF6877228AB334600C070DD /* SampleAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPIFactory.swift; sourceTree = "<group>"; };
+		DFF6877428AB334600C070DD /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		DFF6877528AB334600C070DD /* AlamofireProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireProvider.swift; sourceTree = "<group>"; };
+		DFF6877628AB334600C070DD /* AppURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURLRequest.swift; sourceTree = "<group>"; };
+		DFF6877728AB334600C070DD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		DFF6877828AB334600C070DD /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -908,6 +926,7 @@
 				DFC4F0A3265727010064ECBB /* UIStyling */,
 				DFC4F0B4265727010064ECBB /* UIShared */,
 				DFC4F1442657295B0064ECBB /* Managers */,
+				DFF6876D28AB334600C070DD /* Networking */,
 				D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */,
 				DFC4F08C265727010064ECBB /* DynamicCell */,
 				DFC4F0D6265727010064ECBB /* OperationQueue */,
@@ -1173,6 +1192,38 @@
 				9A4153AC289B5700004275CD /* COUICustom */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		DFF6876D28AB334600C070DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DFF6876E28AB334600C070DD /* Sample */,
+				DFF6877328AB334600C070DD /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DFF6876E28AB334600C070DD /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				DFF6876F28AB334600C070DD /* SampleServiceURL.swift */,
+				DFF6877028AB334600C070DD /* SampleEnvironments.swift */,
+				DFF6877128AB334600C070DD /* SampleModel.swift */,
+				DFF6877228AB334600C070DD /* SampleAPIFactory.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		DFF6877328AB334600C070DD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DFF6877428AB334600C070DD /* ProviderProtocol.swift */,
+				DFF6877528AB334600C070DD /* AlamofireProvider.swift */,
+				DFF6877628AB334600C070DD /* AppURLRequest.swift */,
+				DFF6877728AB334600C070DD /* URLSessionProvider.swift */,
+				DFF6877828AB334600C070DD /* TestProvider.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1449,6 +1500,7 @@
 				DFC4F109265727020064ECBB /* SampleDynamicCellViewController.swift in Sources */,
 				DFC4F0DB265727010064ECBB /* UIView+Additions.swift in Sources */,
 				DFC4F0FD265727020064ECBB /* UITextview+Additions.swift in Sources */,
+				DFF6877B28AB334600C070DD /* SampleModel.swift in Sources */,
 				DFC4F12A265727020064ECBB /* CircleAnimatedView.swift in Sources */,
 				DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */,
 				DFC4F0F2265727020064ECBB /* UITableView+Additions.swift in Sources */,
@@ -1456,6 +1508,7 @@
 				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
 				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
 				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
+				DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */,
 				D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */,
 				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,
 				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
@@ -1471,6 +1524,7 @@
 				D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */,
 				DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */,
 				DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */,
+				DFF6877C28AB334600C070DD /* SampleAPIFactory.swift in Sources */,
 				DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */,
 				DFC4F123265727020064ECBB /* AppearanceHelpers.swift in Sources */,
 				DFC4F0FB265727020064ECBB /* UIBarButtonItem+Additions.swift in Sources */,
@@ -1495,9 +1549,12 @@
 				DFC4F11C265727020064ECBB /* AppearanceImageView.swift in Sources */,
 				DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */,
 				DFC4F10B265727020064ECBB /* UIFlowBaseView.swift in Sources */,
+				DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */,
 				DFC4F137265727020064ECBB /* Logging.swift in Sources */,
 				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
+				DFF6877E28AB334600C070DD /* AlamofireProvider.swift in Sources */,
 				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
+				DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */,
 				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
 				D1A4A3F426B35ED7008C7CD5 /* GeoCircleOverlay.swift in Sources */,
 				DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */,
@@ -1535,6 +1592,7 @@
 				DFC4F12C265727020064ECBB /* CustomTextView.swift in Sources */,
 				DFC4F13C265727020064ECBB /* Alerts.swift in Sources */,
 				DFC4F143265727020064ECBB /* CustomOperation.swift in Sources */,
+				DFF6877A28AB334600C070DD /* SampleEnvironments.swift in Sources */,
 				DFC4F0E2265727020064ECBB /* UIFont+Additions.swift in Sources */,
 				DFC4F128265727020064ECBB /* CustomTextField.swift in Sources */,
 				DFC4F0E5265727020064ECBB /* UIButton+Additions.swift in Sources */,
@@ -1542,8 +1600,10 @@
 				DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */,
 				DFC4F110265727020064ECBB /* UIBehaviourHelper.swift in Sources */,
 				DFC4F13A265727020064ECBB /* Reachability.swift in Sources */,
+				DFF6877D28AB334600C070DD /* ProviderProtocol.swift in Sources */,
 				DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */,
 				DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */,
+				DFF6878128AB334600C070DD /* TestProvider.swift in Sources */,
 				9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */,
 				DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */,
 				DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */,
