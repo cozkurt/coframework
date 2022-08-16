@@ -1,0 +1,12 @@
+[
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "button",
+ "font": "Verdana,16"
+ },
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "label",
+ "font": "Verdana,16"
+ }
+]

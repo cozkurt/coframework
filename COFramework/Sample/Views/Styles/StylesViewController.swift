@@ -23,6 +23,14 @@ class StylesViewController: UIViewController {
         AppearanceController.sharedInstance.loadAppearance("DemoStyle2", view: self.view)
     }
     
+    @IBAction func loadStyle3() {
+        AppearanceController.sharedInstance.loadAppearance("DemoStyle3", view: self.view)
+    }
+    
+    @IBAction func loadStyle4() {
+        AppearanceController.sharedInstance.loadAppearance("DemoStyle4", view: self.view)
+    }
+    
     @IBAction func close() {
         NotificationsCenterManager.sharedInstance.post("DISMISS")
     }

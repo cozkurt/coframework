@@ -69,6 +69,8 @@ open class DynamicActionSheet: AppTableBase {
             
             self.tableView?.frame = CGRect(x: self.tableView.frame.origin.x, y: adjustedHeight - gap, width: self.tableView.frame.width, height: viewHeight - adjustedHeight)
             
+            self.tableView?.layoutIfNeeded()
+            
         }, completion: nil)
         
         if !animation {

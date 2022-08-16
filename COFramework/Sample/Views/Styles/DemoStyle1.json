@@ -27,19 +27,5 @@
  "borderWidth": "0",
  "cornerRadius": "10",
  "styleAlignment": "left"
- },
- {
- "appearanceId": "appearance",
- "appearanceType": "button",
- "titleColor": "255,0,0,1",
- "backgroundColor": "background1",
- "font": "Arial,16"
- },
- {
- "appearanceId": "appearance",
- "appearanceType": "label",
- "titleColor": "0,255,0,1",
- "backgroundColor": "background1",
- "font": "Arial,16"
  }
- ]
+]

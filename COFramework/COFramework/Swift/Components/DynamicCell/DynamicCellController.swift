@@ -22,6 +22,9 @@ public class DynamicCellController {
     // turn on/off only option
     var only: Bool = false
     
+    // table view bottom gap
+    var tableViewBottomGap: CGFloat = 0
+    
     //
     // MARK: - sharedInstance for singleton access
     //
@@ -97,6 +100,11 @@ public class DynamicCellController {
         // set only property to keep on cell
         self.only = only
         
+        // set tableview bottomGap to reuse
+        if tableViewBottomGap != 0 {
+            self.tableViewBottomGap = tableViewBottomGap
+        }
+        
         // check if only one cell presented at a time.
         // if true dismiss all presented cells
         
@@ -141,19 +149,9 @@ public class DynamicCellController {
             }
         }
         
-        // update tablevuew, insert cell, etc.
-        runOnMainQueue(after: delay + 0.1) {
+        // update tableview, insert cell, etc.
+        runOnMainQueue(after: delay + 0.0) {
             self.dynamicCellViewController?.view.isUserInteractionEnabled = userInteractionEnabled
-            
-            // check if it's dynamic actionSheet
-            if let dynamicActionSheet = self.dynamicCellViewController as? DynamicActionSheet {
-                dynamicActionSheet.blurView?.isUserInteractionEnabled = userInteractionEnabled
-                dynamicActionSheet.blurView?.addBlur(blurAlpha)
-                
-                runOnMainQueue(after: 0.1) {
-                    dynamicActionSheet.updateTableHeight(tableViewBottomGap, animation)
-                }
-            }
 
             self.dynamicCellViewController?.tableView?.clipsToBounds = tableViewClipToBounds
             self.dynamicCellViewController?.tableView?.backgroundColor = tableViewBackgroundColor
@@ -172,17 +170,27 @@ public class DynamicCellController {
             self.dynamicCellViewController?.tableView?.layoutIfNeeded()
 
             if tableViewScrollToBottom {
-                runOnMainQueue(after: 0.2) {
+                runOnMainQueue(after: 0.1) {
                     self.dynamicCellViewController?.tableView?.scrollToBottom()
                 }
             }
             
+            // check if it's dynamic actionSheet
+            if let dynamicActionSheet = self.dynamicCellViewController as? DynamicActionSheet {
+                dynamicActionSheet.blurView?.isUserInteractionEnabled = userInteractionEnabled
+                dynamicActionSheet.blurView?.addBlur(blurAlpha)
+                
+                runOnMainQueue(after: 0.1) {
+                    dynamicActionSheet.updateTableHeight(self.tableViewBottomGap, animation)
+                }
+            }
+
             if showDismissButton {
                 if let view = DynamicCellController.sharedInstance.dynamicCellViewController?.view {
                     DismissButton.sharedInstance.presentButton(toView: view,
                                                                iconName: "x.circle",
                                                                delay: 0,
-                                                               tableViewBottomGap: tableViewBottomGap) {
+                                                               tableViewBottomGap: self.tableViewBottomGap) {
                         NotificationsCenterManager.sharedInstance.post("DISMISS")
                     }
                 }
@@ -227,7 +235,7 @@ public class DynamicCellController {
             dynamicCellViewController.removeCell(key, indexPath)
             
             if let dynamicActionSheet = dynamicCellViewController as? DynamicActionSheet {
-                dynamicActionSheet.updateTableHeight()
+                dynamicActionSheet.updateTableHeight(self.tableViewBottomGap)
             }
             
             if dynamicCellViewController.tableView.visibleCells.count == 0 {

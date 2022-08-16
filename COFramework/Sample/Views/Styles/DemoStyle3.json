@@ -1,0 +1,12 @@
+[
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "button",
+ "font": "Arial,12"
+ },
+ {
+ "appearanceId": "appearance",
+ "appearanceType": "label",
+ "font": "Arial,12"
+ }
+]

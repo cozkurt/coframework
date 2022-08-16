@@ -9,101 +9,116 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StylesViewController" customModule="Sample" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="bnS-Iq-VQn" id="Dh8-V0-JmV"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="bnS-Iq-VQn" userLabel="Gradient Background View" customClass="COUIViewCustom">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41V-CO-u2a" userLabel="Gradient Background View" customClass="COUIViewCustom">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Animation Tutorials" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2D-mu-tek">
-                            <rect key="frame" x="90" y="64" width="195" height="34"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-ti-VsX" customClass="AppearanceButton" customModule="COFramework">
-                            <rect key="frame" x="104" y="130" width="165" height="23"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testButton1"/>
-                            </userDefinedRuntimeAttributes>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQg-VX-vmD" customClass="AppearanceLabel" customModule="COFramework">
-                            <rect key="frame" x="104" y="188" width="165" height="15"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testLabel1"/>
-                            </userDefinedRuntimeAttributes>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-vB-1lY" customClass="AppearanceButton" customModule="COFramework">
-                            <rect key="frame" x="81" y="236" width="210" height="22"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CD-cu-txz" customClass="AppearanceButton" customModule="COFramework">
-                            <rect key="frame" x="104" y="296" width="165" height="23"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T01-Wf-tSE" customClass="AppearanceButton" customModule="COFramework">
-                            <rect key="frame" x="110" y="468" width="170" height="23"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Load Style 2"/>
-                            <connections>
-                                <action selector="loadStyle2" destination="-1" eventType="touchUpInside" id="MRw-ac-I6u"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtB-Be-8is" customClass="AppearanceButton" customModule="COFramework">
-                            <rect key="frame" x="110" y="408" width="170" height="22"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Load Style 1"/>
-                            <connections>
-                                <action selector="loadStyle1" destination="-1" eventType="touchUpInside" id="yQF-H4-ex5"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-ft-MYA" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="94" y="579" width="171" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Load Global Style 2"/>
+                    <connections>
+                        <action selector="loadStyle4" destination="-1" eventType="touchUpInside" id="P5g-X6-2HC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-UG-qAd" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="98" y="541" width="171" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Load Global Style 1"/>
+                    <connections>
+                        <action selector="loadStyle3" destination="-1" eventType="touchUpInside" id="NjJ-hh-sSD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCw-Oj-Ql3" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="98" y="510" width="171" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Load Style 2"/>
+                    <connections>
+                        <action selector="loadStyle2" destination="-1" eventType="touchUpInside" id="HpM-ik-861"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-Qd-ckd" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="97" y="325" width="160" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Any Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-Qf-e04" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="73" y="363" width="208" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Any Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label with id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-83-2QC" customClass="AppearanceLabel" customModule="COFramework">
+                    <rect key="frame" x="94" y="159" width="165" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="colorStart">
-                            <color key="value" red="0.4039215686" green="0.69803921570000005" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="colorEnd">
-                            <color key="value" red="0.39607843139999999" green="0.70196078429999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testLabel1"/>
                     </userDefinedRuntimeAttributes>
-                </view>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-az-19x" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="96" y="188" width="165" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button with id"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="testButton1"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Styles Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db2-2B-NVf">
+                    <rect key="frame" x="90" y="23" width="195" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-2X-TCP" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="98" y="480" width="171" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Load Style 1"/>
+                    <connections>
+                        <action selector="loadStyle1" destination="-1" eventType="touchUpInside" id="abi-CU-90z"/>
+                    </connections>
+                </button>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="108" y="114.69265367316342"/>
+            <viewLayoutGuide key="safeArea" id="prU-oR-2LO"/>
+            <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="colorStart">
+                    <color key="value" red="0.4039215686" green="0.69803921570000005" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="colorEnd">
+                    <color key="value" red="0.39607843139999999" green="0.70196078429999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-22" y="103"/>
         </view>
     </objects>
     <designables>
-        <designable name="2CD-cu-txz">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+        <designable name="2Vg-UG-qAd">
+            <size key="intrinsicContentSize" width="131" height="30"/>
         </designable>
-        <designable name="J1u-ti-VsX">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+        <designable name="EvK-Qf-e04">
+            <size key="intrinsicContentSize" width="76" height="30"/>
         </designable>
-        <designable name="PtB-Be-8is">
+        <designable name="QVN-ft-MYA">
+            <size key="intrinsicContentSize" width="133" height="30"/>
+        </designable>
+        <designable name="SAP-2X-TCP">
             <size key="intrinsicContentSize" width="83" height="30"/>
         </designable>
-        <designable name="T01-Wf-tSE">
-            <size key="intrinsicContentSize" width="85" height="30"/>
+        <designable name="Yqx-Qd-ckd">
+            <size key="intrinsicContentSize" width="76" height="30"/>
         </designable>
-        <designable name="xbF-vB-1lY">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+        <designable name="mjh-az-19x">
+            <size key="intrinsicContentSize" width="95" height="30"/>
+        </designable>
+        <designable name="uCw-Oj-Ql3">
+            <size key="intrinsicContentSize" width="85" height="30"/>
         </designable>
     </designables>
 </document>

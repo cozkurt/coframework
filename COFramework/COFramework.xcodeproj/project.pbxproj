@@ -124,6 +124,8 @@
 		9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544F289B7127004275CD /* ConsoleViewController.swift */; };
 		9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415450289B7127004275CD /* ConsoleTableViewCell.xib */; };
 		9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415451289B7127004275CD /* ConsoleViewController.xib */; };
+		9ACDC4D428AC30DB009DABDD /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */; };
+		9ACDC4D528AC30DB009DABDD /* DemoStyle4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -405,6 +407,8 @@
 		9A41544F289B7127004275CD /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
 		9A415450289B7127004275CD /* ConsoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleTableViewCell.xib; sourceTree = "<group>"; };
 		9A415451289B7127004275CD /* ConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleViewController.xib; sourceTree = "<group>"; };
+		9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
+		9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle4.json; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -663,6 +667,8 @@
 			children = (
 				9A3A037A2898E9D80063C9DB /* DemoStyle1.json */,
 				9A3A03782898E9D80063C9DB /* DemoStyle2.json */,
+				9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */,
+				9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */,
 				9A3A037B2898E9D80063C9DB /* StylesViewController.swift */,
 				9A3A03792898E9D80063C9DB /* StylesViewController.xib */,
 			);
@@ -796,8 +802,8 @@
 		9A415427289B6058004275CD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				9A41542A289B6085004275CD /* BluetoothOnCell.swift */,
 				9A415431289B6086004275CD /* BluetoothOnCell.xib */,
+				9A41542A289B6085004275CD /* BluetoothOnCell.swift */,
 				9A41542C289B6085004275CD /* ConnectCell.swift */,
 				9A415435289B6086004275CD /* ConnectCell.xib */,
 				9A41542D289B6086004275CD /* ConnectPiecesCell.swift */,
@@ -1428,7 +1434,9 @@
 				9A3A037E2898E9D80063C9DB /* DemoStyle1.json in Resources */,
 				9A415416289B5AEE004275CD /* robot40_00037.png in Resources */,
 				9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */,
+				9ACDC4D428AC30DB009DABDD /* DemoStyle3.json in Resources */,
 				9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */,
+				9ACDC4D528AC30DB009DABDD /* DemoStyle4.json in Resources */,
 				9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */,
 				9A415415289B5AEE004275CD /* robot40_00009.png in Resources */,
 				9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */,

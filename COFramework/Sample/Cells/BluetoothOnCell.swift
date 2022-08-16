@@ -10,4 +10,7 @@ import COFramework
 
 class BluetoothOnCell: DynamicCellBase {
 
+//    func numberOfRecords() -> Int {
+//        return 3
+//    }
 }

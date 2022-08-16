@@ -27,7 +27,7 @@ class DynamicsCellsViewController: DynamicActionSheet {
     }
     
     @IBAction func add1() {
-        DynamicCellController.sharedInstance.postCell(self, key: "BluetoothOnCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewScrollToBottom: true)
+        DynamicCellController.sharedInstance.postCell(self, key: "BluetoothOnCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewBottomGap: 80, tableViewScrollToBottom: true)
     }
     
     @IBAction func remove1() {
@@ -35,7 +35,7 @@ class DynamicsCellsViewController: DynamicActionSheet {
     }
     
     @IBAction func add2() {
-        DynamicCellController.sharedInstance.postCell(self, key: "ConnectCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewScrollToBottom: true)
+        DynamicCellController.sharedInstance.postCell(self, key: "ConnectCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewBottomGap: 80, tableViewScrollToBottom: true)
     }
     
     @IBAction func remove2() {
@@ -43,7 +43,7 @@ class DynamicsCellsViewController: DynamicActionSheet {
     }
     
     @IBAction func add3() {
-        DynamicCellController.sharedInstance.postCell(self, key: "ConnectPiecesCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewScrollToBottom: true)
+        DynamicCellController.sharedInstance.postCell(self, key: "ConnectPiecesCell", trailingActions: "Delete".localize(), once: false, only: false, tableViewBottomGap: 80, tableViewScrollToBottom: true)
     }
     
     @IBAction func remove3() {

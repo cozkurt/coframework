@@ -11,7 +11,7 @@
  "appearanceType": "button",
  "titleColor": "custom1",
  "backgroundColor": "background1",
- "font": "HelveticaNeue,20",
+ "font": "HelveticaNeue,25",
  "borderColor": "custom0",
  "borderWidth": "1",
  "cornerRadius": "5"
@@ -21,24 +21,10 @@
  "appearanceType": "label",
  "titleColor": "custom1",
  "backgroundColor": "background1",
- "font": "HelveticaNeue,20",
+ "font": "HelveticaNeue,25",
  "borderColor": "custom0",
  "borderWidth": "1",
  "cornerRadius": "5",
  "styleAlignment": "center"
- },
- {
- "appearanceId": "appearance",
- "appearanceType": "button",
- "titleColor": "0,0,255,1",
- "backgroundColor": "background1",
- "font": "Arial,12"
- },
- {
- "appearanceId": "appearance",
- "appearanceType": "label",
- "titleColor": "0,0,255,1",
- "backgroundColor": "background1",
- "font": "Arial,12"
  }
- ]
+]
