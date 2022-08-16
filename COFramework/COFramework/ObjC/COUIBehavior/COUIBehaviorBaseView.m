@@ -35,6 +35,8 @@
  */
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     if (self.behaviorController == nil)
     {
         self.behaviorController = [[COUIBehaviorController alloc] initWithView:self withDataSource:[[CODataSource alloc] initWithJSONFile:self.configFileName]];
