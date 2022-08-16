@@ -34,9 +34,7 @@ public class AppearanceHelpers {
         
         let fontSplitVals: Array = fontName.components(separatedBy: "-")
         
-        if fontSplitVals.count != 2 { return nil }
-        
-        guard let uiFont = fontSplitVals[0].lowercased() == "system" ? UIFont.systemFont(ofSize: CGFloat(fontSize), weight: fontSplitVals[1].asFontWeight()) : UIFont(name: fontName, size: CGFloat(fontSize)) else {
+        guard let uiFont = fontSplitVals[0].lowercased() == "system" && fontSplitVals.count == 2 ? UIFont.systemFont(ofSize: CGFloat(fontSize), weight: fontSplitVals[1].asFontWeight()) : UIFont(name: fontName, size: CGFloat(fontSize)) else {
             return nil
         }
         

@@ -1,0 +1,68 @@
+[
+{
+    "eventName": "POP", "navigationType": "pop"
+},
+{
+    "eventName": "PUSH", "navigationType": "push"
+},
+{
+    "eventName": "REPLACE", "navigationType": "replace"
+},
+{
+    "eventName": "DISMISS_ALL", "navigationType": "dismissAll"
+},
+{
+    "eventName": "REMOVE_ALL", "navigationType": "removeAll"
+},
+{
+    "eventName": "DISMISS_ALL_NO_ANIMATION", "navigationType": "dismissAll", "animated": false
+},
+{
+    "eventName": "POP_NO_ANIMATION", "navigationType": "pop", "animated": false
+},
+{
+    "eventName": "POPTOROOT", "navigationType": "popToRoot"
+},
+{
+    "eventName": "PRESENT", "navigationType": "present"
+},
+{
+    "eventName": "PRESENT_NC", "navigationType": "presentNC"
+},
+{
+    "eventName": "DISMISS", "navigationType": "dismiss"
+},
+{
+    "eventName": "DISMISS_NO_ANIMATION", "navigationType": "dismiss", "animated": false
+},
+{
+    "eventName": "DISMISS_NC", "navigationType": "dismissNC", "animated": false
+},
+{
+    "eventName": "DISMISS_NC_ANIMATED", "navigationType": "dismissNC", "animated": true
+},
+{
+    "eventName": "DISMISS_SUBVIEW", "navigationType": "dismissSubView"
+},
+{
+    "eventName": "DISMISS_SUBVIEW_FROM_ROOT", "navigationType": "dismissSubViewFromRoot"
+},
+{
+    "eventName": "MENU_VIEW", "viewController":"Sample.MenuViewController", "navigationType": "replace", "statusBarHidden": false
+},
+{
+    "eventName": "DYNAMIC_CELLS_VIEW", "viewController":"Sample.DynamicsCellsViewController", "navigationType": "present", "statusBarHidden": false
+},
+{
+    "eventName": "STYLES_VIEW", "viewController":"Sample.StylesViewController", "navigationType": "present", "statusBarHidden": false
+},
+{
+    "eventName": "DYNAMICS_VIEW", "viewController":"Sample.DynamicsViewController", "navigationType": "present", "statusBarHidden": false
+},
+{
+    "eventName": "ANIMATIONS_VIEW", "viewController":"Sample.AnimationsViewController", "navigationType": "present", "statusBarHidden": false
+},
+{
+    "eventName": "CONSOLE_VIEW", "viewController":"Sample.ConsoleViewController", "navigationType": "present", "statusBarHidden": true
+},
+]

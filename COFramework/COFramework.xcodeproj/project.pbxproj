@@ -8,6 +8,123 @@
 
 /* Begin PBXBuildFile section */
 		9A075C972894795700D9F502 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9A075C962894795700D9F502 /* Alamofire */; };
+		9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03642898E7740063C9DB /* AppDelegate.swift */; };
+		9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03662898E7740063C9DB /* SceneDelegate.swift */; };
+		9A3A03692898E7740063C9DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03682898E7740063C9DB /* ViewController.swift */; };
+		9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A036D2898E7750063C9DB /* Assets.xcassets */; };
+		9A3A03712898E7750063C9DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A036F2898E7750063C9DB /* LaunchScreen.storyboard */; };
+		9A3A037C2898E9D80063C9DB /* DemoStyle2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A03782898E9D80063C9DB /* DemoStyle2.json */; };
+		9A3A037D2898E9D80063C9DB /* StylesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A03792898E9D80063C9DB /* StylesViewController.xib */; };
+		9A3A037E2898E9D80063C9DB /* DemoStyle1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A3A037A2898E9D80063C9DB /* DemoStyle1.json */; };
+		9A3A037F2898E9D80063C9DB /* StylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A037B2898E9D80063C9DB /* StylesViewController.swift */; };
+		9A415342289B09E6004275CD /* COFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC4F041265726C80064ECBB /* COFramework.framework */; };
+		9A415364289B0D4A004275CD /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415351289B0D4A004275CD /* MenuItemCell.swift */; };
+		9A415365289B0D4A004275CD /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415352289B0D4A004275CD /* MenuItemCell.xib */; };
+		9A415366289B0D4A004275CD /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415353289B0D4A004275CD /* MenuViewController.xib */; };
+		9A415367289B0D4A004275CD /* MenuViewController_x.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415354289B0D4A004275CD /* MenuViewController_x.xib */; };
+		9A415368289B0D4A004275CD /* MenuViewController_iPadx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415355289B0D4A004275CD /* MenuViewController_iPadx.xib */; };
+		9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415356289B0D4A004275CD /* MenuViewController.swift */; };
+		9A41536C289B0D4A004275CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535A289B0D4A004275CD /* Main.storyboard */; };
+		9A41536D289B0D4A004275CD /* MainFlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535B289B0D4A004275CD /* MainFlow.json */; };
+		9A415383289B208D004275CD /* COUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415370289B208D004275CD /* COUIBaseView.m */; };
+		9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415372289B208D004275CD /* COUIBehaviorGestures.h */; };
+		9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415373289B208D004275CD /* COUIBehaviorModel.m */; };
+		9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415374289B208D004275CD /* COUIBehaviorController.m */; };
+		9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415375289B208D004275CD /* COUIBehaviorView.m */; };
+		9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415376289B208D004275CD /* COUIBehaviorBaseView.m */; };
+		9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415377289B208D004275CD /* COUIBehaviorMotion.h */; };
+		9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415378289B208D004275CD /* COUIBehaviorFactory.h */; };
+		9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415379289B208D004275CD /* COUIBehaviorImage.m */; };
+		9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537A289B208D004275CD /* COUIBehaviorGestures.m */; };
+		9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537B289B208D004275CD /* COUIBehaviorController.h */; };
+		9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537C289B208D004275CD /* COUIBehaviorModel.h */; };
+		9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537D289B208D004275CD /* COUIBehaviorFactory.m */; };
+		9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537E289B208D004275CD /* COUIBehaviorMotion.m */; };
+		9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */; };
+		9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415380289B208D004275CD /* COUIBehaviorView.h */; };
+		9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415381289B208D004275CD /* COUIBehaviorImage.h */; };
+		9A415394289B208D004275CD /* COUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415382289B208D004275CD /* COUIBaseView.h */; };
+		9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41539A289B2878004275CD /* DynamicsViewController.swift */; };
+		9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41539C289B2878004275CD /* DynamicsViewController.json */; };
+		9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A3289B2A71004275CD /* DynamicsViewController.xib */; };
+		9A4153A9289B53A4004275CD /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153A7289B53A4004275CD /* AnimationsViewController.swift */; };
+		9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A8289B53A4004275CD /* AnimationsViewController.xib */; };
+		9A4153B5289B5700004275CD /* COUICircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AD289B5700004275CD /* COUICircleView.m */; };
+		9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AE289B5700004275CD /* COUIParticleView.m */; };
+		9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B0289B5700004275CD /* COUIViewCustom.h */; };
+		9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B1289B5700004275CD /* COUIParticleView.h */; };
+		9A4153BA289B5700004275CD /* COUICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B2289B5700004275CD /* COUICircleView.h */; };
+		9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153B4289B5700004275CD /* COUIViewCustom.m */; };
+		9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */; };
+		9A4153F4289B5AEE004275CD /* robot40_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C0289B5AEE004275CD /* robot40_00013.png */; };
+		9A4153F5289B5AEE004275CD /* robot40_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C1289B5AEE004275CD /* robot40_00007.png */; };
+		9A4153F6289B5AEE004275CD /* robot40_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C2289B5AEE004275CD /* robot40_00006.png */; };
+		9A4153F7289B5AEE004275CD /* robot40_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C3289B5AEE004275CD /* robot40_00012.png */; };
+		9A4153F8289B5AEE004275CD /* robot40_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C4289B5AEE004275CD /* robot40_00004.png */; };
+		9A4153F9289B5AEE004275CD /* robot40_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C5289B5AEE004275CD /* robot40_00010.png */; };
+		9A4153FA289B5AEE004275CD /* robot40_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C6289B5AEE004275CD /* robot40_00011.png */; };
+		9A4153FB289B5AEE004275CD /* robot40_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C7289B5AEE004275CD /* robot40_00005.png */; };
+		9A4153FC289B5AEE004275CD /* robot40_00029.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C8289B5AEE004275CD /* robot40_00029.png */; };
+		9A4153FD289B5AEE004275CD /* robot40_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C9289B5AEE004275CD /* robot40_00001.png */; };
+		9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CA289B5AEE004275CD /* robot40_00015.png */; };
+		9A4153FF289B5AEE004275CD /* robot40_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CB289B5AEE004275CD /* robot40_00014.png */; };
+		9A415400289B5AEE004275CD /* robot40_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CC289B5AEE004275CD /* robot40_00000.png */; };
+		9A415401289B5AEE004275CD /* robot40_00028.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CD289B5AEE004275CD /* robot40_00028.png */; };
+		9A415402289B5AEE004275CD /* robot40_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CE289B5AEE004275CD /* robot40_00016.png */; };
+		9A415403289B5AEE004275CD /* robot40_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153CF289B5AEE004275CD /* robot40_00002.png */; };
+		9A415404289B5AEE004275CD /* robot40_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D0289B5AEE004275CD /* robot40_00003.png */; };
+		9A415405289B5AEE004275CD /* robot40_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D1289B5AEE004275CD /* robot40_00017.png */; };
+		9A415406289B5AEE004275CD /* robot40_00032.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D2289B5AEE004275CD /* robot40_00032.png */; };
+		9A415407289B5AEE004275CD /* robot40_00026.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D3289B5AEE004275CD /* robot40_00026.png */; };
+		9A415408289B5AEE004275CD /* robot40_00027.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D4289B5AEE004275CD /* robot40_00027.png */; };
+		9A415409289B5AEE004275CD /* robot40_00033.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D5289B5AEE004275CD /* robot40_00033.png */; };
+		9A41540A289B5AEE004275CD /* robot40_00025.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D6289B5AEE004275CD /* robot40_00025.png */; };
+		9A41540B289B5AEE004275CD /* robot40_00031.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D7289B5AEE004275CD /* robot40_00031.png */; };
+		9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D8289B5AEE004275CD /* robot40_00019.png */; };
+		9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153D9289B5AEE004275CD /* robot40_00018.png */; };
+		9A41540E289B5AEE004275CD /* robot40_00030.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DA289B5AEE004275CD /* robot40_00030.png */; };
+		9A41540F289B5AEE004275CD /* robot40_00024.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DB289B5AEE004275CD /* robot40_00024.png */; };
+		9A415410289B5AEE004275CD /* robot40_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DC289B5AEE004275CD /* robot40_00008.png */; };
+		9A415411289B5AEE004275CD /* robot40_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DD289B5AEE004275CD /* robot40_00020.png */; };
+		9A415412289B5AEE004275CD /* robot40_00034.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DE289B5AEE004275CD /* robot40_00034.png */; };
+		9A415413289B5AEE004275CD /* robot40_00035.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153DF289B5AEE004275CD /* robot40_00035.png */; };
+		9A415414289B5AEE004275CD /* robot40_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E0289B5AEE004275CD /* robot40_00021.png */; };
+		9A415415289B5AEE004275CD /* robot40_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E1289B5AEE004275CD /* robot40_00009.png */; };
+		9A415416289B5AEE004275CD /* robot40_00037.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E2289B5AEE004275CD /* robot40_00037.png */; };
+		9A415417289B5AEE004275CD /* robot40_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E3289B5AEE004275CD /* robot40_00023.png */; };
+		9A415418289B5AEE004275CD /* robot40_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E4289B5AEE004275CD /* robot40_00022.png */; };
+		9A415419289B5AEE004275CD /* robot40_00036.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E5289B5AEE004275CD /* robot40_00036.png */; };
+		9A41541A289B5AEE004275CD /* robot12_00009.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E7289B5AEE004275CD /* robot12_00009.png */; };
+		9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E8289B5AEE004275CD /* robot12_00008.png */; };
+		9A41541C289B5AEE004275CD /* robot12_00003.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153E9289B5AEE004275CD /* robot12_00003.png */; };
+		9A41541D289B5AEE004275CD /* robot12_00002.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EA289B5AEE004275CD /* robot12_00002.png */; };
+		9A41541E289B5AEE004275CD /* robot12_00000.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EB289B5AEE004275CD /* robot12_00000.png */; };
+		9A41541F289B5AEE004275CD /* robot12_00001.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EC289B5AEE004275CD /* robot12_00001.png */; };
+		9A415420289B5AEE004275CD /* robot12_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153ED289B5AEE004275CD /* robot12_00011.png */; };
+		9A415421289B5AEE004275CD /* robot12_00005.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EE289B5AEE004275CD /* robot12_00005.png */; };
+		9A415422289B5AEE004275CD /* robot12_00004.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153EF289B5AEE004275CD /* robot12_00004.png */; };
+		9A415423289B5AEE004275CD /* robot12_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F0289B5AEE004275CD /* robot12_00010.png */; };
+		9A415424289B5AEE004275CD /* robot12_00006.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F1289B5AEE004275CD /* robot12_00006.png */; };
+		9A415425289B5AEE004275CD /* robot12_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F2289B5AEE004275CD /* robot12_00012.png */; };
+		9A415426289B5AEE004275CD /* robot12_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153F3289B5AEE004275CD /* robot12_00007.png */; };
+		9A41543A289B6086004275CD /* BluetoothOnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542A289B6085004275CD /* BluetoothOnCell.swift */; };
+		9A41543B289B6086004275CD /* ConnectPodToModemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */; };
+		9A41543C289B6086004275CD /* ConnectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542C289B6085004275CD /* ConnectCell.swift */; };
+		9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41542D289B6086004275CD /* ConnectPiecesCell.swift */; };
+		9A41543E289B6086004275CD /* RestartYourModemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41542E289B6086004275CD /* RestartYourModemCell.xib */; };
+		9A41543F289B6086004275CD /* PlugPodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41542F289B6086004275CD /* PlugPodCell.xib */; };
+		9A415440289B6086004275CD /* ConnectPodToModemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415430289B6086004275CD /* ConnectPodToModemCell.xib */; };
+		9A415441289B6086004275CD /* BluetoothOnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415431289B6086004275CD /* BluetoothOnCell.xib */; };
+		9A415442289B6086004275CD /* RestartYourModemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415432289B6086004275CD /* RestartYourModemCell.swift */; };
+		9A415444289B6086004275CD /* PlugPodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415434289B6086004275CD /* PlugPodCell.swift */; };
+		9A415445289B6086004275CD /* ConnectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415435289B6086004275CD /* ConnectCell.xib */; };
+		9A415447289B6086004275CD /* ConnectPiecesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415437289B6086004275CD /* ConnectPiecesCell.xib */; };
+		9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415449289B6442004275CD /* DynamicsCellsViewController.swift */; };
+		9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */; };
+		9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */; };
+		9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544F289B7127004275CD /* ConsoleViewController.swift */; };
+		9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415450289B7127004275CD /* ConsoleTableViewCell.xib */; };
+		9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415451289B7127004275CD /* ConsoleViewController.xib */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
 		D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */; };
 		D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */; };
@@ -159,6 +276,124 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A3A03622898E7740063C9DB /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3A03642898E7740063C9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A3A03662898E7740063C9DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9A3A03682898E7740063C9DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A3A036D2898E7750063C9DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A3A03702898E7750063C9DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A3A03722898E7750063C9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3A03782898E9D80063C9DB /* DemoStyle2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle2.json; sourceTree = "<group>"; };
+		9A3A03792898E9D80063C9DB /* StylesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StylesViewController.xib; sourceTree = "<group>"; };
+		9A3A037A2898E9D80063C9DB /* DemoStyle1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle1.json; sourceTree = "<group>"; };
+		9A3A037B2898E9D80063C9DB /* StylesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesViewController.swift; sourceTree = "<group>"; };
+		9A415351289B0D4A004275CD /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		9A415352289B0D4A004275CD /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		9A415353289B0D4A004275CD /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		9A415354289B0D4A004275CD /* MenuViewController_x.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController_x.xib; sourceTree = "<group>"; };
+		9A415355289B0D4A004275CD /* MenuViewController_iPadx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController_iPadx.xib; sourceTree = "<group>"; };
+		9A415356289B0D4A004275CD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9A41535A289B0D4A004275CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9A41535B289B0D4A004275CD /* MainFlow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainFlow.json; sourceTree = "<group>"; };
+		9A415370289B208D004275CD /* COUIBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBaseView.m; sourceTree = "<group>"; };
+		9A415372289B208D004275CD /* COUIBehaviorGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorGestures.h; sourceTree = "<group>"; };
+		9A415373289B208D004275CD /* COUIBehaviorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorModel.m; sourceTree = "<group>"; };
+		9A415374289B208D004275CD /* COUIBehaviorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorController.m; sourceTree = "<group>"; };
+		9A415375289B208D004275CD /* COUIBehaviorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorView.m; sourceTree = "<group>"; };
+		9A415376289B208D004275CD /* COUIBehaviorBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorBaseView.m; sourceTree = "<group>"; };
+		9A415377289B208D004275CD /* COUIBehaviorMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorMotion.h; sourceTree = "<group>"; };
+		9A415378289B208D004275CD /* COUIBehaviorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorFactory.h; sourceTree = "<group>"; };
+		9A415379289B208D004275CD /* COUIBehaviorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorImage.m; sourceTree = "<group>"; };
+		9A41537A289B208D004275CD /* COUIBehaviorGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorGestures.m; sourceTree = "<group>"; };
+		9A41537B289B208D004275CD /* COUIBehaviorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorController.h; sourceTree = "<group>"; };
+		9A41537C289B208D004275CD /* COUIBehaviorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorModel.h; sourceTree = "<group>"; };
+		9A41537D289B208D004275CD /* COUIBehaviorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorFactory.m; sourceTree = "<group>"; };
+		9A41537E289B208D004275CD /* COUIBehaviorMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIBehaviorMotion.m; sourceTree = "<group>"; };
+		9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorBaseView.h; sourceTree = "<group>"; };
+		9A415380289B208D004275CD /* COUIBehaviorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorView.h; sourceTree = "<group>"; };
+		9A415381289B208D004275CD /* COUIBehaviorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBehaviorImage.h; sourceTree = "<group>"; };
+		9A415382289B208D004275CD /* COUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIBaseView.h; sourceTree = "<group>"; };
+		9A41539A289B2878004275CD /* DynamicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsViewController.swift; sourceTree = "<group>"; };
+		9A41539C289B2878004275CD /* DynamicsViewController.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DynamicsViewController.json; sourceTree = "<group>"; };
+		9A4153A3289B2A71004275CD /* DynamicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicsViewController.xib; sourceTree = "<group>"; };
+		9A4153A7289B53A4004275CD /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
+		9A4153A8289B53A4004275CD /* AnimationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationsViewController.xib; sourceTree = "<group>"; };
+		9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimationsViewControlller.json; sourceTree = "<group>"; };
+		9A4153AD289B5700004275CD /* COUICircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUICircleView.m; sourceTree = "<group>"; };
+		9A4153AE289B5700004275CD /* COUIParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIParticleView.m; sourceTree = "<group>"; };
+		9A4153B0289B5700004275CD /* COUIViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIViewCustom.h; sourceTree = "<group>"; };
+		9A4153B1289B5700004275CD /* COUIParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIParticleView.h; sourceTree = "<group>"; };
+		9A4153B2289B5700004275CD /* COUICircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUICircleView.h; sourceTree = "<group>"; };
+		9A4153B4289B5700004275CD /* COUIViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIViewCustom.m; sourceTree = "<group>"; };
+		9A4153C0289B5AEE004275CD /* robot40_00013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00013.png; sourceTree = "<group>"; };
+		9A4153C1289B5AEE004275CD /* robot40_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00007.png; sourceTree = "<group>"; };
+		9A4153C2289B5AEE004275CD /* robot40_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00006.png; sourceTree = "<group>"; };
+		9A4153C3289B5AEE004275CD /* robot40_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00012.png; sourceTree = "<group>"; };
+		9A4153C4289B5AEE004275CD /* robot40_00004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00004.png; sourceTree = "<group>"; };
+		9A4153C5289B5AEE004275CD /* robot40_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00010.png; sourceTree = "<group>"; };
+		9A4153C6289B5AEE004275CD /* robot40_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00011.png; sourceTree = "<group>"; };
+		9A4153C7289B5AEE004275CD /* robot40_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00005.png; sourceTree = "<group>"; };
+		9A4153C8289B5AEE004275CD /* robot40_00029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00029.png; sourceTree = "<group>"; };
+		9A4153C9289B5AEE004275CD /* robot40_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00001.png; sourceTree = "<group>"; };
+		9A4153CA289B5AEE004275CD /* robot40_00015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00015.png; sourceTree = "<group>"; };
+		9A4153CB289B5AEE004275CD /* robot40_00014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00014.png; sourceTree = "<group>"; };
+		9A4153CC289B5AEE004275CD /* robot40_00000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00000.png; sourceTree = "<group>"; };
+		9A4153CD289B5AEE004275CD /* robot40_00028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00028.png; sourceTree = "<group>"; };
+		9A4153CE289B5AEE004275CD /* robot40_00016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00016.png; sourceTree = "<group>"; };
+		9A4153CF289B5AEE004275CD /* robot40_00002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00002.png; sourceTree = "<group>"; };
+		9A4153D0289B5AEE004275CD /* robot40_00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00003.png; sourceTree = "<group>"; };
+		9A4153D1289B5AEE004275CD /* robot40_00017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00017.png; sourceTree = "<group>"; };
+		9A4153D2289B5AEE004275CD /* robot40_00032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00032.png; sourceTree = "<group>"; };
+		9A4153D3289B5AEE004275CD /* robot40_00026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00026.png; sourceTree = "<group>"; };
+		9A4153D4289B5AEE004275CD /* robot40_00027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00027.png; sourceTree = "<group>"; };
+		9A4153D5289B5AEE004275CD /* robot40_00033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00033.png; sourceTree = "<group>"; };
+		9A4153D6289B5AEE004275CD /* robot40_00025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00025.png; sourceTree = "<group>"; };
+		9A4153D7289B5AEE004275CD /* robot40_00031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00031.png; sourceTree = "<group>"; };
+		9A4153D8289B5AEE004275CD /* robot40_00019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00019.png; sourceTree = "<group>"; };
+		9A4153D9289B5AEE004275CD /* robot40_00018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00018.png; sourceTree = "<group>"; };
+		9A4153DA289B5AEE004275CD /* robot40_00030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00030.png; sourceTree = "<group>"; };
+		9A4153DB289B5AEE004275CD /* robot40_00024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00024.png; sourceTree = "<group>"; };
+		9A4153DC289B5AEE004275CD /* robot40_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00008.png; sourceTree = "<group>"; };
+		9A4153DD289B5AEE004275CD /* robot40_00020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00020.png; sourceTree = "<group>"; };
+		9A4153DE289B5AEE004275CD /* robot40_00034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00034.png; sourceTree = "<group>"; };
+		9A4153DF289B5AEE004275CD /* robot40_00035.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00035.png; sourceTree = "<group>"; };
+		9A4153E0289B5AEE004275CD /* robot40_00021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00021.png; sourceTree = "<group>"; };
+		9A4153E1289B5AEE004275CD /* robot40_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00009.png; sourceTree = "<group>"; };
+		9A4153E2289B5AEE004275CD /* robot40_00037.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00037.png; sourceTree = "<group>"; };
+		9A4153E3289B5AEE004275CD /* robot40_00023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00023.png; sourceTree = "<group>"; };
+		9A4153E4289B5AEE004275CD /* robot40_00022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00022.png; sourceTree = "<group>"; };
+		9A4153E5289B5AEE004275CD /* robot40_00036.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot40_00036.png; sourceTree = "<group>"; };
+		9A4153E7289B5AEE004275CD /* robot12_00009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00009.png; sourceTree = "<group>"; };
+		9A4153E8289B5AEE004275CD /* robot12_00008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00008.png; sourceTree = "<group>"; };
+		9A4153E9289B5AEE004275CD /* robot12_00003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00003.png; sourceTree = "<group>"; };
+		9A4153EA289B5AEE004275CD /* robot12_00002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00002.png; sourceTree = "<group>"; };
+		9A4153EB289B5AEE004275CD /* robot12_00000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00000.png; sourceTree = "<group>"; };
+		9A4153EC289B5AEE004275CD /* robot12_00001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00001.png; sourceTree = "<group>"; };
+		9A4153ED289B5AEE004275CD /* robot12_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00011.png; sourceTree = "<group>"; };
+		9A4153EE289B5AEE004275CD /* robot12_00005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00005.png; sourceTree = "<group>"; };
+		9A4153EF289B5AEE004275CD /* robot12_00004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00004.png; sourceTree = "<group>"; };
+		9A4153F0289B5AEE004275CD /* robot12_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00010.png; sourceTree = "<group>"; };
+		9A4153F1289B5AEE004275CD /* robot12_00006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00006.png; sourceTree = "<group>"; };
+		9A4153F2289B5AEE004275CD /* robot12_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00012.png; sourceTree = "<group>"; };
+		9A4153F3289B5AEE004275CD /* robot12_00007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot12_00007.png; sourceTree = "<group>"; };
+		9A41542A289B6085004275CD /* BluetoothOnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothOnCell.swift; sourceTree = "<group>"; };
+		9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectPodToModemCell.swift; sourceTree = "<group>"; };
+		9A41542C289B6085004275CD /* ConnectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectCell.swift; sourceTree = "<group>"; };
+		9A41542D289B6086004275CD /* ConnectPiecesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectPiecesCell.swift; sourceTree = "<group>"; };
+		9A41542E289B6086004275CD /* RestartYourModemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestartYourModemCell.xib; sourceTree = "<group>"; };
+		9A41542F289B6086004275CD /* PlugPodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlugPodCell.xib; sourceTree = "<group>"; };
+		9A415430289B6086004275CD /* ConnectPodToModemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectPodToModemCell.xib; sourceTree = "<group>"; };
+		9A415431289B6086004275CD /* BluetoothOnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothOnCell.xib; sourceTree = "<group>"; };
+		9A415432289B6086004275CD /* RestartYourModemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestartYourModemCell.swift; sourceTree = "<group>"; };
+		9A415434289B6086004275CD /* PlugPodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugPodCell.swift; sourceTree = "<group>"; };
+		9A415435289B6086004275CD /* ConnectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectCell.xib; sourceTree = "<group>"; };
+		9A415437289B6086004275CD /* ConnectPiecesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectPiecesCell.xib; sourceTree = "<group>"; };
+		9A415449289B6442004275CD /* DynamicsCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicsCellsViewController.swift; sourceTree = "<group>"; };
+		9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicsCellsViewController.xib; sourceTree = "<group>"; };
+		9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTableViewCell.swift; sourceTree = "<group>"; };
+		9A41544F289B7127004275CD /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		9A415450289B7127004275CD /* ConsoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleTableViewCell.xib; sourceTree = "<group>"; };
+		9A415451289B7127004275CD /* ConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleViewController.xib; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D17850BB26687F5F00E4E28D /* CLLocation+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
 		D17850BD2668834800E4E28D /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
@@ -315,6 +550,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A3A035F2898E7740063C9DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A415342289B09E6004275CD /* COFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03E265726C80064ECBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +570,245 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A3A03632898E7740063C9DB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				9A415427289B6058004275CD /* Cells */,
+				9A41534E289B0D4A004275CD /* Views */,
+				9A3A03642898E7740063C9DB /* AppDelegate.swift */,
+				9A3A03662898E7740063C9DB /* SceneDelegate.swift */,
+				9A3A03682898E7740063C9DB /* ViewController.swift */,
+				9A3A036D2898E7750063C9DB /* Assets.xcassets */,
+				9A3A036F2898E7750063C9DB /* LaunchScreen.storyboard */,
+				9A3A03722898E7750063C9DB /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		9A3A03762898E8630063C9DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A41534E289B0D4A004275CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A41544D289B7127004275CD /* Console */,
+				9A415448289B63ED004275CD /* DynamicCells */,
+				9A415395289B2878004275CD /* Animations */,
+				9A41536E289B0EF8004275CD /* Styles */,
+				9A41534F289B0D4A004275CD /* Menu */,
+				9A415357289B0D4A004275CD /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A41534F289B0D4A004275CD /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9A415350289B0D4A004275CD /* Cells */,
+				9A415356289B0D4A004275CD /* MenuViewController.swift */,
+				9A415353289B0D4A004275CD /* MenuViewController.xib */,
+				9A415354289B0D4A004275CD /* MenuViewController_x.xib */,
+				9A415355289B0D4A004275CD /* MenuViewController_iPadx.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		9A415350289B0D4A004275CD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A415351289B0D4A004275CD /* MenuItemCell.swift */,
+				9A415352289B0D4A004275CD /* MenuItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9A415357289B0D4A004275CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A41535A289B0D4A004275CD /* Main.storyboard */,
+				9A41535B289B0D4A004275CD /* MainFlow.json */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9A41536E289B0EF8004275CD /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				9A3A037A2898E9D80063C9DB /* DemoStyle1.json */,
+				9A3A03782898E9D80063C9DB /* DemoStyle2.json */,
+				9A3A037B2898E9D80063C9DB /* StylesViewController.swift */,
+				9A3A03792898E9D80063C9DB /* StylesViewController.xib */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		9A415371289B208D004275CD /* COUIBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */,
+				9A415376289B208D004275CD /* COUIBehaviorBaseView.m */,
+				9A415372289B208D004275CD /* COUIBehaviorGestures.h */,
+				9A41537A289B208D004275CD /* COUIBehaviorGestures.m */,
+				9A41537C289B208D004275CD /* COUIBehaviorModel.h */,
+				9A415373289B208D004275CD /* COUIBehaviorModel.m */,
+				9A41537B289B208D004275CD /* COUIBehaviorController.h */,
+				9A415374289B208D004275CD /* COUIBehaviorController.m */,
+				9A415380289B208D004275CD /* COUIBehaviorView.h */,
+				9A415375289B208D004275CD /* COUIBehaviorView.m */,
+				9A415377289B208D004275CD /* COUIBehaviorMotion.h */,
+				9A41537E289B208D004275CD /* COUIBehaviorMotion.m */,
+				9A415378289B208D004275CD /* COUIBehaviorFactory.h */,
+				9A41537D289B208D004275CD /* COUIBehaviorFactory.m */,
+				9A415381289B208D004275CD /* COUIBehaviorImage.h */,
+				9A415379289B208D004275CD /* COUIBehaviorImage.m */,
+			);
+			path = COUIBehavior;
+			sourceTree = "<group>";
+		};
+		9A415395289B2878004275CD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153BE289B5AEE004275CD /* assets */,
+				9A41539A289B2878004275CD /* DynamicsViewController.swift */,
+				9A41539C289B2878004275CD /* DynamicsViewController.json */,
+				9A4153A3289B2A71004275CD /* DynamicsViewController.xib */,
+				9A4153A7289B53A4004275CD /* AnimationsViewController.swift */,
+				9A4153A8289B53A4004275CD /* AnimationsViewController.xib */,
+				9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		9A4153AC289B5700004275CD /* COUICustom */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153B2289B5700004275CD /* COUICircleView.h */,
+				9A4153AD289B5700004275CD /* COUICircleView.m */,
+				9A4153B1289B5700004275CD /* COUIParticleView.h */,
+				9A4153AE289B5700004275CD /* COUIParticleView.m */,
+				9A4153B0289B5700004275CD /* COUIViewCustom.h */,
+				9A4153B4289B5700004275CD /* COUIViewCustom.m */,
+			);
+			path = COUICustom;
+			sourceTree = "<group>";
+		};
+		9A4153BE289B5AEE004275CD /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153BF289B5AEE004275CD /* robot40 */,
+				9A4153E6289B5AEE004275CD /* robot12 */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		9A4153BF289B5AEE004275CD /* robot40 */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153C0289B5AEE004275CD /* robot40_00013.png */,
+				9A4153C1289B5AEE004275CD /* robot40_00007.png */,
+				9A4153C2289B5AEE004275CD /* robot40_00006.png */,
+				9A4153C3289B5AEE004275CD /* robot40_00012.png */,
+				9A4153C4289B5AEE004275CD /* robot40_00004.png */,
+				9A4153C5289B5AEE004275CD /* robot40_00010.png */,
+				9A4153C6289B5AEE004275CD /* robot40_00011.png */,
+				9A4153C7289B5AEE004275CD /* robot40_00005.png */,
+				9A4153C8289B5AEE004275CD /* robot40_00029.png */,
+				9A4153C9289B5AEE004275CD /* robot40_00001.png */,
+				9A4153CA289B5AEE004275CD /* robot40_00015.png */,
+				9A4153CB289B5AEE004275CD /* robot40_00014.png */,
+				9A4153CC289B5AEE004275CD /* robot40_00000.png */,
+				9A4153CD289B5AEE004275CD /* robot40_00028.png */,
+				9A4153CE289B5AEE004275CD /* robot40_00016.png */,
+				9A4153CF289B5AEE004275CD /* robot40_00002.png */,
+				9A4153D0289B5AEE004275CD /* robot40_00003.png */,
+				9A4153D1289B5AEE004275CD /* robot40_00017.png */,
+				9A4153D2289B5AEE004275CD /* robot40_00032.png */,
+				9A4153D3289B5AEE004275CD /* robot40_00026.png */,
+				9A4153D4289B5AEE004275CD /* robot40_00027.png */,
+				9A4153D5289B5AEE004275CD /* robot40_00033.png */,
+				9A4153D6289B5AEE004275CD /* robot40_00025.png */,
+				9A4153D7289B5AEE004275CD /* robot40_00031.png */,
+				9A4153D8289B5AEE004275CD /* robot40_00019.png */,
+				9A4153D9289B5AEE004275CD /* robot40_00018.png */,
+				9A4153DA289B5AEE004275CD /* robot40_00030.png */,
+				9A4153DB289B5AEE004275CD /* robot40_00024.png */,
+				9A4153DC289B5AEE004275CD /* robot40_00008.png */,
+				9A4153DD289B5AEE004275CD /* robot40_00020.png */,
+				9A4153DE289B5AEE004275CD /* robot40_00034.png */,
+				9A4153DF289B5AEE004275CD /* robot40_00035.png */,
+				9A4153E0289B5AEE004275CD /* robot40_00021.png */,
+				9A4153E1289B5AEE004275CD /* robot40_00009.png */,
+				9A4153E2289B5AEE004275CD /* robot40_00037.png */,
+				9A4153E3289B5AEE004275CD /* robot40_00023.png */,
+				9A4153E4289B5AEE004275CD /* robot40_00022.png */,
+				9A4153E5289B5AEE004275CD /* robot40_00036.png */,
+			);
+			path = robot40;
+			sourceTree = "<group>";
+		};
+		9A4153E6289B5AEE004275CD /* robot12 */ = {
+			isa = PBXGroup;
+			children = (
+				9A4153E7289B5AEE004275CD /* robot12_00009.png */,
+				9A4153E8289B5AEE004275CD /* robot12_00008.png */,
+				9A4153E9289B5AEE004275CD /* robot12_00003.png */,
+				9A4153EA289B5AEE004275CD /* robot12_00002.png */,
+				9A4153EB289B5AEE004275CD /* robot12_00000.png */,
+				9A4153EC289B5AEE004275CD /* robot12_00001.png */,
+				9A4153ED289B5AEE004275CD /* robot12_00011.png */,
+				9A4153EE289B5AEE004275CD /* robot12_00005.png */,
+				9A4153EF289B5AEE004275CD /* robot12_00004.png */,
+				9A4153F0289B5AEE004275CD /* robot12_00010.png */,
+				9A4153F1289B5AEE004275CD /* robot12_00006.png */,
+				9A4153F2289B5AEE004275CD /* robot12_00012.png */,
+				9A4153F3289B5AEE004275CD /* robot12_00007.png */,
+			);
+			path = robot12;
+			sourceTree = "<group>";
+		};
+		9A415427289B6058004275CD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A41542A289B6085004275CD /* BluetoothOnCell.swift */,
+				9A415431289B6086004275CD /* BluetoothOnCell.xib */,
+				9A41542C289B6085004275CD /* ConnectCell.swift */,
+				9A415435289B6086004275CD /* ConnectCell.xib */,
+				9A41542D289B6086004275CD /* ConnectPiecesCell.swift */,
+				9A415437289B6086004275CD /* ConnectPiecesCell.xib */,
+				9A41542B289B6085004275CD /* ConnectPodToModemCell.swift */,
+				9A415430289B6086004275CD /* ConnectPodToModemCell.xib */,
+				9A415434289B6086004275CD /* PlugPodCell.swift */,
+				9A41542F289B6086004275CD /* PlugPodCell.xib */,
+				9A415432289B6086004275CD /* RestartYourModemCell.swift */,
+				9A41542E289B6086004275CD /* RestartYourModemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9A415448289B63ED004275CD /* DynamicCells */ = {
+			isa = PBXGroup;
+			children = (
+				9A415449289B6442004275CD /* DynamicsCellsViewController.swift */,
+				9A41544A289B6442004275CD /* DynamicsCellsViewController.xib */,
+			);
+			path = DynamicCells;
+			sourceTree = "<group>";
+		};
+		9A41544D289B7127004275CD /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				9A41544E289B7127004275CD /* ConsoleTableViewCell.swift */,
+				9A415450289B7127004275CD /* ConsoleTableViewCell.xib */,
+				9A41544F289B7127004275CD /* ConsoleViewController.swift */,
+				9A415451289B7127004275CD /* ConsoleViewController.xib */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,7 +826,9 @@
 			children = (
 				DFC4F1DC265824420064ECBB /* Packages Metadata */,
 				DFC4F043265726C80064ECBB /* COFramework */,
+				9A3A03632898E7740063C9DB /* Sample */,
 				DFC4F042265726C80064ECBB /* Products */,
+				9A3A03762898E8630063C9DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -352,6 +836,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC4F041265726C80064ECBB /* COFramework.framework */,
+				9A3A03622898E7740063C9DB /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -602,24 +1087,22 @@
 		DFC4F18A265733340064ECBB /* COUIAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				DFC4F193265733340064ECBB /* COUIAnimationRouter.h */,
 				DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */,
 				DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */,
+				DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */,
 				DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */,
+				DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */,
+				DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */,
 				DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */,
+				DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */,
 				DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */,
 				DFC4F190265733340064ECBB /* COUIAnimationFactory.h */,
-				DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */,
-				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
-				DFC4F193265733340064ECBB /* COUIAnimationRouter.h */,
-				DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */,
-				DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */,
-				DFC4F196265733340064ECBB /* COShared */,
-				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
-				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
-				DFC4F1A5265733340064ECBB /* Categories */,
 				DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */,
-				DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */,
-				DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */,
+				DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */,
+				DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */,
+				DFC4F192265733340064ECBB /* COUIAnimationController.h */,
+				DFC4F1A3265733340064ECBB /* COUIAnimationController.m */,
 			);
 			path = COUIAnimation;
 			sourceTree = "<group>";
@@ -627,18 +1110,18 @@
 		DFC4F196265733340064ECBB /* COShared */ = {
 			isa = PBXGroup;
 			children = (
-				DFC4F197265733340064ECBB /* CODataSource.h */,
-				DFC4F198265733340064ECBB /* COJSONLoader.h */,
 				DFC4F199265733340064ECBB /* COSingleton.h */,
+				DFC4F1A1265733340064ECBB /* COMacros.h */,
+				DFC4F197265733340064ECBB /* CODataSource.h */,
+				DFC4F19E265733340064ECBB /* CODataSource.m */,
+				DFC4F198265733340064ECBB /* COJSONLoader.h */,
+				DFC4F19D265733340064ECBB /* COJSONLoader.m */,
 				DFC4F19A265733340064ECBB /* COLogging.h */,
+				DFC4F19F265733340064ECBB /* COLogging.m */,
+				DFC4F1A2265733340064ECBB /* COTimer.h */,
 				DFC4F19B265733340064ECBB /* COTimer.m */,
 				DFC4F19C265733340064ECBB /* COCacheController.h */,
-				DFC4F19D265733340064ECBB /* COJSONLoader.m */,
-				DFC4F19E265733340064ECBB /* CODataSource.m */,
-				DFC4F19F265733340064ECBB /* COLogging.m */,
 				DFC4F1A0265733340064ECBB /* COCacheController.m */,
-				DFC4F1A1265733340064ECBB /* COMacros.h */,
-				DFC4F1A2265733340064ECBB /* COTimer.h */,
 			);
 			path = COShared;
 			sourceTree = "<group>";
@@ -647,13 +1130,13 @@
 			isa = PBXGroup;
 			children = (
 				DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */,
+				DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */,
+				DFC4F1AA265733340064ECBB /* NSString+Utilities.h */,
 				DFC4F1A7265733340064ECBB /* NSString+Utilities.m */,
 				DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */,
-				DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */,
-				DFC4F1AA265733340064ECBB /* NSString+Utilities.h */,
-				DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */,
-				DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */,
 				DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */,
+				DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */,
+				DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -681,7 +1164,13 @@
 		DFC4F1E826582C560064ECBB /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				9A415382289B208D004275CD /* COUIBaseView.h */,
+				9A415370289B208D004275CD /* COUIBaseView.m */,
+				DFC4F1A5265733340064ECBB /* Categories */,
+				DFC4F196265733340064ECBB /* COShared */,
+				9A415371289B208D004275CD /* COUIBehavior */,
 				DFC4F18A265733340064ECBB /* COUIAnimation */,
+				9A4153AC289B5700004275CD /* COUICustom */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -693,11 +1182,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */,
+				9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */,
 				DFC4F1C7265733340064ECBB /* COTimer.h in Headers */,
 				DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */,
+				9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */,
 				DFC4F1C6265733340064ECBB /* COMacros.h in Headers */,
 				DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */,
+				9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */,
 				DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */,
+				9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */,
 				DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */,
 				DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */,
 				DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */,
@@ -705,13 +1199,20 @@
 				DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */,
 				DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */,
 				DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */,
+				9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */,
 				DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */,
 				DFC4F1BF265733340064ECBB /* COLogging.h in Headers */,
+				9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */,
+				9A4153BA289B5700004275CD /* COUICircleView.h in Headers */,
+				9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */,
+				9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */,
 				DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */,
 				DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */,
 				DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */,
+				9A415394289B208D004275CD /* COUIBaseView.h in Headers */,
 				DFC4F052265726C80064ECBB /* COFramework.h in Headers */,
 				DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */,
+				9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */,
 				DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,6 +1220,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9A3A03612898E7740063C9DB /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3A03752898E7750063C9DB /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				9A3A035E2898E7740063C9DB /* Sources */,
+				9A3A035F2898E7740063C9DB /* Frameworks */,
+				9A3A03602898E7740063C9DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = 9A3A03622898E7740063C9DB /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DFC4F040265726C80064ECBB /* COFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFC4F055265726C80064ECBB /* Build configuration list for PBXNativeTarget "COFramework" */;
@@ -747,9 +1265,12 @@
 		DFC4F038265726C80064ECBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					9A3A03612898E7740063C9DB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					DFC4F040265726C80064ECBB = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -773,11 +1294,94 @@
 			projectRoot = "";
 			targets = (
 				DFC4F040265726C80064ECBB /* COFramework */,
+				9A3A03612898E7740063C9DB /* Sample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A3A03602898E7740063C9DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A415425289B5AEE004275CD /* robot12_00012.png in Resources */,
+				9A415404289B5AEE004275CD /* robot40_00003.png in Resources */,
+				9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */,
+				9A41540E289B5AEE004275CD /* robot40_00030.png in Resources */,
+				9A4153F4289B5AEE004275CD /* robot40_00013.png in Resources */,
+				9A3A03712898E7750063C9DB /* LaunchScreen.storyboard in Resources */,
+				9A415418289B5AEE004275CD /* robot40_00022.png in Resources */,
+				9A415365289B0D4A004275CD /* MenuItemCell.xib in Resources */,
+				9A415405289B5AEE004275CD /* robot40_00017.png in Resources */,
+				9A415406289B5AEE004275CD /* robot40_00032.png in Resources */,
+				9A415413289B5AEE004275CD /* robot40_00035.png in Resources */,
+				9A415411289B5AEE004275CD /* robot40_00020.png in Resources */,
+				9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */,
+				9A41541E289B5AEE004275CD /* robot12_00000.png in Resources */,
+				9A415400289B5AEE004275CD /* robot40_00000.png in Resources */,
+				9A415445289B6086004275CD /* ConnectCell.xib in Resources */,
+				9A415403289B5AEE004275CD /* robot40_00002.png in Resources */,
+				9A4153F8289B5AEE004275CD /* robot40_00004.png in Resources */,
+				9A415409289B5AEE004275CD /* robot40_00033.png in Resources */,
+				9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */,
+				9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */,
+				9A415447289B6086004275CD /* ConnectPiecesCell.xib in Resources */,
+				9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */,
+				9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */,
+				9A415423289B5AEE004275CD /* robot12_00010.png in Resources */,
+				9A415410289B5AEE004275CD /* robot40_00008.png in Resources */,
+				9A41541A289B5AEE004275CD /* robot12_00009.png in Resources */,
+				9A415408289B5AEE004275CD /* robot40_00027.png in Resources */,
+				9A41540F289B5AEE004275CD /* robot40_00024.png in Resources */,
+				9A4153FC289B5AEE004275CD /* robot40_00029.png in Resources */,
+				9A3A037D2898E9D80063C9DB /* StylesViewController.xib in Resources */,
+				9A415367289B0D4A004275CD /* MenuViewController_x.xib in Resources */,
+				9A4153FD289B5AEE004275CD /* robot40_00001.png in Resources */,
+				9A4153F7289B5AEE004275CD /* robot40_00012.png in Resources */,
+				9A415412289B5AEE004275CD /* robot40_00034.png in Resources */,
+				9A4153FF289B5AEE004275CD /* robot40_00014.png in Resources */,
+				9A415422289B5AEE004275CD /* robot12_00004.png in Resources */,
+				9A415424289B5AEE004275CD /* robot12_00006.png in Resources */,
+				9A41543F289B6086004275CD /* PlugPodCell.xib in Resources */,
+				9A41541C289B5AEE004275CD /* robot12_00003.png in Resources */,
+				9A415401289B5AEE004275CD /* robot40_00028.png in Resources */,
+				9A415441289B6086004275CD /* BluetoothOnCell.xib in Resources */,
+				9A415407289B5AEE004275CD /* robot40_00026.png in Resources */,
+				9A4153F9289B5AEE004275CD /* robot40_00010.png in Resources */,
+				9A415440289B6086004275CD /* ConnectPodToModemCell.xib in Resources */,
+				9A415421289B5AEE004275CD /* robot12_00005.png in Resources */,
+				9A415417289B5AEE004275CD /* robot40_00023.png in Resources */,
+				9A415414289B5AEE004275CD /* robot40_00021.png in Resources */,
+				9A41536C289B0D4A004275CD /* Main.storyboard in Resources */,
+				9A4153F5289B5AEE004275CD /* robot40_00007.png in Resources */,
+				9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */,
+				9A41541F289B5AEE004275CD /* robot12_00001.png in Resources */,
+				9A415420289B5AEE004275CD /* robot12_00011.png in Resources */,
+				9A4153FA289B5AEE004275CD /* robot40_00011.png in Resources */,
+				9A41536D289B0D4A004275CD /* MainFlow.json in Resources */,
+				9A3A037E2898E9D80063C9DB /* DemoStyle1.json in Resources */,
+				9A415416289B5AEE004275CD /* robot40_00037.png in Resources */,
+				9A41541B289B5AEE004275CD /* robot12_00008.png in Resources */,
+				9A41544C289B6442004275CD /* DynamicsCellsViewController.xib in Resources */,
+				9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */,
+				9A415415289B5AEE004275CD /* robot40_00009.png in Resources */,
+				9A41540D289B5AEE004275CD /* robot40_00018.png in Resources */,
+				9A415366289B0D4A004275CD /* MenuViewController.xib in Resources */,
+				9A41540B289B5AEE004275CD /* robot40_00031.png in Resources */,
+				9A4153FB289B5AEE004275CD /* robot40_00005.png in Resources */,
+				9A415402289B5AEE004275CD /* robot40_00016.png in Resources */,
+				9A41541D289B5AEE004275CD /* robot12_00002.png in Resources */,
+				9A415368289B0D4A004275CD /* MenuViewController_iPadx.xib in Resources */,
+				9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */,
+				9A415419289B5AEE004275CD /* robot40_00036.png in Resources */,
+				9A41543E289B6086004275CD /* RestartYourModemCell.xib in Resources */,
+				9A3A037C2898E9D80063C9DB /* DemoStyle2.json in Resources */,
+				9A415426289B5AEE004275CD /* robot12_00007.png in Resources */,
+				9A41540A289B5AEE004275CD /* robot40_00025.png in Resources */,
+				9A4153F6289B5AEE004275CD /* robot40_00006.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03F265726C80064ECBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -796,6 +1400,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A3A035E2898E7740063C9DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */,
+				9A3A037F2898E9D80063C9DB /* StylesViewController.swift in Sources */,
+				9A415442289B6086004275CD /* RestartYourModemCell.swift in Sources */,
+				9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */,
+				9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */,
+				9A41543C289B6086004275CD /* ConnectCell.swift in Sources */,
+				9A3A03692898E7740063C9DB /* ViewController.swift in Sources */,
+				9A4153A9289B53A4004275CD /* AnimationsViewController.swift in Sources */,
+				9A41543B289B6086004275CD /* ConnectPodToModemCell.swift in Sources */,
+				9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */,
+				9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */,
+				9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */,
+				9A415452289B7127004275CD /* ConsoleTableViewCell.swift in Sources */,
+				9A41543D289B6086004275CD /* ConnectPiecesCell.swift in Sources */,
+				9A415364289B0D4A004275CD /* MenuItemCell.swift in Sources */,
+				9A415444289B6086004275CD /* PlugPodCell.swift in Sources */,
+				9A41543A289B6086004275CD /* BluetoothOnCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03D265726C80064ECBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -805,10 +1433,12 @@
 				D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */,
 				D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */,
 				DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */,
+				9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */,
 				DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */,
 				DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */,
 				DFC4F0FF265727020064ECBB /* String+Colors.swift in Sources */,
 				DFC4F12F265727020064ECBB /* CustomTableHelper.swift in Sources */,
+				9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */,
 				DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */,
 				DFC4F136265727020064ECBB /* SignalData.swift in Sources */,
 				DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */,
@@ -831,6 +1461,8 @@
 				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
 				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
 				DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */,
+				9A415383289B208D004275CD /* COUIBaseView.m in Sources */,
+				9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */,
 				DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */,
 				DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */,
 				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
@@ -853,7 +1485,9 @@
 				DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */,
 				DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */,
 				DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */,
+				9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */,
 				DFC4F12E265727020064ECBB /* AppTableBase.swift in Sources */,
+				9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */,
 				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
 				DFC4F0D9265727010064ECBB /* UIApplication+Version.swift in Sources */,
@@ -870,6 +1504,8 @@
 				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
 				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
 				DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */,
+				9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */,
+				9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */,
 				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
 				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
 				DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */,
@@ -885,11 +1521,13 @@
 				DFC4F11A265727020064ECBB /* AppearanceButton.swift in Sources */,
 				DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */,
 				DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */,
+				9A4153B5289B5700004275CD /* COUICircleView.m in Sources */,
 				DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */,
 				DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */,
 				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,
 				DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */,
 				DFC4F121265727020064ECBB /* AppearanceModel.swift in Sources */,
+				9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */,
 				DFC4F135265727020064ECBB /* CustomTableDelegates.swift in Sources */,
 				DFC4F0E7265727020064ECBB /* UILabel+Additions.swift in Sources */,
 				DFC4F142265727020064ECBB /* Signal.swift in Sources */,
@@ -906,6 +1544,7 @@
 				DFC4F13A265727020064ECBB /* Reachability.swift in Sources */,
 				DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */,
 				DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */,
+				9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */,
 				DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */,
 				DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */,
 				DFC4F138265727020064ECBB /* GlobalHelpers.swift in Sources */,
@@ -919,12 +1558,84 @@
 				DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */,
 				DFC4F0E6265727020064ECBB /* NSObject+Additions.swift in Sources */,
 				DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */,
+				9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		9A3A036F2898E7750063C9DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A3A03702898E7750063C9DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9A3A03732898E7750063C9DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQA2Q938H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A3A03742898E7750063C9DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQA2Q938H6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DFC4F053265726C80064ECBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1098,6 +1809,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A3A03752898E7750063C9DB /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3A03732898E7750063C9DB /* Debug */,
+				9A3A03742898E7750063C9DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DFC4F03B265726C80064ECBB /* Build configuration list for PBXProject "COFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

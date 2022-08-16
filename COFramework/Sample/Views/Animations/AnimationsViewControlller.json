@@ -1,0 +1,166 @@
+[
+ {
+ "animationType": "imagesAnimation",
+ "tag": "12",
+ "caDuration": "3",
+ "caRepeatCount": "100",
+ "caValues": "coachSad.png,coachSkipping.png,coachStanding.png,coachWalk.png",
+ "caCalculationMode": "discrete",
+ "caSpeed": "1"
+ },
+ {
+ "animationType": "imagesAnimation",
+ "tag": "13",
+ "caDuration": "3",
+ "caRepeatCount": "100",
+ "caValues": "coachSad.png,coachSkipping.png,coachStanding.png,coachWalk.png",
+ "caCalculationMode": "linear",
+ "caSpeed": "1"
+ },
+ {
+ "animationType": "groupAnimation",
+ "didStartEvent": "AXUIANIMATED_GroupEvent",
+ "tag": "14",
+ "startAfterDelay": "",
+ "startAfterEvent": "",
+ "caDuration": "3",
+ "caRepeatCount": "100",
+ "caSpeed": "1",
+ "caAnimations": [
+                  {
+                  "animationType": "imagesAnimation",
+                  "didStartEvent": "AXUIANIMATED_Animation1Event",
+                  "caDuration": "3",
+                  "caRepeatCount": "1",
+                  "caValues": "coachSad.png,coachSkipping.png,coachStanding.png,coachWalk.png",
+                  "caCalculationMode": "discrete",
+                  "caSpeed": "1"
+                  },
+                  {
+                  "animationType": "keyframeXAnimation",
+                  "didStartEvent": "",
+                  "caDuration": "3",
+                  "caRepeatCount": "1",
+                  "caValues": "100,150,200,250",
+                  "caCalculationMode": "discrete",
+                  "caSpeed": "1"
+                  }
+                  ]
+ },
+ {
+ "animationType": "groupAnimation",
+ "didStartEvent": "AXUIANIMATED_GroupEvent",
+ "tag": "15",
+ "startAfterDelay": "",
+ "startAfterEvent": "",
+ "caDuration": "3",
+ "caRepeatCount": "100",
+ "caSpeed": "2",
+ "caAnimations": [
+                  {
+                  "animationType": "imagesAnimation",
+                  "didStartEvent": "AXUIANIMATED_Animation1Event",
+                  "caDuration": "3",
+                  "caRepeatCount": "1",
+                  "caValues": "coachSad.png,coachSkipping.png,coachStanding.png,coachWalk.png",
+                  "caCalculationMode": "linear",
+                  "caSpeed": "1"
+                  },
+                  {
+                  "animationType": "keyframeXAnimation",
+                  "didStartEvent": "",
+                  "caDuration": "3",
+                  "caRepeatCount": "1",
+                  "caValues": "100,150,200,250",
+                  "caCalculationMode": "linear",
+                  "caSpeed": "1"
+                  },
+                  {
+                  "animationType": "pulseAnimation",
+                  "caDuration": "0.3",
+                  "caFromValue": "1.0",
+                  "caToValue": "1.2",
+                  "caRepeatCount": "100",
+                  "caTimingFunction": "bounce"
+                  }
+                  ]
+ },
+ {
+ "animationType": "contentAnimation",
+ "tag": "30",
+ "caFromValue": "apple.png",
+ "caToValue": "bed.png",
+ "caRepeatCount": "10",
+ "caDuration": "2",
+ "caSpeed": "1"
+ },
+ {
+ "animationType": "colorAnimation",
+ "tag": "31",
+ "caFromValue": "255,0,0,255",
+ "caToValue": "0,0,255,255",
+ "caRepeatCount": "10",
+ "caDuration": "2",
+ "caSpeed": "1"
+ },
+ {
+ "animationType": "pulseAnimation",
+ "tag": "32",
+ "caDuration": "0.3",
+ "caFromValue": "1.0",
+ "caToValue": "1.2",
+ "caRepeatCount": "100",
+ "caTimingFunction": "bounce"
+ },
+ {
+ "animationType": "pulseAnimation",
+ "tag": "33",
+ "caDuration": "0.3",
+ "caFromValue": "1.0",
+ "caToValue": "1.2",
+ "caRepeatCount": "100",
+ "caTimingFunction": "easeInEaseOut"
+ },
+ {
+ "animationType": "positionXAnimation",
+ "tag": "50",
+ "startAfterDelay": "",
+ "startAfterEvent": "",
+ "caDuration": "0.5",
+ "caFromValue": "127",
+ "caToValue": "117",
+ "caRepeatCount": "100",
+ "caTimingFunction": "easeInEaseOut",
+ "caAutoReverses": "YES"
+ },
+ {
+ "animationType": "positionXAnimation",
+ "tag": "52",
+ "startAfterDelay": "",
+ "startAfterEvent": "",
+ "caDuration": "0.5",
+ "caFromValue": "193",
+ "caToValue": "203",
+ "caRepeatCount": "100",
+ "caTimingFunction": "easeInEaseOut",
+ "caAutoReverses": "YES"
+ },
+ {
+ "animationType": "framesAnimation",
+ "tag": "20",
+ "caDuration": "1",
+ "caRepeatCount": "100",
+ "animationFrameCount": "12",
+ "animationImageName": "robot12_",
+ "caSpeed": "1"
+ },
+ {
+ "animationType": "framesAnimation",
+ "tag": "21",
+ "caDuration": "1",
+ "caRepeatCount": "100",
+ "animationFrameCount": "40",
+ "animationImageName": "robot40_",
+ "caSpeed": "1"
+ }
+ ]

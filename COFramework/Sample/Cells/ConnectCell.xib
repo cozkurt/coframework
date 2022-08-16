@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Wigrum-Medium.otf">
+            <string>Wigrum-Medium</string>
+        </array>
+        <array key="Wigrum-Regular.otf">
+            <string>Wigrum-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="544" id="KGk-i7-Jjw" customClass="ConnectCell" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="544"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="544"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-aD-e9v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-mZ-ofI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twt-DK-dvo" userLabel="Subtitle" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="64" width="276" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="There's just a few things needed to bring your new WiFi to life.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.33333000000000002" green="0.30196000000000001" blue="0.33724999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Great, now let's connect the pieces" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hKu-6l-A3c" userLabel="Title" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="16" width="276" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Wigrum-Regular" family="Wigrum" pointSize="26"/>
+                                        <color key="textColor" red="0.23529411759999999" green="0.22352941179999999" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRC-Jb-McU">
+                                <rect key="frame" x="0.0" y="128" width="320" height="102"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CkS-s8-lnT" userLabel="Subtitle" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="50" width="222" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Remove all devices/cables first. This will ensure your Pod receives the proper IP address.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12549020349979401" green="0.12549020349979401" blue="0.12549020349979401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" image="gfxRestartModem" translatesAutoresizingMaskIntoConstraints="NO" id="nvz-e4-c3e" userLabel="Picture" customClass="AppearanceImageView" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="1" width="73" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Restart Your Modem" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-zV-7VC" userLabel="Title" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="15" width="222" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Wigrum-Regular" family="Wigrum" pointSize="22"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-fq-xTM">
+                                <rect key="frame" x="0.0" y="228" width="320" height="102"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-9b-902" userLabel="Subtitle" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="50" width="222" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Using ethernet cable. Use supplied ethernet cable to connect the pod to your modem.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12548999999999999" green="0.12548999999999999" blue="0.12548999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Connect to Modem" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l25-AG-0lg" userLabel="Title" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="11" width="222" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Wigrum-Regular" family="Wigrum" pointSize="22"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" image="gfxObConnectToModem" translatesAutoresizingMaskIntoConstraints="NO" id="TRf-gX-8nd" userLabel="Picture" customClass="AppearanceImageView" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="0.0" width="73" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQT-rp-EKd">
+                                <rect key="frame" x="0.0" y="329" width="320" height="102"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zp7-ol-uxV" userLabel="Subtitle" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="50" width="222" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Stay close until it boots up. Your phone will find it using Bluetooth">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12549020349979401" green="0.12549020349979401" blue="0.12549020349979401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" image="super-pod" translatesAutoresizingMaskIntoConstraints="NO" id="4M8-Ad-9uU" userLabel="Picture" customClass="AppearanceImageView" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="1" width="73" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Plug pod into power" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="t2q-xB-3X1" userLabel="Title" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="15" width="222" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Wigrum-Regular" family="Wigrum" pointSize="22"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-3e-g6t" userLabel="Next Button" customClass="AppearanceButton" customModule="Sample" customModuleProvider="target">
+                                <rect key="frame" x="8" y="495" width="303" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="NEXT_BUTTON"/>
+                                <fontDescription key="fontDescription" name="Wigrum-Regular" family="Wigrum" pointSize="14"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="appearanceId" value="purpleRoundedButton"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lxn-lH-ePx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Advanced Setup Diagrams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UzP-xL-OWA" userLabel="Title" customClass="AppearanceLabel" customModule="Sample" customModuleProvider="target">
+                                <rect key="frame" x="8" y="439" width="303" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Wigrum-Medium" family="Wigrum" pointSize="18"/>
+                                <color key="textColor" red="0.38431372549019605" green="0.41176470588235292" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dynamicCellSubView" destination="FAE-aD-e9v" id="JcT-j1-6D4"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="346.32683658170919"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="4M8-Ad-9uU">
+            <size key="intrinsicContentSize" width="240" height="240"/>
+        </designable>
+        <designable name="Gz4-3e-g6t">
+            <size key="intrinsicContentSize" width="30" height="29"/>
+        </designable>
+        <designable name="TRf-gX-8nd">
+            <size key="intrinsicContentSize" width="240" height="240"/>
+        </designable>
+        <designable name="nvz-e4-c3e">
+            <size key="intrinsicContentSize" width="240" height="240"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="gfxObConnectToModem" width="240" height="240"/>
+        <image name="gfxRestartModem" width="240" height="240"/>
+        <image name="super-pod" width="240" height="240"/>
+    </resources>
+</document>
