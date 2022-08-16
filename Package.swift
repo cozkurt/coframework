@@ -14,7 +14,6 @@ let package = Package(name: "COFramework",
                       ],
                       
                       targets: [
-                        .target(name: "COFramework", dependencies: ["ObjectMapper"], path: "COFramework/COFramework/Swift"),
-                        .target(name: "COFramework", dependencies: ["Alamofire"], path: "COFramework/COFramework/Swift")
+                        .target(name: "COFramework", dependencies: ["Alamofire, ObjectMapper"], path: "COFramework/COFramework/Swift")
                       ]
 )
