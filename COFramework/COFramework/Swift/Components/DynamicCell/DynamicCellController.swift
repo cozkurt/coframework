@@ -150,7 +150,7 @@ public class DynamicCellController {
         }
         
         // update tableview, insert cell, etc.
-        runOnMainQueue(after: delay + 0.0) {
+        runOnMainQueue(after: delay + 0.1) {
             self.dynamicCellViewController?.view.isUserInteractionEnabled = userInteractionEnabled
 
             self.dynamicCellViewController?.tableView?.clipsToBounds = tableViewClipToBounds
