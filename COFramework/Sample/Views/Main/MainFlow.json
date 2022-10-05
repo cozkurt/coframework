@@ -48,24 +48,24 @@
     "eventName": "DISMISS_SUBVIEW_FROM_ROOT", "navigationType": "dismissSubViewFromRoot"
 },
 {
-    "eventName": "MENU_VIEW", "viewController":"Sample.MenuViewController", "navigationType": "replace", "statusBarHidden": false
+    "eventName": "MENU_VIEW", "viewController":"Sample.MenuViewController", "navigationType": "replace"
 },
 {
-    "eventName": "DYNAMIC_CELLS_VIEW", "viewController":"Sample.DynamicsCellsViewController", "navigationType": "present", "statusBarHidden": false
+    "eventName": "DYNAMIC_CELLS_VIEW", "viewController":"Sample.DynamicsCellsViewController", "navigationType": "replace"
 },
 {
-    "eventName": "STYLES_VIEW", "viewController":"Sample.StylesViewController", "navigationType": "present", "statusBarHidden": false
+    "eventName": "STYLES_VIEW", "viewController":"Sample.StylesViewController", "navigationType": "replace"
 },
 {
-    "eventName": "DYNAMICS_VIEW", "viewController":"Sample.DynamicsViewController", "navigationType": "present", "statusBarHidden": false
+    "eventName": "DYNAMICS_VIEW", "viewController":"Sample.DynamicsViewController", "navigationType": "replace"
 },
 {
-    "eventName": "ANIMATIONS_VIEW", "viewController":"Sample.AnimationsViewController", "navigationType": "present", "statusBarHidden": false
+    "eventName": "ANIMATIONS_VIEW", "viewController":"Sample.AnimationsViewController", "navigationType": "replace"
 },
 {
-    "eventName": "CONSOLE_VIEW", "viewController":"Sample.ConsoleViewController", "navigationType": "present", "statusBarHidden": true
+    "eventName": "CONSOLE_VIEW", "viewController":"Sample.ConsoleViewController", "navigationType": "replace"
 },
 {
-    "eventName": "COMBINED_VIEW", "viewController":"Sample.CombinedViewController", "navigationType": "present", "statusBarHidden": true
+    "eventName": "COMBINED_VIEW", "viewController":"Sample.CombinedViewController", "navigationType": "replace"
 }
 ]
