@@ -17,16 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-ft-MYA" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="94" y="579" width="171" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Load Global Style 2"/>
-                    <connections>
-                        <action selector="loadStyle4" destination="-1" eventType="touchUpInside" id="P5g-X6-2HC"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-UG-qAd" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="98" y="541" width="171" height="30"/>
+                    <rect key="frame" x="98" y="561" width="171" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Load Global Style 1"/>
                     <connections>
@@ -34,25 +26,15 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCw-Oj-Ql3" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="98" y="510" width="171" height="23"/>
+                    <rect key="frame" x="98" y="501" width="171" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Load Style 2"/>
                     <connections>
                         <action selector="loadStyle2" destination="-1" eventType="touchUpInside" id="HpM-ik-861"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-Qd-ckd" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="97" y="325" width="160" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Any Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-Qf-e04" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="73" y="363" width="208" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Any Button"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label with id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-83-2QC" customClass="AppearanceLabel" customModule="COFramework">
-                    <rect key="frame" x="94" y="159" width="165" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label with id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-83-2QC" customClass="AppearanceLabel" customModule="COFramework">
+                    <rect key="frame" x="97" y="289" width="165" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -62,7 +44,7 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-az-19x" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="96" y="188" width="165" height="30"/>
+                    <rect key="frame" x="97" y="318" width="165" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button with id"/>
                     <userDefinedRuntimeAttributes>
@@ -77,11 +59,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-2X-TCP" customClass="AppearanceButton" customModule="COFramework">
-                    <rect key="frame" x="98" y="480" width="171" height="22"/>
+                    <rect key="frame" x="98" y="467" width="171" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Load Style 1"/>
                     <connections>
                         <action selector="loadStyle1" destination="-1" eventType="touchUpInside" id="abi-CU-90z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-ft-MYA" customClass="AppearanceButton" customModule="COFramework">
+                    <rect key="frame" x="98" y="599" width="171" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Load Global Style 2"/>
+                    <connections>
+                        <action selector="loadStyle4" destination="-1" eventType="touchUpInside" id="P5g-X6-2HC"/>
                     </connections>
                 </button>
             </subviews>
@@ -102,17 +92,11 @@
         <designable name="2Vg-UG-qAd">
             <size key="intrinsicContentSize" width="131" height="30"/>
         </designable>
-        <designable name="EvK-Qf-e04">
-            <size key="intrinsicContentSize" width="76" height="30"/>
-        </designable>
         <designable name="QVN-ft-MYA">
             <size key="intrinsicContentSize" width="133" height="30"/>
         </designable>
         <designable name="SAP-2X-TCP">
             <size key="intrinsicContentSize" width="83" height="30"/>
-        </designable>
-        <designable name="Yqx-Qd-ckd">
-            <size key="intrinsicContentSize" width="76" height="30"/>
         </designable>
         <designable name="mjh-az-19x">
             <size key="intrinsicContentSize" width="95" height="30"/>
