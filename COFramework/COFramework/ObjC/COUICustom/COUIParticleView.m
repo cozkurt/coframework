@@ -32,6 +32,8 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     CGPoint position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     CAEmitterCell *emitterCell = [self emitterWithImage:@"star.png"];
     
