@@ -122,6 +122,7 @@
 		9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41544F289B7127004275CD /* ConsoleViewController.swift */; };
 		9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415450289B7127004275CD /* ConsoleTableViewCell.xib */; };
 		9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415451289B7127004275CD /* ConsoleViewController.xib */; };
+		9AC3CD6C28F614BC005ECC73 /* CombinedViewController_iPadx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3CD6B28F614BC005ECC73 /* CombinedViewController_iPadx.xib */; };
 		9ACDC4D428AC30DB009DABDD /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */; };
 		9ACDC4D528AC30DB009DABDD /* DemoStyle4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
@@ -403,6 +404,7 @@
 		9A41544F289B7127004275CD /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
 		9A415450289B7127004275CD /* ConsoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleTableViewCell.xib; sourceTree = "<group>"; };
 		9A415451289B7127004275CD /* ConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleViewController.xib; sourceTree = "<group>"; };
+		9AC3CD6B28F614BC005ECC73 /* CombinedViewController_iPadx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CombinedViewController_iPadx.xib; sourceTree = "<group>"; };
 		9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
 		9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle4.json; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
@@ -1236,6 +1238,7 @@
 			children = (
 				DFFA058C28AB4862007CA551 /* CombinedViewController.swift */,
 				DFFA058D28AB4862007CA551 /* CombinedViewController.xib */,
+				9AC3CD6B28F614BC005ECC73 /* CombinedViewController_iPadx.xib */,
 			);
 			path = Combined;
 			sourceTree = "<group>";
@@ -1389,6 +1392,7 @@
 				9A4153F8289B5AEE004275CD /* robot40_00004.png in Resources */,
 				9A415409289B5AEE004275CD /* robot40_00033.png in Resources */,
 				9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */,
+				9AC3CD6C28F614BC005ECC73 /* CombinedViewController_iPadx.xib in Resources */,
 				9A4153FE289B5AEE004275CD /* robot40_00015.png in Resources */,
 				9A3A036E2898E7750063C9DB /* Assets.xcassets in Resources */,
 				9A41540C289B5AEE004275CD /* robot40_00019.png in Resources */,
