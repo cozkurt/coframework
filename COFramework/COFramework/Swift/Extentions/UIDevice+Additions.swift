@@ -44,7 +44,7 @@ extension UIDevice {
             return .i55
         case 2360, 2388, 2732:
             return .iPadx
-		case 1792, 2436, 2532, 2688, 2778:
+		case 1792, 2436, 2532, 2556, 2688, 2778, 2796:
 			return .ix
         default:
             return nil
