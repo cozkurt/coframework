@@ -62,42 +62,32 @@ public class Logger {
     // MARK: - Log Methods
     
     public func LogDebug(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        if UIDevice.isSimulator || UIDevice().isMac() {
-            if self.logLevel.rawValue <= LogLevel.debug.rawValue {
-                print("[DEBUG] \(makeTag(function, file: file, line: line, msg: msg))")
-            }
+        if self.logLevel.rawValue <= LogLevel.debug.rawValue {
+            print("[DEBUG] \(makeTag(function, file: file, line: line, msg: msg))")
         }
     }
     
     public func LogInfo(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        if UIDevice.isSimulator || UIDevice().isMac() {
-            if self.logLevel.rawValue <= LogLevel.info.rawValue {
-                print("[INFO] \(makeTag(function, file: file, line: line, msg: msg))")
-            }
+        if self.logLevel.rawValue <= LogLevel.info.rawValue {
+            print("[INFO] \(makeTag(function, file: file, line: line, msg: msg))")
         }
     }
     
     public func LogWarning(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        if UIDevice.isSimulator || UIDevice().isMac() {
-            if self.logLevel.rawValue <= LogLevel.warning.rawValue {
-                print("[WARNING] \(makeTag(function, file: file, line: line, msg: msg))")
-            }
+        if self.logLevel.rawValue <= LogLevel.warning.rawValue {
+            print("[WARNING] \(makeTag(function, file: file, line: line, msg: msg))")
         }
     }
     
     public func LogError(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        if UIDevice.isSimulator || UIDevice().isMac() {
-            if self.logLevel.rawValue <= LogLevel.error.rawValue {
-                print("[ERROR] \(makeTag(function, file: file, line: line, msg: msg))")
-            }
+        if self.logLevel.rawValue <= LogLevel.error.rawValue {
+            print("[ERROR] \(makeTag(function, file: file, line: line, msg: msg))")
         }
     }
     
     public func LogCustom(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        if UIDevice.isSimulator || UIDevice().isMac() {
-            if self.logLevel.rawValue == LogLevel.custom.rawValue {
-                print("[CUSTOM] \(makeTag(function, file: file, line: line, msg: msg))")
-            }
+        if self.logLevel.rawValue == LogLevel.custom.rawValue {
+            print("[CUSTOM] \(makeTag(function, file: file, line: line, msg: msg))")
         }
     }
     
