@@ -6,6 +6,7 @@
 //  Copyright © 2019 FuzFuz. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 public protocol LoggerDelegate {
@@ -61,43 +62,43 @@ public class Logger {
     // MARK: - Log Methods
     
     public func LogDebug(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        #if targetEnvironment(simulator)
+        if UIDevice.isSimulator || UIDevice().isMac() {
             if self.logLevel.rawValue <= LogLevel.debug.rawValue {
                 print("[DEBUG] \(makeTag(function, file: file, line: line, msg: msg))")
             }
-        #endif
+        }
     }
     
     public func LogInfo(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        #if targetEnvironment(simulator)
+        if UIDevice.isSimulator || UIDevice().isMac() {
             if self.logLevel.rawValue <= LogLevel.info.rawValue {
                 print("[INFO] \(makeTag(function, file: file, line: line, msg: msg))")
             }
-        #endif
+        }
     }
     
     public func LogWarning(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        #if targetEnvironment(simulator)
+        if UIDevice.isSimulator || UIDevice().isMac() {
             if self.logLevel.rawValue <= LogLevel.warning.rawValue {
                 print("[WARNING] \(makeTag(function, file: file, line: line, msg: msg))")
             }
-        #endif
+        }
     }
     
     public func LogError(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        #if targetEnvironment(simulator)
+        if UIDevice.isSimulator || UIDevice().isMac() {
             if self.logLevel.rawValue <= LogLevel.error.rawValue {
                 print("[ERROR] \(makeTag(function, file: file, line: line, msg: msg))")
             }
-        #endif
+        }
     }
     
     public func LogCustom(_ msg:String, function: String = #function, file: String = #file, line: Int = #line) {
-        #if targetEnvironment(simulator)
+        if UIDevice.isSimulator || UIDevice().isMac() {
             if self.logLevel.rawValue == LogLevel.custom.rawValue {
                 print("[CUSTOM] \(makeTag(function, file: file, line: line, msg: msg))")
             }
-        #endif
+        }
     }
     
     fileprivate func makeTag(_ function: String, file: String, line: Int, msg: String) -> String {
