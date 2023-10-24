@@ -887,8 +887,12 @@ public class UIFlowController {
             if let _ = Bundle.main.path(forResource: "\(viewController)_mac", ofType: "nib") {
                 return self.viewController(viewControllerName, nibName: "\(viewController)_mac")
             }
+        } else if UIDevice().isIPad() {
+            if let _ = Bundle.main.path(forResource: "\(viewController)_ipad", ofType: "nib") {
+                return self.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
+            }
         } else if UIDevice().isIPadx() {
-            if let _ = Bundle.main.path(forResource: "\(viewController)_iPadx", ofType: "nib") {
+            if let _ = Bundle.main.path(forResource: "\(viewController)_ipadx", ofType: "nib") {
                 return self.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
             }
         } else if UIDevice().isScreen35inch() {
