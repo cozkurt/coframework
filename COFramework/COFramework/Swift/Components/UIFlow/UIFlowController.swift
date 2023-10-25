@@ -889,11 +889,11 @@ public class UIFlowController {
             }
         } else if UIDevice().isIPad() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_ipad", ofType: "nib") {
-                return self.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_ipad")
             }
         } else if UIDevice().isIPadx() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_ipadx", ofType: "nib") {
-                return self.viewController(viewControllerName, nibName: "\(viewController)_iPadx")
+                return self.viewController(viewControllerName, nibName: "\(viewController)_ipadx")
             }
         } else if UIDevice().isScreen35inch() {
             if let _ = Bundle.main.path(forResource: "\(viewController)_35", ofType: "nib") {
