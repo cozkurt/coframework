@@ -8,7 +8,6 @@
 
 import UIKit
 import CloudKit
-import ObjectMapper
 
 extension NSObject {
     

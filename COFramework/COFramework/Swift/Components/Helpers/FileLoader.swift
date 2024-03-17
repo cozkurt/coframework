@@ -6,7 +6,6 @@
 //  Copyright © 2019 FuzFuz. All rights reserved.
 //
 
-import ObjectMapper
 import Foundation
 
 open class FileLoader {

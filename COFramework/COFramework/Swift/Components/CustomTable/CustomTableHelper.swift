@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import ObjectMapper
 
 /*
  *  MARK: - FiltersViewController Helper Extention
@@ -17,19 +16,24 @@ import ObjectMapper
 extension CustomTableBase {
     
     // MARK: Custom Functions
-    
+
     public func loadCellDescriptors(_ fileName: String) {
         
-        if let path = Bundle(for: type(of: self)).path(forResource: fileName, ofType: "plist"), let cells = NSMutableArray(contentsOfFile: path) as? [[String: Any]] {
-            
-            let mappable = Mapper<SectionDescriptor>()
-            
-            self.sectionDescriptors = mappable.mapArray(JSONArray: cells)
-        } else {
-            print("plist can not be loaded!!!")
+        guard let path = Bundle(for: type(of: self)).path(forResource: fileName, ofType: "plist"), let cellData = FileManager.default.contents(atPath: path) else {
+            print("plist cannot be loaded!!!")
+            return
+        }
+        
+        do {
+            // Decode the plist data into an array of SectionDescriptor objects
+            let decoder = PropertyListDecoder()
+            let sections = try decoder.decode([SectionDescriptor].self, from: cellData)
+            self.sectionDescriptors = sections
+        } catch {
+            print("Error decoding SectionDescriptors from plist: \(error)")
         }
     }
-    
+
     /**
      registerCells from plist configuration
      

@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import ObjectMapper
 
-public enum UIFlowNavigationType: String {
+public enum UIFlowNavigationType: String, Codable {
     case push       // Push view controller to current navigation controller
     case pop        // Pops recent view controller
     case popTo      // Pop to given view controller
@@ -27,10 +26,8 @@ public enum UIFlowNavigationType: String {
     case removeAll   // Remove all controller from root view controller
 }
 
-struct UIFlowModel: Mappable {
+struct UIFlowModel: Codable {
     
-    /// Model Properties
-
     var instanceName: String?
     var eventName: String?
     var eventMapTo: String?
@@ -41,33 +38,56 @@ struct UIFlowModel: Mappable {
     var modalPresentationStyle: UIModalPresentationStyle?
     var modalTransitionStyle: UIModalTransitionStyle?
     var transitionType: String?
-    var navigationBar: Bool? // on/off navigation bar
-    var statusBarStyle: String? // If status bar is on then apply status bar style "Default", "LightContent"
-    var animated: Bool? // animation on/off
-    var multiple: Bool? = false // allows to push same viewController
-
-    // MARK: Mappable protocol conformance
+    var navigationBar: Bool?
+    var statusBarStyle: String?
+    var animated: Bool?
+    var multiple: Bool?
     
-    init?(map: Map) {
-        
-        // Model Properties
-        instanceName <- map["instanceName"]
-        eventName <- map["eventName"]
-        eventMapTo <- map["eventMapTo"]
-        storyBoard <- map["storyBoard"]
-        identifier <- map["identifier"]
-        viewController <- map["viewController"]
-        navigationType <- map["navigationType"]
-        modalPresentationStyle <- (map["modalPresentationStyle"], TransformOf<UIModalPresentationStyle, String>(fromJSON: { UIModalPresentationStyle(rawValue: Int($0!)!) }, toJSON: { $0.map { String(describing: $0) } }))
-        modalTransitionStyle <- (map["modalTransitionStyle"], TransformOf<UIModalTransitionStyle, String>(fromJSON: { UIModalTransitionStyle(rawValue: Int($0!)!) }, toJSON: { $0.map { String(describing: $0) } }))
-        transitionType <- map["transitionType"]
-        navigationBar <- map["navigationBar"]
-        statusBarStyle <- map["statusBarStyle"]
-        animated <- map["animated"]
-        multiple <- map["multiple"]
+    private enum CodingKeys: String, CodingKey {
+        case instanceName, eventName, eventMapTo, storyBoard, identifier, viewController, navigationType, transitionType, navigationBar, statusBarStyle, animated, multiple, modalPresentationStyle, modalTransitionStyle
     }
     
-    func mapping(map: Map) {
-        /// Mapping already completed in init()
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        // Decode simple types
+        instanceName = try container.decodeIfPresent(String.self, forKey: .instanceName)
+        eventName = try container.decodeIfPresent(String.self, forKey: .eventName)
+        eventMapTo = try container.decodeIfPresent(String.self, forKey: .eventMapTo)
+        storyBoard = try container.decodeIfPresent(String.self, forKey: .storyBoard)
+        identifier = try container.decodeIfPresent(String.self, forKey: .identifier)
+        viewController = try container.decodeIfPresent(String.self, forKey: .viewController)
+        transitionType = try container.decodeIfPresent(String.self, forKey: .transitionType)
+        navigationBar = try container.decodeIfPresent(Bool.self, forKey: .navigationBar)
+        statusBarStyle = try container.decodeIfPresent(String.self, forKey: .statusBarStyle)
+        animated = try container.decodeIfPresent(Bool.self, forKey: .animated)
+        multiple = try container.decodeIfPresent(Bool.self, forKey: .multiple)
+
+        // Decode custom types
+        navigationType = try container.decodeIfPresent(UIFlowNavigationType.self, forKey: .navigationType)
+        
+        if let modalPresentationStyleString = try container.decodeIfPresent(String.self, forKey: .modalPresentationStyle), let styleValue = Int(modalPresentationStyleString) {
+            modalPresentationStyle = UIModalPresentationStyle(rawValue: styleValue)
+        } else {
+            modalPresentationStyle = nil
+        }
+        
+        if let modalTransitionStyleString = try container.decodeIfPresent(String.self, forKey: .modalTransitionStyle), let styleValue = Int(modalTransitionStyleString) {
+            modalTransitionStyle = UIModalTransitionStyle(rawValue: styleValue)
+        } else {
+            modalTransitionStyle = nil
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(instanceName, forKey: .instanceName)
+        // Continue with other properties...
+        if let modalPresentationStyle = modalPresentationStyle {
+            try container.encodeIfPresent(String(describing: modalPresentationStyle.rawValue), forKey: .modalPresentationStyle)
+        }
+        if let modalTransitionStyle = modalTransitionStyle {
+            try container.encodeIfPresent(String(describing: modalTransitionStyle.rawValue), forKey: .modalTransitionStyle)
+        }
     }
 }

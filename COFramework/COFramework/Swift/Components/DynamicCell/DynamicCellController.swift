@@ -11,7 +11,7 @@ import UIKit
 public class DynamicCellController {
     
     // notifiers
-    var dynamicCellControllerDataUpdatedEvent: SignalData<[AnyObject]?> = SignalData()
+    var dynamicCellControllerDataUpdatedEvent: SignalData<[CustomData]?> = SignalData()
     
     // parent view controller
     var dynamicCellViewController: AppTableBase?
@@ -71,7 +71,7 @@ public class DynamicCellController {
                   sectionTitle: String = "section0",
                   blurAlpha: CGFloat = 0,
                   sectionNibName: String? = nil,
-                  data: [AnyObject]? = nil,
+                  data: [CustomData]? = nil,
                   leadingActions: String? = nil,
                   trailingActions: String? = nil,
                   delay: TimeInterval = 0,
@@ -121,8 +121,7 @@ public class DynamicCellController {
                                   cellCache: cellCache,
                                   cellRemoveSeperator: cellRemoveSeperator,
                                   cellLeadingActions: leadingActions,
-                                  cellTrailingActions: trailingActions,
-                                  cellCallback: callback)
+                                  cellTrailingActions: trailingActions)
 
         // check we don't want multiple same cell
         if once {
@@ -135,8 +134,12 @@ public class DynamicCellController {
         // data after cell displayed
         
         self.dynamicCellControllerDataUpdatedEvent.bind(self) { [weak self] (data) in
+            guard let data = data else {
+                return
+            }
+            
             runOnMainQueue {
-                self?.dynamicCellViewController?.insertDataToCell(key, cellData: data ?? [])
+                self?.dynamicCellViewController?.insertDataToCell(key, cellData: data)
                 self?.dynamicCellViewController?.reloadData()
             }
         }

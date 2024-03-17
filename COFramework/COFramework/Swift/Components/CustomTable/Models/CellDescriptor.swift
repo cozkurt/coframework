@@ -7,17 +7,16 @@
 //
 
 import Foundation
-import ObjectMapper
 
-public typealias ValueClosure = (_ cellDesc: CellDescriptor, _ rowData: NSDictionary, _ index: Int) -> (String, String)?
+public typealias ValueClosure = (_ cellDesc: CellDescriptor, _ rowData: [String: Any], _ index: Int) -> (String, String)?
 
-public struct CellDescriptor: Mappable {
+public struct CellDescriptor: Codable {
     
     public var cellName: String?
     public var cellIdentifier: String?
     public var cellNibName: String?
     public var cellSelectionStyle: String?
-    public var cellData: [AnyObject]?
+    public var cellData: [CustomData]?
     public var cellHidden: Bool?
     public var cellCache: Bool?
     public var cellRemoveSeperator: Bool = true
@@ -28,8 +27,7 @@ public struct CellDescriptor: Mappable {
     
     // selected row index and any object passed to callback
     // this is used for when cell clicked
-    
-    public var cellCallback: ((Int?, AnyObject?) -> ())?
+    public var cellCallback: ((Int?, Any?) -> ())?
     
     // MARK: following keys will be used for multiple/single cells only
     
@@ -37,24 +35,16 @@ public struct CellDescriptor: Mappable {
     public var cellValueClosure: ValueClosure?
     
     /// Flags for each cell if they selected
-    public var cellSelectedDict: Dictionary<String, Bool> = [:]
+    public var cellSelectedDict: [String: Bool] = [:]
     
-    // MARK: Mappable protocol conformance
-    public init?(map: Map) {
-        cellName <- map["cellName"]
-        cellIdentifier <- map["cellIdentifier"]
-        cellNibName <- map["cellNibName"]
-        cellSelectionStyle <- map["cellSelectionStyle"]
-        cellData <- map["cellData"]
-        cellHidden <- map["cellHidden"]
-        cellCache <- map["cellCache"]
-        cellRemoveSeperator <- map["cellRemoveSeperator"]
-        cellTrailingActions <- map["cellTrailingActions"]
-        cellLeadingActions <- map["cellLeadingActions"]
-        cellCallback <- map["cellCallback"]
+
+    // Custom CodingKeys to match the JSON keys with property names, if needed
+    private enum CodingKeys: String, CodingKey {
+        case cellName, cellIdentifier, cellNibName, cellSelectionStyle, cellHidden, cellCache, cellRemoveSeperator, cellTrailingActions, cellLeadingActions, cellData
     }
     
-    public init(cellName: String?, cellIdentifier: String?, cellNibName: String?, cellSelectionStyle: String?, cellData: [AnyObject]?, cellHidden: Bool?, cellCache: Bool?, cellRemoveSeperator: Bool = false, cellLeadingActions: String? = nil, cellTrailingActions: String? = nil, cellCallback: ((Int?, AnyObject?) -> ())? = nil) {
+    // Custom initializers can still be used with Codable for additional setup
+    public init(cellName: String?, cellIdentifier: String?, cellNibName: String?, cellSelectionStyle: String?, cellData: [CustomData]?, cellHidden: Bool?, cellCache: Bool?, cellRemoveSeperator: Bool = false, cellLeadingActions: String? = nil, cellTrailingActions: String? = nil, cellCallback: ((Int?, Any?) -> ())? = nil) {
         
         self.cellName = cellName
         self.cellIdentifier = cellIdentifier
@@ -81,9 +71,5 @@ public struct CellDescriptor: Mappable {
         self.cellTrailingActions = nil
         self.cellLeadingActions = nil
         self.cellCallback = nil
-    }
-    
-    public func mapping(map: Map) {
-        // Mapping already completed in init()
     }
 }

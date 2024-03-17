@@ -7,29 +7,11 @@
 //
 
 import Foundation
-import ObjectMapper
 
-struct UIBehaviourModel: Mappable, DictionaryHelper {
-    
-    /// Model Properties
-    
+struct UIBehaviourModel: Codable {
     var kingDensity: Float?
     var nodeDensity: Float?
     var attachDamping: Float?
     var snapDamping: Float?
-    
-    // MARK: Mappable protocol conformance
-    
-    init?(map: Map) {
-        
-        // Model Properties
-        kingDensity <- map["kingDensity"]
-        nodeDensity <- map["nodeDensity"]
-        attachDamping <- map["attachDamping"]
-        snapDamping <- map["snapDamping"]
-    }
-    
-    func mapping(map: Map) {
-        /// Mapping already completed in init()
-    }
 }
+

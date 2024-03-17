@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2362AC2BA63BEF00CB3040 /* CustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2362AB2BA63BEF00CB3040 /* CustomData.swift */; };
 		9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03642898E7740063C9DB /* AppDelegate.swift */; };
 		9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03662898E7740063C9DB /* SceneDelegate.swift */; };
 		9A3A03692898E7740063C9DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03682898E7740063C9DB /* ViewController.swift */; };
@@ -226,7 +227,6 @@
 		DFC4F13A265727020064ECBB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CD265727010064ECBB /* Reachability.swift */; };
 		DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CE265727010064ECBB /* FileLoader.swift */; };
 		DFC4F13C265727020064ECBB /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0CF265727010064ECBB /* Alerts.swift */; };
-		DFC4F13D265727020064ECBB /* DateUTCTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */; };
 		DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */; };
 		DFC4F13F265727020064ECBB /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D2265727010064ECBB /* ImageHelper.swift */; };
 		DFC4F140265727020064ECBB /* ImageViewWithMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */; };
@@ -277,17 +277,15 @@
 		DFF6877B28AB334600C070DD /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877128AB334600C070DD /* SampleModel.swift */; };
 		DFF6877C28AB334600C070DD /* SampleAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877228AB334600C070DD /* SampleAPIFactory.swift */; };
 		DFF6877D28AB334600C070DD /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877428AB334600C070DD /* ProviderProtocol.swift */; };
-		DFF6877E28AB334600C070DD /* AlamofireProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877528AB334600C070DD /* AlamofireProvider.swift */; };
 		DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877628AB334600C070DD /* AppURLRequest.swift */; };
 		DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877728AB334600C070DD /* URLSessionProvider.swift */; };
 		DFF6878128AB334600C070DD /* TestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877828AB334600C070DD /* TestProvider.swift */; };
 		DFFA058E28AB4862007CA551 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFA058C28AB4862007CA551 /* CombinedViewController.swift */; };
 		DFFA058F28AB4862007CA551 /* CombinedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFA058D28AB4862007CA551 /* CombinedViewController.xib */; };
-		DFFA059728AB50DA007CA551 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DFFA059628AB50DA007CA551 /* Alamofire */; };
-		DFFA059A28AB50F9007CA551 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = DFFA059928AB50F9007CA551 /* ObjectMapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A2362AB2BA63BEF00CB3040 /* CustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomData.swift; sourceTree = "<group>"; };
 		9A3A03622898E7740063C9DB /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3A03642898E7740063C9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3A03662898E7740063C9DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -510,7 +508,6 @@
 		DFC4F0CD265727010064ECBB /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DFC4F0CE265727010064ECBB /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		DFC4F0CF265727010064ECBB /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
-		DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUTCTransform.swift; sourceTree = "<group>"; };
 		DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryHelper.swift; sourceTree = "<group>"; };
 		DFC4F0D2265727010064ECBB /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewWithMask.swift; sourceTree = "<group>"; };
@@ -565,7 +562,6 @@
 		DFF6877128AB334600C070DD /* SampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		DFF6877228AB334600C070DD /* SampleAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAPIFactory.swift; sourceTree = "<group>"; };
 		DFF6877428AB334600C070DD /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
-		DFF6877528AB334600C070DD /* AlamofireProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireProvider.swift; sourceTree = "<group>"; };
 		DFF6877628AB334600C070DD /* AppURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURLRequest.swift; sourceTree = "<group>"; };
 		DFF6877728AB334600C070DD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		DFF6877828AB334600C070DD /* TestProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProvider.swift; sourceTree = "<group>"; };
@@ -586,8 +582,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFA059A28AB50F9007CA551 /* ObjectMapper in Frameworks */,
-				DFFA059728AB50DA007CA551 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1084,11 +1078,11 @@
 				DFC4F0CD265727010064ECBB /* Reachability.swift */,
 				DFC4F0CE265727010064ECBB /* FileLoader.swift */,
 				DFC4F0CF265727010064ECBB /* Alerts.swift */,
-				DFC4F0D0265727010064ECBB /* DateUTCTransform.swift */,
 				DFC4F0D1265727010064ECBB /* DictionaryHelper.swift */,
 				DFC4F0D2265727010064ECBB /* ImageHelper.swift */,
 				DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */,
 				DFC4F0D5265727010064ECBB /* Signal.swift */,
+				9A2362AB2BA63BEF00CB3040 /* CustomData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1225,7 +1219,6 @@
 			isa = PBXGroup;
 			children = (
 				DFF6877428AB334600C070DD /* ProviderProtocol.swift */,
-				DFF6877528AB334600C070DD /* AlamofireProvider.swift */,
 				DFF6877628AB334600C070DD /* AppURLRequest.swift */,
 				DFF6877728AB334600C070DD /* URLSessionProvider.swift */,
 				DFF6877828AB334600C070DD /* TestProvider.swift */,
@@ -1320,8 +1313,6 @@
 			);
 			name = COFramework;
 			packageProductDependencies = (
-				DFFA059628AB50DA007CA551 /* Alamofire */,
-				DFFA059928AB50F9007CA551 /* ObjectMapper */,
 			);
 			productName = COFramework;
 			productReference = DFC4F041265726C80064ECBB /* COFramework.framework */;
@@ -1354,8 +1345,6 @@
 			);
 			mainGroup = DFC4F037265726C80064ECBB;
 			packageReferences = (
-				DFFA059528AB50DA007CA551 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				DFFA059828AB50F9007CA551 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = DFC4F042265726C80064ECBB /* Products */;
 			projectDirPath = "";
@@ -1513,7 +1502,6 @@
 				DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */,
 				DFC4F136265727020064ECBB /* SignalData.swift in Sources */,
 				DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */,
-				DFC4F13D265727020064ECBB /* DateUTCTransform.swift in Sources */,
 				DFC4F134265727020064ECBB /* CustomTableConfiguration.swift in Sources */,
 				DFC4F131265727020064ECBB /* SectionDescriptor.swift in Sources */,
 				DFC4F0EC265727020064ECBB /* UITextField+Additions.swift in Sources */,
@@ -1528,6 +1516,7 @@
 				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
 				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
 				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
+				9A2362AC2BA63BEF00CB3040 /* CustomData.swift in Sources */,
 				DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */,
 				D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */,
 				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,
@@ -1572,7 +1561,6 @@
 				DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */,
 				DFC4F137265727020064ECBB /* Logging.swift in Sources */,
 				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
-				DFF6877E28AB334600C070DD /* AlamofireProvider.swift in Sources */,
 				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
 				DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */,
 				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
@@ -1917,38 +1905,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DFFA059528AB50DA007CA551 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		DFFA059828AB50F9007CA551 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DFFA059628AB50DA007CA551 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DFFA059528AB50DA007CA551 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		DFFA059928AB50F9007CA551 /* ObjectMapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DFFA059828AB50F9007CA551 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
-			productName = ObjectMapper;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFC4F038265726C80064ECBB /* Project object */;
 }

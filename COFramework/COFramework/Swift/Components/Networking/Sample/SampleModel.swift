@@ -7,23 +7,16 @@
 //
 
 import Foundation
-import ObjectMapper
 
-public struct SampleModel: Codable, Mappable {
+public struct SampleModel: Codable {
     
     var id: String?
     var firstName: String?
     var lastName: String?
 
-    // MARK: Mappable protocol conformance
-    
-    public init?(map: Map) {
-        id <- map["id"]
-        firstName <- map["firstName"]
-        lastName <- map["lastName"]
-    }
-    
-    public func mapping(map: Map) {
-        /// Mapping already completed in init()
+    // Custom CodingKeys to match the JSON keys with property names
+    private enum CodingKeys: String, CodingKey {
+        case id, firstName, lastName
     }
 }
+

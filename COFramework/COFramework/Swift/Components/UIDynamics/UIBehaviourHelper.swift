@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import ObjectMapper
 
 open class UIBehaviourHelper {
     
@@ -32,25 +31,28 @@ open class UIBehaviourHelper {
      */
     
     fileprivate func loadModels(_ fileName: String?) {
-        
         guard let fileName = fileName else {
             Logger.sharedInstance.LogInfo("fileName is missing")
             return
         }
-        
-        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
-            
-            let mappable = Mapper<UIBehaviourModel>()
-            
-            if let models = mappable.map(JSONString: jsonString) {
-                self.settings = models
+
+        // Attempt to load the JSON file
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName), let jsonData = jsonString.data(using: .utf8) {
+            do {
+                // Use JSONDecoder to decode the JSON into a UIBehaviourModel object
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(UIBehaviourModel.self, from: jsonData)
+                self.settings = model
+                Logger.sharedInstance.LogInfo("File: \(fileName) loaded")
+            } catch {
+                // Handle JSON decoding errors
+                Logger.sharedInstance.LogError("Error decoding JSON from file: \(fileName) with error: \(error)")
             }
-            
-            Logger.sharedInstance.LogInfo("File: \(fileName) loaded")
         } else {
             Logger.sharedInstance.LogError("File: \(fileName) NOT loaded")
         }
     }
+
 
     func viewsFromTags(_ parentView: UIView, tags: String) -> [UIView] {
         

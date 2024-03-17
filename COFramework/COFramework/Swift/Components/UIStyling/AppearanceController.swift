@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ObjectMapper
 import Foundation
 
 public class AppearanceController {
@@ -43,14 +42,13 @@ public class AppearanceController {
      */
     
     public func loadAppearance(_ fileName: String, view: UIView? = nil, append: Bool = true) {
-        
         self.fileName = fileName
         
-        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
-            
-            let mappable = Mapper<AppearanceModel>()
-            
-            if let appearanceModels = mappable.mapArray(JSONString: jsonString) {
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName), let jsonData = jsonString.data(using: .utf8) {
+            do {
+                // Use JSONDecoder to decode the JSON string into an array of AppearanceModel objects
+                let decoder = JSONDecoder()
+                let appearanceModels = try decoder.decode([AppearanceModel].self, from: jsonData)
                 
                 if append {
                     // add to previous models
@@ -62,17 +60,21 @@ public class AppearanceController {
                 
                 // apply all appearance models to classes
                 self.applyModelsToAppearance()
-            }
-            
-            // apply models if view submitted
-            // this is used specially when loading new json file
-            // to apply to view realtime
-            
-            if let view = view {
-                self.applyModelsToView(view)
+                
+                // apply models if view submitted
+                // this is used specially when loading new json file
+                // to apply to view in real-time
+                if let view = view {
+                    self.applyModelsToView(view)
+                }
+                
+            } catch {
+                // Handle JSON decoding error
+                print("Error decoding AppearanceModel from file: \(fileName), error: \(error)")
             }
         }
     }
+
     
     /**
      color search for color from json.

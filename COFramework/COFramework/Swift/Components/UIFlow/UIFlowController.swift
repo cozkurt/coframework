@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ObjectMapper
 import Foundation
 
 public protocol UIFlowProtocol {
@@ -97,25 +96,28 @@ public class UIFlowController {
      */
     
     fileprivate func loadFlowModels(_ fileName: String?) {
-        
         guard let fileName = fileName else {
             Logger.sharedInstance.LogError("\(instanceName): fileName is missing")
             return
         }
 
-        if let jsonString = try? FileLoader.loadFile(fileName: fileName) {
-            
-            let mappable = Mapper<UIFlowModel>()
-            
-            if let flowModels = mappable.mapArray(JSONString: jsonString) {
+        // Attempt to load the JSON file
+        if let jsonString = try? FileLoader.loadFile(fileName: fileName), let jsonData = jsonString.data(using: .utf8) {
+            do {
+                // Use JSONDecoder to decode the JSON into an array of UIFlowModel objects
+                let decoder = JSONDecoder()
+                let flowModels = try decoder.decode([UIFlowModel].self, from: jsonData)
                 self.flowModels = flowModels
+                Logger.sharedInstance.LogDebug("\(instanceName): File: \(fileName) loaded")
+            } catch {
+                // Handle JSON decoding errors
+                Logger.sharedInstance.LogError("\(instanceName): Error decoding JSON from file: \(fileName) with error: \(error)")
             }
-            
-            Logger.sharedInstance.LogDebug("\(instanceName): File: \(fileName) loaded")
         } else {
             Logger.sharedInstance.LogError("\(instanceName): File: \(fileName) NOT loaded")
         }
     }
+
     
     /**
      logEvent to print out event

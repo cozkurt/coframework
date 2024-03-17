@@ -6,7 +6,6 @@
 //  Copyright © 2019 Cenker Ozkurt, Inc. All rights reserved.
 //
 
-import ObjectMapper
 import Foundation
 
 /**
@@ -64,26 +63,5 @@ public class SampleAPIFactory {
         }, failure: { (error) in
             failure(error)
         })
-        
-        //
-        // ObjectMapper parsing
-        //
-        
-        /*
-        provider.request(urlRequest, success: { (JSONString) in
-
-            let mappable = Mapper<SampleModel>()
-
-            if let responseModel = mappable.map(JSONString: JSONString) {
-                self.sampleResponse = responseModel
-                success()
-            } else {
-                failure(nil)
-            }
-
-            }, failure: { error in
-                failure(error)
-        })
-         */
     }
 }
