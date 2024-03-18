@@ -1,5 +1,5 @@
 //
-//  CustomData.swift
+//  CodableObject.swift
 //  COFramework
 //
 //  Created by Ozkurt, Cenker on 3/16/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class CustomData: Codable {
+public class CodableObject: Codable {
     public var value: Any
     
     public init(_ value: Any) {
@@ -25,13 +25,13 @@ public class CustomData: Codable {
             value = boolValue
         } else if let doubleValue = try? container.decode(Double.self) {
             value = doubleValue
-        } else if let dictValue = try? container.decode([String: CustomData].self) {
+        } else if let dictValue = try? container.decode([String: CodableObject].self) {
             var decodedDict = [String: Any]()
             for (key, customDataValue) in dictValue {
                 decodedDict[key] = customDataValue.value
             }
             value = decodedDict
-        } else if let arrayValue = try? container.decode([CustomData].self) {
+        } else if let arrayValue = try? container.decode([CodableObject].self) {
             value = arrayValue.map { $0.value }
         } else {
             throw DecodingError.dataCorruptedError(in: container, debugDescription: "CustomData value cannot be decoded")
@@ -51,10 +51,10 @@ public class CustomData: Codable {
         case let doubleValue as Double:
             try container.encode(doubleValue)
         case let dictValue as [String: Any]:
-            let encodedDict = dictValue.mapValues { CustomData($0) }
+            let encodedDict = dictValue.mapValues { CodableObject($0) }
             try container.encode(encodedDict)
         case let arrayValue as [Any]:
-            try container.encode(arrayValue.map { CustomData($0) })
+            try container.encode(arrayValue.map { CodableObject($0) })
         default:
             let context = EncodingError.Context(codingPath: container.codingPath, debugDescription: "CustomData value cannot be encoded")
             throw EncodingError.invalidValue(value, context)

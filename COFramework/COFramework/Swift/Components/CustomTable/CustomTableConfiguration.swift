@@ -305,7 +305,7 @@ extension CustomTableBase {
      - returns
      */
     
-    public func insertDataToCell(_ cellName: String, cellData: [CustomData]?) {
+    public func insertDataToCell(_ cellName: String, cellData: [Any]?) {
         let cell = CellDescriptor(cellName: cellName)
         
         self.insertDataToCell(cell, cellData: cellData)
@@ -321,7 +321,7 @@ extension CustomTableBase {
      - returns
      */
 
-    public func insertDataToCell(_ cell: CellDescriptor, cellData: [CustomData]?) {
+    public func insertDataToCell(_ cell: CellDescriptor, cellData: [Any]?) {
 
         guard let (section, row) = self.findCellIndex(cell) else {
             return
@@ -345,7 +345,7 @@ extension CustomTableBase {
      - returns
      */
 
-    public func insertDataToSection(_ sectionTitle: String, sectionData: CustomData?) {
+    public func insertDataToSection(_ sectionTitle: String, sectionData: Any?) {
 
         guard let (section) = self.findSectionIndex(sectionTitle) else {
             return

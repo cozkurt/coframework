@@ -17,13 +17,13 @@ public struct SectionDescriptor: Codable {
     public var sectionHeaderVisible: Bool?
     public var sectionFooter: String?
     public var cells: [CellDescriptor]?
-    public var sectionData: CustomData?
+    public var sectionData: Any?
 
     private enum CodingKeys: String, CodingKey {
-        case sectionNibName, sectionTitle, sectionExpandable, sectionExpanded, sectionHideNoData, sectionHeaderVisible, sectionFooter, cells, sectionData
+        case sectionNibName, sectionTitle, sectionExpandable, sectionExpanded, sectionHideNoData, sectionHeaderVisible, sectionFooter, cells
     }
 
-    public init(sectionNibName: String?, sectionTitle: String?, sectionExpandable: Bool?, sectionExpanded: Bool?, sectionHideNoData: Bool?, sectionHeaderVisible: Bool?, sectionData: CustomData?, sectionFooter: String?, cells: [CellDescriptor]?) {
+    public init(sectionNibName: String?, sectionTitle: String?, sectionExpandable: Bool?, sectionExpanded: Bool?, sectionHideNoData: Bool?, sectionHeaderVisible: Bool?, sectionData: Any?, sectionFooter: String?, cells: [CellDescriptor]?) {
         self.sectionNibName = sectionNibName
         self.sectionTitle = sectionTitle
         self.sectionExpandable = sectionExpandable

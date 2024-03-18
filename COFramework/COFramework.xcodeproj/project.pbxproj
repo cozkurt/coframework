@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A2362AC2BA63BEF00CB3040 /* CustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2362AB2BA63BEF00CB3040 /* CustomData.swift */; };
+		9A2362AC2BA63BEF00CB3040 /* CodableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2362AB2BA63BEF00CB3040 /* CodableObject.swift */; };
 		9A3A03652898E7740063C9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03642898E7740063C9DB /* AppDelegate.swift */; };
 		9A3A03672898E7740063C9DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03662898E7740063C9DB /* SceneDelegate.swift */; };
 		9A3A03692898E7740063C9DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A03682898E7740063C9DB /* ViewController.swift */; };
@@ -285,7 +285,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A2362AB2BA63BEF00CB3040 /* CustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomData.swift; sourceTree = "<group>"; };
+		9A2362AB2BA63BEF00CB3040 /* CodableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableObject.swift; sourceTree = "<group>"; };
 		9A3A03622898E7740063C9DB /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3A03642898E7740063C9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A3A03662898E7740063C9DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -1082,7 +1082,7 @@
 				DFC4F0D2265727010064ECBB /* ImageHelper.swift */,
 				DFC4F0D3265727010064ECBB /* ImageViewWithMask.swift */,
 				DFC4F0D5265727010064ECBB /* Signal.swift */,
-				9A2362AB2BA63BEF00CB3040 /* CustomData.swift */,
+				9A2362AB2BA63BEF00CB3040 /* CodableObject.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1516,7 +1516,7 @@
 				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
 				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
 				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
-				9A2362AC2BA63BEF00CB3040 /* CustomData.swift in Sources */,
+				9A2362AC2BA63BEF00CB3040 /* CodableObject.swift in Sources */,
 				DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */,
 				D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */,
 				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,

@@ -16,7 +16,7 @@ public struct CellDescriptor: Codable {
     public var cellIdentifier: String?
     public var cellNibName: String?
     public var cellSelectionStyle: String?
-    public var cellData: [CustomData]?
+    public var cellData: [Any]?
     public var cellHidden: Bool?
     public var cellCache: Bool?
     public var cellRemoveSeperator: Bool = true
@@ -40,11 +40,11 @@ public struct CellDescriptor: Codable {
 
     // Custom CodingKeys to match the JSON keys with property names, if needed
     private enum CodingKeys: String, CodingKey {
-        case cellName, cellIdentifier, cellNibName, cellSelectionStyle, cellHidden, cellCache, cellRemoveSeperator, cellTrailingActions, cellLeadingActions, cellData
+        case cellName, cellIdentifier, cellNibName, cellSelectionStyle, cellHidden, cellCache, cellRemoveSeperator, cellTrailingActions, cellLeadingActions
     }
     
     // Custom initializers can still be used with Codable for additional setup
-    public init(cellName: String?, cellIdentifier: String?, cellNibName: String?, cellSelectionStyle: String?, cellData: [CustomData]?, cellHidden: Bool?, cellCache: Bool?, cellRemoveSeperator: Bool = false, cellLeadingActions: String? = nil, cellTrailingActions: String? = nil, cellCallback: ((Int?, Any?) -> ())? = nil) {
+    public init(cellName: String?, cellIdentifier: String?, cellNibName: String?, cellSelectionStyle: String?, cellData: [Any]?, cellHidden: Bool?, cellCache: Bool?, cellRemoveSeperator: Bool = false, cellLeadingActions: String? = nil, cellTrailingActions: String? = nil, cellCallback: ((Int?, Any?) -> ())? = nil) {
         
         self.cellName = cellName
         self.cellIdentifier = cellIdentifier

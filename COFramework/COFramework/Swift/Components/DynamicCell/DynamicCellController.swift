@@ -11,7 +11,7 @@ import UIKit
 public class DynamicCellController {
     
     // notifiers
-    var dynamicCellControllerDataUpdatedEvent: SignalData<[CustomData]?> = SignalData()
+    var dynamicCellControllerDataUpdatedEvent: SignalData<[Any]?> = SignalData()
     
     // parent view controller
     var dynamicCellViewController: AppTableBase?
@@ -71,7 +71,7 @@ public class DynamicCellController {
                   sectionTitle: String = "section0",
                   blurAlpha: CGFloat = 0,
                   sectionNibName: String? = nil,
-                  data: [CustomData]? = nil,
+                  data: [Any]? = nil,
                   leadingActions: String? = nil,
                   trailingActions: String? = nil,
                   delay: TimeInterval = 0,
