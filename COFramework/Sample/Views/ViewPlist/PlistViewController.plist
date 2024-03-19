@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sectionExpandable</key>
+		<false/>
+		<key>sectionExpanded</key>
+		<true/>
+		<key>sectionHideNoData</key>
+		<false/>
+		<key>cells</key>
+		<array>
+			<dict>
+				<key>cellName</key>
+				<string>BluetoothOnCell</string>
+				<key>cellIdentifier</key>
+				<string>BluetoothOnCell</string>
+				<key>cellNibName</key>
+				<string>BluetoothOnCell</string>
+				<key>cellSelectionStyle</key>
+				<string>none</string>
+			</dict>
+			<dict>
+				<key>cellName</key>
+				<string>ConnectCell</string>
+				<key>cellIdentifier</key>
+				<string>ConnectCell</string>
+				<key>cellNibName</key>
+				<string>ConnectCell</string>
+				<key>cellSelectionStyle</key>
+				<string>none</string>
+			</dict>
+			<dict>
+				<key>cellName</key>
+				<string>ConnectPodToModemCell</string>
+				<key>cellIdentifier</key>
+				<string>ConnectPodToModemCell</string>
+				<key>cellNibName</key>
+				<string>ConnectPodToModemCell</string>
+				<key>cellSelectionStyle</key>
+				<string>none</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

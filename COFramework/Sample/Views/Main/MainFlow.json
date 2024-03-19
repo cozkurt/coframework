@@ -51,6 +51,9 @@
     "eventName": "MENU_VIEW", "viewController":"Sample.MenuViewController", "navigationType": "replace"
 },
 {
+        "eventName": "PLIST_VIEW", "viewController":"Sample.PlistViewController", "navigationType": "replace"
+},
+{
     "eventName": "DYNAMIC_CELLS_VIEW", "viewController":"Sample.DynamicsCellsViewController", "navigationType": "replace"
 },
 {

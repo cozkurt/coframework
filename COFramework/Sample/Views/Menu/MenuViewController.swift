@@ -118,6 +118,7 @@ class MenuViewController: AdvancedPageViewController {
         // Setup Menu Items
         #if DEBUG
         self.menuItems = [
+            ("Plist".localize(),"list.bullet.indent"),
             ("DynamicCells".localize(),"list.bullet.indent"),
             ("Styles".localize(),"text.badge.plus"),
             ("Dynamics".localize(),"gear"),
@@ -126,6 +127,7 @@ class MenuViewController: AdvancedPageViewController {
             ("Combiend".localize(),"text.badge.plus")]
         #else
         self.menuItems = [
+            ("Plist".localize(),"list.bullet.indent"),
             ("DynamicCells".localize(),"list.bullet.indent"),
             ("Styles".localize(),"text.badge.plus"),
             ("Dynamics".localize(),"gear"),
@@ -137,14 +139,16 @@ class MenuViewController: AdvancedPageViewController {
     
     func setupControllers() {
         #if DEBUG
-        self.pagesWithFlowControllers([("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
+        self.pagesWithFlowControllers([("MainFlow", "PlistCellTab", "PLIST_VIEW"),
+                                       ("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
                                        ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW"),
                                        ("MainFlow", "ConsoleTab", "CONSOLE_VIEW"),
                                        ("MainFlow", "CombinedTab", "COMBINED_VIEW")])
         #else
-        self.pagesWithFlowControllers([("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
+        self.pagesWithFlowControllers([("MainFlow", "PlistCellTab", "PLIST_VIEW"),
+                                       ("MainFlow", "DynamicCellTab", "DYNAMIC_CELLS_VIEW"),
                                        ("MainFlow", "StylesTab", "STYLES_VIEW"),
                                        ("MainFlow", "DynamicsTab", "DYNAMICS_VIEW"),
                                        ("MainFlow", "AnimationsTab", "ANIMATIONS_VIEW"),
@@ -162,9 +166,9 @@ class MenuViewController: AdvancedPageViewController {
         }
         
         #if DEBUG
-            self.badges = [ notificationsCount,0,0,0,0,0 ]
+            self.badges = [ notificationsCount,0,0,0,0,0,0 ]
         #else
-            self.badges = [ notificationsCount,0,0,0,0,0 ]
+            self.badges = [ notificationsCount,0,0,0,0,0,0 ]
         #endif
     }
     

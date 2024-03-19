@@ -287,7 +287,7 @@ extension CustomTableBase {
             self.updateSelectionStyle(cell, cellDesc: cellDescriptor)
             
             // check cell seperator
-            if cellDescriptor.cellRemoveSeperator {
+            if cellDescriptor.cellRemoveSeperator ?? true {
                 cell.removeSeparator()
             }
             

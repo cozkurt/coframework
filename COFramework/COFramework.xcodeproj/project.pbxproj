@@ -124,6 +124,9 @@
 		9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415450289B7127004275CD /* ConsoleTableViewCell.xib */; };
 		9A415455289B7127004275CD /* ConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A415451289B7127004275CD /* ConsoleViewController.xib */; };
 		9AC3CD6C28F614BC005ECC73 /* CombinedViewController_iPadx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3CD6B28F614BC005ECC73 /* CombinedViewController_iPadx.xib */; };
+		9AC8BE1C2BAA0FAA00EC477D /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8BE1A2BAA0FAA00EC477D /* PlistViewController.swift */; };
+		9AC8BE1D2BAA0FAA00EC477D /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8BE1B2BAA0FAA00EC477D /* PlistViewController.xib */; };
+		9AC8BE212BAA14F200EC477D /* PlistViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC8BE202BAA14F200EC477D /* PlistViewController.plist */; };
 		9ACDC4D428AC30DB009DABDD /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */; };
 		9ACDC4D528AC30DB009DABDD /* DemoStyle4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */; };
 		D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */; };
@@ -402,6 +405,9 @@
 		9A415450289B7127004275CD /* ConsoleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleTableViewCell.xib; sourceTree = "<group>"; };
 		9A415451289B7127004275CD /* ConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleViewController.xib; sourceTree = "<group>"; };
 		9AC3CD6B28F614BC005ECC73 /* CombinedViewController_iPadx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CombinedViewController_iPadx.xib; sourceTree = "<group>"; };
+		9AC8BE1A2BAA0FAA00EC477D /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		9AC8BE1B2BAA0FAA00EC477D /* PlistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlistViewController.xib; sourceTree = "<group>"; };
+		9AC8BE202BAA14F200EC477D /* PlistViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistViewController.plist; sourceTree = "<group>"; };
 		9ACDC4D228AC30DB009DABDD /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
 		9ACDC4D328AC30DB009DABDD /* DemoStyle4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle4.json; sourceTree = "<group>"; };
 		D13CE5ED2683EF25007B3BD0 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
@@ -611,6 +617,7 @@
 		9A41534E289B0D4A004275CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9AC8BE192BAA0F6800EC477D /* ViewPlist */,
 				DFFA058B28AB4826007CA551 /* Combined */,
 				9A41544D289B7127004275CD /* Console */,
 				9A415448289B63ED004275CD /* DynamicCells */,
@@ -824,6 +831,16 @@
 				9A415451289B7127004275CD /* ConsoleViewController.xib */,
 			);
 			path = Console;
+			sourceTree = "<group>";
+		};
+		9AC8BE192BAA0F6800EC477D /* ViewPlist */ = {
+			isa = PBXGroup;
+			children = (
+				9AC8BE1A2BAA0FAA00EC477D /* PlistViewController.swift */,
+				9AC8BE1B2BAA0FAA00EC477D /* PlistViewController.xib */,
+				9AC8BE202BAA14F200EC477D /* PlistViewController.plist */,
+			);
+			path = ViewPlist;
 			sourceTree = "<group>";
 		};
 		D1A4A3EE26B35ED7008C7CD5 /* GeoLocation */ = {
@@ -1359,6 +1376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A415425289B5AEE004275CD /* robot12_00012.png in Resources */,
+				9AC8BE1D2BAA0FAA00EC477D /* PlistViewController.xib in Resources */,
 				9A415404289B5AEE004275CD /* robot40_00003.png in Resources */,
 				9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */,
 				9A41540E289B5AEE004275CD /* robot40_00030.png in Resources */,
@@ -1432,6 +1450,7 @@
 				9A415454289B7127004275CD /* ConsoleTableViewCell.xib in Resources */,
 				9A415419289B5AEE004275CD /* robot40_00036.png in Resources */,
 				9A41543E289B6086004275CD /* RestartYourModemCell.xib in Resources */,
+				9AC8BE212BAA14F200EC477D /* PlistViewController.plist in Resources */,
 				9A3A037C2898E9D80063C9DB /* DemoStyle2.json in Resources */,
 				9A415426289B5AEE004275CD /* robot12_00007.png in Resources */,
 				9A41540A289B5AEE004275CD /* robot40_00025.png in Resources */,
@@ -1462,6 +1481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A41544B289B6442004275CD /* DynamicsCellsViewController.swift in Sources */,
+				9AC8BE1C2BAA0FAA00EC477D /* PlistViewController.swift in Sources */,
 				9A3A037F2898E9D80063C9DB /* StylesViewController.swift in Sources */,
 				9A415442289B6086004275CD /* RestartYourModemCell.swift in Sources */,
 				9A415453289B7127004275CD /* ConsoleViewController.swift in Sources */,

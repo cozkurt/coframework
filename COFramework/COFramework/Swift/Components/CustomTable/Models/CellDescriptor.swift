@@ -19,7 +19,7 @@ public struct CellDescriptor: Codable {
     public var cellData: [Any]?
     public var cellHidden: Bool?
     public var cellCache: Bool?
-    public var cellRemoveSeperator: Bool = true
+    public var cellRemoveSeperator: Bool?
     
     // cell swipe actions exp: delete, remove etc.
     public var cellTrailingActions: String?
