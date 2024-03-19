@@ -233,7 +233,6 @@
 		DFC4F142265727020064ECBB /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D5265727010064ECBB /* Signal.swift */; };
 		DFC4F143265727020064ECBB /* CustomOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D7265727010064ECBB /* CustomOperation.swift */; };
 		DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */; };
-		DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F14826572A140064ECBB /* Defaults.swift */; };
 		DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F14926572A140064ECBB /* DemoStyle3.json */; };
 		DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */; };
 		DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */; };
@@ -514,7 +513,6 @@
 		DFC4F0D5265727010064ECBB /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		DFC4F0D7265727010064ECBB /* CustomOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperation.swift; sourceTree = "<group>"; };
 		DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsCenterManager.swift; sourceTree = "<group>"; };
-		DFC4F14826572A140064ECBB /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		DFC4F14926572A140064ECBB /* DemoStyle3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DemoStyle3.json; sourceTree = "<group>"; };
 		DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COUIAnimationRouter.m; sourceTree = "<group>"; };
 		DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COUIAnimationSpriteLayer.h; sourceTree = "<group>"; };
@@ -993,7 +991,6 @@
 		DFC4F0A3265727010064ECBB /* UIStyling */ = {
 			isa = PBXGroup;
 			children = (
-				DFC4F14826572A140064ECBB /* Defaults.swift */,
 				DFC4F0A4265727010064ECBB /* AppearanceView.swift */,
 				DFC4F0A5265727010064ECBB /* AppearanceSegmented.swift */,
 				DFC4F0A6265727010064ECBB /* AppearanceSwitch.swift */,
@@ -1561,7 +1558,6 @@
 				DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */,
 				DFC4F137265727020064ECBB /* Logging.swift in Sources */,
 				DFC4F127265727020064ECBB /* DynamicActionSheet.swift in Sources */,
-				DFC4F14A26572A140064ECBB /* Defaults.swift in Sources */,
 				DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */,
 				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
 				D1A4A3F426B35ED7008C7CD5 /* GeoCircleOverlay.swift in Sources */,

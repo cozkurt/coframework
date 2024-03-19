@@ -11,6 +11,9 @@ import Foundation
 
 public class AppearanceController {
     
+    /// default font name
+    var defaultFontName = "System"
+    
     /// json file to load into model
     var fileName: String?
     

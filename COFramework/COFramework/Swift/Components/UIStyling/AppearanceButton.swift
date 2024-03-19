@@ -46,7 +46,7 @@ public class AppearanceButton: UIButton {
 	public func setDefaults() {
 		if useDefaultFont {
             if let size = self.titleLabel?.font.pointSize {
-                self.titleLabel?.font = self.titleLabel?.font.appearanceFont(fontDefault: defaultFontName, size: size)
+                self.titleLabel?.font = self.titleLabel?.font.appearanceFont(fontDefault: AppearanceController.sharedInstance.defaultFontName, size: size)
             }
 			self.setTitleColor(AppearanceController.sharedInstance.color("default.color"), for: .normal)
 		}

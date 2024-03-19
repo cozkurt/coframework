@@ -28,7 +28,7 @@ public class AppearanceLabel: UILabel {
 	
     public func setDefaults() {
 		if useDefaultFont {
-            self.font = self.font.appearanceFont(fontDefault: defaultFontName, size: self.font.pointSize)
+            self.font = self.font.appearanceFont(fontDefault: AppearanceController.sharedInstance.defaultFontName, size: self.font.pointSize)
 			self.textColor = AppearanceController.sharedInstance.color("default.text")
 		}
 	}

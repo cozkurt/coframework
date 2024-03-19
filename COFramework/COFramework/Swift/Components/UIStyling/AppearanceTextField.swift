@@ -30,7 +30,7 @@ public class AppearanceTextField: UITextField {
     public func setDefaults() {
         if useDefaultFont {
             if let font = self.font {
-                self.font = font.appearanceFont(fontDefault: defaultFontName, size: font.pointSize)
+                self.font = font.appearanceFont(fontDefault: AppearanceController.sharedInstance.defaultFontName, size: font.pointSize)
             }
             self.textColor = AppearanceController.sharedInstance.color("default.text")
         }

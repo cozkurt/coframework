@@ -27,8 +27,8 @@ class CircleGraphView: UIView {
         didSet {
 			let text = "\(Int(((self.toDegree - self.fromDegree).rounded(.toNearestOrAwayFromZero) * 100 / 360).rounded(.toNearestOrAwayFromZero)))%"
             
-            let font: UIFont = UIFont.defaultFontWithSize(fontDefault: defaultFontName, ofSize: fontSize, andWeight: bolderFont ? UIFont.Weight.medium : UIFont.Weight.regular)!
-			let fontSuper: UIFont = UIFont.defaultFontWithSize(fontDefault: defaultFontName, ofSize: fontSuperSize, andWeight: UIFont.Weight.regular)!
+            let font: UIFont = UIFont.defaultFontWithSize(fontDefault: AppearanceController.sharedInstance.defaultFontName, ofSize: fontSize, andWeight: bolderFont ? UIFont.Weight.medium : UIFont.Weight.regular)!
+            let fontSuper: UIFont = UIFont.defaultFontWithSize(fontDefault: AppearanceController.sharedInstance.defaultFontName, ofSize: fontSuperSize, andWeight: UIFont.Weight.regular)!
 			let attString: NSMutableAttributedString = NSMutableAttributedString(string: text, attributes: [.font: font])
             
             var attributes = [
