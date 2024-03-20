@@ -199,7 +199,7 @@ open class AdvancedPageViewController: UIViewController {
         return controller
     }
     
-    public func slideToTab(tabName: String?) {
+    public func slideToTab(tabName: String?, animated: Bool = false) {
         
         let index = self.flowControllersList?.firstIndex(where: { item -> Bool in
             return item.tabName == tabName
@@ -210,7 +210,7 @@ open class AdvancedPageViewController: UIViewController {
         }
     }
     
-    public func slideToPage(index: Int) {
+    public func slideToPage(index: Int, animated: Bool = false) {
         var count = 0
         
         if let controllers = controllersList {
@@ -227,13 +227,13 @@ open class AdvancedPageViewController: UIViewController {
             if index > self.currentPageIndex {
                 let vc = self.viewControllers[index]
                 
-                self.pageViewController.setViewControllers([vc], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: { (complete) -> Void in
+                self.pageViewController.setViewControllers([vc], direction: UIPageViewController.NavigationDirection.forward, animated: animated, completion: { (complete) -> Void in
                     self.currentPage(index)
                 })
             } else if index < self.currentPageIndex {
                 let vc = self.viewControllers[index]
                 
-                self.pageViewController.setViewControllers([vc], direction: UIPageViewController.NavigationDirection.reverse, animated: false, completion: { (complete) -> Void in
+                self.pageViewController.setViewControllers([vc], direction: UIPageViewController.NavigationDirection.reverse, animated: animated, completion: { (complete) -> Void in
                     self.currentPage(index)
                 })
             }
