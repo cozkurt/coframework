@@ -37,8 +37,9 @@ public class NotificationsCenterManager {
      - parameters:
      - return : Void
      */
-    public func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:]) {
-        runOnMainQueue {
+    public func post(_ forName: String, object: Any? = nil, userInfo: [AnyHashable: Any]? = [:], delay: TimeInterval = 0) {
+
+        runOnMainQueue(after: delay) {
             
             if var userInfo = userInfo, let flowInstanceNameCallBack = self.flowInstanceNameCallBack {
                 let result = flowInstanceNameCallBack()
