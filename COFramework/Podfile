@@ -8,7 +8,6 @@ inhibit_all_warnings!
 # Available pods
 
 def available_pods
-  pod 'ObjectMapper'
 end
 
 target 'COFramework' do
