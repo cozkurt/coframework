@@ -217,6 +217,23 @@ public class DynamicCellController {
      dismissCell to dismiss cell from the DynamicCellViewController
      
      - parameters:
+     - parent : cellNibName defined in DynamicCellKey class
+     - key : cellNibName defined in DynamicCellKey class
+     - indexPath : IndexPath of the cell
+     - return : void
+     */
+    
+    public func dismissCell(_ parent: AppTableBase? = nil, _ key: String?, _ indexPath: IndexPath? = nil, after: Double = 0.0) {
+        // set dynamicCellViewController
+        self.dynamicCellViewController = parent
+        
+        self.dismissCell(key, indexPath, after: after)
+    }
+    
+    /**
+     dismissCell to dismiss cell from the DynamicCellViewController
+     
+     - parameters:
      - key : cellNibName defined in DynamicCellKey class
      - indexPath : IndexPath of the cell
      - return : void
