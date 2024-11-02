@@ -13,6 +13,6 @@ let package = Package(name: "COFramework",
                         .target(name: "COFramework",
                                 dependencies: [],
                                 path: "COFramework")
-                      ]
+                      ],
                       swiftLanguageVersions: [.v5]
 )
