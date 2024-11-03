@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,35 +26,11 @@
 		9A415369289B0D4A004275CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A415356289B0D4A004275CD /* MenuViewController.swift */; };
 		9A41536C289B0D4A004275CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535A289B0D4A004275CD /* Main.storyboard */; };
 		9A41536D289B0D4A004275CD /* MainFlow.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41535B289B0D4A004275CD /* MainFlow.json */; };
-		9A415383289B208D004275CD /* COUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415370289B208D004275CD /* COUIBaseView.m */; };
-		9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415372289B208D004275CD /* COUIBehaviorGestures.h */; };
-		9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415373289B208D004275CD /* COUIBehaviorModel.m */; };
-		9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415374289B208D004275CD /* COUIBehaviorController.m */; };
-		9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415375289B208D004275CD /* COUIBehaviorView.m */; };
-		9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415376289B208D004275CD /* COUIBehaviorBaseView.m */; };
-		9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415377289B208D004275CD /* COUIBehaviorMotion.h */; };
-		9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415378289B208D004275CD /* COUIBehaviorFactory.h */; };
-		9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415379289B208D004275CD /* COUIBehaviorImage.m */; };
-		9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537A289B208D004275CD /* COUIBehaviorGestures.m */; };
-		9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537B289B208D004275CD /* COUIBehaviorController.h */; };
-		9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537C289B208D004275CD /* COUIBehaviorModel.h */; };
-		9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537D289B208D004275CD /* COUIBehaviorFactory.m */; };
-		9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537E289B208D004275CD /* COUIBehaviorMotion.m */; };
-		9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */; };
-		9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415380289B208D004275CD /* COUIBehaviorView.h */; };
-		9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415381289B208D004275CD /* COUIBehaviorImage.h */; };
-		9A415394289B208D004275CD /* COUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415382289B208D004275CD /* COUIBaseView.h */; };
 		9A4153A0289B2878004275CD /* DynamicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41539A289B2878004275CD /* DynamicsViewController.swift */; };
 		9A4153A2289B2878004275CD /* DynamicsViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A41539C289B2878004275CD /* DynamicsViewController.json */; };
 		9A4153A4289B2A71004275CD /* DynamicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A3289B2A71004275CD /* DynamicsViewController.xib */; };
 		9A4153A9289B53A4004275CD /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153A7289B53A4004275CD /* AnimationsViewController.swift */; };
 		9A4153AA289B53A4004275CD /* AnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153A8289B53A4004275CD /* AnimationsViewController.xib */; };
-		9A4153B5289B5700004275CD /* COUICircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AD289B5700004275CD /* COUICircleView.m */; };
-		9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AE289B5700004275CD /* COUIParticleView.m */; };
-		9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B0289B5700004275CD /* COUIViewCustom.h */; };
-		9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B1289B5700004275CD /* COUIParticleView.h */; };
-		9A4153BA289B5700004275CD /* COUICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B2289B5700004275CD /* COUICircleView.h */; };
-		9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153B4289B5700004275CD /* COUIViewCustom.m */; };
 		9A4153BD289B596E004275CD /* AnimationsViewControlller.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153AB289B53CC004275CD /* AnimationsViewControlller.json */; };
 		9A4153F4289B5AEE004275CD /* robot40_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C0289B5AEE004275CD /* robot40_00013.png */; };
 		9A4153F5289B5AEE004275CD /* robot40_00007.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4153C1289B5AEE004275CD /* robot40_00007.png */; };
@@ -137,7 +113,67 @@
 		D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */; };
 		D1A4A3F726B35ED7008C7CD5 /* GeoLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */; };
 		D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */; };
-		DFC4F052265726C80064ECBB /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF991EEC2CD735A800828659 /* COUIBehaviorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415380289B208D004275CD /* COUIBehaviorView.h */; };
+		DF991EED2CD735A800828659 /* COUIBehaviorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537C289B208D004275CD /* COUIBehaviorModel.h */; };
+		DF991EEE2CD735A800828659 /* COTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A2265733340064ECBB /* COTimer.h */; };
+		DF991EEF2CD735A800828659 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */; };
+		DF991EF02CD735A800828659 /* COUIBehaviorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537B289B208D004275CD /* COUIBehaviorController.h */; };
+		DF991EF12CD735A800828659 /* COMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A1265733340064ECBB /* COMacros.h */; };
+		DF991EF22CD735A800828659 /* COUIAnimationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F190265733340064ECBB /* COUIAnimationFactory.h */; };
+		DF991EF32CD735A800828659 /* COUIParticleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B1289B5700004275CD /* COUIParticleView.h */; };
+		DF991EF42CD735A800828659 /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
+		DF991EF52CD735A800828659 /* COUIBehaviorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415381289B208D004275CD /* COUIBehaviorImage.h */; };
+		DF991EF62CD735A800828659 /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
+		DF991EF72CD735A800828659 /* CODataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F197265733340064ECBB /* CODataSource.h */; };
+		DF991EF82CD735A800828659 /* COSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F199265733340064ECBB /* COSingleton.h */; };
+		DF991EF92CD735A800828659 /* COCacheController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19C265733340064ECBB /* COCacheController.h */; };
+		DF991EFA2CD735A800828659 /* COUIAnimationBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */; };
+		DF991EFB2CD735A800828659 /* COUIAnimationSpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */; };
+		DF991EFC2CD735A800828659 /* COUIAnimationRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F193265733340064ECBB /* COUIAnimationRouter.h */; };
+		DF991EFD2CD735A800828659 /* COUIViewCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B0289B5700004275CD /* COUIViewCustom.h */; };
+		DF991EFE2CD735A800828659 /* COUIAnimationCAModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */; };
+		DF991EFF2CD735A800828659 /* COLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19A265733340064ECBB /* COLogging.h */; };
+		DF991F002CD735A800828659 /* COUIBehaviorBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A41537F289B208D004275CD /* COUIBehaviorBaseView.h */; };
+		DF991F012CD735A800828659 /* COUICircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4153B2289B5700004275CD /* COUICircleView.h */; };
+		DF991F022CD735A800828659 /* COUIBehaviorMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415377289B208D004275CD /* COUIBehaviorMotion.h */; };
+		DF991F032CD735A800828659 /* COUIBehaviorGestures.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415372289B208D004275CD /* COUIBehaviorGestures.h */; };
+		DF991F042CD735A800828659 /* NSObject+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */; };
+		DF991F052CD735A800828659 /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AA265733340064ECBB /* NSString+Utilities.h */; };
+		DF991F062CD735A800828659 /* NSMutableAttributedString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */; };
+		DF991F072CD735A800828659 /* COUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415382289B208D004275CD /* COUIBaseView.h */; };
+		DF991F082CD735A800828659 /* COFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F044265726C80064ECBB /* COFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF991F092CD735A800828659 /* COJSONLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F198265733340064ECBB /* COJSONLoader.h */; };
+		DF991F0A2CD735A800828659 /* COUIBehaviorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A415378289B208D004275CD /* COUIBehaviorFactory.h */; };
+		DF991F0B2CD735A800828659 /* COUIAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F192265733340064ECBB /* COUIAnimationController.h */; };
+		DF991F122CD735A800828659 /* COUIBehaviorMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537E289B208D004275CD /* COUIBehaviorMotion.m */; };
+		DF991F142CD735A800828659 /* COUIAnimationBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */; };
+		DF991F172CD735A800828659 /* COUIBehaviorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415374289B208D004275CD /* COUIBehaviorController.m */; };
+		DF991F282CD735A800828659 /* COCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A0265733340064ECBB /* COCacheController.m */; };
+		DF991F2C2CD735A800828659 /* COUIAnimationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */; };
+		DF991F2E2CD735A800828659 /* CODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19E265733340064ECBB /* CODataSource.m */; };
+		DF991F302CD735A800828659 /* COUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415370289B208D004275CD /* COUIBaseView.m */; };
+		DF991F312CD735A800828659 /* COUIParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AE289B5700004275CD /* COUIParticleView.m */; };
+		DF991F322CD735A800828659 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */; };
+		DF991F362CD735A800828659 /* COUIAnimationSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */; };
+		DF991F402CD735A800828659 /* COJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19D265733340064ECBB /* COJSONLoader.m */; };
+		DF991F412CD735A800828659 /* COLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19F265733340064ECBB /* COLogging.m */; };
+		DF991F482CD735A800828659 /* COUIAnimationCAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */; };
+		DF991F492CD735A800828659 /* COUIBehaviorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415373289B208D004275CD /* COUIBehaviorModel.m */; };
+		DF991F4B2CD735A800828659 /* COUIBehaviorGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537A289B208D004275CD /* COUIBehaviorGestures.m */; };
+		DF991F4C2CD735A800828659 /* COTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19B265733340064ECBB /* COTimer.m */; };
+		DF991F592CD735A800828659 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A7265733340064ECBB /* NSString+Utilities.m */; };
+		DF991F5D2CD735A800828659 /* COUIViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153B4289B5700004275CD /* COUIViewCustom.m */; };
+		DF991F5E2CD735A800828659 /* COUIBehaviorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41537D289B208D004275CD /* COUIBehaviorFactory.m */; };
+		DF991F5F2CD735A800828659 /* COUIAnimationParticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */; };
+		DF991F652CD735A800828659 /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */; };
+		DF991F662CD735A800828659 /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */; };
+		DF991F6E2CD735A800828659 /* COUICircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4153AD289B5700004275CD /* COUICircleView.m */; };
+		DF991F742CD735A800828659 /* COUIBehaviorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415379289B208D004275CD /* COUIBehaviorImage.m */; };
+		DF991F882CD735A800828659 /* COUIBehaviorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415375289B208D004275CD /* COUIBehaviorView.m */; };
+		DF991F8E2CD735A800828659 /* COUIAnimatedBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */; };
+		DF991F932CD735A800828659 /* COUIAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */; };
+		DF991F952CD735A800828659 /* COUIAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A3265733340064ECBB /* COUIAnimationController.m */; };
+		DF991F962CD735A800828659 /* COUIBehaviorBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A415376289B208D004275CD /* COUIBehaviorBaseView.m */; };
 		DFC4F0D8265727010064ECBB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05C265727010064ECBB /* Bundle+Additions.swift */; };
 		DFC4F0D9265727010064ECBB /* UIApplication+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05D265727010064ECBB /* UIApplication+Additions.swift */; };
 		DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F05E265727010064ECBB /* UIImage+Additions.swift */; };
@@ -237,42 +273,6 @@
 		DFC4F143265727020064ECBB /* CustomOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F0D7265727010064ECBB /* CustomOperation.swift */; };
 		DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */; };
 		DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F14926572A140064ECBB /* DemoStyle3.json */; };
-		DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18B265733340064ECBB /* COUIAnimationRouter.m */; };
-		DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18C265733340064ECBB /* COUIAnimationSpriteLayer.h */; };
-		DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F18D265733340064ECBB /* COUIAnimationBaseModel.h */; };
-		DFC4F1B4265733340064ECBB /* COUIAnimatedBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18E265733340064ECBB /* COUIAnimatedBaseView.m */; };
-		DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F18F265733340064ECBB /* COUIAnimationParticleModel.m */; };
-		DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F190265733340064ECBB /* COUIAnimationFactory.h */; };
-		DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F191265733340064ECBB /* COUIAnimationCAModel.h */; };
-		DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F192265733340064ECBB /* COUIAnimationController.h */; };
-		DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F193265733340064ECBB /* COUIAnimationRouter.h */; };
-		DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F194265733340064ECBB /* COUIAnimationSpriteLayer.m */; };
-		DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F195265733340064ECBB /* COUIAnimationBaseModel.m */; };
-		DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F197265733340064ECBB /* CODataSource.h */; };
-		DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F198265733340064ECBB /* COJSONLoader.h */; };
-		DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F199265733340064ECBB /* COSingleton.h */; };
-		DFC4F1BF265733340064ECBB /* COLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19A265733340064ECBB /* COLogging.h */; };
-		DFC4F1C0265733340064ECBB /* COTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19B265733340064ECBB /* COTimer.m */; };
-		DFC4F1C1265733340064ECBB /* COCacheController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F19C265733340064ECBB /* COCacheController.h */; };
-		DFC4F1C2265733340064ECBB /* COJSONLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19D265733340064ECBB /* COJSONLoader.m */; };
-		DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19E265733340064ECBB /* CODataSource.m */; };
-		DFC4F1C4265733340064ECBB /* COLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F19F265733340064ECBB /* COLogging.m */; };
-		DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A0265733340064ECBB /* COCacheController.m */; };
-		DFC4F1C6265733340064ECBB /* COMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A1265733340064ECBB /* COMacros.h */; };
-		DFC4F1C7265733340064ECBB /* COTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A2265733340064ECBB /* COTimer.h */; };
-		DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A3265733340064ECBB /* COUIAnimationController.m */; };
-		DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A4265733340064ECBB /* COUIAnimationCAModel.m */; };
-		DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A6265733340064ECBB /* UIImage+ImageEffects.h */; };
-		DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A7265733340064ECBB /* NSString+Utilities.m */; };
-		DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1A8265733340064ECBB /* NSMutableAttributedString+Utilities.h */; };
-		DFC4F1CD265733340064ECBB /* NSObject+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1A9265733340064ECBB /* NSObject+Blocks.m */; };
-		DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AA265733340064ECBB /* NSString+Utilities.h */; };
-		DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AB265733340064ECBB /* UIImage+ImageEffects.m */; };
-		DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AC265733340064ECBB /* NSObject+Blocks.h */; };
-		DFC4F1D1265733340064ECBB /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AD265733340064ECBB /* NSMutableAttributedString+Utilities.m */; };
-		DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1AE265733340064ECBB /* COUIAnimationFactory.m */; };
-		DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1AF265733340064ECBB /* COUIAnimationParticleModel.h */; };
-		DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC4F1B0265733340064ECBB /* COUIAnimatedBaseView.h */; };
 		DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */; };
 		DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6876F28AB334600C070DD /* SampleServiceURL.swift */; };
 		DFF6877A28AB334600C070DD /* SampleEnvironments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877028AB334600C070DD /* SampleEnvironments.swift */; };
@@ -418,6 +418,8 @@
 		D1A4A3F126B35ED7008C7CD5 /* GeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
 		D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationManager.swift; sourceTree = "<group>"; };
 		D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoderManager.swift; sourceTree = "<group>"; };
+		DF991FA42CD735A800828659 /* COFrameworkObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFrameworkObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF991FA52CD735A900828659 /* COFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "COFramework copy-Info.plist"; path = "/Users/cenkerozkurt/coframework/COFramework/COFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		DFC4F041265726C80064ECBB /* COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
 		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -579,6 +581,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A415342289B09E6004275CD /* COFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF991F972CD735A800828659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +872,7 @@
 				9A3A03632898E7740063C9DB /* Sample */,
 				DFC4F042265726C80064ECBB /* Products */,
 				9A3A03762898E8630063C9DB /* Frameworks */,
+				DF991FA52CD735A900828659 /* COFramework copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -871,6 +881,7 @@
 			children = (
 				DFC4F041265726C80064ECBB /* COFramework.framework */,
 				9A3A03622898E7740063C9DB /* Sample.app */,
+				DF991FA42CD735A800828659 /* COFrameworkObjC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1253,42 +1264,49 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		DF991EEB2CD735A800828659 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF991EEC2CD735A800828659 /* COUIBehaviorView.h in Headers */,
+				DF991EED2CD735A800828659 /* COUIBehaviorModel.h in Headers */,
+				DF991EEE2CD735A800828659 /* COTimer.h in Headers */,
+				DF991EEF2CD735A800828659 /* UIImage+ImageEffects.h in Headers */,
+				DF991EF02CD735A800828659 /* COUIBehaviorController.h in Headers */,
+				DF991EF12CD735A800828659 /* COMacros.h in Headers */,
+				DF991EF22CD735A800828659 /* COUIAnimationFactory.h in Headers */,
+				DF991EF32CD735A800828659 /* COUIParticleView.h in Headers */,
+				DF991EF42CD735A800828659 /* COUIAnimationParticleModel.h in Headers */,
+				DF991EF52CD735A800828659 /* COUIBehaviorImage.h in Headers */,
+				DF991EF62CD735A800828659 /* COUIAnimatedBaseView.h in Headers */,
+				DF991EF72CD735A800828659 /* CODataSource.h in Headers */,
+				DF991EF82CD735A800828659 /* COSingleton.h in Headers */,
+				DF991EF92CD735A800828659 /* COCacheController.h in Headers */,
+				DF991EFA2CD735A800828659 /* COUIAnimationBaseModel.h in Headers */,
+				DF991EFB2CD735A800828659 /* COUIAnimationSpriteLayer.h in Headers */,
+				DF991EFC2CD735A800828659 /* COUIAnimationRouter.h in Headers */,
+				DF991EFD2CD735A800828659 /* COUIViewCustom.h in Headers */,
+				DF991EFE2CD735A800828659 /* COUIAnimationCAModel.h in Headers */,
+				DF991EFF2CD735A800828659 /* COLogging.h in Headers */,
+				DF991F002CD735A800828659 /* COUIBehaviorBaseView.h in Headers */,
+				DF991F012CD735A800828659 /* COUICircleView.h in Headers */,
+				DF991F022CD735A800828659 /* COUIBehaviorMotion.h in Headers */,
+				DF991F032CD735A800828659 /* COUIBehaviorGestures.h in Headers */,
+				DF991F042CD735A800828659 /* NSObject+Blocks.h in Headers */,
+				DF991F052CD735A800828659 /* NSString+Utilities.h in Headers */,
+				DF991F062CD735A800828659 /* NSMutableAttributedString+Utilities.h in Headers */,
+				DF991F072CD735A800828659 /* COUIBaseView.h in Headers */,
+				DF991F082CD735A800828659 /* COFramework.h in Headers */,
+				DF991F092CD735A800828659 /* COJSONLoader.h in Headers */,
+				DF991F0A2CD735A800828659 /* COUIBehaviorFactory.h in Headers */,
+				DF991F0B2CD735A800828659 /* COUIAnimationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03C265726C80064ECBB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A415392289B208D004275CD /* COUIBehaviorView.h in Headers */,
-				9A41538E289B208D004275CD /* COUIBehaviorModel.h in Headers */,
-				DFC4F1C7265733340064ECBB /* COTimer.h in Headers */,
-				DFC4F1CA265733340064ECBB /* UIImage+ImageEffects.h in Headers */,
-				9A41538D289B208D004275CD /* COUIBehaviorController.h in Headers */,
-				DFC4F1C6265733340064ECBB /* COMacros.h in Headers */,
-				DFC4F1B6265733340064ECBB /* COUIAnimationFactory.h in Headers */,
-				9A4153B9289B5700004275CD /* COUIParticleView.h in Headers */,
-				DFC4F1D3265733340064ECBB /* COUIAnimationParticleModel.h in Headers */,
-				9A415393289B208D004275CD /* COUIBehaviorImage.h in Headers */,
-				DFC4F1D4265733340064ECBB /* COUIAnimatedBaseView.h in Headers */,
-				DFC4F1BC265733340064ECBB /* CODataSource.h in Headers */,
-				DFC4F1BE265733340064ECBB /* COSingleton.h in Headers */,
-				DFC4F1C1265733340064ECBB /* COCacheController.h in Headers */,
-				DFC4F1B3265733340064ECBB /* COUIAnimationBaseModel.h in Headers */,
-				DFC4F1B2265733340064ECBB /* COUIAnimationSpriteLayer.h in Headers */,
-				DFC4F1B9265733340064ECBB /* COUIAnimationRouter.h in Headers */,
-				9A4153B8289B5700004275CD /* COUIViewCustom.h in Headers */,
-				DFC4F1B7265733340064ECBB /* COUIAnimationCAModel.h in Headers */,
-				DFC4F1BF265733340064ECBB /* COLogging.h in Headers */,
-				9A415391289B208D004275CD /* COUIBehaviorBaseView.h in Headers */,
-				9A4153BA289B5700004275CD /* COUICircleView.h in Headers */,
-				9A415389289B208D004275CD /* COUIBehaviorMotion.h in Headers */,
-				9A415384289B208D004275CD /* COUIBehaviorGestures.h in Headers */,
-				DFC4F1D0265733340064ECBB /* NSObject+Blocks.h in Headers */,
-				DFC4F1CE265733340064ECBB /* NSString+Utilities.h in Headers */,
-				DFC4F1CC265733340064ECBB /* NSMutableAttributedString+Utilities.h in Headers */,
-				9A415394289B208D004275CD /* COUIBaseView.h in Headers */,
-				DFC4F052265726C80064ECBB /* COFramework.h in Headers */,
-				DFC4F1BD265733340064ECBB /* COJSONLoader.h in Headers */,
-				9A41538A289B208D004275CD /* COUIBehaviorFactory.h in Headers */,
-				DFC4F1B8265733340064ECBB /* COUIAnimationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1311,6 +1329,26 @@
 			productName = Sample;
 			productReference = 9A3A03622898E7740063C9DB /* Sample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DF991EEA2CD735A800828659 /* COFrameworkObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF991FA12CD735A800828659 /* Build configuration list for PBXNativeTarget "COFrameworkObjC" */;
+			buildPhases = (
+				DF991EEB2CD735A800828659 /* Headers */,
+				DF991F0C2CD735A800828659 /* Sources */,
+				DF991F972CD735A800828659 /* Frameworks */,
+				DF991F982CD735A800828659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = COFrameworkObjC;
+			packageProductDependencies = (
+			);
+			productName = COFramework;
+			productReference = DF991FA42CD735A800828659 /* COFrameworkObjC.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		DFC4F040265726C80064ECBB /* COFramework */ = {
 			isa = PBXNativeTarget;
@@ -1338,8 +1376,9 @@
 		DFC4F038265726C80064ECBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					9A3A03612898E7740063C9DB = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -1365,6 +1404,7 @@
 			projectRoot = "";
 			targets = (
 				DFC4F040265726C80064ECBB /* COFramework */,
+				DF991EEA2CD735A800828659 /* COFrameworkObjC */,
 				9A3A03612898E7740063C9DB /* Sample */,
 			);
 		};
@@ -1458,6 +1498,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF991F982CD735A800828659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03F265726C80064ECBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1501,6 +1548,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF991F0C2CD735A800828659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF991F122CD735A800828659 /* COUIBehaviorMotion.m in Sources */,
+				DF991F142CD735A800828659 /* COUIAnimationBaseModel.m in Sources */,
+				DF991F172CD735A800828659 /* COUIBehaviorController.m in Sources */,
+				DF991F282CD735A800828659 /* COCacheController.m in Sources */,
+				DF991F2C2CD735A800828659 /* COUIAnimationRouter.m in Sources */,
+				DF991F2E2CD735A800828659 /* CODataSource.m in Sources */,
+				DF991F302CD735A800828659 /* COUIBaseView.m in Sources */,
+				DF991F312CD735A800828659 /* COUIParticleView.m in Sources */,
+				DF991F322CD735A800828659 /* UIImage+ImageEffects.m in Sources */,
+				DF991F362CD735A800828659 /* COUIAnimationSpriteLayer.m in Sources */,
+				DF991F402CD735A800828659 /* COJSONLoader.m in Sources */,
+				DF991F412CD735A800828659 /* COLogging.m in Sources */,
+				DF991F482CD735A800828659 /* COUIAnimationCAModel.m in Sources */,
+				DF991F492CD735A800828659 /* COUIBehaviorModel.m in Sources */,
+				DF991F4B2CD735A800828659 /* COUIBehaviorGestures.m in Sources */,
+				DF991F4C2CD735A800828659 /* COTimer.m in Sources */,
+				DF991F592CD735A800828659 /* NSString+Utilities.m in Sources */,
+				DF991F5D2CD735A800828659 /* COUIViewCustom.m in Sources */,
+				DF991F5E2CD735A800828659 /* COUIBehaviorFactory.m in Sources */,
+				DF991F5F2CD735A800828659 /* COUIAnimationParticleModel.m in Sources */,
+				DF991F652CD735A800828659 /* NSObject+Blocks.m in Sources */,
+				DF991F662CD735A800828659 /* NSMutableAttributedString+Utilities.m in Sources */,
+				DF991F6E2CD735A800828659 /* COUICircleView.m in Sources */,
+				DF991F742CD735A800828659 /* COUIBehaviorImage.m in Sources */,
+				DF991F882CD735A800828659 /* COUIBehaviorView.m in Sources */,
+				DF991F8E2CD735A800828659 /* COUIAnimatedBaseView.m in Sources */,
+				DF991F932CD735A800828659 /* COUIAnimationFactory.m in Sources */,
+				DF991F952CD735A800828659 /* COUIAnimationController.m in Sources */,
+				DF991F962CD735A800828659 /* COUIBehaviorBaseView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFC4F03D265726C80064ECBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1510,12 +1593,9 @@
 				D17850BE2668834800E4E28D /* UICollectionView+Additions.swift in Sources */,
 				D13CE5EE2683EF25007B3BD0 /* LanguageManager.swift in Sources */,
 				DFC4F0F0265727020064ECBB /* UIScrollView+Additions.swift in Sources */,
-				9A415390289B208D004275CD /* COUIBehaviorMotion.m in Sources */,
 				DFC4F125265727020064ECBB /* AppearanceTextField.swift in Sources */,
-				DFC4F1BB265733340064ECBB /* COUIAnimationBaseModel.m in Sources */,
 				DFC4F0FF265727020064ECBB /* String+Colors.swift in Sources */,
 				DFC4F12F265727020064ECBB /* CustomTableHelper.swift in Sources */,
-				9A415386289B208D004275CD /* COUIBehaviorController.m in Sources */,
 				DFC4F10E265727020064ECBB /* UIBehaviourFactory.swift in Sources */,
 				DFC4F136265727020064ECBB /* SignalData.swift in Sources */,
 				DFC4F0F1265727020064ECBB /* UIView+Border.swift in Sources */,
@@ -1532,21 +1612,14 @@
 				DFC4F10A265727020064ECBB /* DynamicCellViewController.swift in Sources */,
 				DFC4F0EA265727020064ECBB /* UUID+Additions.swift in Sources */,
 				DFC4F0EB265727020064ECBB /* DispatchQueue.swift in Sources */,
-				DFC4F1C5265733340064ECBB /* COCacheController.m in Sources */,
 				9A2362AC2BA63BEF00CB3040 /* CodableObject.swift in Sources */,
 				DFF6877F28AB334600C070DD /* AppURLRequest.swift in Sources */,
 				D1A4A3F626B35ED7008C7CD5 /* GeoModel.swift in Sources */,
-				DFC4F1B1265733340064ECBB /* COUIAnimationRouter.m in Sources */,
 				DFC4F0DF265727010064ECBB /* CKAsset+Additions.swift in Sources */,
-				DFC4F1C3265733340064ECBB /* CODataSource.m in Sources */,
 				DFC4F117265727020064ECBB /* AppearanceView.swift in Sources */,
-				9A415383289B208D004275CD /* COUIBaseView.m in Sources */,
-				9A4153B6289B5700004275CD /* COUIParticleView.m in Sources */,
-				DFC4F1CF265733340064ECBB /* UIImage+ImageEffects.m in Sources */,
 				DFC4F0E4265727020064ECBB /* UIDevice+Additions.swift in Sources */,
 				DFC4F0E8265727020064ECBB /* NSObject+CloudKit.swift in Sources */,
 				DFC4F12D265727020064ECBB /* AdvancedPageViewController.swift in Sources */,
-				DFC4F1BA265733340064ECBB /* COUIAnimationSpriteLayer.m in Sources */,
 				D1A4A3F826B35ED7008C7CD5 /* GeoCoderManager.swift in Sources */,
 				DFC4F0F4265727020064ECBB /* UIPageViewController+Additions.swift in Sources */,
 				DFC4F0DD265727010064ECBB /* Double+Additions.swift in Sources */,
@@ -1556,19 +1629,13 @@
 				DFC4F0FB265727020064ECBB /* UIBarButtonItem+Additions.swift in Sources */,
 				DFC4F0F7265727020064ECBB /* NSLocale+Additions.swift in Sources */,
 				DFC4F12B265727020064ECBB /* DismissButton.swift in Sources */,
-				DFC4F1C2265733340064ECBB /* COJSONLoader.m in Sources */,
-				DFC4F1C4265733340064ECBB /* COLogging.m in Sources */,
 				DFC4F0DC265727010064ECBB /* MKMapView+Additions.swift in Sources */,
 				DFC4F103265727020064ECBB /* WebViewController.swift in Sources */,
 				DFC4F10F265727020064ECBB /* UIBehaviourModel.swift in Sources */,
 				D1A4A3F726B35ED7008C7CD5 /* GeoLocationManager.swift in Sources */,
 				DFC4F0F8265727020064ECBB /* UISegmentedControl+Additions.swift in Sources */,
 				DFC4F124265727020064ECBB /* AppearanceLabel.swift in Sources */,
-				DFC4F1C9265733340064ECBB /* COUIAnimationCAModel.m in Sources */,
-				9A415385289B208D004275CD /* COUIBehaviorModel.m in Sources */,
 				DFC4F12E265727020064ECBB /* AppTableBase.swift in Sources */,
-				9A41538C289B208D004275CD /* COUIBehaviorGestures.m in Sources */,
-				DFC4F1C0265733340064ECBB /* COTimer.m in Sources */,
 				DFC4F11B265727020064ECBB /* AppearanceController.swift in Sources */,
 				DFC4F0D9265727010064ECBB /* UIApplication+Additions.swift in Sources */,
 				DFC4F106265727020064ECBB /* DynamicCellController.swift in Sources */,
@@ -1581,20 +1648,14 @@
 				DFF6878028AB334600C070DD /* URLSessionProvider.swift in Sources */,
 				DFC4F105265727020064ECBB /* DynamicCellBase.swift in Sources */,
 				D1A4A3F426B35ED7008C7CD5 /* GeoCircleOverlay.swift in Sources */,
-				DFC4F1CB265733340064ECBB /* NSString+Utilities.m in Sources */,
 				DFC4F10D265727020064ECBB /* UIFlowController.swift in Sources */,
 				DFC4F132265727020064ECBB /* CellDescriptor.swift in Sources */,
 				DFC4F0DA265727010064ECBB /* UIImage+Additions.swift in Sources */,
-				9A4153BC289B5700004275CD /* COUIViewCustom.m in Sources */,
-				9A41538F289B208D004275CD /* COUIBehaviorFactory.m in Sources */,
-				DFC4F1B5265733340064ECBB /* COUIAnimationParticleModel.m in Sources */,
 				DFC4F0DE265727010064ECBB /* NSTimer+Swifty.swift in Sources */,
 				DFC4F0F3265727020064ECBB /* Array+Additions.swift in Sources */,
 				DFC4F119265727020064ECBB /* AppearanceSwitch.swift in Sources */,
 				DFC4F139265727020064ECBB /* ImagePicker.swift in Sources */,
 				DFC4F11F265727020064ECBB /* StylesViewController.swift in Sources */,
-				DFC4F1CD265733340064ECBB /* NSObject+Blocks.m in Sources */,
-				DFC4F1D1265733340064ECBB /* NSMutableAttributedString+Utilities.m in Sources */,
 				DFC4F118265727020064ECBB /* AppearanceSegmented.swift in Sources */,
 				DFC4F140265727020064ECBB /* ImageViewWithMask.swift in Sources */,
 				DFC4F0FC265727020064ECBB /* Data+Additions.swift in Sources */,
@@ -1602,13 +1663,11 @@
 				DFC4F11A265727020064ECBB /* AppearanceButton.swift in Sources */,
 				DFC4F0FA265727020064ECBB /* DataFormatter+Additions.swift in Sources */,
 				DFC4F122265727020064ECBB /* AppearanceTextView.swift in Sources */,
-				9A4153B5289B5700004275CD /* COUICircleView.m in Sources */,
 				DFC4F13E265727020064ECBB /* DictionaryHelper.swift in Sources */,
 				DFC4F0EE265727020064ECBB /* NSMutableAttributedString.swift in Sources */,
 				DFC4F0FE265727020064ECBB /* String+Localization.swift in Sources */,
 				DFC4F0E3265727020064ECBB /* UIResponder+Additions.swift in Sources */,
 				DFC4F121265727020064ECBB /* AppearanceModel.swift in Sources */,
-				9A41538B289B208D004275CD /* COUIBehaviorImage.m in Sources */,
 				DFC4F135265727020064ECBB /* CustomTableDelegates.swift in Sources */,
 				DFC4F0E7265727020064ECBB /* UILabel+Additions.swift in Sources */,
 				DFC4F142265727020064ECBB /* Signal.swift in Sources */,
@@ -1628,21 +1687,16 @@
 				DFC4F0E0265727010064ECBB /* UIColor+Additions.swift in Sources */,
 				DFC4F0F5265727020064ECBB /* CALayer+Additions.swift in Sources */,
 				DFF6878128AB334600C070DD /* TestProvider.swift in Sources */,
-				9A415387289B208D004275CD /* COUIBehaviorView.m in Sources */,
 				DFC4F126265727020064ECBB /* CircleGraphView.swift in Sources */,
 				DFC4F13B265727020064ECBB /* FileLoader.swift in Sources */,
 				DFC4F138265727020064ECBB /* GlobalHelpers.swift in Sources */,
 				DFC4F0E9265727020064ECBB /* Date+Additions.swift in Sources */,
 				D17850BC26687F5F00E4E28D /* CLLocation+Additions.swift in Sources */,
-				DFC4F1B4265733340064ECBB /* COUIAnimatedBaseView.m in Sources */,
 				DFC4F10C265727020064ECBB /* UIFlowModel.swift in Sources */,
 				DFC4F0F9265727020064ECBB /* String+Additions.swift in Sources */,
 				DFC4F129265727020064ECBB /* ResizableImageView.swift in Sources */,
 				DFC4F0ED265727020064ECBB /* UINib+Load.swift in Sources */,
-				DFC4F1D2265733340064ECBB /* COUIAnimationFactory.m in Sources */,
 				DFC4F0E6265727020064ECBB /* NSObject+Additions.swift in Sources */,
-				DFC4F1C8265733340064ECBB /* COUIAnimationController.m in Sources */,
-				9A415388289B208D004275CD /* COUIBehaviorBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1676,7 +1730,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1706,7 +1760,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1715,6 +1769,62 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF991FA22CD735A800828659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WX8HCZ35T3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "COFramework copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF991FA32CD735A800828659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WX8HCZ35T3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "COFramework copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1758,6 +1868,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1772,7 +1883,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1822,6 +1933,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1830,7 +1942,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1845,12 +1957,14 @@
 		DFC4F056265726C80064ECBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WX8HCZ35T3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = COFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -1859,6 +1973,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1870,12 +1985,14 @@
 		DFC4F057265726C80064ECBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WX8HCZ35T3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = COFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -1884,6 +2001,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.COFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1900,6 +2018,15 @@
 			buildConfigurations = (
 				9A3A03732898E7750063C9DB /* Debug */,
 				9A3A03742898E7750063C9DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF991FA12CD735A800828659 /* Build configuration list for PBXNativeTarget "COFrameworkObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF991FA22CD735A800828659 /* Debug */,
+				DF991FA32CD735A800828659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
