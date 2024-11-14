@@ -3,7 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "COFramework",
-    platforms: [.iOS(.v16)],
     products: [
         .library(
             name: "COFramework",
