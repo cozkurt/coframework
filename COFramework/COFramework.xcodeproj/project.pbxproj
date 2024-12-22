@@ -274,6 +274,7 @@
 		DFC4F1462657295B0064ECBB /* NotificationsCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1452657295B0064ECBB /* NotificationsCenterManager.swift */; };
 		DFC4F14B26572A140064ECBB /* DemoStyle3.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC4F14926572A140064ECBB /* DemoStyle3.json */; };
 		DFC4F1EC265842540064ECBB /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC4F1EB265842540064ECBB /* UIViewController+Additions.swift */; };
+		DFEC997C2D17BAF7000CC76C /* COFrameworkObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF991FA42CD735A800828659 /* COFrameworkObjC.framework */; };
 		DFF6877928AB334600C070DD /* SampleServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6876F28AB334600C070DD /* SampleServiceURL.swift */; };
 		DFF6877A28AB334600C070DD /* SampleEnvironments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877028AB334600C070DD /* SampleEnvironments.swift */; };
 		DFF6877B28AB334600C070DD /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6877128AB334600C070DD /* SampleModel.swift */; };
@@ -419,7 +420,7 @@
 		D1A4A3F226B35ED7008C7CD5 /* GeoLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationManager.swift; sourceTree = "<group>"; };
 		D1A4A3F326B35ED7008C7CD5 /* GeoCoderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoderManager.swift; sourceTree = "<group>"; };
 		DF991FA42CD735A800828659 /* COFrameworkObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFrameworkObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF991FA52CD735A900828659 /* COFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "COFramework copy-Info.plist"; path = "/Users/cenkerozkurt/coframework/COFramework/COFramework copy-Info.plist"; sourceTree = "<absolute>"; };
+		DF991FA52CD735A900828659 /* COFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "COFramework-Info.plist"; path = "/Users/cenkerozkurt/coframework/COFramework/COFramework-Info.plist"; sourceTree = "<absolute>"; };
 		DFC4F041265726C80064ECBB /* COFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = COFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC4F044265726C80064ECBB /* COFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COFramework.h; sourceTree = "<group>"; };
 		DFC4F045265726C80064ECBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -581,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A415342289B09E6004275CD /* COFramework.framework in Frameworks */,
+				DFEC997C2D17BAF7000CC76C /* COFrameworkObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,7 +874,7 @@
 				9A3A03632898E7740063C9DB /* Sample */,
 				DFC4F042265726C80064ECBB /* Products */,
 				9A3A03762898E8630063C9DB /* Frameworks */,
-				DF991FA52CD735A900828659 /* COFramework copy-Info.plist */,
+				DF991FA52CD735A900828659 /* COFramework-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1785,7 +1787,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "COFramework copy-Info.plist";
+				INFOPLIST_FILE = "COFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1813,7 +1815,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "COFramework copy-Info.plist";
+				INFOPLIST_FILE = "COFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
