@@ -11,7 +11,16 @@ import Foundation
 
 public class CustomTextField: AppearanceTextField {
     
-    public var isEditable: Bool = true
+    private var _isEditable: Bool = true
+    public override var isEditable: Bool {
+        get {
+            return _isEditable
+        }
+        set {
+            _isEditable = newValue
+            self.updateBorderColor()
+        }
+    }
     
     public override func layoutSubviews() {
         super.layoutSubviews()

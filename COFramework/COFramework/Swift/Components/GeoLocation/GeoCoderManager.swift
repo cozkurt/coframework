@@ -89,26 +89,42 @@ public class GeoCoderManager: NSObject, MKLocalSearchCompleterDelegate {
     public func reverseGeocodeLocation(latitude:Double, longitude:Double, completion:@escaping (ReversedGeoLocation?) -> Void) {
         
         let location = CLLocation(latitude: latitude, longitude: longitude)
-        let locationHash:String = String(latitude) + String(longitude)
+        let locationHash = String(format: "%.6f_%.6f", latitude, longitude)
         
         if let cachedLocation = reverseGeocodeCache[locationHash] {
-            completion(cachedLocation)
+            print("Using cached location for \(locationHash): \(cachedLocation)")
+            runOnMainQueue {
+                completion(cachedLocation)
+            }
             return
         }
         
         CLGeocoder().reverseGeocodeLocation(location) { placemarks, error in
             
+            if let error = error {
+                print("Reverse geocoding failed with error: \(error.localizedDescription)")
+                runOnMainQueue {
+                    completion(nil)
+                }
+                return
+            }
+            
             guard let placemark = placemarks?.first else {
                 let errorString = error?.localizedDescription ?? "Unexpected Error"
                 print("Unable to reverse geocode the given location. Error: \(errorString)")
-                completion(nil)
+                runOnMainQueue {
+                    completion(nil)
+                }
                 return
             }
             
             let reversedGeoLocation = ReversedGeoLocation(with: placemark)
             self.reverseGeocodeCache[locationHash] = reversedGeoLocation
+            print("Caching new reversed location for \(locationHash)")
             
-            completion(reversedGeoLocation)
+            runOnMainQueue {
+                completion(reversedGeoLocation)
+            }
         }
     }
     
